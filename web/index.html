@@ -103,7 +103,12 @@
     }
 
     /* ===== メインコンテンツ ===== */
-    .main { padding: 10px; }
+    .main {
+      padding: 10px;
+      overflow: auto;
+      height: calc(100vh - 140px);
+      -webkit-overflow-scrolling: touch;
+    }
 
     /* ===== カテゴリブロック ===== */
     .cat-section { margin-bottom: 16px; }
@@ -115,12 +120,13 @@
       font-weight: bold;
       border-radius: 8px 8px 0 0;
       letter-spacing: 0.03em;
+      position: sticky;
+      top: 0;
+      z-index: 3;
     }
 
     /* ===== テーブル ===== */
     .table-wrap {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
       border-radius: 0 0 8px 8px;
       box-shadow: 0 2px 8px rgba(176,125,98,0.1);
     }
@@ -142,7 +148,8 @@
       white-space: nowrap;
       border-right: 1px solid rgba(255,255,255,0.15);
       position: sticky;
-      top: 0;
+      top: 34px;
+      z-index: 2;
     }
     .price-table thead th:first-child {
       text-align: left;
