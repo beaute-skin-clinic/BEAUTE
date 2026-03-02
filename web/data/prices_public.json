@@ -9,7 +9,7 @@
   "treatments": [
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "お尻",
       "sessions": "",
@@ -28,7 +28,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "取り放題",
       "sessions": "",
@@ -47,7 +47,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ADM",
       "area": "1㎜ごと",
       "sessions": "",
@@ -66,7 +66,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ADM",
       "area": "片頬",
       "sessions": "",
@@ -85,7 +85,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "1個〜3mmまで",
       "sessions": "",
@@ -104,7 +104,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "追加1mmごと",
       "sessions": "",
@@ -123,7 +123,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Co２ハイリュウシュ",
       "area": "",
       "sessions": "",
@@ -142,7 +142,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キシロカイン麻酔",
       "area": "",
       "sessions": "",
@@ -161,7 +161,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコW",
       "area": "",
       "sessions": "20％",
@@ -180,7 +180,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "V＋Iライン",
       "sessions": "",
@@ -199,7 +199,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "デコルテ",
       "sessions": "",
@@ -218,7 +218,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "リップ",
       "sessions": "",
@@ -237,7 +237,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "片手の甲",
       "sessions": "",
@@ -256,7 +256,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "肘下（手の甲含まず）",
       "sessions": "",
@@ -275,7 +275,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "背中から肩甲骨",
       "sessions": "",
@@ -294,7 +294,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "脇",
       "sessions": "",
@@ -313,7 +313,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "顔全体",
       "sessions": "20％",
@@ -332,7 +332,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコトーニング",
       "area": "首",
       "sessions": "",
@@ -351,7 +351,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコフラクショナル",
       "area": "頬+鼻",
       "sessions": "",
@@ -370,7 +370,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコフラクショナル",
       "area": "顔全体",
       "sessions": "20％",
@@ -389,7 +389,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mm〜（1mmにつき）",
       "sessions": "",
@@ -408,7 +408,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mmまで",
       "sessions": "",
@@ -427,7 +427,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "1mmまで",
       "sessions": "",
@@ -446,7 +446,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "5mmまで",
       "sessions": "",
@@ -465,7 +465,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "両前腕（肘下・手・甲・指）",
       "sessions": "",
@@ -484,7 +484,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "全顔",
       "sessions": "",
@@ -503,7 +503,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "眉下〜鼻下",
       "sessions": "",
@@ -522,7 +522,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "背中（肩甲骨 上 or 下）",
       "sessions": "",
@@ -541,7 +541,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "お尻",
       "sessions": "",
@@ -560,7 +560,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "手の甲",
       "sessions": "",
@@ -579,7 +579,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "背中から肩甲骨",
       "sessions": "",
@@ -598,7 +598,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "腕（肘上・腕下）",
       "sessions": "",
@@ -617,7 +617,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "頬のみ",
       "sessions": "",
@@ -636,7 +636,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "頬＋鼻",
       "sessions": "",
@@ -655,7 +655,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル",
       "area": "首・デコルテ",
       "sessions": "",
@@ -674,7 +674,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトフェイシャル（フォトダブル）",
       "area": "顔全体",
       "sessions": "20％",
@@ -693,7 +693,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "局所麻酔0.5CC",
       "area": "",
       "sessions": "",
@@ -712,7 +712,7 @@
     },
     {
       "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "局所麻酔ブロック0.5CC",
       "area": "",
       "sessions": "",
@@ -731,7 +731,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アクネトーニング",
       "area": "全顔",
       "sessions": "",
@@ -750,7 +750,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アクネトーニング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -769,7 +769,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "オプションタイトニング",
       "area": "オプション",
       "sessions": "",
@@ -788,7 +788,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "オプションタイトニング",
       "area": "オプション",
       "sessions": "20.00%",
@@ -807,7 +807,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "スマイルリフト",
       "area": "口腔内",
       "sessions": "",
@@ -826,7 +826,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "スマイルリフト",
       "area": "口腔内",
       "sessions": "20.00%",
@@ -845,7 +845,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "タイトニング",
       "area": "全顔",
       "sessions": "",
@@ -864,7 +864,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "タイトニング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -883,7 +883,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "トーニング",
       "area": "全顔",
       "sessions": "",
@@ -902,7 +902,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "トーニング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -921,7 +921,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピーリング",
       "area": "全顔",
       "sessions": "",
@@ -940,7 +940,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ピーリング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -959,7 +959,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（スタンダード）680s",
       "sessions": "",
@@ -978,7 +978,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（プレミアム）880s",
       "sessions": "",
@@ -997,7 +997,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（ライト）356s",
       "sessions": "",
@@ -1016,7 +1016,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "ハイフアイシャワー®224s",
       "sessions": "",
@@ -1035,7 +1035,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）324s",
       "sessions": "",
@@ -1054,7 +1054,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
       "sessions": "",
@@ -1073,7 +1073,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
       "sessions": "",
@@ -1092,7 +1092,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
       "sessions": "20.00%",
@@ -1111,7 +1111,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ4d",
       "area": "全顔",
       "sessions": "",
@@ -1130,7 +1130,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ4d",
       "area": "全顔",
       "sessions": "20.00%",
@@ -1149,7 +1149,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ6d",
       "area": "全顔",
       "sessions": "",
@@ -1168,7 +1168,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナ6d",
       "area": "全顔",
       "sessions": "20.00%",
@@ -1187,7 +1187,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
       "sessions": "",
@@ -1206,7 +1206,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
       "sessions": "20.00%",
@@ -1225,7 +1225,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
       "sessions": "",
@@ -1244,7 +1244,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
       "sessions": "20.00%",
@@ -1263,7 +1263,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルニューマ",
       "area": "100ショット",
       "sessions": "",
@@ -1282,7 +1282,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルニューマ",
       "area": "200ショット",
       "sessions": "",
@@ -1301,7 +1301,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルニューマ",
       "area": "300ショット",
       "sessions": "",
@@ -1320,7 +1320,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルニューマ",
       "area": "400ショット",
       "sessions": "",
@@ -1339,7 +1339,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルニューマ",
       "area": "500ショット",
       "sessions": "",
@@ -1358,7 +1358,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
       "sessions": "132,000",
@@ -1377,7 +1377,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルフォーマープレミアム（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（プレミアム）ボ500ハ680S",
       "sessions": "154000",
@@ -1396,7 +1396,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（ライト）ボ200sハ356s",
       "sessions": "",
@@ -1415,7 +1415,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リップ",
       "area": "口元治療",
       "sessions": "",
@@ -1434,7 +1434,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リップ",
       "area": "口元治療",
       "sessions": "20.00%",
@@ -1453,7 +1453,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "人中短縮",
       "area": "口周り治療",
       "sessions": "",
@@ -1472,7 +1472,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "人中短縮",
       "area": "口周り治療",
       "sessions": "20.00%",
@@ -1491,7 +1491,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔スタンダード",
       "sessions": "",
@@ -1510,7 +1510,7 @@
     },
     {
       "category": "しわ・たるみ",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔ライト",
       "sessions": "",
@@ -1529,7 +1529,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "",
@@ -1548,7 +1548,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "",
@@ -1567,7 +1567,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "",
@@ -1586,7 +1586,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1605,7 +1605,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1624,7 +1624,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1643,7 +1643,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1662,7 +1662,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1681,7 +1681,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1700,7 +1700,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1719,7 +1719,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1738,7 +1738,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1757,7 +1757,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "Dr.手打ち注射",
       "area": "",
       "sessions": "10％",
@@ -1776,7 +1776,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -1795,7 +1795,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -1814,7 +1814,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -1833,7 +1833,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -1852,7 +1852,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -1871,7 +1871,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルローニターゼ",
       "area": "",
       "sessions": "",
@@ -1890,7 +1890,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルローニターゼ",
       "area": "",
       "sessions": "",
@@ -1909,7 +1909,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルローニターゼ",
       "area": "",
       "sessions": "",
@@ -1928,7 +1928,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -1947,7 +1947,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -1966,7 +1966,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -1985,7 +1985,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2004,7 +2004,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2023,7 +2023,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2042,7 +2042,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2061,7 +2061,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2080,7 +2080,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2099,7 +2099,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2118,7 +2118,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2137,7 +2137,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ボトックス",
       "area": "",
       "sessions": "",
@@ -2156,7 +2156,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2175,7 +2175,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2194,7 +2194,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2213,7 +2213,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2232,7 +2232,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2251,7 +2251,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "",
@@ -2270,7 +2270,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2289,7 +2289,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2308,7 +2308,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2327,7 +2327,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2346,7 +2346,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2365,7 +2365,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2384,7 +2384,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2403,7 +2403,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
       "sessions": "10％",
@@ -2422,7 +2422,7 @@
     },
     {
       "category": "注入系",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射",
       "area": "",
       "sessions": "",
@@ -2441,7 +2441,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アイスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2460,7 +2460,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アイスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2479,7 +2479,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "40本以上10本追加",
       "sessions": "",
@@ -2498,7 +2498,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2517,7 +2517,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2536,7 +2536,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2555,7 +2555,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2574,7 +2574,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2593,7 +2593,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ショートスレッド",
       "area": "全顔",
       "sessions": "",
@@ -2612,7 +2612,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2631,7 +2631,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2650,7 +2650,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2669,7 +2669,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2688,7 +2688,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2707,7 +2707,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPCL",
       "area": "全顔",
       "sessions": "",
@@ -2726,7 +2726,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2745,7 +2745,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2764,7 +2764,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2783,7 +2783,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2802,7 +2802,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2821,7 +2821,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ロングスレッドPDO",
       "area": "全顔",
       "sessions": "",
@@ -2840,7 +2840,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "目元用シール麻酔",
       "area": "目元2枚",
       "sessions": "",
@@ -2859,7 +2859,7 @@
     },
     {
       "category": "スレッド（糸リフト）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "麻酔代",
       "area": "全顔",
       "sessions": "",
@@ -2878,7 +2878,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ11～20個",
       "sessions": "",
@@ -2897,7 +2897,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ1～4個",
       "sessions": "",
@@ -2916,7 +2916,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ21～30個",
       "sessions": "",
@@ -2935,7 +2935,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ5～10個",
       "sessions": "",
@@ -2954,7 +2954,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "イオン導入",
       "area": "トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -2973,7 +2973,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "イオン導入",
       "area": "ビタミンC＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -2992,7 +2992,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サブシジョン",
       "area": "ジュベルック　2×2㎝",
       "sessions": "",
@@ -3011,7 +3011,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サブシジョン",
       "area": "ジュベルック　全顔",
       "sessions": "",
@@ -3030,7 +3030,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サブシジョン",
       "area": "ジュベルック　半顔",
       "sessions": "",
@@ -3049,7 +3049,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "カスタマイズ",
       "sessions": "",
@@ -3068,7 +3068,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "トラネキサム酸",
       "sessions": "",
@@ -3087,7 +3087,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "ビタミンC",
       "sessions": "",
@@ -3106,7 +3106,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "ラコス",
       "sessions": "",
@@ -3125,7 +3125,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "頬・鼻（毛穴）・首：1部位",
       "sessions": "",
@@ -3144,7 +3144,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サーマニードル",
       "area": "顔全体",
       "sessions": "",
@@ -3163,7 +3163,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ダーマペン4",
       "area": "顔全体",
       "sessions": "",
@@ -3182,7 +3182,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ダーマペン4",
       "area": "顔全体",
       "sessions": "20.00%",
@@ -3201,7 +3201,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -3220,7 +3220,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "20.00%",
@@ -3239,7 +3239,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
       "sessions": "",
@@ -3258,7 +3258,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
       "sessions": "5%",
@@ -3277,7 +3277,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
       "sessions": "",
@@ -3296,7 +3296,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
       "sessions": "5%",
@@ -3315,7 +3315,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
       "sessions": "",
@@ -3334,7 +3334,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
       "sessions": "",
@@ -3353,7 +3353,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
       "sessions": "",
@@ -3372,7 +3372,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
       "sessions": "",
@@ -3391,7 +3391,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマのみ",
       "sessions": "",
@@ -3410,7 +3410,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋エクソソームアンプル",
       "sessions": "",
@@ -3429,7 +3429,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋タイトニングセラム",
       "sessions": "",
@@ -3448,7 +3448,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋ヒト臍帯由来幹細胞培養上清液",
       "sessions": "",
@@ -3467,7 +3467,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋ビタミンC",
       "sessions": "",
@@ -3486,7 +3486,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋プラセンタ",
       "sessions": "",
@@ -3505,7 +3505,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラズマリフティング",
       "area": "プラズマ＋リジェンセラム修復",
       "sessions": "",
@@ -3524,7 +3524,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヴェルヴェットスキン",
       "area": "お尻（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -3543,7 +3543,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体",
       "sessions": "",
@@ -3562,7 +3562,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -3581,7 +3581,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "20.00%",
@@ -3600,7 +3600,7 @@
     },
     {
       "category": "美肌治療",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "圧出",
       "area": "",
       "sessions": "",
@@ -3619,7 +3619,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "マッサージピール",
       "area": "顔全体",
       "sessions": "",
@@ -3638,7 +3638,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "マッサージピール",
       "area": "顔全体",
       "sessions": "10.00%",
@@ -3657,7 +3657,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "マッサージピール",
       "area": "顔全体",
       "sessions": "20.00%",
@@ -3676,7 +3676,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "マッサージピール",
       "area": "首",
       "sessions": "",
@@ -3695,7 +3695,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ヒップ・背中上",
       "sessions": "",
@@ -3714,7 +3714,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ヒップ・背中上",
       "sessions": "10.00%",
@@ -3733,7 +3733,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ヒップ・背中上",
       "sessions": "5.00%",
@@ -3752,7 +3752,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ワキ・肘・ひざ・かかと",
       "sessions": "",
@@ -3771,7 +3771,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ワキ・肘・ひざ・かかと",
       "sessions": "10.00%",
@@ -3790,7 +3790,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "ワキ・肘・ひざ・かかと",
       "sessions": "5.00%",
@@ -3809,7 +3809,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "顔全体",
       "sessions": "",
@@ -3828,7 +3828,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "顔全体",
       "sessions": "10.00%",
@@ -3847,7 +3847,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "顔全体",
       "sessions": "5.00%",
@@ -3866,7 +3866,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ミラノリピール",
       "area": "首",
       "sessions": "",
@@ -3885,7 +3885,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リバースピール",
       "area": "顔全体",
       "sessions": "",
@@ -3904,7 +3904,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リバースピール",
       "area": "顔全体",
       "sessions": "10.00%",
@@ -3923,7 +3923,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リバースピール",
       "area": "顔全体",
       "sessions": "5％",
@@ -3942,7 +3942,7 @@
     },
     {
       "category": "ピーリング",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リバースピール",
       "area": "首",
       "sessions": "",
@@ -3961,7 +3961,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "1ショット",
       "sessions": "",
@@ -3980,7 +3980,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Iライン",
       "sessions": "",
@@ -3999,7 +3999,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Iライン",
       "sessions": "10.00%",
@@ -4018,7 +4018,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Iライン",
       "sessions": "5.00%",
@@ -4037,7 +4037,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Oライン",
       "sessions": "",
@@ -4056,7 +4056,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Oライン",
       "sessions": "10.00%",
@@ -4075,7 +4075,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Oライン",
       "sessions": "5.00%",
@@ -4094,7 +4094,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "VIOセット",
       "sessions": "",
@@ -4113,7 +4113,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "VIOセット",
       "sessions": "10.00%",
@@ -4132,7 +4132,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "VIOセット",
       "sessions": "5.00%",
@@ -4151,7 +4151,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Vライン",
       "sessions": "",
@@ -4170,7 +4170,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Vライン",
       "sessions": "10.00%",
@@ -4189,7 +4189,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "Vライン",
       "sessions": "5.00%",
@@ -4208,7 +4208,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "うなじ",
       "sessions": "",
@@ -4227,7 +4227,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "うなじ",
       "sessions": "10.00%",
@@ -4246,7 +4246,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "うなじ",
       "sessions": "5.00%",
@@ -4265,7 +4265,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "",
@@ -4284,7 +4284,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "10.00%",
@@ -4303,7 +4303,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "5.00%",
@@ -4322,7 +4322,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ",
       "sessions": "",
@@ -4341,7 +4341,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ",
       "sessions": "10.00%",
@@ -4360,7 +4360,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ",
       "sessions": "5.00%",
@@ -4379,7 +4379,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ上",
       "sessions": "",
@@ -4398,7 +4398,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ上",
       "sessions": "10.00%",
@@ -4417,7 +4417,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ上",
       "sessions": "5.00%",
@@ -4436,7 +4436,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ下",
       "sessions": "",
@@ -4455,7 +4455,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ下",
       "sessions": "10.00%",
@@ -4474,7 +4474,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひざ下",
       "sessions": "5.00%",
@@ -4493,7 +4493,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ",
       "sessions": "",
@@ -4512,7 +4512,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ",
       "sessions": "10.00%",
@@ -4531,7 +4531,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ",
       "sessions": "5.00%",
@@ -4550,7 +4550,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ上",
       "sessions": "",
@@ -4569,7 +4569,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ上",
       "sessions": "10.00%",
@@ -4588,7 +4588,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ上",
       "sessions": "5.00%",
@@ -4607,7 +4607,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ下",
       "sessions": "",
@@ -4626,7 +4626,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ下",
       "sessions": "10.00%",
@@ -4645,7 +4645,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ひじ下",
       "sessions": "5.00%",
@@ -4664,7 +4664,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ワキ",
       "sessions": "",
@@ -4683,7 +4683,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ワキ",
       "sessions": "10.00%",
@@ -4702,7 +4702,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "両ワキ",
       "sessions": "5.00%",
@@ -4721,7 +4721,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "乳輪周り",
       "sessions": "",
@@ -4740,7 +4740,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "乳輪周り",
       "sessions": "10.00%",
@@ -4759,7 +4759,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "乳輪周り",
       "sessions": "5.00%",
@@ -4778,7 +4778,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "",
@@ -4797,7 +4797,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "",
@@ -4816,7 +4816,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "",
@@ -4835,7 +4835,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "剃毛代（1部位）",
       "sessions": "",
@@ -4854,7 +4854,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "",
@@ -4873,7 +4873,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "10.00%",
@@ -4892,7 +4892,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "5.00%",
@@ -4911,7 +4911,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "手の甲・指",
       "sessions": "",
@@ -4930,7 +4930,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "手の甲・指",
       "sessions": "10.00%",
@@ -4949,7 +4949,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "手の甲・指",
       "sessions": "5.00%",
@@ -4968,7 +4968,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中上",
       "sessions": "",
@@ -4987,7 +4987,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中上",
       "sessions": "10.00%",
@@ -5006,7 +5006,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中上",
       "sessions": "5.00%",
@@ -5025,7 +5025,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中下",
       "sessions": "",
@@ -5044,7 +5044,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中下",
       "sessions": "10.00%",
@@ -5063,7 +5063,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "背中下",
       "sessions": "5.00%",
@@ -5082,7 +5082,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "胸",
       "sessions": "",
@@ -5101,7 +5101,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "胸",
       "sessions": "10.00%",
@@ -5120,7 +5120,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "胸",
       "sessions": "5.00%",
@@ -5139,7 +5139,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "腹部",
       "sessions": "",
@@ -5158,7 +5158,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "腹部",
       "sessions": "10.00%",
@@ -5177,7 +5177,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "腹部",
       "sessions": "5.00%",
@@ -5196,7 +5196,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "臀部",
       "sessions": "",
@@ -5215,7 +5215,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "臀部",
       "sessions": "10.00%",
@@ -5234,7 +5234,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "臀部",
       "sessions": "5.00%",
@@ -5253,7 +5253,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "足の甲・指",
       "sessions": "",
@@ -5272,7 +5272,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "足の甲・指",
       "sessions": "10.00%",
@@ -5291,7 +5291,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "足の甲・指",
       "sessions": "5.00%",
@@ -5310,7 +5310,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "顔全体",
       "sessions": "",
@@ -5329,7 +5329,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "顔全体",
       "sessions": "10.00%",
@@ -5348,7 +5348,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "キッズ脱毛",
       "area": "顔全体",
       "sessions": "5.00%",
@@ -5367,7 +5367,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "1ショット",
       "sessions": "",
@@ -5386,7 +5386,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "うなじ",
       "sessions": "",
@@ -5405,7 +5405,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "うなじ",
       "sessions": "10.00%",
@@ -5424,7 +5424,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "うなじ",
       "sessions": "5.00%",
@@ -5443,7 +5443,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "",
@@ -5462,7 +5462,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "10.00%",
@@ -5481,7 +5481,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "へそ周り（直径6㎝）",
       "sessions": "5.00%",
@@ -5500,7 +5500,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ",
       "sessions": "",
@@ -5519,7 +5519,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ",
       "sessions": "10.00%",
@@ -5538,7 +5538,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ",
       "sessions": "5.00%",
@@ -5557,7 +5557,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ下",
       "sessions": "",
@@ -5576,7 +5576,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ下",
       "sessions": "10.00%",
@@ -5595,7 +5595,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "アゴ下",
       "sessions": "5.00%",
@@ -5614,7 +5614,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "ヒゲ3か所",
       "sessions": "",
@@ -5633,7 +5633,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "ヒゲ3か所",
       "sessions": "10％",
@@ -5652,7 +5652,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "ヒゲ3か所",
       "sessions": "5.00%",
@@ -5671,7 +5671,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ",
       "sessions": "",
@@ -5690,7 +5690,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ",
       "sessions": "10.00%",
@@ -5709,7 +5709,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ",
       "sessions": "5.00%",
@@ -5728,7 +5728,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ上",
       "sessions": "",
@@ -5747,7 +5747,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ上",
       "sessions": "10.00%",
@@ -5766,7 +5766,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ上",
       "sessions": "5.00%",
@@ -5785,7 +5785,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ下",
       "sessions": "",
@@ -5804,7 +5804,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ下",
       "sessions": "10.00%",
@@ -5823,7 +5823,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひざ下",
       "sessions": "5.00%",
@@ -5842,7 +5842,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ",
       "sessions": "",
@@ -5861,7 +5861,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ",
       "sessions": "10.00%",
@@ -5880,7 +5880,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ",
       "sessions": "5.00%",
@@ -5899,7 +5899,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ上",
       "sessions": "",
@@ -5918,7 +5918,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ上",
       "sessions": "10.00%",
@@ -5937,7 +5937,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ上",
       "sessions": "5.00%",
@@ -5956,7 +5956,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ下",
       "sessions": "",
@@ -5975,7 +5975,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ下",
       "sessions": "10.00%",
@@ -5994,7 +5994,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ひじ下",
       "sessions": "5.00%",
@@ -6013,7 +6013,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ワキ",
       "sessions": "",
@@ -6032,7 +6032,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ワキ",
       "sessions": "10.00%",
@@ -6051,7 +6051,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "両ワキ",
       "sessions": "5.00%",
@@ -6070,7 +6070,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "乳輪周り",
       "sessions": "",
@@ -6089,7 +6089,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "乳輪周り",
       "sessions": "10.00%",
@@ -6108,7 +6108,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "乳輪周り",
       "sessions": "5.00%",
@@ -6127,7 +6127,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "",
@@ -6146,7 +6146,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "10％",
@@ -6165,7 +6165,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "5.00%",
@@ -6184,7 +6184,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "剃毛代（1部位）",
       "sessions": "",
@@ -6203,7 +6203,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "手の甲・指",
       "sessions": "",
@@ -6222,7 +6222,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "手の甲・指",
       "sessions": "10.00%",
@@ -6241,7 +6241,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "手の甲・指",
       "sessions": "5.00%",
@@ -6260,7 +6260,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "眉間・眉上",
       "sessions": "",
@@ -6279,7 +6279,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "眉間・眉上",
       "sessions": "10.00%",
@@ -6298,7 +6298,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "眉間・眉上",
       "sessions": "5.00%",
@@ -6317,7 +6317,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中上",
       "sessions": "",
@@ -6336,7 +6336,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中上",
       "sessions": "10.00%",
@@ -6355,7 +6355,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中上",
       "sessions": "5.00%",
@@ -6374,7 +6374,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中下",
       "sessions": "",
@@ -6393,7 +6393,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中下",
       "sessions": "10.00%",
@@ -6412,7 +6412,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "背中下",
       "sessions": "5.00%",
@@ -6431,7 +6431,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸",
       "sessions": "",
@@ -6450,7 +6450,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸",
       "sessions": "10.00%",
@@ -6469,7 +6469,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸",
       "sessions": "5.00%",
@@ -6488,7 +6488,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸＋お腹セット",
       "sessions": "",
@@ -6507,7 +6507,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸＋お腹セット",
       "sessions": "10％",
@@ -6526,7 +6526,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "胸＋お腹セット",
       "sessions": "5.00%",
@@ -6545,7 +6545,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "脚全体セット",
       "sessions": "",
@@ -6564,7 +6564,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "脚全体セット",
       "sessions": "10％",
@@ -6583,7 +6583,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "脚全体セット",
       "sessions": "5.00%",
@@ -6602,7 +6602,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腕全体セット",
       "sessions": "",
@@ -6621,7 +6621,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腕全体セット",
       "sessions": "10％",
@@ -6640,7 +6640,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腕全体セット",
       "sessions": "5.00%",
@@ -6659,7 +6659,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腰",
       "sessions": "",
@@ -6678,7 +6678,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腰",
       "sessions": "10.00%",
@@ -6697,7 +6697,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腰",
       "sessions": "5.00%",
@@ -6716,7 +6716,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腹部",
       "sessions": "",
@@ -6735,7 +6735,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腹部",
       "sessions": "10.00%",
@@ -6754,7 +6754,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "腹部",
       "sessions": "5.00%",
@@ -6773,7 +6773,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "臀部",
       "sessions": "",
@@ -6792,7 +6792,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "臀部",
       "sessions": "10.00%",
@@ -6811,7 +6811,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "臀部",
       "sessions": "5.00%",
@@ -6830,7 +6830,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "足の甲・指",
       "sessions": "",
@@ -6849,7 +6849,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "足の甲・指",
       "sessions": "10.00%",
@@ -6868,7 +6868,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "足の甲・指",
       "sessions": "5.00%",
@@ -6887,7 +6887,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "頬＋もみあげ",
       "sessions": "",
@@ -6906,7 +6906,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "頬＋もみあげ",
       "sessions": "10.00%",
@@ -6925,7 +6925,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "頬＋もみあげ",
       "sessions": "5.00%",
@@ -6944,7 +6944,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "額",
       "sessions": "",
@@ -6963,7 +6963,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "額",
       "sessions": "10.00%",
@@ -6982,7 +6982,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "額",
       "sessions": "5.00%",
@@ -7001,7 +7001,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "顔全体",
       "sessions": "",
@@ -7020,7 +7020,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "顔全体",
       "sessions": "10％",
@@ -7039,7 +7039,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "顔全体",
       "sessions": "5.00%",
@@ -7058,7 +7058,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "首",
       "sessions": "",
@@ -7077,7 +7077,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "首",
       "sessions": "10.00%",
@@ -7096,7 +7096,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "首",
       "sessions": "5.00%",
@@ -7115,7 +7115,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻",
       "sessions": "",
@@ -7134,7 +7134,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻",
       "sessions": "10.00%",
@@ -7153,7 +7153,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻",
       "sessions": "5.00%",
@@ -7172,7 +7172,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻下",
       "sessions": "",
@@ -7191,7 +7191,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻下",
       "sessions": "10.00%",
@@ -7210,7 +7210,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "メンズ脱毛",
       "area": "鼻下",
       "sessions": "5.00%",
@@ -7229,7 +7229,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Iライン",
       "sessions": "",
@@ -7248,7 +7248,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Iライン",
       "sessions": "10.00%",
@@ -7267,7 +7267,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Iライン",
       "sessions": "5.00%",
@@ -7286,7 +7286,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Oライン",
       "sessions": "",
@@ -7305,7 +7305,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Oライン",
       "sessions": "10.00%",
@@ -7324,7 +7324,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Oライン",
       "sessions": "5.00%",
@@ -7343,7 +7343,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "VIO",
       "sessions": "",
@@ -7362,7 +7362,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "VIO",
       "sessions": "10.00%",
@@ -7381,7 +7381,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "VIO",
       "sessions": "5.00%",
@@ -7400,7 +7400,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Vライン",
       "sessions": "",
@@ -7419,7 +7419,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Vライン",
       "sessions": "10.00%",
@@ -7438,7 +7438,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "Vライン",
       "sessions": "5.00%",
@@ -7457,7 +7457,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "うなじ",
       "sessions": "",
@@ -7476,7 +7476,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "うなじ",
       "sessions": "10.00%",
@@ -7495,7 +7495,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "うなじ",
       "sessions": "5.00%",
@@ -7514,7 +7514,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "へそ周り（直径6センチ）",
       "sessions": "",
@@ -7533,7 +7533,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "へそ周り（直径6センチ）",
       "sessions": "10.00%",
@@ -7552,7 +7552,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "へそ周り（直径6センチ）",
       "sessions": "5.00%",
@@ -7571,7 +7571,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛3か所",
       "sessions": "",
@@ -7590,7 +7590,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛3か所",
       "sessions": "",
@@ -7609,7 +7609,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛3か所",
       "sessions": "",
@@ -7628,7 +7628,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛5か所",
       "sessions": "",
@@ -7647,7 +7647,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛5か所",
       "sessions": "",
@@ -7666,7 +7666,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "セレクト脱毛5か所",
       "sessions": "",
@@ -7685,7 +7685,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ",
       "sessions": "",
@@ -7704,7 +7704,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ",
       "sessions": "10.00%",
@@ -7723,7 +7723,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ",
       "sessions": "5.00%",
@@ -7742,7 +7742,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ上",
       "sessions": "",
@@ -7761,7 +7761,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ上",
       "sessions": "10.00%",
@@ -7780,7 +7780,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ上",
       "sessions": "5.00%",
@@ -7799,7 +7799,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ下",
       "sessions": "",
@@ -7818,7 +7818,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ下",
       "sessions": "10.00%",
@@ -7837,7 +7837,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひざ下",
       "sessions": "5.00%",
@@ -7856,7 +7856,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ",
       "sessions": "",
@@ -7875,7 +7875,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ",
       "sessions": "10.00%",
@@ -7894,7 +7894,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ",
       "sessions": "5.00%",
@@ -7913,7 +7913,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ上",
       "sessions": "",
@@ -7932,7 +7932,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ上",
       "sessions": "10.00%",
@@ -7951,7 +7951,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ上",
       "sessions": "5.00%",
@@ -7970,7 +7970,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ下",
       "sessions": "",
@@ -7989,7 +7989,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ下",
       "sessions": "10.00%",
@@ -8008,7 +8008,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ひじ下",
       "sessions": "5.00%",
@@ -8027,7 +8027,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ワキ",
       "sessions": "",
@@ -8046,7 +8046,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ワキ",
       "sessions": "10.00%",
@@ -8065,7 +8065,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "両ワキ",
       "sessions": "5.00%",
@@ -8084,7 +8084,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "乳輪周り",
       "sessions": "",
@@ -8103,7 +8103,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "乳輪周り",
       "sessions": "10.00%",
@@ -8122,7 +8122,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "乳輪周り",
       "sessions": "5.00%",
@@ -8141,7 +8141,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身パーフェクト（顔・うなじ・VIO付き）",
       "sessions": "",
@@ -8160,7 +8160,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身パーフェクト（顔・うなじ・VIO付き）",
       "sessions": "",
@@ -8179,7 +8179,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身パーフェクト（顔・うなじ・VIO付き）",
       "sessions": "",
@@ -8198,7 +8198,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "",
@@ -8217,7 +8217,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "10.00%",
@@ -8236,7 +8236,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "全身（顔・うなじ・VIO除く）",
       "sessions": "5.00%",
@@ -8255,7 +8255,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "剃毛代（1部位）",
       "sessions": "",
@@ -8274,7 +8274,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "",
@@ -8293,7 +8293,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "10.00%",
@@ -8312,7 +8312,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "口周囲（鼻下＋顎）",
       "sessions": "5.00%",
@@ -8331,7 +8331,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "手の甲・指",
       "sessions": "",
@@ -8350,7 +8350,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "手の甲・指",
       "sessions": "10.00%",
@@ -8369,7 +8369,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "手の甲・指",
       "sessions": "5.00%",
@@ -8388,7 +8388,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "打ち放題30分",
       "sessions": "",
@@ -8407,7 +8407,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "打ち放題60分",
       "sessions": "",
@@ -8426,7 +8426,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中上",
       "sessions": "",
@@ -8445,7 +8445,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中上",
       "sessions": "10.00%",
@@ -8464,7 +8464,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中上",
       "sessions": "5.00%",
@@ -8483,7 +8483,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中下",
       "sessions": "",
@@ -8502,7 +8502,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中下",
       "sessions": "10.00%",
@@ -8521,7 +8521,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "背中下",
       "sessions": "5.00%",
@@ -8540,7 +8540,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "胸",
       "sessions": "",
@@ -8559,7 +8559,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "胸",
       "sessions": "10.00%",
@@ -8578,7 +8578,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "胸",
       "sessions": "5.00%",
@@ -8597,7 +8597,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "腹部",
       "sessions": "",
@@ -8616,7 +8616,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "腹部",
       "sessions": "10.00%",
@@ -8635,7 +8635,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "腹部",
       "sessions": "5.00%",
@@ -8654,7 +8654,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "臀部",
       "sessions": "",
@@ -8673,7 +8673,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "臀部",
       "sessions": "10.00%",
@@ -8692,7 +8692,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "臀部",
       "sessions": "5.00%",
@@ -8711,7 +8711,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "足の甲・指",
       "sessions": "",
@@ -8730,7 +8730,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "足の甲・指",
       "sessions": "10.00%",
@@ -8749,7 +8749,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "足の甲・指",
       "sessions": "5.00%",
@@ -8768,7 +8768,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "顔全体",
       "sessions": "",
@@ -8787,7 +8787,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "顔全体",
       "sessions": "10.00%",
@@ -8806,7 +8806,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "顔全体",
       "sessions": "5.00%",
@@ -8825,7 +8825,7 @@
     },
     {
       "category": "医療脱毛",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "レディース脱毛",
       "area": "１ショット",
       "sessions": "",
@@ -8844,7 +8844,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "にんにく注射",
       "area": "",
       "sessions": "",
@@ -8863,7 +8863,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラセンタ注射",
       "area": "１A",
       "sessions": "",
@@ -8882,7 +8882,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "プラチナ白玉点滴",
       "area": "",
       "sessions": "",
@@ -8901,7 +8901,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "白玉点滴",
       "area": "",
       "sessions": "",
@@ -8920,7 +8920,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪燃焼注射",
       "area": "",
       "sessions": "",
@@ -8939,7 +8939,7 @@
     },
     {
       "category": "点滴・注射",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "高濃度ビタミンC",
       "area": "",
       "sessions": "",
@@ -8958,7 +8958,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "10錠",
       "sessions": "",
@@ -8977,7 +8977,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "90錠",
       "sessions": "",
@@ -8996,7 +8996,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サノレックス（食欲抑制）",
       "area": "10錠",
       "sessions": "",
@@ -9015,7 +9015,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "サノレックス（食欲抑制）",
       "area": "30錠",
       "sessions": "",
@@ -9034,7 +9034,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "シナール",
       "area": "30錠",
       "sessions": "",
@@ -9053,7 +9053,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "シミ肝斑セット",
       "area": "トラネキサム酸・シナール・ユベラＮ30錠",
       "sessions": "",
@@ -9072,7 +9072,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1か月84カプセル",
       "sessions": "",
@@ -9091,7 +9091,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1週間21カプセル",
       "sessions": "",
@@ -9110,7 +9110,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "デキサンVG5g",
       "area": "",
       "sessions": "",
@@ -9129,7 +9129,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "トラネキサム酸",
       "area": "30錠",
       "sessions": "",
@@ -9148,7 +9148,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "トレチノイン5g",
       "area": "",
       "sessions": "",
@@ -9167,7 +9167,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ニキビ・肌荒れセット",
       "area": "シナール・ユベラＮ・ビフロキシン30錠",
       "sessions": "",
@@ -9186,7 +9186,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ハイドロキノン4g",
       "area": "",
       "sessions": "",
@@ -9205,7 +9205,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヘリオケア",
       "area": "",
       "sessions": "",
@@ -9224,7 +9224,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ユベラN",
       "area": "30錠",
       "sessions": "",
@@ -9243,7 +9243,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リベルサス",
       "area": "3㎎30錠",
       "sessions": "",
@@ -9262,7 +9262,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リベルサス",
       "area": "7㎎30錠",
       "sessions": "",
@@ -9281,7 +9281,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "リンデロンVG5g",
       "area": "",
       "sessions": "",
@@ -9300,7 +9300,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "防己黄耆湯",
       "area": "90包",
       "sessions": "",
@@ -9319,7 +9319,7 @@
     },
     {
       "category": "内服・外用薬",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "防風通聖散",
       "area": "90包",
       "sessions": "",
@@ -9338,7 +9338,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "CHニュアンス",
       "area": "顔",
       "sessions": "",
@@ -9357,7 +9357,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "CHニュアンス",
       "area": "顔➕首➕デコルテ",
       "sessions": "",
@@ -9376,7 +9376,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "アフター再生トリートメント",
       "area": "",
       "sessions": "",
@@ -9395,7 +9395,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "エピダーマルスキン30分",
       "area": "顔",
       "sessions": "",
@@ -9414,7 +9414,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "エピダーマルスキン45分",
       "area": "顔",
       "sessions": "",
@@ -9433,7 +9433,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "スキンメイド60分",
       "area": "顔",
       "sessions": "",
@@ -9452,7 +9452,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "スキンメイド90分",
       "area": "顔",
       "sessions": "",
@@ -9471,7 +9471,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "トロイピール",
       "area": "顔",
       "sessions": "",
@@ -9490,7 +9490,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング",
       "area": "顔",
       "sessions": "",
@@ -9509,7 +9509,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング背中",
       "area": "背中",
       "sessions": "",
@@ -9528,7 +9528,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング背中半分",
       "area": "背中半分",
       "sessions": "",
@@ -9547,7 +9547,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨアンストレス",
       "area": "顔",
       "sessions": "",
@@ -9566,7 +9566,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨイラストリアス",
       "area": "顔",
       "sessions": "",
@@ -9585,7 +9585,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨコモデックス",
       "area": "顔",
       "sessions": "",
@@ -9604,7 +9604,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨシャトーデボーテ",
       "area": "顔",
       "sessions": "",
@@ -9623,7 +9623,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨシルク",
       "area": "顔",
       "sessions": "",
@@ -9642,7 +9642,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨビオフィート",
       "area": "顔",
       "sessions": "",
@@ -9661,7 +9661,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨフォーエバーヤング",
       "area": "顔",
       "sessions": "",
@@ -9680,7 +9680,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨミューズ",
       "area": "顔",
       "sessions": "",
@@ -9699,7 +9699,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＣＨローズドメーラ",
       "area": "顔",
       "sessions": "",
@@ -9718,7 +9718,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "Ｈ２ハイドロフェイシャル顔60分",
       "area": "顔",
       "sessions": "",
@@ -9737,7 +9737,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "Ｈ２ハイドロフェイシャル顔＋頭70分",
       "area": "顔＋頭",
       "sessions": "",
@@ -9756,7 +9756,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰイオン導入",
       "area": "ＶＣor トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -9775,7 +9775,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰエクソソームアンプル導入",
       "area": "",
       "sessions": "",
@@ -9794,7 +9794,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰガビラン10分",
       "area": "",
       "sessions": "",
@@ -9813,7 +9813,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰシルクコラーゲン",
       "area": "顔",
       "sessions": "",
@@ -9832,7 +9832,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰヒーライト10分",
       "area": "顔",
       "sessions": "",
@@ -9851,7 +9851,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマのみ",
       "area": "",
       "sessions": "",
@@ -9870,7 +9870,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋エクソソームアンプル",
       "sessions": "",
@@ -9889,7 +9889,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋タイトニング",
       "sessions": "",
@@ -9908,7 +9908,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋ヒト臍帯由来幹細胞培養上清液",
       "sessions": "",
@@ -9927,7 +9927,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋プラセンタ",
       "sessions": "",
@@ -9946,7 +9946,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋リジェンセラム",
       "sessions": "",
@@ -9965,7 +9965,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋純正エクソソーム",
       "sessions": "",
@@ -9984,7 +9984,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋ＶＣ",
       "sessions": "",
@@ -10003,7 +10003,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰヘッドカッサ10分",
       "area": "",
       "sessions": "",
@@ -10022,7 +10022,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰヘッドマッサージ10分",
       "area": "",
       "sessions": "",
@@ -10041,7 +10041,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰ幹細胞美容液導入",
       "area": "",
       "sessions": "",
@@ -10060,7 +10060,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＯＰ肌質別マスク",
       "area": "",
       "sessions": "",
@@ -10079,7 +10079,7 @@
     },
     {
       "category": "フェイシャル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ＶＶＳトリートメント",
       "area": "顔",
       "sessions": "",
@@ -10098,7 +10098,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPBDSクリーム",
       "area": "身体",
       "sessions": "",
@@ -10117,7 +10117,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPキャビゼロ10分",
       "area": "身体",
       "sessions": "",
@@ -10136,7 +10136,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPキャビテーション&ラジオ波10分",
       "area": "身体",
       "sessions": "",
@@ -10155,7 +10155,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPスリミングマッサージ10分",
       "area": "身体",
       "sessions": "",
@@ -10174,7 +10174,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPハイパーウッド30分",
       "area": "身体",
       "sessions": "",
@@ -10193,7 +10193,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPヒートマット20分",
       "area": "身体",
       "sessions": "",
@@ -10212,7 +10212,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラジオ波/キャビテーション10分",
       "area": "身体",
       "sessions": "",
@@ -10231,7 +10231,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラセールオイル1パーツ",
       "area": "身体",
       "sessions": "",
@@ -10250,7 +10250,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラセールオイル全身",
       "area": "身体",
       "sessions": "",
@@ -10269,7 +10269,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPリフレ足ツボ20分",
       "area": "身体",
       "sessions": "",
@@ -10288,7 +10288,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPリンパマッサージ10分",
       "area": "身体",
       "sessions": "",
@@ -10307,7 +10307,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OP電磁波EMS1箇所30分",
       "area": "身体",
       "sessions": "",
@@ -10326,7 +10326,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "チネイザン20分",
       "area": "身体",
       "sessions": "",
@@ -10345,7 +10345,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ボディ&フェイシャルアロマ90分",
       "area": "身体",
       "sessions": "",
@@ -10364,7 +10364,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールデコルテ・ヘッド15分",
       "area": "身体",
       "sessions": "",
@@ -10383,7 +10383,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールハンド10分",
       "area": "身体",
       "sessions": "",
@@ -10402,7 +10402,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールフット20分",
       "area": "身体",
       "sessions": "",
@@ -10421,7 +10421,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディ&フェイシャルアロマ90分",
       "area": "身体",
       "sessions": "",
@@ -10440,7 +10440,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディアロマリンパマッサージ60分",
       "area": "身体",
       "sessions": "",
@@ -10459,7 +10459,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディアロマリンパマッサージ90分",
       "area": "身体",
       "sessions": "",
@@ -10478,7 +10478,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "経絡マッサージ70分",
       "area": "身体",
       "sessions": "",
@@ -10497,7 +10497,7 @@
     },
     {
       "category": "リラクゼーション",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "経絡マッサージ＋発汗付き",
       "area": "身体",
       "sessions": "",
@@ -10516,7 +10516,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPBDSクリーム",
       "area": "身体",
       "sessions": "",
@@ -10535,7 +10535,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPキャビゼロ10分",
       "area": "身体",
       "sessions": "",
@@ -10554,7 +10554,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPキャビテーション&ラジオ波10分",
       "area": "身体",
       "sessions": "",
@@ -10573,7 +10573,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPスリミングマッサージ10分",
       "area": "身体",
       "sessions": "",
@@ -10592,7 +10592,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPハイパーウッド30分",
       "area": "身体",
       "sessions": "",
@@ -10611,7 +10611,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPヒートマット20分",
       "area": "身体",
       "sessions": "",
@@ -10630,7 +10630,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラジオ波/キャビテーション10分",
       "area": "身体",
       "sessions": "",
@@ -10649,7 +10649,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラセールオイル1パーツ",
       "area": "身体",
       "sessions": "",
@@ -10668,7 +10668,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPラセールオイル全身",
       "area": "身体",
       "sessions": "",
@@ -10687,7 +10687,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPリフレ足ツボ20分",
       "area": "身体",
       "sessions": "",
@@ -10706,7 +10706,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OPリンパマッサージ10分",
       "area": "身体",
       "sessions": "",
@@ -10725,7 +10725,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "OP電磁波EMS1箇所30分",
       "area": "身体",
       "sessions": "",
@@ -10744,7 +10744,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "カスタム痩身60分",
       "area": "身体",
       "sessions": "",
@@ -10763,7 +10763,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "カスタム痩身90分",
       "area": "身体",
       "sessions": "",
@@ -10782,7 +10782,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "キャビゼロ瘦身60分",
       "area": "身体",
       "sessions": "",
@@ -10801,7 +10801,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "キャビゼロ瘦身＋発汗付き120分",
       "area": "身体",
       "sessions": "",
@@ -10820,7 +10820,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "キャビゼロ瘦身＋発汗付き90分",
       "area": "身体",
       "sessions": "",
@@ -10839,7 +10839,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "キャビラジ+スリミング経絡マッサージ60分",
       "area": "身体",
       "sessions": "",
@@ -10858,7 +10858,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "キャビラジ+スリミング経絡マッサージ90分",
       "area": "身体",
       "sessions": "",
@@ -10877,7 +10877,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "スリミング経絡マッサージ＋電磁波EMS60分",
       "area": "身体",
       "sessions": "",
@@ -10896,7 +10896,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "チネイザン20分",
       "area": "身体",
       "sessions": "",
@@ -10915,7 +10915,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハイパーウッド30分",
       "area": "身体",
       "sessions": "",
@@ -10934,7 +10934,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハイパーウッド60分",
       "area": "身体",
       "sessions": "",
@@ -10953,7 +10953,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ハイパーウッド90分",
       "area": "身体",
       "sessions": "",
@@ -10972,7 +10972,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ボディ&フェイシャルアロマ90分",
       "area": "身体",
       "sessions": "",
@@ -10991,7 +10991,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ポールシェリーリラクシング90分",
       "area": "身体",
       "sessions": "",
@@ -11010,7 +11010,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールデコルテ・ヘッド15分",
       "area": "身体",
       "sessions": "",
@@ -11029,7 +11029,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールハンド10分",
       "area": "身体",
       "sessions": "",
@@ -11048,7 +11048,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールフット20分",
       "area": "身体",
       "sessions": "",
@@ -11067,7 +11067,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディ&フェイシャルアロマ90分",
       "area": "身体",
       "sessions": "",
@@ -11086,7 +11086,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディアロマリンパマッサージ60分",
       "area": "身体",
       "sessions": "",
@@ -11105,7 +11105,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ラセールボディアロマリンパマッサージ90分",
       "area": "身体",
       "sessions": "",
@@ -11124,7 +11124,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "経絡マッサージ70分",
       "area": "身体",
       "sessions": "",
@@ -11143,7 +11143,7 @@
     },
     {
       "category": "ボディ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "経絡マッサージ＋発汗付き",
       "area": "身体",
       "sessions": "",
@@ -11162,7 +11162,7 @@
     },
     {
       "category": "エステブライダル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "1day集中コース120分",
       "area": "顔",
       "sessions": "",
@@ -11181,7 +11181,7 @@
     },
     {
       "category": "エステブライダル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "1day集中コース＋美白フェイシャル180分",
       "area": "顔",
       "sessions": "",
@@ -11200,7 +11200,7 @@
     },
     {
       "category": "エステブライダル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "フェイシャル＋デコルテor背中トリートメント90分",
       "area": "顔＋デコルテ/背中",
       "sessions": "",
@@ -11219,7 +11219,7 @@
     },
     {
       "category": "エステブライダル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ベーシックフェイシャル50分",
       "area": "顔",
       "sessions": "",
@@ -11238,7 +11238,7 @@
     },
     {
       "category": "エステブライダル",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "二の腕&背中痩せ50分",
       "area": "二の腕＋背中",
       "sessions": "",
@@ -11257,7 +11257,7 @@
     },
     {
       "category": "エステマタニティ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "ヘッド＋デコルテ/フットマッサージ30分",
       "area": "身体",
       "sessions": "",
@@ -11276,7 +11276,7 @@
     },
     {
       "category": "エステマタニティ",
-      "provider_type": null,
+      "provider_type": "エステ",
       "treatment": "全身オイルトリートメント50分",
       "area": "身体",
       "sessions": "",
@@ -11295,7 +11295,7 @@
     },
     {
       "category": "オプション",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウーバーピール",
       "area": "",
       "sessions": "",
@@ -11314,7 +11314,7 @@
     },
     {
       "category": "オプション",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "エクソソームアンプル",
       "area": "",
       "sessions": "",
@@ -11333,7 +11333,7 @@
     },
     {
       "category": "オプション",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ヒアルロン酸",
       "area": "",
       "sessions": "",
@@ -11352,7 +11352,7 @@
     },
     {
       "category": "オプション",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "美白",
       "area": "",
       "sessions": "",
@@ -11371,7 +11371,7 @@
     },
     {
       "category": "バーティカルリフト",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "PDO",
       "area": "",
       "sessions": "",
@@ -11390,7 +11390,7 @@
     },
     {
       "category": "バーティカルリフト",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "PDO",
       "area": "中顔面",
       "sessions": "",
@@ -11409,7 +11409,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹",
       "sessions": "10.00%",
@@ -11428,7 +11428,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹　1320S",
       "sessions": "20.00%",
@@ -11447,7 +11447,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）",
       "sessions": "10.00%",
@@ -11466,7 +11466,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）　880S",
       "sessions": "20.00%",
@@ -11485,7 +11485,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
       "sessions": "10.00%",
@@ -11504,7 +11504,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
       "sessions": "10.00%",
@@ -11523,7 +11523,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上　180S",
       "sessions": "20.00%",
@@ -11542,7 +11542,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上（ライト）　120S",
       "sessions": "20.00%",
@@ -11561,7 +11561,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト",
       "sessions": "10.00%",
@@ -11580,7 +11580,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト　1200S",
       "sessions": "20.00%",
@@ -11599,7 +11599,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）",
       "sessions": "10.00%",
@@ -11618,7 +11618,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）800S",
       "sessions": "20.00%",
@@ -11637,7 +11637,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット",
       "sessions": "10.00%",
@@ -11656,7 +11656,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット　120S",
       "sessions": "20.00%",
@@ -11675,7 +11675,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕",
       "sessions": "10.00%",
@@ -11694,7 +11694,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕　540S",
       "sessions": "20.00%",
@@ -11713,7 +11713,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）",
       "sessions": "10.00%",
@@ -11732,7 +11732,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）　360S",
       "sessions": "20.00%",
@@ -11751,7 +11751,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも",
       "sessions": "10.00%",
@@ -11770,7 +11770,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも　840S",
       "sessions": "20.00%",
@@ -11789,7 +11789,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り",
       "sessions": "10.00%",
@@ -11808,7 +11808,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り　1680S",
       "sessions": "20.00%",
@@ -11827,7 +11827,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
       "sessions": "20.00%",
@@ -11846,7 +11846,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
       "sessions": "20.00%",
@@ -11865,7 +11865,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
       "sessions": "20.00%",
@@ -11884,7 +11884,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
       "sessions": "20.00%",
@@ -11903,7 +11903,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
       "sessions": "20.00%",
@@ -11922,7 +11922,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
       "sessions": "20.00%",
@@ -11941,7 +11941,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
       "sessions": "20.00%",
@@ -11960,7 +11960,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
       "sessions": "20.00%",
@@ -11979,7 +11979,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "10％",
@@ -11998,7 +11998,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "20.00%",
@@ -12017,7 +12017,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "30.00%",
@@ -12036,7 +12036,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "40.00%",
@@ -12055,7 +12055,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
       "sessions": "10％",
@@ -12074,7 +12074,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
       "sessions": "20.00%",
@@ -12093,7 +12093,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射",
       "area": "顔1cc",
       "sessions": "",
@@ -12112,7 +12112,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射FATXCORE",
       "area": "顔1cc",
       "sessions": "",
@@ -12131,7 +12131,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体10cc",
       "sessions": "",
@@ -12150,7 +12150,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体1cc",
       "sessions": "",
@@ -12169,7 +12169,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体20cc",
       "sessions": "",
@@ -12188,7 +12188,7 @@
     },
     {
       "category": "医療ボディ痩身",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体5cc",
       "sessions": "",
@@ -12207,7 +12207,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "タレ目形成",
       "area": "",
       "sessions": "",
@@ -12226,7 +12226,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ネックリフト",
       "area": "",
       "sessions": "",
@@ -12245,7 +12245,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "中顔面リフト",
       "area": "4本",
       "sessions": "",
@@ -12264,7 +12264,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "二重埋没法（1年間保証付）",
       "area": "",
       "sessions": "1回",
@@ -12283,7 +12283,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -12302,7 +12302,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -12321,7 +12321,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "点眼麻酔",
       "area": "",
       "sessions": "1回",
@@ -12340,7 +12340,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "目の下のくま・たるみ取り",
       "area": "",
       "sessions": "1回",
@@ -12359,7 +12359,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "目の下のくま・たるみ取り",
       "area": "ハムラ法",
       "sessions": "1回",
@@ -12378,7 +12378,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "目の下のくま・たるみ取り",
       "area": "裏ハムラ法",
       "sessions": "1回",
@@ -12397,7 +12397,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "眉下切開",
       "area": "",
       "sessions": "",
@@ -12416,7 +12416,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "笑気麻酔",
       "area": "",
       "sessions": "1回",
@@ -12435,7 +12435,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "笑気麻酔",
       "area": "30分",
       "sessions": "1回",
@@ -12454,7 +12454,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "自然癒着法",
       "area": "4点留め",
       "sessions": "1回",
@@ -12473,7 +12473,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "自然癒着法",
       "area": "6点留め",
       "sessions": "1回",
@@ -12492,7 +12492,7 @@
     },
     {
       "category": "美容外科（脱脂・埋没）",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "静脈麻酔",
       "area": "",
       "sessions": "1回",
@@ -12511,7 +12511,7 @@
     },
     {
       "category": "脂肪吸引",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "ジョールファット",
       "area": "",
       "sessions": "",
@@ -12530,7 +12530,7 @@
     },
     {
       "category": "脂肪吸引",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "頬",
       "area": "",
       "sessions": "",
@@ -12549,7 +12549,7 @@
     },
     {
       "category": "脂肪吸引",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "頬➕顎下",
       "area": "",
       "sessions": "",
@@ -12568,7 +12568,7 @@
     },
     {
       "category": "脂肪吸引",
-      "provider_type": null,
+      "provider_type": "医療",
       "treatment": "顎下",
       "area": "",
       "sessions": "",
