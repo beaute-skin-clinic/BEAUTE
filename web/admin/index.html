@@ -1184,8 +1184,8 @@ async function commitFiles(files, message) {
   const { owner, repo } = settings;
 
   // 1. HEAD SHAを取得
-  const ref = await ghApi(`/repos/${owner}/${repo}/git/ref/heads/main`);
-  const headSha = ref.object.sha;
+  const refData = await ghApi(`/repos/${owner}/${repo}/git/refs/heads/main`);
+  const headSha = refData.object.sha;
 
   // 2. 現在のコミットのtree SHAを取得
   const commit = await ghApi(`/repos/${owner}/${repo}/git/commits/${headSha}`);
@@ -1229,7 +1229,7 @@ async function commitFiles(files, message) {
   });
 
   // 6. HEADを更新
-  await ghApi(`/repos/${owner}/${repo}/git/ref/heads/main`, {
+  await ghApi(`/repos/${owner}/${repo}/git/refs/heads/main`, {
     method: 'PATCH',
     body: JSON.stringify({ sha: newCommit.sha }),
   });
