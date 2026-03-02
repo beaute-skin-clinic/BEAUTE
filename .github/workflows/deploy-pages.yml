@@ -1,0 +1,47 @@
+name: GitHub Pages デプロイ
+
+on:
+  # mainへのpush時（web/配下が更新されたら）
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+
+  # 他のワークフローから呼び出し可能
+  workflow_call:
+
+  # 手動実行
+  workflow_dispatch:
+
+# GitHub Pages用の権限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時デプロイを防止
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Pages設定
+        uses: actions/configure-pages@v5
+
+      - name: web/ ディレクトリをアーティファクトとしてアップロード
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: GitHub Pagesにデプロイ
+        id: deployment
+        uses: actions/deploy-pages@v4

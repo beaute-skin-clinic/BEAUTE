@@ -13,9 +13,16 @@ on:
         required: false
         default: '手動更新'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
 
     steps:
       - name: リポジトリをチェックアウト
@@ -37,9 +44,18 @@ jobs:
           # データが更新されている場合のみコミット
           if git diff --quiet web/data/; then
             echo "データに変更なし。コミットをスキップします。"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git add web/data/
             git commit -m "🔄 料金データ自動更新 $(date '+%Y/%m/%d %H:%M JST' -d '+9 hours')"
             git push
             echo "✅ データを更新しました"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+        id: commit
+
+  # データ更新時にPagesも再デプロイ
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy-pages.yml
