@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【管理者】料金管理 | ボーテスキンクリニック</title>
+  <style>
+    :root {
+      --primary: #b07d62;
+      --primary-light: #d4a98a;
+      --primary-dark: #8a5c3f;
+      --accent: #e8d5c4;
+      --bg: #faf7f4;
+      --card-bg: #fff;
+      --text: #3a2e27;
+      --text-light: #7a6a5f;
+      --border: #e0d0c4;
+      --admin-bg: #1a1a2e;
+      --admin-header: #16213e;
+      --cost-bg: #fff9f0;
+      --cost-border: #f0a500;
+      --profit-pos: #166534;
+      --profit-neg: #991b1b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* ===== ログイン画面 ===== */
+    #loginScreen {
+      position: fixed;
+      inset: 0;
+      background: var(--admin-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .login-box {
+      background: var(--admin-header);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 32px 28px;
+      width: min(360px, 90vw);
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .login-box .subtitle {
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+    .login-input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      margin-bottom: 12px;
+      letter-spacing: 0.1em;
+    }
+    .login-input:focus { border-color: var(--primary-light); }
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .login-btn:hover { background: var(--primary-dark); }
+    .login-error {
+      color: #fc8181;
+      font-size: 12px;
+      margin-top: 8px;
+      display: none;
+    }
+    .login-note {
+      color: rgba(255,255,255,0.35);
+      font-size: 11px;
+      margin-top: 20px;
+    }
+
+    /* ===== メイン画面（ログイン後） ===== */
+    #mainApp { display: none; }
+
+    /* ===== ヘッダー ===== */
+    .site-header {
+      background: var(--admin-header);
+      color: #fff;
+      padding: 14px 16px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .header-left h1 { font-size: 16px; }
+    .header-left .badge-admin {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 10px;
+      border-radius: 4px;
+      padding: 1px 6px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .header-right { display: flex; gap: 8px; align-items: center; }
+    .btn-sm {
+      padding: 5px 10px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 6px;
+      background: transparent;
+      color: #fff;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .btn-sm:hover { background: rgba(255,255,255,0.1); }
+
+    /* ===== コントロール ===== */
+    .controls {
+      background: #fff;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .search-box {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      font-size: 14px;
+      outline: none;
+    }
+    .search-box:focus { border-color: var(--primary); }
+
+    /* ===== カテゴリタブ ===== */
+    .category-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 8px 14px 4px;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: none;
+    }
+    .category-tabs::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0;
+      padding: 5px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #fff;
+      color: var(--text-light);
+      white-space: nowrap;
+    }
+    .tab-btn.active { background: var(--admin-bg); border-color: var(--admin-bg); color: #fff; }
+
+    /* ===== テーブル ===== */
+    .main { padding: 12px; overflow-x: auto; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      font-size: 13px;
+    }
+    .data-table thead th {
+      background: var(--admin-bg);
+      color: #fff;
+      padding: 9px 10px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: normal;
+      white-space: nowrap;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .data-table thead th:last-child { border-right: none; }
+    .data-table thead th.col-cost {
+      background: #78350f;
+    }
+    .data-table tbody tr:nth-child(even) { background: #faf7f4; }
+    .data-table tbody tr:hover { background: #fdf2e9; }
+    .data-table tbody td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #f0e8e0;
+      border-right: 1px solid #f0e8e0;
+      vertical-align: middle;
+    }
+    .data-table tbody td:last-child { border-right: none; }
+
+    .cat-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+
+    .price-val { font-weight: bold; color: var(--text); white-space: nowrap; }
+    .price-small { font-size: 11px; color: var(--text-light); white-space: nowrap; }
+
+    /* コスト列（管理者専用） */
+    .td-cost {
+      background: var(--cost-bg) !important;
+      border-left: 2px solid var(--cost-border) !important;
+    }
+    .cost-val { font-weight: bold; color: #92400e; font-size: 12px; }
+    .profit-val-pos { font-weight: bold; color: var(--profit-pos); }
+    .profit-val-neg { font-weight: bold; color: var(--profit-neg); }
+
+    /* ===== サマリーバー ===== */
+    .summary-bar {
+      background: var(--admin-header);
+      color: rgba(255,255,255,0.8);
+      padding: 6px 14px;
+      font-size: 11px;
+      display: flex;
+      gap: 16px;
+    }
+    .summary-bar span { color: #fff; font-weight: bold; }
+
+    /* ===== 印刷 ===== */
+    @media print {
+      #loginScreen { display: none !important; }
+      .site-header, .controls, .category-tabs, .summary-bar { display: none !important; }
+      .main { padding: 0; }
+      .data-table { font-size: 10px; box-shadow: none; }
+      .data-table thead th { background: #333 !important; font-size: 9px; }
+    }
+
+    @media (max-width: 640px) {
+      .data-table { min-width: 700px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ログイン画面 -->
+<div id="loginScreen">
+  <div class="login-box">
+    <h2>管理者ログイン</h2>
+    <div class="subtitle">ボーテスキンクリニック 料金管理システム</div>
+    <input type="password" class="login-input" id="passwordInput" placeholder="パスワードを入力" autocomplete="current-password">
+    <button class="login-btn" onclick="doLogin()">ログイン</button>
+    <div class="login-error" id="loginError">パスワードが違います</div>
+    <div class="login-note">このページは管理者専用です。<br>パスワードはオーナーにお問い合わせください。</div>
+  </div>
+</div>
+
+<!-- メインアプリ -->
+<div id="mainApp">
+
+  <header class="site-header">
+    <div class="header-left">
+      <h1>料金管理 <span class="badge-admin">管理者専用</span></h1>
+    </div>
+    <div class="header-right">
+      <button class="btn-sm" onclick="window.print()">🖨️ 印刷</button>
+      <button class="btn-sm" onclick="doLogout()">ログアウト</button>
+    </div>
+  </header>
+
+  <div class="controls">
+    <input type="search" class="search-box" id="searchBox" placeholder="施術名・部位で検索..." autocomplete="off">
+    <label style="font-size:12px;color:#666;white-space:nowrap;display:flex;align-items:center;gap:4px;">
+      <input type="checkbox" id="showCostOnly"> コストのみ表示
+    </label>
+  </div>
+
+  <div class="category-tabs" id="categoryTabs">
+    <button class="tab-btn active" data-cat="all">すべて</button>
+  </div>
+
+  <div class="summary-bar" id="summaryBar">
+    <div>表示件数: <span id="summaryCount">—</span>件</div>
+    <div>うちコスト情報あり: <span id="summaryCost">—</span>件</div>
+  </div>
+
+  <main class="main">
+    <table class="data-table" id="dataTable">
+      <thead>
+        <tr>
+          <th>カテゴリ</th>
+          <th>施術名</th>
+          <th>対象部位</th>
+          <th>回数</th>
+          <th>通常価格</th>
+          <th>初回価格</th>
+          <th>回数券</th>
+          <th>CP価格</th>
+          <th class="col-cost">🔒 コスト/備考</th>
+          <th class="col-cost">🔒 利益/粗利</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr><td colspan="10" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+</div>
+
+<script>
+// ============================================================
+// パスワード設定
+// ここを変更してパスワードを設定してください
+// ============================================================
+const ADMIN_PASSWORD = "beaute2024";  // ← ここを変更
+
+const SESSION_KEY = "beaute_admin_auth";
+const DATA_URL = '../data/prices.json';
+
+let allData = null;
+let currentCategory = 'all';
+let searchQuery = '';
+let showCostOnly = false;
+
+const CATEGORY_ORDER = [
+  'シミ取り（そばかす・肝斑・ほくろ）',
+  'しわ・たるみ',
+  '注入系',
+  'スレッド（糸リフト）',
+  '美肌治療',
+  '美容整形・外科',
+  'ピーリング',
+  '医療ボディ（痩身）',
+  '医療脱毛',
+  '点滴・注射',
+  '内服・外用薬',
+  'フェイシャル',
+  'リラクゼーション',
+  'ボディ',
+  'エステその他',
+];
+
+// ===== 認証 =====
+function checkAuth() {
+  return sessionStorage.getItem(SESSION_KEY) === 'ok';
+}
+
+function doLogin() {
+  const pw = document.getElementById('passwordInput').value;
+  if (pw === ADMIN_PASSWORD) {
+    sessionStorage.setItem(SESSION_KEY, 'ok');
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('mainApp').style.display = 'block';
+    loadData();
+  } else {
+    document.getElementById('loginError').style.display = 'block';
+    document.getElementById('passwordInput').value = '';
+  }
+}
+
+function doLogout() {
+  sessionStorage.removeItem(SESSION_KEY);
+  location.reload();
+}
+
+document.getElementById('passwordInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doLogin();
+});
+
+// 既認証チェック
+if (checkAuth()) {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('mainApp').style.display = 'block';
+}
+
+// ===== データ =====
+async function loadData() {
+  try {
+    const res = await fetch(DATA_URL);
+    allData = await res.json();
+    buildTabs();
+    render();
+  } catch (e) {
+    document.getElementById('tableBody').innerHTML =
+      '<tr><td colspan="10" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+    console.error(e);
+  }
+}
+
+function buildTabs() {
+  const tabs = document.getElementById('categoryTabs');
+  const categories = [...new Set(allData.treatments.map(t => t.category))]
+    .sort((a, b) => {
+      const ai = CATEGORY_ORDER.indexOf(a);
+      const bi = CATEGORY_ORDER.indexOf(b);
+      if (ai === -1 && bi === -1) return a.localeCompare(b, 'ja');
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    });
+
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.addEventListener('click', () => {
+      currentCategory = cat;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+    tabs.appendChild(btn);
+  });
+
+  tabs.querySelector('[data-cat="all"]').addEventListener('click', () => {
+    currentCategory = 'all';
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    tabs.querySelector('[data-cat="all"]').classList.add('active');
+    render();
+  });
+}
+
+function fmt(val) {
+  if (!val) return null;
+  const n = parseInt(String(val).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(n)) return String(val);  // 数値でない場合はそのまま
+  return '¥' + n.toLocaleString('ja-JP');
+}
+
+function render() {
+  if (!allData) return;
+  let treatments = allData.treatments;
+
+  if (currentCategory !== 'all') {
+    treatments = treatments.filter(t => t.category === currentCategory);
+  }
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    treatments = treatments.filter(t =>
+      (t.treatment || '').toLowerCase().includes(q) ||
+      (t.area || '').toLowerCase().includes(q) ||
+      (t.category || '').toLowerCase().includes(q)
+    );
+  }
+  if (showCostOnly) {
+    treatments = treatments.filter(t => t.cost_note || t.profit_note);
+  }
+
+  const withCost = treatments.filter(t => t.cost_note || t.profit_note).length;
+  document.getElementById('summaryCount').textContent = treatments.length;
+  document.getElementById('summaryCost').textContent = withCost;
+
+  const tbody = document.getElementById('tableBody');
+  if (treatments.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = treatments.map(t => {
+    const hasCost = t.cost_note || t.profit_note;
+    return `<tr>
+      <td><span class="cat-badge">${esc(t.category)}</span></td>
+      <td>${esc(t.treatment || '')}</td>
+      <td>${esc(t.area || '')}</td>
+      <td>${esc(t.sessions || '')}</td>
+      <td class="price-val">${fmt(t.price) || '—'}</td>
+      <td class="price-small">${fmt(t.first_price) || ''}</td>
+      <td class="price-small">${fmt(t.bundle_price) || ''}</td>
+      <td class="price-small">${fmt(t.campaign_price) || ''}</td>
+      <td class="td-cost"><span class="cost-val">${esc(t.cost_note || '')}</span></td>
+      <td class="td-cost"><span class="${t.profit_note ? 'profit-val-pos' : ''}">${esc(t.profit_note || '')}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function esc(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+// 検索
+let searchTimer;
+document.getElementById('searchBox').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    searchQuery = e.target.value.trim();
+    render();
+  }, 200);
+});
+
+document.getElementById('showCostOnly').addEventListener('change', e => {
+  showCostOnly = e.target.checked;
+  render();
+});
+
+// 初期化（既ログインの場合）
+if (checkAuth()) loadData();
+</script>
+
+</body>
+</html>

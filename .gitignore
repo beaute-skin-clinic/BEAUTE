@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# エディター
+.vscode/
+*.swp
+*~
+
+# 一時ファイル
+/tmp/
+/data/
+web/public/
+
+# Claude Code設定（プロジェクト固有の設定は含めない）
+.claude/

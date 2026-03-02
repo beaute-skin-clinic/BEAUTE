@@ -1,0 +1,48 @@
+name: 料金データ自動更新
+
+on:
+  # 毎日午前6時（JST = UTC 21:00）に自動実行
+  schedule:
+    - cron: '0 21 * * *'
+
+  # 手動実行ボタン（GitHubの Actions タブから実行可能）
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: '実行理由（任意）'
+        required: false
+        default: '手動更新'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 料金データを取得・マージ
+        run: python3 scripts/fetch_and_merge.py
+
+      - name: 公開用JSONを生成（コスト情報除去）
+        run: python3 scripts/build_public.py
+
+      - name: 変更をコミット
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+
+          # データが更新されている場合のみコミット
+          if git diff --quiet web/data/; then
+            echo "データに変更なし。コミットをスキップします。"
+          else
+            git add web/data/prices.json web/data/prices_public.json
+            git commit -m "🔄 料金データ自動更新 $(date '+%Y/%m/%d %H:%M JST' -d '+9 hours')"
+            git push
+            echo "✅ データを更新しました"
+          fi

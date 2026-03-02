@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ボーテスキンクリニック 料金表</title>
+  <style>
+    :root {
+      --primary: #b07d62;
+      --primary-light: #d4a98a;
+      --primary-dark: #8a5c3f;
+      --accent: #e8d5c4;
+      --bg: #faf7f4;
+      --card-bg: #fff;
+      --text: #3a2e27;
+      --text-light: #7a6a5f;
+      --border: #e0d0c4;
+      --highlight: #fff3ec;
+      --campaign: #c0392b;
+      --first-visit: #2980b9;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===== ヘッダー ===== */
+    .site-header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      padding: 20px 16px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .site-header h1 { font-size: 18px; font-weight: bold; letter-spacing: 0.05em; }
+    .site-header .subtitle {
+      font-size: 11px;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+    .update-time {
+      font-size: 10px;
+      opacity: 0.7;
+      margin-top: 4px;
+    }
+
+    /* ===== 検索・フィルター ===== */
+    .controls {
+      background: #fff;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 74px;
+      z-index: 99;
+    }
+    .search-box {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      font-size: 14px;
+      outline: none;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .search-box:focus { border-color: var(--primary); }
+
+    /* ===== カテゴリタブ ===== */
+    .category-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 8px 14px 4px;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: none;
+    }
+    .category-tabs::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      flex-shrink: 0;
+      padding: 5px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #fff;
+      color: var(--text-light);
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== メインコンテンツ ===== */
+    .main { padding: 12px 12px 60px; }
+
+    /* ===== 施術カテゴリブロック ===== */
+    .category-block {
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(176,125,98,0.1);
+    }
+    .category-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 14px;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+    }
+
+    /* ===== 施術グループ（施術名単位） ===== */
+    .treatment-group {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .treatment-group:last-child { border-bottom: none; }
+
+    .treatment-name-row {
+      padding: 8px 14px 4px;
+      background: var(--accent);
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--primary-dark);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ===== 価格行 ===== */
+    .price-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 8px 14px;
+      border-bottom: 1px dotted var(--border);
+      gap: 8px;
+    }
+    .price-row:last-child { border-bottom: none; }
+
+    .price-info { min-width: 0; }
+    .area-sessions {
+      font-size: 13px;
+      color: var(--text);
+    }
+    .sessions-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      border-radius: 10px;
+      padding: 1px 7px;
+      font-size: 11px;
+      margin-left: 6px;
+    }
+
+    .prices-col { text-align: right; flex-shrink: 0; }
+    .price-normal {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text);
+    }
+    .price-currency { font-size: 11px; font-weight: normal; }
+
+    .price-badges { display: flex; gap: 4px; justify-content: flex-end; margin-top: 3px; flex-wrap: wrap; }
+    .badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    .badge-first {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+    .badge-campaign {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+    .badge-bundle {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    /* ===== プリペイドセクション ===== */
+    .prepaid-section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(176,125,98,0.1);
+      margin-bottom: 20px;
+    }
+    .prepaid-header {
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 10px 14px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .prepaid-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .prepaid-card {
+      background: var(--card-bg);
+      padding: 12px;
+    }
+    .prepaid-amount {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .prepaid-detail {
+      font-size: 11px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    .prepaid-note {
+      font-size: 11px;
+      color: var(--text-light);
+      padding: 8px 14px;
+      background: var(--highlight);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ===== フッター ===== */
+    .site-footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.85);
+      padding: 16px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .footer-note {
+      color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+      font-size: 10px;
+    }
+
+    /* ===== 印刷用 ===== */
+    .print-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 16px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(176,125,98,0.4);
+      z-index: 200;
+      font-family: inherit;
+    }
+    .print-btn:active { transform: scale(0.97); }
+
+    /* ===== 検索なし表示 ===== */
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-light);
+    }
+
+    /* ===== 印刷スタイル ===== */
+    @media print {
+      .site-header { position: static; box-shadow: none; }
+      .controls, .category-tabs, .print-btn { display: none !important; }
+      .category-block { break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+      .main { padding: 0; }
+      body { font-size: 12px; }
+      .price-normal { font-size: 14px; }
+    }
+
+    /* ===== デスクトップ ===== */
+    @media (min-width: 640px) {
+      .site-header h1 { font-size: 22px; }
+      .main { max-width: 800px; margin: 0 auto; padding: 16px 20px 80px; }
+      .controls { max-width: 800px; margin: 0 auto; }
+      .category-tabs { max-width: 800px; margin: 0 auto; }
+      .price-row { grid-template-columns: 1fr auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>ボーテスキンクリニック</h1>
+  <div class="subtitle">料金表</div>
+  <div class="update-time" id="updateTime"></div>
+</header>
+
+<div class="controls">
+  <input type="search" class="search-box" id="searchBox" placeholder="施術名・部位で検索..." autocomplete="off">
+</div>
+
+<div class="category-tabs" id="categoryTabs">
+  <button class="tab-btn active" data-cat="all">すべて</button>
+</div>
+
+<main class="main" id="mainContent">
+  <div class="no-results" id="loadingMsg">読み込み中...</div>
+</main>
+
+<button class="print-btn" onclick="window.print()">🖨️ 印刷・PDF</button>
+
+<footer class="site-footer">
+  <div>ボーテスキンクリニック</div>
+  <div class="footer-note">※価格はすべて税込表示です。価格は予告なく変更する場合がございます。</div>
+</footer>
+
+<script>
+const DATA_URL = './data/prices_public.json';
+
+let allData = null;
+let currentCategory = 'all';
+let searchQuery = '';
+
+// カテゴリの日本語表示順序（医療→エステ）
+const CATEGORY_ORDER = [
+  'シミ取り（そばかす・肝斑・ほくろ）',
+  'しわ・たるみ',
+  '注入系',
+  'スレッド（糸リフト）',
+  '美肌治療',
+  '美容整形・外科',
+  'ピーリング',
+  '医療ボディ（痩身）',
+  '医療脱毛',
+  '点滴・注射',
+  '内服・外用薬',
+  'フェイシャル',
+  'リラクゼーション',
+  'ボディ',
+  'エステその他',
+];
+
+async function loadData() {
+  try {
+    const res = await fetch(DATA_URL);
+    allData = await res.json();
+    document.getElementById('updateTime').textContent =
+      '最終更新: ' + new Date(allData.metadata.generated_at).toLocaleString('ja-JP', {
+        year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'
+      });
+    buildTabs();
+    render();
+  } catch (e) {
+    document.getElementById('loadingMsg').textContent = 'データの読み込みに失敗しました。';
+    console.error(e);
+  }
+}
+
+function buildTabs() {
+  const tabs = document.getElementById('categoryTabs');
+  const categories = [...new Set(allData.treatments.map(t => t.category))]
+    .sort((a, b) => {
+      const ai = CATEGORY_ORDER.indexOf(a);
+      const bi = CATEGORY_ORDER.indexOf(b);
+      if (ai === -1 && bi === -1) return a.localeCompare(b, 'ja');
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    });
+
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.addEventListener('click', () => {
+      currentCategory = cat;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
+    tabs.appendChild(btn);
+  });
+
+  document.querySelector('[data-cat="all"]').addEventListener('click', () => {
+    currentCategory = 'all';
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-cat="all"]').classList.add('active');
+    render();
+  });
+}
+
+function fmt(val) {
+  if (!val) return null;
+  const n = parseInt(val.replace(/,/g, ''), 10);
+  if (isNaN(n)) return null;
+  return n.toLocaleString('ja-JP');
+}
+
+function render() {
+  const main = document.getElementById('mainContent');
+  let treatments = allData.treatments;
+
+  // カテゴリフィルター
+  if (currentCategory !== 'all') {
+    treatments = treatments.filter(t => t.category === currentCategory);
+  }
+
+  // 検索フィルター
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    treatments = treatments.filter(t =>
+      (t.treatment || '').toLowerCase().includes(q) ||
+      (t.area || '').toLowerCase().includes(q) ||
+      (t.category || '').toLowerCase().includes(q)
+    );
+  }
+
+  if (treatments.length === 0) {
+    main.innerHTML = '<div class="no-results">該当する施術が見つかりませんでした。</div>';
+    return;
+  }
+
+  // カテゴリ → 施術名でグループ化
+  const byCat = {};
+  treatments.forEach(t => {
+    const cat = t.category || '未分類';
+    if (!byCat[cat]) byCat[cat] = {};
+    const name = t.treatment || '（施術名なし）';
+    if (!byCat[cat][name]) byCat[cat][name] = [];
+    byCat[cat][name].push(t);
+  });
+
+  // カテゴリを順序通りに並べ替え
+  const sortedCats = Object.keys(byCat).sort((a, b) => {
+    const ai = CATEGORY_ORDER.indexOf(a);
+    const bi = CATEGORY_ORDER.indexOf(b);
+    if (ai === -1 && bi === -1) return a.localeCompare(b, 'ja');
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
+
+  let html = '';
+
+  // プリペイド割引表（全表示時または検索なし時）
+  if (currentCategory === 'all' && !searchQuery) {
+    html += renderPrepaid();
+  }
+
+  sortedCats.forEach(cat => {
+    html += `<div class="category-block">`;
+    html += `<div class="category-header">${escHtml(cat)}</div>`;
+
+    Object.entries(byCat[cat]).forEach(([name, items]) => {
+      html += `<div class="treatment-group">`;
+      if (name && name !== '（施術名なし）') {
+        html += `<div class="treatment-name-row">${escHtml(name)}</div>`;
+      }
+
+      items.forEach(item => {
+        const price = fmt(item.price);
+        const firstP = fmt(item.first_price);
+        const campP = fmt(item.campaign_price);
+        const bundleP = fmt(item.bundle_price);
+
+        html += `<div class="price-row">
+          <div class="price-info">
+            <div class="area-sessions">
+              ${escHtml(item.area || '')}
+              ${item.sessions ? `<span class="sessions-badge">${escHtml(item.sessions)}</span>` : ''}
+            </div>
+          </div>
+          <div class="prices-col">
+            <div class="price-normal">
+              ${price ? `<span class="price-currency">¥</span>${price}` : '—'}
+            </div>
+            ${(firstP || campP || bundleP) ? `
+            <div class="price-badges">
+              ${firstP ? `<span class="badge badge-first">初回 ¥${firstP}</span>` : ''}
+              ${campP ? `<span class="badge badge-campaign">CP ¥${campP}</span>` : ''}
+              ${bundleP ? `<span class="badge badge-bundle">回数券 ¥${bundleP}</span>` : ''}
+            </div>` : ''}
+          </div>
+        </div>`;
+      });
+
+      html += `</div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  main.innerHTML = html;
+}
+
+function renderPrepaid() {
+  const pd = allData.prepaid_discount_rates;
+  if (!pd) return '';
+
+  const entries = [
+    ['プリペイド 10万円', pd['10万円']],
+    ['プリペイド 30万円', pd['30万円']],
+    ['プリペイド 50万円', pd['50万円']],
+    ['ご紹介割引', pd['紹介']],
+  ];
+
+  let html = `<div class="prepaid-section">
+    <div class="prepaid-header">プリペイド・割引について</div>
+    <div class="prepaid-grid">`;
+
+  entries.forEach(([label, info]) => {
+    if (!info) return;
+    html += `<div class="prepaid-card">
+      <div class="prepaid-amount">${escHtml(label)}</div>
+      <div class="prepaid-detail">
+        看護師施術: ${escHtml(info.nurse || '—')}<br>
+        Dr.施術: ${escHtml(info.doctor || '—')}<br>
+        エステ: ${escHtml(info.estethic || '—')}
+      </div>
+    </div>`;
+  });
+
+  html += `</div>`;
+
+  const note10 = pd['10万円']?.note;
+  const noteRef = pd['紹介']?.note;
+  const expiry = pd['紹介']?.expiry;
+
+  if (note10 || noteRef) {
+    html += `<div class="prepaid-note">
+      ${note10 ? `※10万円プリペイドは対象施術限定（フォトナ・ピコトーニング・ピコフラクショナル・フォトフェイシャル・イオン導入・ピーリング・ダーマペン・ヴェルヴェット・ハイドラ・各種オプション）<br>` : ''}
+      ${noteRef ? `※ご紹介割引除外施術: オペ・ピコスポット・CO2・ボトックス麻酔・オプション・点滴<br>` : ''}
+      ${expiry ? `※ご紹介クーポン（無期限配布分）は${escHtml(expiry)}` : ''}
+    </div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// 検索
+let searchTimer;
+document.getElementById('searchBox').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    searchQuery = e.target.value.trim();
+    render();
+  }, 200);
+});
+
+loadData();
+</script>
+
+</body>
+</html>
