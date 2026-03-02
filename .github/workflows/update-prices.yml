@@ -26,11 +26,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 料金データを取得・マージ
-        run: python3 scripts/fetch_and_merge.py
-
-      - name: 公開用JSONを生成（コスト情報除去）
-        run: python3 scripts/build_public.py
+      - name: マスタースプレッドシートから料金データを取得
+        run: python3 scripts/fetch_from_master.py
 
       - name: 変更をコミット
         run: |
@@ -41,7 +38,7 @@ jobs:
           if git diff --quiet web/data/; then
             echo "データに変更なし。コミットをスキップします。"
           else
-            git add web/data/prices.json web/data/prices_public.json
+            git add web/data/
             git commit -m "🔄 料金データ自動更新 $(date '+%Y/%m/%d %H:%M JST' -d '+9 hours')"
             git push
             echo "✅ データを更新しました"
