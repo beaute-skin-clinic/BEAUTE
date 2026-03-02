@@ -21,11 +21,16 @@
       --cost-border: #f0a500;
       --profit-pos: #166534;
       --profit-neg: #991b1b;
+      --changed-bg: #fefce8;
+      --changed-border: #facc15;
+      --deleted-bg: #fef2f2;
+      --added-bg: #f0fdf4;
+      --save-bar: #059669;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', 'Noto Sans JP', sans-serif;
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
       background: var(--bg);
       color: var(--text);
       font-size: 14px;
@@ -33,13 +38,10 @@
 
     /* ===== ログイン画面 ===== */
     #loginScreen {
-      position: fixed;
-      inset: 0;
+      position: fixed; inset: 0;
       background: var(--admin-bg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
       z-index: 1000;
     }
     .login-box {
@@ -50,218 +52,280 @@
       width: min(360px, 90vw);
       text-align: center;
     }
-    .login-box h2 {
-      color: #fff;
-      font-size: 18px;
-      margin-bottom: 6px;
-    }
-    .login-box .subtitle {
-      color: rgba(255,255,255,0.5);
-      font-size: 12px;
-      margin-bottom: 24px;
-    }
+    .login-box h2 { color: #fff; font-size: 18px; margin-bottom: 6px; }
+    .login-box .subtitle { color: rgba(255,255,255,0.5); font-size: 12px; margin-bottom: 24px; }
     .login-input {
-      width: 100%;
-      padding: 12px 14px;
+      width: 100%; padding: 12px 14px;
       border: 1.5px solid rgba(255,255,255,0.2);
       border-radius: 8px;
       background: rgba(255,255,255,0.1);
-      color: #fff;
-      font-size: 16px;
-      outline: none;
-      margin-bottom: 12px;
-      letter-spacing: 0.1em;
+      color: #fff; font-size: 16px; outline: none;
+      margin-bottom: 12px; letter-spacing: 0.1em;
     }
     .login-input:focus { border-color: var(--primary-light); }
     .login-btn {
-      width: 100%;
-      padding: 12px;
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 15px;
-      font-family: inherit;
-      cursor: pointer;
-      font-weight: bold;
+      width: 100%; padding: 12px;
+      background: var(--primary); color: #fff; border: none;
+      border-radius: 8px; font-size: 15px;
+      font-family: inherit; cursor: pointer; font-weight: bold;
     }
     .login-btn:hover { background: var(--primary-dark); }
-    .login-error {
-      color: #fc8181;
-      font-size: 12px;
-      margin-top: 8px;
-      display: none;
-    }
-    .login-note {
-      color: rgba(255,255,255,0.35);
-      font-size: 11px;
-      margin-top: 20px;
-    }
+    .login-error { color: #fc8181; font-size: 12px; margin-top: 8px; display: none; }
+    .login-note { color: rgba(255,255,255,0.35); font-size: 11px; margin-top: 20px; }
 
-    /* ===== メイン画面（ログイン後） ===== */
+    /* ===== メイン画面 ===== */
     #mainApp { display: none; }
 
     /* ===== ヘッダー ===== */
     .site-header {
-      background: var(--admin-header);
-      color: #fff;
-      padding: 14px 16px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      background: var(--admin-header); color: #fff;
+      padding: 10px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
       box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     }
     .header-left h1 { font-size: 16px; }
-    .header-left .badge-admin {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      font-size: 10px;
-      border-radius: 4px;
-      padding: 1px 6px;
-      margin-left: 6px;
-      vertical-align: middle;
+    .badge-admin {
+      display: inline-block; background: var(--primary);
+      font-size: 10px; border-radius: 4px;
+      padding: 1px 6px; margin-left: 6px; vertical-align: middle;
     }
-    .header-right { display: flex; gap: 8px; align-items: center; }
+    .header-right { display: flex; gap: 6px; align-items: center; }
     .btn-sm {
       padding: 5px 10px;
       border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 6px;
-      background: transparent;
-      color: #fff;
-      font-size: 12px;
-      cursor: pointer;
-      font-family: inherit;
-      white-space: nowrap;
+      border-radius: 6px; background: transparent;
+      color: #fff; font-size: 12px;
+      cursor: pointer; font-family: inherit; white-space: nowrap;
     }
     .btn-sm:hover { background: rgba(255,255,255,0.1); }
+    .btn-add {
+      padding: 5px 12px;
+      border: none; border-radius: 6px;
+      background: #059669; color: #fff;
+      font-size: 12px; cursor: pointer;
+      font-family: inherit; font-weight: bold;
+    }
+    .btn-add:hover { background: #047857; }
+    .gh-status {
+      font-size: 10px; padding: 3px 8px;
+      border-radius: 10px; cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .gh-status.connected { background: rgba(5,150,105,0.3); color: #6ee7b7; }
+    .gh-status.disconnected { background: rgba(220,38,38,0.3); color: #fca5a5; }
 
     /* ===== コントロール ===== */
     .controls {
-      background: #fff;
-      padding: 10px 14px;
+      background: #fff; padding: 8px 14px;
       border-bottom: 1px solid var(--border);
-      display: flex;
-      gap: 8px;
-      align-items: center;
+      display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
     }
     .search-box {
-      flex: 1;
-      padding: 8px 12px;
-      border: 1.5px solid var(--border);
-      border-radius: 20px;
-      font-size: 14px;
-      outline: none;
+      flex: 1; min-width: 200px;
+      padding: 7px 12px; border: 1.5px solid var(--border);
+      border-radius: 20px; font-size: 13px; outline: none;
     }
     .search-box:focus { border-color: var(--primary); }
 
     /* ===== カテゴリタブ ===== */
     .category-tabs {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      padding: 8px 14px 4px;
-      background: #fff;
+      display: flex; gap: 6px; overflow-x: auto;
+      padding: 6px 14px; background: #fff;
       border-bottom: 1px solid var(--border);
       scrollbar-width: none;
     }
     .category-tabs::-webkit-scrollbar { display: none; }
     .tab-btn {
-      flex-shrink: 0;
-      padding: 5px 12px;
-      border: 1.5px solid var(--border);
-      border-radius: 16px;
-      font-size: 12px;
-      cursor: pointer;
-      background: #fff;
-      color: var(--text-light);
-      white-space: nowrap;
+      flex-shrink: 0; padding: 4px 10px;
+      border: 1.5px solid var(--border); border-radius: 14px;
+      font-size: 11px; cursor: pointer;
+      background: #fff; color: var(--text-light); white-space: nowrap;
     }
     .tab-btn.active { background: var(--admin-bg); border-color: var(--admin-bg); color: #fff; }
 
-    /* ===== テーブル ===== */
-    .main { padding: 12px; overflow-x: auto; }
+    /* ===== サマリーバー ===== */
+    .summary-bar {
+      background: var(--admin-header); color: rgba(255,255,255,0.8);
+      padding: 5px 14px; font-size: 11px;
+      display: flex; gap: 16px;
+    }
+    .summary-bar span { color: #fff; font-weight: bold; }
 
+    /* ===== テーブル ===== */
+    .main { padding: 10px; overflow-x: auto; }
     .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      font-size: 13px;
+      width: 100%; border-collapse: collapse;
+      background: #fff; border-radius: 10px; overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 12px;
     }
     .data-table thead th {
-      background: var(--admin-bg);
-      color: #fff;
-      padding: 9px 10px;
-      text-align: left;
-      font-size: 12px;
-      font-weight: normal;
+      background: var(--admin-bg); color: #fff;
+      padding: 7px 6px; text-align: left;
+      font-size: 10px; font-weight: normal;
       white-space: nowrap;
       border-right: 1px solid rgba(255,255,255,0.1);
+      position: sticky; top: 42px; z-index: 10;
     }
     .data-table thead th:last-child { border-right: none; }
-    .data-table thead th.col-cost {
-      background: #78350f;
-    }
+    .data-table thead th.col-cost { background: #78350f; }
+    .data-table thead th.col-action { background: #374151; width: 70px; text-align: center; }
+    .data-table tbody tr { transition: background 0.1s; }
     .data-table tbody tr:nth-child(even) { background: #faf7f4; }
     .data-table tbody tr:hover { background: #fdf2e9; }
+    .data-table tbody tr.row-changed { background: var(--changed-bg) !important; }
+    .data-table tbody tr.row-deleted {
+      background: var(--deleted-bg) !important;
+      opacity: 0.5; text-decoration: line-through;
+    }
+    .data-table tbody tr.row-added { background: var(--added-bg) !important; }
     .data-table tbody td {
-      padding: 7px 10px;
+      padding: 4px 6px;
       border-bottom: 1px solid #f0e8e0;
       border-right: 1px solid #f0e8e0;
       vertical-align: middle;
+      max-width: 140px;
     }
     .data-table tbody td:last-child { border-right: none; }
 
     .cat-badge {
-      display: inline-block;
-      font-size: 10px;
-      padding: 1px 6px;
-      border-radius: 8px;
-      background: var(--accent);
-      color: var(--primary-dark);
-      white-space: nowrap;
+      display: inline-block; font-size: 9px;
+      padding: 1px 5px; border-radius: 8px;
+      background: var(--accent); color: var(--primary-dark);
+      white-space: nowrap; max-width: 100%;
+      overflow: hidden; text-overflow: ellipsis;
     }
 
     .price-val { font-weight: bold; color: var(--text); white-space: nowrap; }
     .price-small { font-size: 11px; color: var(--text-light); white-space: nowrap; }
+    .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
 
-    /* コスト列（管理者専用） */
     .td-cost {
       background: var(--cost-bg) !important;
       border-left: 2px solid var(--cost-border) !important;
     }
-    .cost-val { font-weight: bold; color: #92400e; font-size: 12px; }
+    .cost-val { font-weight: bold; color: #92400e; font-size: 11px; }
     .profit-val-pos { font-weight: bold; color: var(--profit-pos); }
-    .profit-val-neg { font-weight: bold; color: var(--profit-neg); }
 
-    /* ===== サマリーバー ===== */
-    .summary-bar {
-      background: var(--admin-header);
-      color: rgba(255,255,255,0.8);
-      padding: 6px 14px;
-      font-size: 11px;
-      display: flex;
-      gap: 16px;
+    .cell-changed {
+      background: var(--changed-bg) !important;
+      outline: 2px solid var(--changed-border);
+      outline-offset: -2px;
     }
-    .summary-bar span { color: #fff; font-weight: bold; }
+
+    /* ===== インライン編集 ===== */
+    .editable { cursor: pointer; min-height: 20px; min-width: 30px; border-radius: 3px; padding: 2px 4px; }
+    .editable:hover { background: rgba(176,125,98,0.1); }
+    .edit-input {
+      width: 100%; padding: 3px 4px;
+      border: 1.5px solid var(--primary);
+      border-radius: 4px; font-size: 12px;
+      font-family: inherit; outline: none;
+      background: #fff;
+    }
+    .edit-input:focus { border-color: var(--primary-dark); box-shadow: 0 0 0 2px rgba(176,125,98,0.2); }
+    .edit-select {
+      width: 100%; padding: 3px 2px;
+      border: 1.5px solid var(--primary);
+      border-radius: 4px; font-size: 11px;
+      font-family: inherit; outline: none;
+      background: #fff;
+    }
+
+    /* ===== 行アクションボタン ===== */
+    .row-actions { display: flex; gap: 2px; justify-content: center; }
+    .row-btn {
+      width: 24px; height: 24px;
+      border: none; border-radius: 4px;
+      cursor: pointer; font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+      background: transparent; color: var(--text-light);
+    }
+    .row-btn:hover { background: rgba(0,0,0,0.08); }
+    .row-btn.btn-delete:hover { background: #fee2e2; color: #dc2626; }
+    .row-btn.btn-undo:hover { background: #dcfce7; color: #16a34a; }
+
+    /* ===== 保存バー ===== */
+    .save-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--save-bar);
+      color: #fff; padding: 10px 20px;
+      display: none; align-items: center; justify-content: space-between;
+      z-index: 200;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+    }
+    .save-bar.visible { display: flex; }
+    .save-bar-left { font-size: 14px; font-weight: bold; }
+    .save-bar-right { display: flex; gap: 8px; }
+    .save-btn {
+      padding: 8px 24px; border: none;
+      border-radius: 8px; font-size: 14px;
+      font-family: inherit; cursor: pointer;
+      font-weight: bold;
+    }
+    .save-btn-primary { background: #fff; color: var(--save-bar); }
+    .save-btn-primary:hover { background: #f0fdf4; }
+    .save-btn-cancel { background: rgba(255,255,255,0.2); color: #fff; }
+    .save-btn-cancel:hover { background: rgba(255,255,255,0.3); }
+
+    /* ===== GitHub設定モーダル ===== */
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      display: none; align-items: center; justify-content: center;
+      z-index: 500;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal {
+      background: #fff; border-radius: 12px;
+      padding: 24px; width: min(440px, 90vw);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .modal h3 { font-size: 16px; margin-bottom: 16px; color: var(--text); }
+    .modal-field { margin-bottom: 12px; }
+    .modal-field label {
+      display: block; font-size: 12px;
+      color: var(--text-light); margin-bottom: 4px;
+    }
+    .modal-field input {
+      width: 100%; padding: 8px 10px;
+      border: 1.5px solid var(--border);
+      border-radius: 6px; font-size: 13px;
+      font-family: inherit; outline: none;
+    }
+    .modal-field input:focus { border-color: var(--primary); }
+    .modal-field .help { font-size: 10px; color: var(--text-light); margin-top: 3px; }
+    .modal-buttons { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+    .modal-btn {
+      padding: 8px 18px; border-radius: 6px;
+      font-size: 13px; font-family: inherit; cursor: pointer;
+    }
+    .modal-btn-primary { background: var(--primary); color: #fff; border: none; }
+    .modal-btn-primary:hover { background: var(--primary-dark); }
+    .modal-btn-secondary { background: #fff; color: var(--text); border: 1px solid var(--border); }
+
+    /* ===== トースト ===== */
+    .toast {
+      position: fixed; bottom: 80px; left: 50%;
+      transform: translateX(-50%);
+      background: #1f2937; color: #fff;
+      padding: 10px 20px; border-radius: 8px;
+      font-size: 13px; z-index: 600;
+      opacity: 0; transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .toast.visible { opacity: 1; }
+    .toast.error { background: #dc2626; }
+    .toast.success { background: #059669; }
 
     /* ===== 印刷 ===== */
     @media print {
-      #loginScreen { display: none !important; }
+      #loginScreen, .save-bar, .modal-overlay, .toast { display: none !important; }
       .site-header, .controls, .category-tabs, .summary-bar { display: none !important; }
       .main { padding: 0; }
-      .data-table { font-size: 10px; box-shadow: none; }
-      .data-table thead th { background: #333 !important; font-size: 9px; }
-    }
-
-    @media (max-width: 640px) {
-      .data-table { min-width: 700px; }
+      .data-table { font-size: 9px; box-shadow: none; }
+      .data-table thead th { background: #333 !important; font-size: 8px; position: static; }
+      .col-action { display: none !important; }
     }
   </style>
 </head>
@@ -287,15 +351,17 @@
       <h1>料金管理 <span class="badge-admin">管理者専用</span></h1>
     </div>
     <div class="header-right">
-      <button class="btn-sm" onclick="window.print()">🖨️ 印刷</button>
+      <button class="btn-add" onclick="addNewRow()">+ 新規追加</button>
+      <button class="btn-sm" onclick="window.print()">印刷</button>
+      <span class="gh-status disconnected" id="ghStatus" onclick="openGitHubSettings()">GitHub未設定</span>
       <button class="btn-sm" onclick="doLogout()">ログアウト</button>
     </div>
   </header>
 
   <div class="controls">
     <input type="search" class="search-box" id="searchBox" placeholder="施術名・部位で検索..." autocomplete="off">
-    <label style="font-size:12px;color:#666;white-space:nowrap;display:flex;align-items:center;gap:4px;">
-      <input type="checkbox" id="showCostOnly"> コストのみ表示
+    <label style="font-size:11px;color:#666;white-space:nowrap;display:flex;align-items:center;gap:4px;">
+      <input type="checkbox" id="showCostOnly"> コストのみ
     </label>
   </div>
 
@@ -304,8 +370,9 @@
   </div>
 
   <div class="summary-bar" id="summaryBar">
-    <div>表示件数: <span id="summaryCount">—</span>件</div>
-    <div>うちコスト情報あり: <span id="summaryCost">—</span>件</div>
+    <div>表示: <span id="summaryCount">-</span>件</div>
+    <div>コスト情報: <span id="summaryCost">-</span>件</div>
+    <div>全件: <span id="summaryTotal">-</span>件</div>
   </div>
 
   <main class="main">
@@ -315,68 +382,126 @@
           <th>カテゴリ</th>
           <th>区分</th>
           <th>施術名</th>
-          <th>対象部位</th>
+          <th>部位</th>
           <th>回数</th>
           <th>旧価格</th>
           <th>通常価格</th>
           <th>初回</th>
-          <th>リピート割</th>
+          <th>リピート</th>
           <th>回数券</th>
           <th>CP</th>
-          <th>モニター(全顔)</th>
-          <th>モニター(目元)</th>
+          <th>モニ全顔</th>
+          <th>モニ目元</th>
           <th>PP10万</th>
           <th>PP30万</th>
           <th>PP50万</th>
-          <th class="col-cost">🔒 コスト</th>
-          <th class="col-cost">🔒 利益</th>
+          <th class="col-cost">コスト</th>
+          <th class="col-cost">利益</th>
+          <th class="col-action">操作</th>
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
-
 </div>
+
+<!-- 保存バー -->
+<div class="save-bar" id="saveBar">
+  <div class="save-bar-left" id="saveBarText">3件の変更があります</div>
+  <div class="save-bar-right">
+    <button class="save-btn save-btn-cancel" onclick="discardChanges()">変更を破棄</button>
+    <button class="save-btn save-btn-primary" id="saveButton" onclick="saveChanges()">保存する</button>
+  </div>
+</div>
+
+<!-- GitHub設定モーダル -->
+<div class="modal-overlay" id="ghModal">
+  <div class="modal">
+    <h3>GitHub連携設定</h3>
+    <div class="modal-field">
+      <label>リポジトリオーナー</label>
+      <input type="text" id="ghOwner" value="beaute-skin-clinic" placeholder="beaute-skin-clinic">
+    </div>
+    <div class="modal-field">
+      <label>リポジトリ名</label>
+      <input type="text" id="ghRepo" value="BEAUTE" placeholder="BEAUTE">
+    </div>
+    <div class="modal-field">
+      <label>Personal Access Token (PAT)</label>
+      <input type="password" id="ghToken" placeholder="github_pat_xxxxx...">
+      <div class="help">GitHub Settings > Developer settings > Fine-grained tokens で作成。<br>スコープ: このリポジトリのみ、Contents: Read and write</div>
+    </div>
+    <div class="modal-buttons">
+      <button class="modal-btn modal-btn-secondary" onclick="closeGitHubSettings()">キャンセル</button>
+      <button class="modal-btn modal-btn-primary" onclick="saveGitHubSettings()">接続テスト & 保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- トースト -->
+<div class="toast" id="toast"></div>
 
 <script>
 // ============================================================
-// パスワード設定
-// ここを変更してパスワードを設定してください
+// 設定
 // ============================================================
-const ADMIN_PASSWORD = "beaute2024";  // ← ここを変更
-
+const ADMIN_PASSWORD = "beaute2024";
 const SESSION_KEY = "beaute_admin_auth";
 const DATA_URL = '../data/prices.json';
+const GH_STORAGE_KEY = 'beaute_github_settings';
 
-let allData = null;
-let currentCategory = 'all';
-let searchQuery = '';
-let showCostOnly = false;
+// ============================================================
+// プリペイド割引率テーブル（Python fetch_from_master.py から移植）
+// ============================================================
+const PREPAID_RATES = {
+  "看護師": {"10万": 10, "30万": 20, "50万": 25},
+  "Dr.":    {"10万": 0,  "30万": 10, "50万": 10},
+  "Dr.オペ": {"10万": 0,  "30万": 0,  "50万": 10},
+  "エステ":  {"10万": 10, "30万": 20, "50万": 20},
+};
+const PP10_KEYWORDS = [
+  "フォトナ", "ピコトーニング", "ピコフラクショナル", "フォトフェイシャル",
+  "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェット", "ハイドラ", "オプション",
+];
+
+const PROVIDER_TYPES = ["", "看護師", "Dr.", "Dr.オペ", "エステ"];
 
 const CATEGORY_ORDER = [
   'シミ取り（そばかす・肝斑・ほくろ）',
-  'しわ・たるみ',
-  '注入系',
-  'スレッド（糸リフト）',
-  '美肌治療',
-  '美容整形・外科',
-  'ピーリング',
-  '医療ボディ（痩身）',
-  '医療脱毛',
-  '点滴・注射',
-  '内服・外用薬',
-  'フェイシャル',
-  'リラクゼーション',
-  'ボディ',
-  'エステその他',
+  'しわ・たるみ', '注入系', 'スレッド（糸リフト）',
+  '美肌治療', '美容整形・外科', 'ピーリング',
+  '医療ボディ（痩身）', '医療脱毛', '点滴・注射',
+  '内服・外用薬', 'フェイシャル', 'リラクゼーション',
+  'ボディ', 'エステその他', 'オプション',
 ];
 
-// ===== 認証 =====
-function checkAuth() {
-  return sessionStorage.getItem(SESSION_KEY) === 'ok';
-}
+const PRICE_FIELDS = [
+  'old_price', 'price', 'first_price', 'repeat_price',
+  'bundle_price', 'campaign_price', 'monitor_full_price',
+  'monitor_eye_price', 'prepaid_manual'
+];
+const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note'];
+
+// ============================================================
+// 状態管理
+// ============================================================
+let allData = null;          // 元データ（マスター）
+let editedData = null;       // 編集中データ（保存時にこれを書き出す）
+let changes = new Map();     // rowIndex → Set<field> 変更トラッキング
+let deletedRows = new Set(); // 削除予定の行インデックス
+let addedRows = new Set();   // 新規追加の行インデックス
+let currentCategory = 'all';
+let searchQuery = '';
+let showCostOnly = false;
+let editingCell = null;      // 現在編集中のセル
+let filteredIndices = [];    // フィルタ後のインデックス配列
+
+// ============================================================
+// 認証
+// ============================================================
+function checkAuth() { return sessionStorage.getItem(SESSION_KEY) === 'ok'; }
 
 function doLogin() {
   const pw = document.getElementById('passwordInput').value;
@@ -392,6 +517,7 @@ function doLogin() {
 }
 
 function doLogout() {
+  if (getChangeCount() > 0 && !confirm('未保存の変更があります。ログアウトしますか？')) return;
   sessionStorage.removeItem(SESSION_KEY);
   location.reload();
 }
@@ -400,29 +526,43 @@ document.getElementById('passwordInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') doLogin();
 });
 
-// 既認証チェック
 if (checkAuth()) {
   document.getElementById('loginScreen').style.display = 'none';
   document.getElementById('mainApp').style.display = 'block';
 }
 
-// ===== データ =====
+// ============================================================
+// データ読み込み
+// ============================================================
 async function loadData() {
   try {
-    const res = await fetch(DATA_URL);
+    const res = await fetch(DATA_URL + '?_=' + Date.now());
     allData = await res.json();
+    // ディープコピーして編集用データを作る
+    editedData = JSON.parse(JSON.stringify(allData));
+    changes.clear();
+    deletedRows.clear();
+    addedRows.clear();
     buildTabs();
     render();
+    updateSaveBar();
+    updateGitHubStatus();
   } catch (e) {
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="18" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+      '<tr><td colspan="19" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
     console.error(e);
   }
 }
 
+// ============================================================
+// カテゴリタブ
+// ============================================================
 function buildTabs() {
   const tabs = document.getElementById('categoryTabs');
-  const categories = [...new Set(allData.treatments.map(t => t.category))]
+  // 既存のタブを「すべて」以外削除
+  tabs.querySelectorAll('.tab-btn:not([data-cat="all"])').forEach(b => b.remove());
+
+  const categories = [...new Set(editedData.treatments.map(t => t.category))]
     .sort((a, b) => {
       const ai = CATEGORY_ORDER.indexOf(a);
       const bi = CATEGORY_ORDER.indexOf(b);
@@ -437,91 +577,809 @@ function buildTabs() {
     btn.className = 'tab-btn';
     btn.dataset.cat = cat;
     btn.textContent = cat;
-    btn.addEventListener('click', () => {
-      currentCategory = cat;
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      render();
-    });
+    btn.addEventListener('click', () => selectCategory(cat, btn));
     tabs.appendChild(btn);
   });
 
-  tabs.querySelector('[data-cat="all"]').addEventListener('click', () => {
-    currentCategory = 'all';
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    tabs.querySelector('[data-cat="all"]').classList.add('active');
-    render();
+  tabs.querySelector('[data-cat="all"]').addEventListener('click', function() {
+    selectCategory('all', this);
   });
 }
 
+function selectCategory(cat, btn) {
+  currentCategory = cat;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+// ============================================================
+// PP自動計算（Python fetch_from_master.py から移植）
+// ============================================================
+function calcPrepaidPrices(priceStr, providerType, treatment, category) {
+  const result = { prepaid_10: null, prepaid_30: null, prepaid_50: null };
+  if (!priceStr || !providerType) return result;
+
+  const price = parseInt(String(priceStr).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(price) || price === 0) return result;
+
+  const rates = PREPAID_RATES[providerType];
+  if (!rates) return result;
+
+  // 10万ティア: 対象施術かチェック
+  const rate10 = rates["10万"] || 0;
+  if (rate10 > 0) {
+    const isEligible = PP10_KEYWORDS.some(kw =>
+      (treatment || '').includes(kw) || (category || '').includes(kw)
+    );
+    if (isEligible) {
+      result.prepaid_10 = String(Math.floor(price * (100 - rate10) / 100));
+    }
+  }
+
+  // 30万ティア
+  const rate30 = rates["30万"] || 0;
+  if (rate30 > 0) {
+    result.prepaid_30 = String(Math.floor(price * (100 - rate30) / 100));
+  }
+
+  // 50万ティア
+  const rate50 = rates["50万"] || 0;
+  if (rate50 > 0) {
+    result.prepaid_50 = String(Math.floor(price * (100 - rate50) / 100));
+  }
+
+  return result;
+}
+
+// 行のPP値を再計算して更新
+function recalcPrepaid(rowIdx) {
+  const t = editedData.treatments[rowIdx];
+  const pp = calcPrepaidPrices(t.price, t.provider_type, t.treatment, t.category);
+  t.prepaid_10 = pp.prepaid_10;
+  t.prepaid_30 = pp.prepaid_30;
+  t.prepaid_50 = pp.prepaid_50;
+}
+
+// ============================================================
+// レンダリング
+// ============================================================
 function fmt(val) {
-  if (!val) return null;
+  if (!val) return '';
   const n = parseInt(String(val).replace(/[¥,\s]/g, ''), 10);
-  if (isNaN(n)) return String(val);  // 数値でない場合はそのまま
+  if (isNaN(n)) return String(val);
   return '¥' + n.toLocaleString('ja-JP');
 }
 
+function esc(str) {
+  return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 function render() {
-  if (!allData) return;
-  let treatments = allData.treatments;
+  if (!editedData) return;
+  finishEditing(); // 編集中セルを確定
 
-  if (currentCategory !== 'all') {
-    treatments = treatments.filter(t => t.category === currentCategory);
-  }
-  if (searchQuery) {
-    const q = searchQuery.toLowerCase();
-    treatments = treatments.filter(t =>
-      (t.treatment || '').toLowerCase().includes(q) ||
-      (t.area || '').toLowerCase().includes(q) ||
-      (t.category || '').toLowerCase().includes(q)
-    );
-  }
-  if (showCostOnly) {
-    treatments = treatments.filter(t => t.cost_note || t.profit_note);
+  const treatments = editedData.treatments;
+
+  // フィルタリング
+  filteredIndices = [];
+  for (let i = 0; i < treatments.length; i++) {
+    const t = treatments[i];
+    if (currentCategory !== 'all' && t.category !== currentCategory) continue;
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      if (!(t.treatment || '').toLowerCase().includes(q) &&
+          !(t.area || '').toLowerCase().includes(q) &&
+          !(t.category || '').toLowerCase().includes(q)) continue;
+    }
+    if (showCostOnly && !t.cost_note && !t.profit_note) continue;
+    filteredIndices.push(i);
   }
 
-  const withCost = treatments.filter(t => t.cost_note || t.profit_note).length;
-  document.getElementById('summaryCount').textContent = treatments.length;
+  // サマリー更新
+  const withCost = filteredIndices.filter(i => treatments[i].cost_note || treatments[i].profit_note).length;
+  document.getElementById('summaryCount').textContent = filteredIndices.length;
   document.getElementById('summaryCost').textContent = withCost;
+  document.getElementById('summaryTotal').textContent = treatments.length;
 
   const tbody = document.getElementById('tableBody');
-  if (treatments.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+  if (filteredIndices.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
     return;
   }
 
-  tbody.innerHTML = treatments.map(t => {
-    return `<tr>
-      <td><span class="cat-badge">${esc(t.category)}</span></td>
-      <td>${esc(t.provider_type || '')}</td>
-      <td>${esc(t.treatment || '')}</td>
-      <td>${esc(t.area || '')}</td>
-      <td>${esc(t.sessions || '')}</td>
-      <td class="price-small">${fmt(t.old_price) || ''}</td>
-      <td class="price-val">${fmt(t.price) || '—'}</td>
-      <td class="price-small">${fmt(t.first_price) || ''}</td>
-      <td class="price-small">${fmt(t.repeat_price) || ''}</td>
-      <td class="price-small">${fmt(t.bundle_price) || ''}</td>
-      <td class="price-small">${fmt(t.campaign_price) || ''}</td>
-      <td class="price-small">${fmt(t.monitor_full_price) || ''}</td>
-      <td class="price-small">${fmt(t.monitor_eye_price) || ''}</td>
-      <td class="price-small">${fmt(t.prepaid_10) || fmt(t.prepaid_manual) || ''}</td>
-      <td class="price-small">${fmt(t.prepaid_30) || ''}</td>
-      <td class="price-small">${fmt(t.prepaid_50) || ''}</td>
-      <td class="td-cost"><span class="cost-val">${esc(t.cost_note || '')}</span></td>
-      <td class="td-cost"><span class="${t.profit_note ? 'profit-val-pos' : ''}">${esc(t.profit_note || '')}</span></td>
+  const rows = filteredIndices.map(idx => {
+    const t = treatments[idx];
+    const isDeleted = deletedRows.has(idx);
+    const isAdded = addedRows.has(idx);
+    const isChanged = changes.has(idx);
+    const changedFields = changes.get(idx) || new Set();
+
+    let rowClass = '';
+    if (isDeleted) rowClass = 'row-deleted';
+    else if (isAdded) rowClass = 'row-added';
+    else if (isChanged) rowClass = 'row-changed';
+
+    const cellCls = (field) => changedFields.has(field) && !isDeleted ? ' cell-changed' : '';
+
+    // PP表示: 自動計算値かmanual値
+    const ppDisp10 = t.prepaid_10 || t.prepaid_manual || '';
+    const ppDisp30 = t.prepaid_30 || '';
+    const ppDisp50 = t.prepaid_50 || '';
+    const ppCls10 = t.prepaid_10 ? 'price-auto' : 'price-small';
+    const ppCls30 = t.prepaid_30 ? 'price-auto' : 'price-small';
+    const ppCls50 = t.prepaid_50 ? 'price-auto' : 'price-small';
+
+    return `<tr class="${rowClass}" data-idx="${idx}">
+      <td class="${cellCls('category')}"><span class="editable" data-field="category" data-idx="${idx}" data-type="category">${t.category ? `<span class="cat-badge">${esc(t.category)}</span>` : ''}</span></td>
+      <td class="${cellCls('provider_type')}"><span class="editable" data-field="provider_type" data-idx="${idx}" data-type="provider">${esc(t.provider_type || '')}</span></td>
+      <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span></td>
+      <td class="${cellCls('area')}"><span class="editable" data-field="area" data-idx="${idx}" data-type="text">${esc(t.area || '')}</span></td>
+      <td class="${cellCls('sessions')}"><span class="editable" data-field="sessions" data-idx="${idx}" data-type="text">${esc(t.sessions || '')}</span></td>
+      <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
+      <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmt(t.price)}</span></td>
+      <td class="price-small${cellCls('first_price')}"><span class="editable" data-field="first_price" data-idx="${idx}" data-type="price">${fmt(t.first_price)}</span></td>
+      <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmt(t.repeat_price)}</span></td>
+      <td class="price-small${cellCls('bundle_price')}"><span class="editable" data-field="bundle_price" data-idx="${idx}" data-type="price">${fmt(t.bundle_price)}</span></td>
+      <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
+      <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_full_price)}</span></td>
+      <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_eye_price)}</span></td>
+      <td class="${ppCls10}">${fmt(ppDisp10)}</td>
+      <td class="${ppCls30}">${fmt(ppDisp30)}</td>
+      <td class="${ppCls50}">${fmt(ppDisp50)}</td>
+      <td class="td-cost${cellCls('cost_note')}"><span class="editable cost-val" data-field="cost_note" data-idx="${idx}" data-type="text">${esc(t.cost_note || '')}</span></td>
+      <td class="td-cost${cellCls('profit_note')}"><span class="editable profit-val-pos" data-field="profit_note" data-idx="${idx}" data-type="text">${esc(t.profit_note || '')}</span></td>
+      <td class="col-action">
+        <div class="row-actions">
+          ${isDeleted
+            ? `<button class="row-btn btn-undo" onclick="undoDelete(${idx})" title="削除取消">↩</button>`
+            : `<button class="row-btn" onclick="duplicateRow(${idx})" title="複製">📋</button>
+               <button class="row-btn btn-delete" onclick="deleteRow(${idx})" title="削除">🗑</button>`
+          }
+        </div>
+      </td>
     </tr>`;
   }).join('');
+
+  tbody.innerHTML = rows;
 }
 
-function esc(str) {
-  return String(str || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+// ============================================================
+// インライン編集
+// ============================================================
+document.addEventListener('click', function(e) {
+  const editable = e.target.closest('.editable');
+  if (editable && !editingCell) {
+    startEditing(editable);
+    return;
+  }
+  // 編集中のセル以外をクリックしたら確定
+  if (editingCell && !e.target.closest('.edit-input, .edit-select')) {
+    finishEditing();
+  }
+});
+
+function startEditing(el) {
+  const idx = parseInt(el.dataset.idx, 10);
+  if (deletedRows.has(idx)) return; // 削除済み行は編集不可
+
+  const field = el.dataset.field;
+  const type = el.dataset.type;
+  const t = editedData.treatments[idx];
+  const currentVal = t[field] || '';
+
+  editingCell = { el, idx, field, type, originalVal: currentVal };
+
+  if (type === 'provider') {
+    const select = document.createElement('select');
+    select.className = 'edit-select';
+    PROVIDER_TYPES.forEach(pt => {
+      const opt = document.createElement('option');
+      opt.value = pt;
+      opt.textContent = pt || '(なし)';
+      if (pt === currentVal) opt.selected = true;
+      select.appendChild(opt);
+    });
+    el.innerHTML = '';
+    el.appendChild(select);
+    select.focus();
+    select.addEventListener('change', () => finishEditing());
+    select.addEventListener('keydown', handleEditKeydown);
+  } else if (type === 'category') {
+    const categories = [...new Set(editedData.treatments.map(t => t.category))].sort();
+    const select = document.createElement('select');
+    select.className = 'edit-select';
+    categories.forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      if (cat === currentVal) opt.selected = true;
+      select.appendChild(opt);
+    });
+    el.innerHTML = '';
+    el.appendChild(select);
+    select.focus();
+    select.addEventListener('change', () => finishEditing());
+    select.addEventListener('keydown', handleEditKeydown);
+  } else {
+    // text or price
+    const input = document.createElement('input');
+    input.className = 'edit-input';
+    input.type = type === 'price' ? 'number' : 'text';
+    if (type === 'price') {
+      // 価格は数値のみ
+      const raw = String(currentVal).replace(/[¥,\s]/g, '');
+      input.value = raw;
+      input.min = '0';
+      input.step = '1';
+      input.style.width = '80px';
+    } else {
+      input.value = currentVal;
+    }
+    el.innerHTML = '';
+    el.appendChild(input);
+    input.focus();
+    input.select();
+    input.addEventListener('keydown', handleEditKeydown);
+  }
 }
 
-// 検索
+function handleEditKeydown(e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    finishEditing();
+    // Tab的に次のセルへ移動
+    moveToNextCell(1);
+  } else if (e.key === 'Tab') {
+    e.preventDefault();
+    finishEditing();
+    moveToNextCell(e.shiftKey ? -1 : 1);
+  } else if (e.key === 'Escape') {
+    cancelEditing();
+  }
+}
+
+function moveToNextCell(direction) {
+  if (!editingCell) return;
+  const currentRow = document.querySelector(`tr[data-idx="${editingCell.idx}"]`);
+  if (!currentRow) return;
+
+  const editables = currentRow.querySelectorAll('.editable');
+  const arr = Array.from(editables);
+  const currentIdx = arr.findIndex(el => el.dataset.field === editingCell.field);
+  const nextIdx = currentIdx + direction;
+
+  editingCell = null;
+
+  if (nextIdx >= 0 && nextIdx < arr.length) {
+    startEditing(arr[nextIdx]);
+  } else {
+    // 次/前の行に移動
+    const rows = document.querySelectorAll('#tableBody tr[data-idx]');
+    const rowArr = Array.from(rows);
+    const rowIdx = rowArr.indexOf(currentRow);
+    const nextRow = rowArr[rowIdx + direction];
+    if (nextRow) {
+      const nextEditables = nextRow.querySelectorAll('.editable');
+      if (nextEditables.length > 0) {
+        startEditing(direction > 0 ? nextEditables[0] : nextEditables[nextEditables.length - 1]);
+      }
+    }
+  }
+}
+
+function finishEditing() {
+  if (!editingCell) return;
+  const { el, idx, field, type, originalVal } = editingCell;
+  let newVal;
+
+  if (type === 'provider' || type === 'category') {
+    const select = el.querySelector('select');
+    newVal = select ? select.value : originalVal;
+  } else if (type === 'price') {
+    const input = el.querySelector('input');
+    const raw = input ? input.value.trim() : '';
+    newVal = raw || '';
+  } else {
+    const input = el.querySelector('input');
+    newVal = input ? input.value : originalVal;
+  }
+
+  // 値を更新
+  editedData.treatments[idx][field] = newVal || null;
+
+  // 変更トラッキング
+  const orig = allData.treatments[idx];
+  const origVal = orig ? (orig[field] || '') : '';
+  const newValStr = newVal || '';
+
+  if (!addedRows.has(idx)) {
+    if (origVal !== newValStr) {
+      if (!changes.has(idx)) changes.set(idx, new Set());
+      changes.get(idx).add(field);
+    } else {
+      if (changes.has(idx)) {
+        changes.get(idx).delete(field);
+        if (changes.get(idx).size === 0) changes.delete(idx);
+      }
+    }
+  }
+
+  // PP再計算（価格 or 施術者区分が変わった場合）
+  if (field === 'price' || field === 'provider_type' || field === 'treatment' || field === 'category') {
+    recalcPrepaid(idx);
+  }
+
+  editingCell = null;
+
+  // 該当行だけ再描画
+  render();
+  updateSaveBar();
+}
+
+function cancelEditing() {
+  if (!editingCell) return;
+  editingCell = null;
+  render();
+}
+
+// ============================================================
+// CRUD操作
+// ============================================================
+function addNewRow() {
+  const newTreatment = {
+    category: currentCategory !== 'all' ? currentCategory : (CATEGORY_ORDER[0] || ''),
+    provider_type: null,
+    treatment: '',
+    area: '',
+    sessions: '',
+    old_price: null,
+    price: '',
+    first_price: null,
+    repeat_price: null,
+    bundle_price: null,
+    campaign_price: null,
+    monitor_full_price: null,
+    monitor_eye_price: null,
+    prepaid_10: null,
+    prepaid_30: null,
+    prepaid_50: null,
+    prepaid_manual: null,
+    cost_note: null,
+    profit_note: null,
+  };
+
+  // 現在のカテゴリの先頭に追加
+  let insertIdx = 0;
+  if (currentCategory !== 'all') {
+    insertIdx = editedData.treatments.findIndex(t => t.category === currentCategory);
+    if (insertIdx === -1) insertIdx = editedData.treatments.length;
+  }
+
+  editedData.treatments.splice(insertIdx, 0, newTreatment);
+
+  // インデックス調整
+  const newChanges = new Map();
+  changes.forEach((fields, idx) => {
+    newChanges.set(idx >= insertIdx ? idx + 1 : idx, fields);
+  });
+  changes = newChanges;
+
+  const newDeleted = new Set();
+  deletedRows.forEach(idx => newDeleted.add(idx >= insertIdx ? idx + 1 : idx));
+  deletedRows = newDeleted;
+
+  const newAdded = new Set();
+  addedRows.forEach(idx => newAdded.add(idx >= insertIdx ? idx + 1 : idx));
+  addedRows = newAdded;
+
+  addedRows.add(insertIdx);
+  render();
+  updateSaveBar();
+  showToast('新規行を追加しました。施術名を入力してください。', 'success');
+
+  // 追加した行の施術名セルをフォーカス
+  setTimeout(() => {
+    const row = document.querySelector(`tr[data-idx="${insertIdx}"]`);
+    if (row) {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const nameCell = row.querySelector('[data-field="treatment"]');
+      if (nameCell) startEditing(nameCell);
+    }
+  }, 100);
+}
+
+function deleteRow(idx) {
+  const t = editedData.treatments[idx];
+  const name = t.treatment || '(名称なし)';
+  if (!confirm(`「${name}」を削除しますか？\n※保存するまで実際には削除されません。`)) return;
+  deletedRows.add(idx);
+  render();
+  updateSaveBar();
+}
+
+function undoDelete(idx) {
+  deletedRows.delete(idx);
+  render();
+  updateSaveBar();
+}
+
+function duplicateRow(idx) {
+  const original = editedData.treatments[idx];
+  const copy = JSON.parse(JSON.stringify(original));
+  copy.treatment = (copy.treatment || '') + '（コピー）';
+
+  const insertIdx = idx + 1;
+  editedData.treatments.splice(insertIdx, 0, copy);
+
+  // インデックス調整
+  const newChanges = new Map();
+  changes.forEach((fields, i) => {
+    newChanges.set(i >= insertIdx ? i + 1 : i, fields);
+  });
+  changes = newChanges;
+
+  const newDeleted = new Set();
+  deletedRows.forEach(i => newDeleted.add(i >= insertIdx ? i + 1 : i));
+  deletedRows = newDeleted;
+
+  const newAdded = new Set();
+  addedRows.forEach(i => newAdded.add(i >= insertIdx ? i + 1 : i));
+  addedRows = newAdded;
+
+  addedRows.add(insertIdx);
+  render();
+  updateSaveBar();
+  showToast('行を複製しました', 'success');
+}
+
+// ============================================================
+// 変更管理 & 保存バー
+// ============================================================
+function getChangeCount() {
+  return changes.size + deletedRows.size + addedRows.size;
+}
+
+function updateSaveBar() {
+  const count = getChangeCount();
+  const bar = document.getElementById('saveBar');
+  const text = document.getElementById('saveBarText');
+  const ghSettings = getGitHubSettings();
+
+  if (count > 0) {
+    bar.classList.add('visible');
+    text.textContent = `${count}件の変更があります`;
+    document.getElementById('saveButton').disabled = !ghSettings;
+    document.getElementById('saveButton').textContent = ghSettings ? '保存する' : 'GitHub未設定';
+  } else {
+    bar.classList.remove('visible');
+  }
+}
+
+function discardChanges() {
+  if (!confirm('すべての変更を破棄しますか？')) return;
+  editedData = JSON.parse(JSON.stringify(allData));
+  changes.clear();
+  deletedRows.clear();
+  addedRows.clear();
+  buildTabs();
+  render();
+  updateSaveBar();
+  showToast('変更を破棄しました', '');
+}
+
+// ============================================================
+// 未保存警告
+// ============================================================
+window.addEventListener('beforeunload', function(e) {
+  if (getChangeCount() > 0) {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
+
+// ============================================================
+// GitHub API
+// ============================================================
+function getGitHubSettings() {
+  try {
+    const s = localStorage.getItem(GH_STORAGE_KEY);
+    if (!s) return null;
+    const parsed = JSON.parse(s);
+    if (parsed.owner && parsed.repo && parsed.token) return parsed;
+    return null;
+  } catch { return null; }
+}
+
+function updateGitHubStatus() {
+  const el = document.getElementById('ghStatus');
+  const settings = getGitHubSettings();
+  if (settings) {
+    el.textContent = 'GitHub接続済';
+    el.className = 'gh-status connected';
+  } else {
+    el.textContent = 'GitHub未設定';
+    el.className = 'gh-status disconnected';
+  }
+}
+
+function openGitHubSettings() {
+  const settings = getGitHubSettings();
+  if (settings) {
+    document.getElementById('ghOwner').value = settings.owner;
+    document.getElementById('ghRepo').value = settings.repo;
+    document.getElementById('ghToken').value = settings.token;
+  }
+  document.getElementById('ghModal').classList.add('visible');
+}
+
+function closeGitHubSettings() {
+  document.getElementById('ghModal').classList.remove('visible');
+}
+
+async function saveGitHubSettings() {
+  const owner = document.getElementById('ghOwner').value.trim();
+  const repo = document.getElementById('ghRepo').value.trim();
+  const token = document.getElementById('ghToken').value.trim();
+
+  if (!owner || !repo || !token) {
+    showToast('すべてのフィールドを入力してください', 'error');
+    return;
+  }
+
+  // 接続テスト
+  try {
+    showToast('接続テスト中...', '');
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github+json',
+      },
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    // 書き込み権限チェック
+    if (!data.permissions || !data.permissions.push) {
+      showToast('トークンに書き込み権限がありません', 'error');
+      return;
+    }
+
+    localStorage.setItem(GH_STORAGE_KEY, JSON.stringify({ owner, repo, token }));
+    updateGitHubStatus();
+    updateSaveBar();
+    closeGitHubSettings();
+    showToast('GitHub接続成功！', 'success');
+  } catch (e) {
+    showToast('接続失敗: ' + e.message, 'error');
+  }
+}
+
+// ============================================================
+// Git Trees API で一括コミット
+// ============================================================
+async function ghApi(path, options = {}) {
+  const settings = getGitHubSettings();
+  if (!settings) throw new Error('GitHub未設定');
+
+  const url = `https://api.github.com${path}`;
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      'Authorization': `Bearer ${settings.token}`,
+      'Accept': 'application/vnd.github+json',
+      ...(options.headers || {}),
+    },
+  });
+
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`GitHub API エラー (${res.status}): ${body}`);
+  }
+  return res.json();
+}
+
+async function commitFiles(files, message) {
+  const settings = getGitHubSettings();
+  const { owner, repo } = settings;
+
+  // 1. HEAD SHAを取得
+  const ref = await ghApi(`/repos/${owner}/${repo}/git/ref/heads/main`);
+  const headSha = ref.object.sha;
+
+  // 2. 現在のコミットのtree SHAを取得
+  const commit = await ghApi(`/repos/${owner}/${repo}/git/commits/${headSha}`);
+  const treeSha = commit.tree.sha;
+
+  // 3. 各ファイルのblobを作成
+  const treeItems = [];
+  for (const file of files) {
+    const blob = await ghApi(`/repos/${owner}/${repo}/git/blobs`, {
+      method: 'POST',
+      body: JSON.stringify({
+        content: file.content,
+        encoding: 'utf-8',
+      }),
+    });
+    treeItems.push({
+      path: file.path,
+      mode: '100644',
+      type: 'blob',
+      sha: blob.sha,
+    });
+  }
+
+  // 4. 新しいtreeを作成
+  const newTree = await ghApi(`/repos/${owner}/${repo}/git/trees`, {
+    method: 'POST',
+    body: JSON.stringify({
+      base_tree: treeSha,
+      tree: treeItems,
+    }),
+  });
+
+  // 5. コミット作成
+  const newCommit = await ghApi(`/repos/${owner}/${repo}/git/commits`, {
+    method: 'POST',
+    body: JSON.stringify({
+      message,
+      tree: newTree.sha,
+      parents: [headSha],
+    }),
+  });
+
+  // 6. HEADを更新
+  await ghApi(`/repos/${owner}/${repo}/git/ref/heads/main`, {
+    method: 'PATCH',
+    body: JSON.stringify({ sha: newCommit.sha }),
+  });
+
+  return newCommit.sha;
+}
+
+// ============================================================
+// 保存処理
+// ============================================================
+async function saveChanges() {
+  const settings = getGitHubSettings();
+  if (!settings) {
+    showToast('先にGitHub連携を設定してください', 'error');
+    openGitHubSettings();
+    return;
+  }
+
+  const count = getChangeCount();
+  if (count === 0) return;
+
+  const saveBtn = document.getElementById('saveButton');
+  saveBtn.disabled = true;
+  saveBtn.textContent = '保存中...';
+
+  try {
+    // 1. 削除行を除去（インデックスが大きい方から）
+    const sortedDeleted = [...deletedRows].sort((a, b) => b - a);
+    for (const idx of sortedDeleted) {
+      editedData.treatments.splice(idx, 1);
+    }
+
+    // 2. 空の施術名の行を除去（新規追加で未入力のもの）
+    editedData.treatments = editedData.treatments.filter(t => t.treatment && t.treatment.trim());
+
+    // 3. 全行のPP再計算
+    editedData.treatments.forEach((t, i) => {
+      recalcPrepaid(i);
+    });
+
+    // 4. メタデータ更新
+    editedData.metadata.generated_at = new Date().toISOString();
+    editedData.metadata.total_records = editedData.treatments.length;
+    editedData.metadata.records_with_cost = editedData.treatments.filter(t => t.cost_note || t.profit_note).length;
+    delete editedData.metadata.note;
+
+    // 5. 公開用データ生成（コスト情報除去）
+    const publicData = generatePublicData(editedData);
+
+    // 6. JSON文字列生成
+    const fullJson = JSON.stringify(editedData, null, 2);
+    const publicJson = JSON.stringify(publicData, null, 2);
+
+    // 7. 日次スナップショットのファイル名
+    const today = new Date();
+    const dateStr = today.getFullYear() +
+      String(today.getMonth() + 1).padStart(2, '0') +
+      String(today.getDate()).padStart(2, '0');
+
+    // 8. コミットメッセージ生成
+    const msg = generateCommitMessage();
+
+    // 9. GitHub APIで3ファイル一括コミット
+    const sha = await commitFiles([
+      { path: 'web/data/prices.json', content: fullJson },
+      { path: 'web/data/prices_public.json', content: publicJson },
+      { path: `web/data/history/${dateStr}.json`, content: fullJson },
+    ], msg);
+
+    // 10. 状態リセット
+    allData = JSON.parse(JSON.stringify(editedData));
+    changes.clear();
+    deletedRows.clear();
+    addedRows.clear();
+    buildTabs();
+    render();
+    updateSaveBar();
+
+    const shortSha = sha.substring(0, 7);
+    showToast(`保存しました (${shortSha})`, 'success');
+  } catch (e) {
+    console.error('保存エラー:', e);
+    showToast('保存に失敗しました: ' + e.message, 'error');
+  } finally {
+    saveBtn.disabled = false;
+    saveBtn.textContent = '保存する';
+  }
+}
+
+function generatePublicData(fullData) {
+  return {
+    metadata: {
+      ...fullData.metadata,
+      note: '公開用データ（コスト情報除去済み）',
+    },
+    treatments: fullData.treatments.map(t => {
+      const pub = {};
+      for (const [k, v] of Object.entries(t)) {
+        if (k !== 'cost_note' && k !== 'profit_note') pub[k] = v;
+      }
+      return pub;
+    }),
+    prepaid_discount_rates: fullData.prepaid_discount_rates,
+  };
+}
+
+function generateCommitMessage() {
+  const parts = [];
+
+  // 変更されたトリートメント名を収集
+  const changedNames = [];
+  changes.forEach((fields, idx) => {
+    const t = editedData.treatments[idx];
+    if (t) changedNames.push(t.treatment || '不明');
+  });
+
+  // 追加
+  const addedCount = addedRows.size;
+  if (addedCount > 0) parts.push(`追加${addedCount}件`);
+
+  // 変更
+  if (changedNames.length > 0) {
+    if (changedNames.length <= 2) {
+      parts.push(changedNames.join('、') + 'を更新');
+    } else {
+      parts.push(`${changedNames[0]}他${changedNames.length - 1}件を更新`);
+    }
+  }
+
+  // 削除
+  const deletedCount = deletedRows.size;
+  if (deletedCount > 0) parts.push(`削除${deletedCount}件`);
+
+  return '料金更新: ' + (parts.join(' / ') || '軽微な変更');
+}
+
+// ============================================================
+// トースト通知
+// ============================================================
+function showToast(msg, type) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast visible' + (type ? ' ' + type : '');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('visible'), 3000);
+}
+
+// ============================================================
+// 検索 & フィルタ
+// ============================================================
 let searchTimer;
 document.getElementById('searchBox').addEventListener('input', e => {
   clearTimeout(searchTimer);
@@ -536,7 +1394,9 @@ document.getElementById('showCostOnly').addEventListener('change', e => {
   render();
 });
 
-// 初期化（既ログインの場合）
+// ============================================================
+// 初期化
+// ============================================================
 if (checkAuth()) loadData();
 </script>
 

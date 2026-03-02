@@ -1,17 +1,23 @@
-name: 料金データ自動更新
+name: 【無効】料金データ自動更新（旧スプレッドシート取得）
+
+# ================================================
+# 注意: Web管理画面からの直接編集に移行したため、
+# スプレッドシートからの自動取得は無効化しています。
+# 緊急時のみ手動実行（workflow_dispatch）で利用可能です。
+# ================================================
 
 on:
-  # 毎日午前6時（JST = UTC 21:00）に自動実行
-  schedule:
-    - cron: '0 21 * * *'
+  # スケジュール実行は無効化
+  # schedule:
+  #   - cron: '0 21 * * *'
 
-  # 手動実行ボタン（GitHubの Actions タブから実行可能）
+  # 手動実行ボタン（緊急時のみ）
   workflow_dispatch:
     inputs:
       reason:
-        description: '実行理由（任意）'
+        description: '実行理由（緊急時のみ使用）'
         required: false
-        default: '手動更新'
+        default: '緊急：スプレッドシートから再取得'
 
 permissions:
   contents: write
