@@ -313,19 +313,27 @@
       <thead>
         <tr>
           <th>カテゴリ</th>
+          <th>区分</th>
           <th>施術名</th>
           <th>対象部位</th>
           <th>回数</th>
+          <th>旧価格</th>
           <th>通常価格</th>
-          <th>初回価格</th>
+          <th>初回</th>
+          <th>リピート割</th>
           <th>回数券</th>
-          <th>CP価格</th>
-          <th class="col-cost">🔒 コスト/備考</th>
-          <th class="col-cost">🔒 利益/粗利</th>
+          <th>CP</th>
+          <th>モニター(全顔)</th>
+          <th>モニター(目元)</th>
+          <th>PP10万</th>
+          <th>PP30万</th>
+          <th>PP50万</th>
+          <th class="col-cost">🔒 コスト</th>
+          <th class="col-cost">🔒 利益</th>
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="10" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
@@ -407,7 +415,7 @@ async function loadData() {
     render();
   } catch (e) {
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="10" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+      '<tr><td colspan="18" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
     console.error(e);
   }
 }
@@ -478,21 +486,28 @@ function render() {
 
   const tbody = document.getElementById('tableBody');
   if (treatments.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
     return;
   }
 
   tbody.innerHTML = treatments.map(t => {
-    const hasCost = t.cost_note || t.profit_note;
     return `<tr>
       <td><span class="cat-badge">${esc(t.category)}</span></td>
+      <td>${esc(t.provider_type || '')}</td>
       <td>${esc(t.treatment || '')}</td>
       <td>${esc(t.area || '')}</td>
       <td>${esc(t.sessions || '')}</td>
+      <td class="price-small">${fmt(t.old_price) || ''}</td>
       <td class="price-val">${fmt(t.price) || '—'}</td>
       <td class="price-small">${fmt(t.first_price) || ''}</td>
+      <td class="price-small">${fmt(t.repeat_price) || ''}</td>
       <td class="price-small">${fmt(t.bundle_price) || ''}</td>
       <td class="price-small">${fmt(t.campaign_price) || ''}</td>
+      <td class="price-small">${fmt(t.monitor_full_price) || ''}</td>
+      <td class="price-small">${fmt(t.monitor_eye_price) || ''}</td>
+      <td class="price-small">${fmt(t.prepaid_10) || fmt(t.prepaid_manual) || ''}</td>
+      <td class="price-small">${fmt(t.prepaid_30) || ''}</td>
+      <td class="price-small">${fmt(t.prepaid_50) || ''}</td>
       <td class="td-cost"><span class="cost-val">${esc(t.cost_note || '')}</span></td>
       <td class="td-cost"><span class="${t.profit_note ? 'profit-val-pos' : ''}">${esc(t.profit_note || '')}</span></td>
     </tr>`;
