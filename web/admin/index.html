@@ -388,7 +388,6 @@
           <th>通常価格</th>
           <th>初回</th>
           <th>リピート</th>
-          <th>回数券</th>
           <th>CP</th>
           <th>モニ全顔</th>
           <th>モニ目元</th>
@@ -401,7 +400,7 @@
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
@@ -479,7 +478,7 @@ const CATEGORY_ORDER = [
 
 const PRICE_FIELDS = [
   'old_price', 'price', 'first_price', 'repeat_price',
-  'bundle_price', 'campaign_price', 'monitor_full_price',
+  'campaign_price', 'monitor_full_price',
   'monitor_eye_price', 'prepaid_manual'
 ];
 const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note'];
@@ -549,7 +548,7 @@ async function loadData() {
     updateGitHubStatus();
   } catch (e) {
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="19" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+      '<tr><td colspan="18" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
     console.error(e);
   }
 }
@@ -684,7 +683,7 @@ function render() {
 
   const tbody = document.getElementById('tableBody');
   if (filteredIndices.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
     return;
   }
 
@@ -720,7 +719,6 @@ function render() {
       <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmt(t.price)}</span></td>
       <td class="price-small${cellCls('first_price')}"><span class="editable" data-field="first_price" data-idx="${idx}" data-type="price">${fmt(t.first_price)}</span></td>
       <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmt(t.repeat_price)}</span></td>
-      <td class="price-small${cellCls('bundle_price')}"><span class="editable" data-field="bundle_price" data-idx="${idx}" data-type="price">${fmt(t.bundle_price)}</span></td>
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
       <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_full_price)}</span></td>
       <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_eye_price)}</span></td>
@@ -937,7 +935,6 @@ function addNewRow() {
     price: '',
     first_price: null,
     repeat_price: null,
-    bundle_price: null,
     campaign_price: null,
     monitor_full_price: null,
     monitor_eye_price: null,

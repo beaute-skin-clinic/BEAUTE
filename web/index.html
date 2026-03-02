@@ -219,7 +219,6 @@
     }
     .p-first { color: var(--first-visit); font-weight: 600; }
     .p-repeat { color: var(--repeat); font-weight: 600; }
-    .p-bundle { color: var(--bundle); font-weight: 600; }
     .p-campaign { color: var(--campaign); font-weight: 700; }
     .p-monitor { color: var(--monitor); font-weight: 600; }
     .p-na { color: #ccc; font-size: 11px; }
@@ -232,36 +231,13 @@
     .price-table tbody tr:nth-child(even) .td-pp { background: #fdf6e8 !important; }
     .price-table tbody tr:hover .td-pp { background: #fef0d4 !important; }
 
-    /* ===== 旧価格列（開閉式）===== */
-    .col-old { display: none; }
-    body.show-old-price .col-old { display: table-cell; }
-    .col-old-note { display: block; font-size: 8px; opacity: 0.75; font-weight: 400; }
-
-    /* トグルボタン */
-    .old-price-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 4px 10px;
-      margin-left: 8px;
-      border: 1.5px solid var(--border);
-      border-radius: 14px;
+    /* 回数列 */
+    .price-table thead th.col-sessions,
+    .price-table tbody td.col-sessions {
+      text-align: center;
+      white-space: nowrap;
       font-size: 11px;
-      cursor: pointer;
-      background: #fff;
-      color: var(--text-light);
-      transition: all 0.15s;
-      font-family: inherit;
-      vertical-align: middle;
     }
-    .old-price-toggle:hover { border-color: var(--primary); color: var(--primary); }
-    body.show-old-price .old-price-toggle {
-      background: var(--old-price);
-      border-color: var(--old-price);
-      color: #fff;
-    }
-    .toggle-arrow { font-size: 10px; transition: transform 0.2s; }
-    body.show-old-price .toggle-arrow { transform: rotate(90deg); }
 
     /* ===== プリペイド説明 ===== */
     .prepaid-info {
@@ -369,11 +345,6 @@
 
 <div class="controls">
   <input type="search" class="search-box" id="searchBox" placeholder="施術名・部位で検索..." autocomplete="off">
-  <div id="oldPriceToggleWrap" style="display:none; margin-top:6px; text-align:right;">
-    <button class="old-price-toggle" id="oldPriceToggle" type="button">
-      <span class="toggle-arrow">▶</span> 旧価格を表示
-    </button>
-  </div>
 </div>
 
 <div class="category-tabs" id="categoryTabs">
@@ -481,30 +452,6 @@ function priceCell(val, cls) {
   return f ? `<span class="${cls}">${f}</span>` : na();
 }
 
-// 有効な（値がある）列を判定
-function detectActiveCols(treatments) {
-  const cols = {
-    old_price: false, first_price: false, repeat_price: false,
-    bundle_price: false, campaign_price: false,
-    monitor_full_price: false, monitor_eye_price: false,
-    prepaid_10: false, prepaid_30: false, prepaid_50: false,
-    prepaid_manual: false,
-  };
-  for (const t of treatments) {
-    for (const k of Object.keys(cols)) {
-      if (t[k]) cols[k] = true;
-    }
-  }
-  return cols;
-}
-
-// 表示用の価格を解決: first_price(F列)があればそれが新価格、price(E列)が旧価格
-function resolveDisplayPrice(t) {
-  if (t.first_price) {
-    return { display: t.first_price, old: t.price };
-  }
-  return { display: t.price, old: null };
-}
 
 function render() {
   const main = document.getElementById('mainContent');
@@ -544,25 +491,10 @@ function render() {
     return ai - bi;
   });
 
-  // 有効な列を判定
-  const active = detectActiveCols(treatments);
-
-  // first_priceがある = 価格改定あり → 旧価格トグルを表示
-  const hasNewPrice = active.first_price;
-  const toggleWrap = document.getElementById('oldPriceToggleWrap');
-  if (toggleWrap) toggleWrap.style.display = hasNewPrice ? '' : 'none';
-
-  // PP列: 自動計算(prepaid_10/30/50)があるか手動(prepaid_manual)があるか
-  const hasPP10 = active.prepaid_10;
-  const hasPP30 = active.prepaid_30;
-  const hasPP50 = active.prepaid_50;
-  const hasPPManual = active.prepaid_manual;
-  const hasPPAny = hasPP10 || hasPP30 || hasPP50 || hasPPManual;
-
   let html = '';
 
   // プリペイド情報バー
-  if (hasPPAny && currentCategory === 'all' && !searchQuery) {
+  if (currentCategory === 'all' && !searchQuery) {
     html += `<div class="prepaid-info">
       <strong>プリペイド割引について</strong><br>
       PP10万（税込11万）/ PP30万（税込33万）/ PP50万（税込55万）の列は、各プリペイドティアでの割引適用後の価格です。<br>
@@ -592,17 +524,15 @@ function render() {
     // ヘッダー
     html += `<thead><tr>`;
     html += `<th>施術</th>`;
-    if (hasNewPrice) html += `<th class="col-old">旧価格<span class="col-old-note">※2026年3月末まで</span></th>`;
+    html += `<th class="col-sessions">回数</th>`;
     html += `<th>通常価格</th>`;
-    if (active.repeat_price) html += `<th>リピート割</th>`;
-    if (active.bundle_price) html += `<th>回数券</th>`;
-    if (active.campaign_price) html += `<th>CP</th>`;
-    if (active.monitor_full_price) html += `<th>モニター<br>全顔出し</th>`;
-    if (active.monitor_eye_price) html += `<th>モニター<br>目元のみ</th>`;
-    if (hasPP10) html += `<th class="th-pp">PP<br>10万</th>`;
-    if (hasPP30) html += `<th class="th-pp">PP<br>30万</th>`;
-    if (hasPP50) html += `<th class="th-pp">PP<br>50万</th>`;
-    if (hasPPManual && !hasPP10 && !hasPP30 && !hasPP50) html += `<th class="th-pp">PP割</th>`;
+    html += `<th>リピート割</th>`;
+    html += `<th>CP</th>`;
+    html += `<th>モニター<br>全顔出し</th>`;
+    html += `<th>モニター<br>目元のみ</th>`;
+    html += `<th class="th-pp">PP<br>10万</th>`;
+    html += `<th class="th-pp">PP<br>30万</th>`;
+    html += `<th class="th-pp">PP<br>50万</th>`;
     html += `</tr></thead>`;
 
     // ボディ
@@ -620,38 +550,29 @@ function render() {
           nameHtml += `<span class="treat-name">${esc(t.treatment)}</span><br>`;
         }
         if (t.area) nameHtml += `<span class="treat-area">${esc(t.area)}</span>`;
-        if (t.sessions) nameHtml += `<span class="treat-sessions">${esc(t.sessions)}</span>`;
         if (!nameHtml) nameHtml = `<span class="treat-area">${esc(t.treatment || '—')}</span>`;
         html += `<td>${nameHtml}</td>`;
 
-        // 旧価格・通常価格（first_priceがあれば新旧を入れ替え）
-        const dp = resolveDisplayPrice(t);
+        // 回数
+        html += `<td class="col-sessions">${t.sessions ? esc(t.sessions) : na()}</td>`;
 
-        if (hasNewPrice) {
-          html += `<td class="col-old">${dp.old ? `<span class="p-old">${fmt(dp.old)}</span>` : na()}</td>`;
-        }
-        html += `<td>${priceCell(dp.display, 'p-val')}</td>`;
+        // 通常価格
+        html += `<td>${priceCell(t.price, 'p-val')}</td>`;
 
         // リピート割
-        if (active.repeat_price) html += `<td>${priceCell(t.repeat_price, 'p-repeat')}</td>`;
-
-        // 回数券
-        if (active.bundle_price) html += `<td>${priceCell(t.bundle_price, 'p-bundle')}</td>`;
+        html += `<td>${priceCell(t.repeat_price, 'p-repeat')}</td>`;
 
         // CP
-        if (active.campaign_price) html += `<td>${priceCell(t.campaign_price, 'p-campaign')}</td>`;
+        html += `<td>${priceCell(t.campaign_price, 'p-campaign')}</td>`;
 
         // モニター
-        if (active.monitor_full_price) html += `<td>${priceCell(t.monitor_full_price, 'p-monitor')}</td>`;
-        if (active.monitor_eye_price) html += `<td>${priceCell(t.monitor_eye_price, 'p-monitor')}</td>`;
+        html += `<td>${priceCell(t.monitor_full_price, 'p-monitor')}</td>`;
+        html += `<td>${priceCell(t.monitor_eye_price, 'p-monitor')}</td>`;
 
         // PP列
-        if (hasPP10) html += `<td class="td-pp">${priceCell(t.prepaid_10, 'p-pp')}</td>`;
-        if (hasPP30) html += `<td class="td-pp">${priceCell(t.prepaid_30, 'p-pp')}</td>`;
-        if (hasPP50) html += `<td class="td-pp">${priceCell(t.prepaid_50, 'p-pp')}</td>`;
-        if (hasPPManual && !hasPP10 && !hasPP30 && !hasPP50) {
-          html += `<td class="td-pp">${priceCell(t.prepaid_manual, 'p-pp')}</td>`;
-        }
+        html += `<td class="td-pp">${priceCell(t.prepaid_10, 'p-pp')}</td>`;
+        html += `<td class="td-pp">${priceCell(t.prepaid_30, 'p-pp')}</td>`;
+        html += `<td class="td-pp">${priceCell(t.prepaid_50, 'p-pp')}</td>`;
 
         html += `</tr>`;
       });
@@ -679,16 +600,6 @@ document.getElementById('searchBox').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
     render();
   }, 200);
-});
-
-// 旧価格列トグル
-document.getElementById('oldPriceToggle').addEventListener('click', () => {
-  document.body.classList.toggle('show-old-price');
-  const btn = document.getElementById('oldPriceToggle');
-  const isOpen = document.body.classList.contains('show-old-price');
-  btn.innerHTML = isOpen
-    ? '<span class="toggle-arrow">▶</span> 旧価格を非表示'
-    : '<span class="toggle-arrow">▶</span> 旧価格を表示';
 });
 
 loadData();
