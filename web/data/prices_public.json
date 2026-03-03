@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T02:07:41.639Z",
+    "generated_at": "2026-03-03T02:08:33.451Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 676,
     "records_with_cost": 70,
@@ -10383,7 +10383,7 @@
     },
     {
       "category": "内服（痩身）",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "10錠",
       "sessions": "",
@@ -10396,8 +10396,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1760",
-      "prepaid_50": "1650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服（痩身）",
@@ -10406,7 +10406,7 @@
     },
     {
       "category": "内服（痩身）",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "90錠",
       "sessions": "",
@@ -10419,8 +10419,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "13200",
-      "prepaid_50": "12375",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服（痩身）",
@@ -10429,7 +10429,7 @@
     },
     {
       "category": "内服（痩身）",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "10錠",
       "sessions": "",
@@ -10442,8 +10442,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服（痩身）",
@@ -10452,7 +10452,7 @@
     },
     {
       "category": "内服（痩身）",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "30錠",
       "sessions": "",
@@ -10465,8 +10465,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "7040",
-      "prepaid_50": "6600",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服（痩身）",
@@ -10523,7 +10523,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1か月84カプセル",
       "sessions": "",
@@ -10536,8 +10536,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "2640",
-      "prepaid_50": "2475",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "医療痩身",
@@ -10546,7 +10546,7 @@
     },
     {
       "category": "内服（痩身）",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1週間21カプセル",
       "sessions": "",
@@ -10559,8 +10559,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服（痩身）",
