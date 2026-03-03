@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T02:11:36.037Z",
+    "generated_at": "2026-03-03T02:13:02.461Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 676,
     "records_with_cost": 70,
@@ -14906,14 +14906,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "13200",
-      "prepaid_50": "12375",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "手術局所麻酔",
       "area": "1回",
       "sessions": "",
