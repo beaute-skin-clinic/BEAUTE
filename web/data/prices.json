@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T04:29:29.194Z",
+    "generated_at": "2026-03-03T04:29:49.791Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 676,
     "records_with_cost": 66
@@ -2573,30 +2573,6 @@
     },
     {
       "category": "ボトックス",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックスリフト（ニューロノックス）",
-      "area": null,
-      "sessions": "",
-      "old_price": "33000",
-      "price": "33000",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": "3,000",
-      "categories": [
-        "ボトックス"
-      ]
-    },
-    {
-      "category": "ボトックス",
       "categories": [
         "ボトックス"
       ],
@@ -2705,6 +2681,30 @@
       "prepaid_10": null,
       "prepaid_30": "89100",
       "prepaid_50": "89100",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": "3,000",
+      "categories": [
+        "ボトックス"
+      ]
+    },
+    {
+      "category": "ボトックス",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックスリフト（ニューロノックス）",
+      "area": null,
+      "sessions": "",
+      "old_price": "33000",
+      "price": "33000",
+      "first_price": "設定なし",
+      "repeat_price": "設定なし",
+      "bundle_price": null,
+      "campaign_price": "設定なし",
+      "monitor_full_price": "設定なし",
+      "monitor_eye_price": "設定なし",
+      "prepaid_10": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": "3,000",
