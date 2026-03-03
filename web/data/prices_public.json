@@ -8,7 +8,7 @@
   },
   "treatments": [
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "お尻",
@@ -26,11 +26,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "取り放題",
@@ -48,11 +48,11 @@
       "prepaid_50": "148500",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ADM",
       "area": "1㎜ごと",
@@ -70,11 +70,11 @@
       "prepaid_50": "1980",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ADM",
       "area": "片頬",
@@ -92,11 +92,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "1個〜3mmまで",
@@ -114,11 +114,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "追加1mmごと",
@@ -136,11 +136,11 @@
       "prepaid_50": "990",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Co２ハイリュウシュ",
       "area": "",
@@ -158,12 +158,12 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "キシロカイン麻酔",
       "area": "",
       "sessions": "",
@@ -180,11 +180,11 @@
       "prepaid_50": "990",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコW",
       "area": "",
@@ -202,11 +202,11 @@
       "prepaid_50": "34650",
       "prepaid_manual": "30800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "V＋Iライン",
@@ -224,11 +224,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "デコルテ",
@@ -246,11 +246,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "リップ",
@@ -268,11 +268,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": "4400",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "片手の甲",
@@ -290,11 +290,11 @@
       "prepaid_50": "7524",
       "prepaid_manual": "6688",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "肘下（手の甲含まず）",
@@ -312,11 +312,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "背中から肩甲骨",
@@ -334,11 +334,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "脇",
@@ -356,11 +356,11 @@
       "prepaid_50": "7920",
       "prepaid_manual": "7040",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "顔全体",
@@ -378,11 +378,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "首",
@@ -400,11 +400,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコフラクショナル",
       "area": "頬+鼻",
@@ -422,11 +422,11 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコフラクショナル",
       "area": "顔全体",
@@ -444,11 +444,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mm〜（1mmにつき）",
@@ -466,11 +466,11 @@
       "prepaid_50": "990",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mmまで",
@@ -488,11 +488,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "1mmまで",
@@ -510,11 +510,11 @@
       "prepaid_50": "990",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "5mmまで",
@@ -532,11 +532,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "両前腕（肘下・手・甲・指）",
@@ -554,11 +554,11 @@
       "prepaid_50": "99000",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "全顔",
@@ -576,11 +576,11 @@
       "prepaid_50": "79200",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "眉下〜鼻下",
@@ -598,11 +598,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "背中（肩甲骨 上 or 下）",
@@ -620,11 +620,11 @@
       "prepaid_50": "99000",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "お尻",
@@ -642,11 +642,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "手の甲",
@@ -664,11 +664,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "背中から肩甲骨",
@@ -686,11 +686,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "腕（肘上・腕下）",
@@ -708,11 +708,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬のみ",
@@ -730,11 +730,11 @@
       "prepaid_50": "11880",
       "prepaid_manual": "10560",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬＋鼻",
@@ -752,11 +752,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "首・デコルテ",
@@ -774,11 +774,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル（フォトダブル）",
       "area": "顔全体",
@@ -796,12 +796,12 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔0.5CC",
       "area": "",
       "sessions": "",
@@ -818,12 +818,12 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔ブロック0.5CC",
       "area": "",
       "sessions": "",
@@ -840,11 +840,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
@@ -862,11 +862,11 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
@@ -884,11 +884,11 @@
       "prepaid_50": "53460",
       "prepaid_manual": "47520",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "オプションタイトニング",
       "area": "オプション",
@@ -906,11 +906,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "オプションタイトニング",
       "area": "オプション",
@@ -928,11 +928,11 @@
       "prepaid_50": "89100",
       "prepaid_manual": "79200",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
@@ -950,11 +950,11 @@
       "prepaid_50": "43200",
       "prepaid_manual": "38400",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
@@ -972,11 +972,11 @@
       "prepaid_50": "129600",
       "prepaid_manual": "115200",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "タイトニング",
       "area": "全顔",
@@ -994,11 +994,11 @@
       "prepaid_50": "37800",
       "prepaid_manual": "33600",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "タイトニング",
       "area": "全顔",
@@ -1016,11 +1016,11 @@
       "prepaid_50": "113400",
       "prepaid_manual": "100800",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "トーニング",
       "area": "全顔",
@@ -1038,11 +1038,11 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "トーニング",
       "area": "全顔",
@@ -1060,11 +1060,11 @@
       "prepaid_50": "53460",
       "prepaid_manual": "47520",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピーリング",
       "area": "全顔",
@@ -1082,11 +1082,11 @@
       "prepaid_50": "22320",
       "prepaid_manual": "19840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピーリング",
       "area": "全顔",
@@ -1104,11 +1104,11 @@
       "prepaid_50": "66960",
       "prepaid_manual": "59520",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（スタンダード）680s",
@@ -1126,11 +1126,11 @@
       "prepaid_50": "74250",
       "prepaid_manual": "66000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（プレミアム）880s",
@@ -1148,11 +1148,11 @@
       "prepaid_50": "89100",
       "prepaid_manual": "79200",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（ライト）356s",
@@ -1170,11 +1170,11 @@
       "prepaid_50": "53460",
       "prepaid_manual": "47520",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "ハイフアイシャワー®224s",
@@ -1192,11 +1192,11 @@
       "prepaid_50": "22320",
       "prepaid_manual": "19840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）324s",
@@ -1214,11 +1214,11 @@
       "prepaid_50": "33300",
       "prepaid_manual": "29600",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
@@ -1236,11 +1236,11 @@
       "prepaid_50": "24750",
       "prepaid_manual": "22000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
@@ -1258,11 +1258,11 @@
       "prepaid_50": "55620",
       "prepaid_manual": "49440",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
@@ -1280,11 +1280,11 @@
       "prepaid_50": "166860",
       "prepaid_manual": "148320",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
@@ -1302,11 +1302,11 @@
       "prepaid_50": "148500",
       "prepaid_manual": "132000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
@@ -1324,11 +1324,11 @@
       "prepaid_50": "445500",
       "prepaid_manual": "396000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
@@ -1346,11 +1346,11 @@
       "prepaid_50": "189000",
       "prepaid_manual": "168000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
@@ -1368,11 +1368,11 @@
       "prepaid_50": "567000",
       "prepaid_manual": "504000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
@@ -1390,11 +1390,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": "44000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
@@ -1412,11 +1412,11 @@
       "prepaid_50": "148500",
       "prepaid_manual": "132000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
@@ -1434,11 +1434,11 @@
       "prepaid_50": "43200",
       "prepaid_manual": "38400",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
@@ -1456,11 +1456,11 @@
       "prepaid_50": "129600",
       "prepaid_manual": "115200",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "100ショット",
@@ -1478,11 +1478,11 @@
       "prepaid_50": "24750",
       "prepaid_manual": "22000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "200ショット",
@@ -1500,11 +1500,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": "44000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "300ショット",
@@ -1522,11 +1522,11 @@
       "prepaid_50": "74250",
       "prepaid_manual": "66000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "400ショット",
@@ -1544,11 +1544,11 @@
       "prepaid_50": "99000",
       "prepaid_manual": "88000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "500ショット",
@@ -1566,11 +1566,11 @@
       "prepaid_50": "123750",
       "prepaid_manual": "110000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
@@ -1588,11 +1588,11 @@
       "prepaid_50": "173250",
       "prepaid_manual": "154000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマープレミアム（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（プレミアム）ボ500ハ680S",
@@ -1610,11 +1610,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "176000",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（ライト）ボ200sハ356s",
@@ -1632,11 +1632,11 @@
       "prepaid_50": "105300",
       "prepaid_manual": "93600",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "リップ",
       "area": "口元治療",
@@ -1654,11 +1654,11 @@
       "prepaid_50": "22320",
       "prepaid_manual": "19840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "リップ",
       "area": "口元治療",
@@ -1676,11 +1676,11 @@
       "prepaid_50": "66960",
       "prepaid_manual": "59520",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "人中短縮",
       "area": "口周り治療",
@@ -1698,11 +1698,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "人中短縮",
       "area": "口周り治療",
@@ -1720,11 +1720,11 @@
       "prepaid_50": "89100",
       "prepaid_manual": "79200",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔スタンダード",
@@ -1742,11 +1742,11 @@
       "prepaid_50": "26820",
       "prepaid_manual": "23840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔ライト",
@@ -1764,11 +1764,11 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1786,11 +1786,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1808,11 +1808,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1830,11 +1830,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1852,11 +1852,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1874,11 +1874,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1896,11 +1896,11 @@
       "prepaid_50": "79200",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1918,11 +1918,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1940,11 +1940,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1962,11 +1962,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1984,11 +1984,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2006,11 +2006,11 @@
       "prepaid_50": "118800",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2028,11 +2028,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2050,11 +2050,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2072,11 +2072,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2094,11 +2094,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2116,11 +2116,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2138,11 +2138,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2160,11 +2160,11 @@
       "prepaid_50": "69300",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2182,11 +2182,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2204,11 +2204,11 @@
       "prepaid_50": "34650",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2226,11 +2226,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2248,11 +2248,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2270,11 +2270,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2292,11 +2292,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2314,11 +2314,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2336,11 +2336,11 @@
       "prepaid_50": "693000",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2358,11 +2358,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2380,11 +2380,11 @@
       "prepaid_50": "24750",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2402,11 +2402,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2424,11 +2424,11 @@
       "prepaid_50": "74250",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2446,11 +2446,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2468,11 +2468,11 @@
       "prepaid_50": "89100",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2490,11 +2490,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2512,11 +2512,11 @@
       "prepaid_50": "24750",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2534,11 +2534,11 @@
       "prepaid_50": "12375",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2556,11 +2556,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2578,11 +2578,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2600,11 +2600,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2622,11 +2622,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2644,11 +2644,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2666,11 +2666,11 @@
       "prepaid_50": "44550",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2688,11 +2688,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2710,11 +2710,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2732,11 +2732,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2754,11 +2754,11 @@
       "prepaid_50": "79200",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2776,11 +2776,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2798,11 +2798,11 @@
       "prepaid_50": "118800",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "脂肪溶解注射",
       "area": "",
@@ -2820,7 +2820,7 @@
       "prepaid_50": "11880",
       "prepaid_manual": null,
       "categories": [
-        "注入系"
+        "しわ・たるみ・小顔"
       ]
     },
     {
@@ -3286,8 +3286,8 @@
       ]
     },
     {
-      "category": "スレッド（糸リフト）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "目元用シール麻酔",
       "area": "目元2枚",
       "sessions": "",
@@ -3304,12 +3304,12 @@
       "prepaid_50": "594",
       "prepaid_manual": "594",
       "categories": [
-        "スレッド（糸リフト）"
+        "麻酔"
       ]
     },
     {
-      "category": "スレッド（糸リフト）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "麻酔代",
       "area": "全顔",
       "sessions": "",
@@ -3326,11 +3326,11 @@
       "prepaid_50": "1980",
       "prepaid_manual": "1980",
       "categories": [
-        "スレッド（糸リフト）"
+        "麻酔"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ11～20個",
@@ -3348,11 +3348,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ1～4個",
@@ -3370,11 +3370,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ21～30個",
@@ -3392,11 +3392,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ5～10個",
@@ -3414,11 +3414,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "イオン導入",
       "area": "トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
@@ -3436,11 +3436,11 @@
       "prepaid_50": "7920",
       "prepaid_manual": "7040",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "イオン導入",
       "area": "ビタミンC＋ｱﾙｹﾞﾏｽｸ",
@@ -3458,11 +3458,11 @@
       "prepaid_50": "7920",
       "prepaid_manual": "7040",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　2×2㎝",
@@ -3480,11 +3480,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": "39600",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　全顔",
@@ -3502,11 +3502,11 @@
       "prepaid_50": "99000",
       "prepaid_manual": "99000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　半顔",
@@ -3524,11 +3524,11 @@
       "prepaid_50": "79200",
       "prepaid_manual": "79200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "カスタマイズ",
@@ -3546,11 +3546,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": "44000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "トラネキサム酸",
@@ -3568,11 +3568,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": "4400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ビタミンC",
@@ -3590,11 +3590,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": "4400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ラコス",
@@ -3612,11 +3612,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "頬・鼻（毛穴）・首：1部位",
@@ -3634,11 +3634,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "顔全体",
@@ -3656,11 +3656,11 @@
       "prepaid_50": "39600",
       "prepaid_manual": "35200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
@@ -3678,11 +3678,11 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
@@ -3700,11 +3700,11 @@
       "prepaid_50": "53460",
       "prepaid_manual": "47520",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -3722,11 +3722,11 @@
       "prepaid_50": "23760",
       "prepaid_manual": "21120",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -3744,11 +3744,11 @@
       "prepaid_50": "71280",
       "prepaid_manual": "63360",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
@@ -3766,11 +3766,12 @@
       "prepaid_50": "23760",
       "prepaid_manual": "21120",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
@@ -3788,11 +3789,12 @@
       "prepaid_50": "71280",
       "prepaid_manual": "63360",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
@@ -3810,11 +3812,12 @@
       "prepaid_50": "17820",
       "prepaid_manual": "15840",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
@@ -3832,11 +3835,12 @@
       "prepaid_50": "53460",
       "prepaid_manual": "47520",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
@@ -3854,11 +3858,12 @@
       "prepaid_50": "35640",
       "prepaid_manual": "31680",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
@@ -3876,11 +3881,12 @@
       "prepaid_50": "106920",
       "prepaid_manual": "95040",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
@@ -3898,11 +3904,12 @@
       "prepaid_50": "26730",
       "prepaid_manual": "23760",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
@@ -3920,11 +3927,12 @@
       "prepaid_50": "80190",
       "prepaid_manual": "71280",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング",
       "area": "プラズマのみ",
@@ -3942,11 +3950,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "エクソソームアンプル",
@@ -3964,11 +3972,11 @@
       "prepaid_50": "19800",
       "prepaid_manual": "17600",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "タイトニングセラム",
@@ -3986,11 +3994,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "ヒト臍帯由来幹細胞培養上清液",
@@ -4008,11 +4016,11 @@
       "prepaid_50": "29700",
       "prepaid_manual": "26400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "ビタミンC",
@@ -4030,11 +4038,11 @@
       "prepaid_50": "12870",
       "prepaid_manual": "11440",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "プラセンタ",
@@ -4052,11 +4060,11 @@
       "prepaid_50": "12870",
       "prepaid_manual": "11440",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "リジュランセラム修復",
@@ -4074,11 +4082,11 @@
       "prepaid_50": "14850",
       "prepaid_manual": "13200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "お尻（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4096,11 +4104,11 @@
       "prepaid_50": "59400",
       "prepaid_manual": "52800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体",
@@ -4118,11 +4126,11 @@
       "prepaid_50": "26730",
       "prepaid_manual": "23760",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4140,11 +4148,11 @@
       "prepaid_50": "32670",
       "prepaid_manual": "29040",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4162,11 +4170,11 @@
       "prepaid_50": "98010",
       "prepaid_manual": "87120",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "圧出",
       "area": "",
@@ -4184,7 +4192,7 @@
       "prepaid_50": "495",
       "prepaid_manual": "440",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
@@ -10370,7 +10378,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "10錠",
@@ -10388,11 +10396,11 @@
       "prepaid_50": "1650",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "90錠",
@@ -10410,11 +10418,11 @@
       "prepaid_50": "12375",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "10錠",
@@ -10432,11 +10440,11 @@
       "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "30錠",
@@ -10454,7 +10462,7 @@
       "prepaid_50": "6600",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -10502,7 +10510,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1か月84カプセル",
@@ -10520,11 +10528,11 @@
       "prepaid_50": "2475",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1週間21カプセル",
@@ -10542,7 +10550,7 @@
       "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -10700,7 +10708,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "リベルサス",
       "area": "3㎎30錠",
@@ -10718,11 +10726,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "リベルサス",
       "area": "7㎎30錠",
@@ -10740,7 +10748,7 @@
       "prepaid_50": "18150",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -10766,7 +10774,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "防己黄耆湯",
       "area": "90包",
@@ -10784,11 +10792,11 @@
       "prepaid_50": "2475",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "防風通聖散",
       "area": "90包",
@@ -10806,7 +10814,7 @@
       "prepaid_50": "2475",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -13076,7 +13084,7 @@
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ウーバーピール",
@@ -13094,11 +13102,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "エクソソームアンプル",
@@ -13116,11 +13124,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ヒアルロン酸",
@@ -13138,11 +13146,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": "4400",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "美白",
@@ -13160,7 +13168,7 @@
       "prepaid_50": "9900",
       "prepaid_manual": "8800",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
@@ -13208,7 +13216,7 @@
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹",
@@ -13226,11 +13234,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹　1320S",
@@ -13248,11 +13256,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）",
@@ -13270,11 +13278,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）　880S",
@@ -13292,11 +13300,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
@@ -13314,11 +13322,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
@@ -13336,11 +13344,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上　180S",
@@ -13358,11 +13366,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上（ライト）　120S",
@@ -13380,11 +13388,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト",
@@ -13402,11 +13410,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト　1200S",
@@ -13424,11 +13432,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）",
@@ -13446,11 +13454,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）800S",
@@ -13468,11 +13476,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット",
@@ -13490,11 +13498,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット　120S",
@@ -13512,11 +13520,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕",
@@ -13534,11 +13542,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕　540S",
@@ -13556,11 +13564,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）",
@@ -13578,11 +13586,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）　360S",
@@ -13600,11 +13608,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも",
@@ -13622,11 +13630,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも　840S",
@@ -13644,11 +13652,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り",
@@ -13666,11 +13674,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り　1680S",
@@ -13688,11 +13696,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
@@ -13710,11 +13718,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
@@ -13732,11 +13740,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
@@ -13754,11 +13762,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
@@ -13776,11 +13784,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
@@ -13798,11 +13806,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
@@ -13820,11 +13828,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
@@ -13842,11 +13850,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
@@ -13864,11 +13872,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -13886,11 +13894,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -13908,11 +13916,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -13930,11 +13938,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -13952,11 +13960,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
@@ -13974,11 +13982,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
@@ -13996,11 +14004,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射",
       "area": "顔1cc",
@@ -14018,11 +14026,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射FATXCORE",
       "area": "顔1cc",
@@ -14040,11 +14048,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体10cc",
@@ -14062,11 +14070,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体1cc",
@@ -14084,11 +14092,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体20cc",
@@ -14106,11 +14114,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体5cc",
@@ -14128,11 +14136,11 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "タレ目形成",
       "area": "",
@@ -14150,11 +14158,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "ネックリフト",
       "area": "",
@@ -14172,11 +14180,11 @@
       "prepaid_50": "594000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "中顔面リフト",
       "area": "4本",
@@ -14194,11 +14202,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "二重埋没法（1年間保証付）",
       "area": "",
@@ -14216,12 +14224,12 @@
       "prepaid_50": "118800",
       "prepaid_manual": "10％",
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -14238,12 +14246,12 @@
       "prepaid_50": "990",
       "prepaid_manual": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -14260,12 +14268,12 @@
       "prepaid_50": "14850",
       "prepaid_manual": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "点眼麻酔",
       "area": "",
       "sessions": "1回",
@@ -14282,11 +14290,11 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "",
@@ -14304,11 +14312,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "ハムラ法",
@@ -14326,11 +14334,11 @@
       "prepaid_50": "346500",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "裏ハムラ法",
@@ -14348,11 +14356,11 @@
       "prepaid_50": "396000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "眉下切開",
       "area": "",
@@ -14370,12 +14378,12 @@
       "prepaid_50": "396000",
       "prepaid_manual": "10％",
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "笑気麻酔",
       "area": "",
       "sessions": "1回",
@@ -14392,12 +14400,12 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "笑気麻酔",
       "area": "30分",
       "sessions": "1回",
@@ -14414,11 +14422,11 @@
       "prepaid_50": "9900",
       "prepaid_manual": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "自然癒着法",
       "area": "4点留め",
@@ -14436,11 +14444,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "自然癒着法",
       "area": "6点留め",
@@ -14458,12 +14466,12 @@
       "prepaid_50": "247500",
       "prepaid_manual": "10％",
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "静脈麻酔",
       "area": "",
       "sessions": "1回",
@@ -14480,11 +14488,11 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "ジョールファット",
       "area": "",
@@ -14502,11 +14510,11 @@
       "prepaid_50": "178200",
       "prepaid_manual": "10％",
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "頬",
       "area": "",
@@ -14524,11 +14532,11 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "頬➕顎下",
       "area": "",
@@ -14546,11 +14554,11 @@
       "prepaid_50": "396000",
       "prepaid_manual": "10％",
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "顎下",
       "area": "",
@@ -14568,7 +14576,7 @@
       "prepaid_50": "198000",
       "prepaid_manual": "10％",
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     }
   ],

@@ -7,7 +7,7 @@
   },
   "treatments": [
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "お尻",
@@ -27,11 +27,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "取り放題",
@@ -51,11 +51,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ADM",
       "area": "1㎜ごと",
@@ -75,11 +75,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ADM",
       "area": "片頬",
@@ -99,11 +99,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "1個〜3mmまで",
@@ -123,11 +123,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
       "area": "追加1mmごと",
@@ -147,11 +147,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Co２ハイリュウシュ",
       "area": "",
@@ -171,12 +171,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "キシロカイン麻酔",
       "area": "",
       "sessions": "",
@@ -195,11 +195,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコW",
       "area": "",
@@ -219,11 +219,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "V＋Iライン",
@@ -243,11 +243,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "デコルテ",
@@ -267,11 +267,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "リップ",
@@ -291,11 +291,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "片手の甲",
@@ -315,11 +315,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "肘下（手の甲含まず）",
@@ -339,11 +339,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "背中から肩甲骨",
@@ -363,11 +363,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "脇",
@@ -387,11 +387,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "顔全体",
@@ -411,11 +411,11 @@
       "cost_note": "13,500",
       "profit_note": "13,500",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコトーニング",
       "area": "首",
@@ -435,11 +435,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコフラクショナル",
       "area": "頬+鼻",
@@ -459,11 +459,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコフラクショナル",
       "area": "顔全体",
@@ -483,11 +483,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mm〜（1mmにつき）",
@@ -507,11 +507,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "10mmまで",
@@ -531,11 +531,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "1mmまで",
@@ -555,11 +555,11 @@
       "cost_note": "1s4.5円",
       "profit_note": "1s4.5円",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "5mmまで",
@@ -579,11 +579,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "両前腕（肘下・手・甲・指）",
@@ -603,11 +603,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "全顔",
@@ -627,11 +627,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "眉下〜鼻下",
@@ -651,11 +651,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコレーザー・ピコスポット",
       "area": "背中（肩甲骨 上 or 下）",
@@ -675,11 +675,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "お尻",
@@ -699,11 +699,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "手の甲",
@@ -723,11 +723,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "背中から肩甲骨",
@@ -747,11 +747,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "腕（肘上・腕下）",
@@ -771,11 +771,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬のみ",
@@ -795,11 +795,11 @@
       "cost_note": "1s18.7円",
       "profit_note": "1s18.7円",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬＋鼻",
@@ -819,11 +819,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル",
       "area": "首・デコルテ",
@@ -843,11 +843,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトフェイシャル（フォトダブル）",
       "area": "顔全体",
@@ -867,12 +867,12 @@
       "cost_note": "5,800",
       "profit_note": "5,800",
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔0.5CC",
       "area": "",
       "sessions": "",
@@ -891,12 +891,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "シミ取り（そばかす・肝斑・ほくろ）",
-      "provider_type": "医療（Dr.施術）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔ブロック0.5CC",
       "area": "",
       "sessions": "",
@@ -915,11 +915,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "シミ取り（そばかす・肝斑・ほくろ）"
+        "麻酔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
@@ -939,11 +939,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
@@ -963,11 +963,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "オプションタイトニング",
       "area": "オプション",
@@ -987,11 +987,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "オプションタイトニング",
       "area": "オプション",
@@ -1011,11 +1011,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
@@ -1035,11 +1035,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
@@ -1059,11 +1059,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "タイトニング",
       "area": "全顔",
@@ -1083,11 +1083,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "タイトニング",
       "area": "全顔",
@@ -1107,11 +1107,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "トーニング",
       "area": "全顔",
@@ -1131,11 +1131,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "トーニング",
       "area": "全顔",
@@ -1155,11 +1155,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピーリング",
       "area": "全顔",
@@ -1179,11 +1179,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピーリング",
       "area": "全顔",
@@ -1203,11 +1203,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（スタンダード）680s",
@@ -1227,11 +1227,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（プレミアム）880s",
@@ -1251,11 +1251,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（ライト）356s",
@@ -1275,11 +1275,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "ハイフアイシャワー®224s",
@@ -1299,11 +1299,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）324s",
@@ -1323,11 +1323,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
@@ -1347,11 +1347,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
@@ -1371,11 +1371,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
@@ -1395,11 +1395,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
@@ -1419,11 +1419,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
@@ -1443,11 +1443,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
@@ -1467,11 +1467,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
@@ -1491,11 +1491,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
@@ -1515,11 +1515,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
@@ -1539,11 +1539,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
@@ -1563,11 +1563,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
@@ -1587,11 +1587,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "100ショット",
@@ -1611,11 +1611,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "200ショット",
@@ -1635,11 +1635,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "300ショット",
@@ -1659,11 +1659,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "400ショット",
@@ -1683,11 +1683,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルニューマ",
       "area": "500ショット",
@@ -1707,11 +1707,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
@@ -1731,11 +1731,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマープレミアム（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（プレミアム）ボ500ハ680S",
@@ -1755,11 +1755,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（ライト）ボ200sハ356s",
@@ -1779,11 +1779,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "リップ",
       "area": "口元治療",
@@ -1803,11 +1803,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "リップ",
       "area": "口元治療",
@@ -1827,11 +1827,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "人中短縮",
       "area": "口周り治療",
@@ -1851,11 +1851,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "人中短縮",
       "area": "口周り治療",
@@ -1875,11 +1875,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔スタンダード",
@@ -1899,11 +1899,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "しわ・たるみ",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔ライト",
@@ -1923,11 +1923,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "しわ・たるみ"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1947,11 +1947,11 @@
       "cost_note": null,
       "profit_note": "16000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1971,11 +1971,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -1995,11 +1995,11 @@
       "cost_note": null,
       "profit_note": "15,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2019,11 +2019,11 @@
       "cost_note": null,
       "profit_note": "8,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2043,11 +2043,11 @@
       "cost_note": null,
       "profit_note": "16000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2067,11 +2067,11 @@
       "cost_note": null,
       "profit_note": "24000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2091,11 +2091,11 @@
       "cost_note": null,
       "profit_note": "5,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2115,11 +2115,11 @@
       "cost_note": null,
       "profit_note": "15,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2139,11 +2139,11 @@
       "cost_note": null,
       "profit_note": "15,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2163,11 +2163,11 @@
       "cost_note": null,
       "profit_note": "¥25,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2187,11 +2187,11 @@
       "cost_note": null,
       "profit_note": "¥60,244",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2211,11 +2211,11 @@
       "cost_note": null,
       "profit_note": "¥13,700",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "",
@@ -2235,11 +2235,11 @@
       "cost_note": null,
       "profit_note": "¥17,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2259,11 +2259,11 @@
       "cost_note": null,
       "profit_note": "21,000",
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2283,11 +2283,11 @@
       "cost_note": null,
       "profit_note": "18,000",
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2307,11 +2307,11 @@
       "cost_note": null,
       "profit_note": "18,000",
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2331,11 +2331,11 @@
       "cost_note": null,
       "profit_note": "19,500",
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
       "area": "",
@@ -2355,11 +2355,11 @@
       "cost_note": null,
       "profit_note": "19,000",
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2379,11 +2379,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2403,11 +2403,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
       "area": "",
@@ -2427,11 +2427,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "ヒアルロン酸"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2451,11 +2451,11 @@
       "cost_note": null,
       "profit_note": "1,500",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2475,11 +2475,11 @@
       "cost_note": null,
       "profit_note": "3,000",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2499,11 +2499,11 @@
       "cost_note": null,
       "profit_note": "4,500",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2523,11 +2523,11 @@
       "cost_note": null,
       "profit_note": "7,500",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2547,11 +2547,11 @@
       "cost_note": null,
       "profit_note": "15,000",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2571,11 +2571,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2595,11 +2595,11 @@
       "cost_note": null,
       "profit_note": "2,640",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2619,11 +2619,11 @@
       "cost_note": null,
       "profit_note": "5,808",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2643,11 +2643,11 @@
       "cost_note": null,
       "profit_note": "7,920",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2667,11 +2667,11 @@
       "cost_note": null,
       "profit_note": "14,520",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2691,11 +2691,11 @@
       "cost_note": null,
       "profit_note": "29,040",
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
@@ -2715,11 +2715,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "ボトックス"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2739,11 +2739,11 @@
       "cost_note": null,
       "profit_note": "3,500",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2763,11 +2763,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2787,11 +2787,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2811,11 +2811,11 @@
       "cost_note": null,
       "profit_note": "7,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2835,11 +2835,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2859,11 +2859,11 @@
       "cost_note": null,
       "profit_note": "17000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2883,11 +2883,11 @@
       "cost_note": null,
       "profit_note": "10,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2907,11 +2907,11 @@
       "cost_note": null,
       "profit_note": "18000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2931,11 +2931,11 @@
       "cost_note": null,
       "profit_note": "26,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2955,11 +2955,11 @@
       "cost_note": null,
       "profit_note": "12,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -2979,11 +2979,11 @@
       "cost_note": null,
       "profit_note": "17,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -3003,11 +3003,11 @@
       "cost_note": null,
       "profit_note": "¥32,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -3027,11 +3027,11 @@
       "cost_note": null,
       "profit_note": "¥27,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "水光注射（ハイコックス）",
       "area": "",
@@ -3051,11 +3051,11 @@
       "cost_note": null,
       "profit_note": "52,000",
       "categories": [
-        "注入系"
+        "肌質改善／肌育"
       ]
     },
     {
-      "category": "注入系",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "脂肪溶解注射",
       "area": "",
@@ -3075,7 +3075,7 @@
       "cost_note": null,
       "profit_note": "1500",
       "categories": [
-        "注入系"
+        "しわ・たるみ・小顔"
       ]
     },
     {
@@ -3583,8 +3583,8 @@
       ]
     },
     {
-      "category": "スレッド（糸リフト）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "目元用シール麻酔",
       "area": "目元2枚",
       "sessions": "",
@@ -3603,12 +3603,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "スレッド（糸リフト）"
+        "麻酔"
       ]
     },
     {
-      "category": "スレッド（糸リフト）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "麻酔代",
       "area": "全顔",
       "sessions": "",
@@ -3627,11 +3627,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "スレッド（糸リフト）"
+        "麻酔"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ11～20個",
@@ -3651,11 +3651,11 @@
       "cost_note": null,
       "profit_note": "¥10,000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ1～4個",
@@ -3675,11 +3675,11 @@
       "cost_note": null,
       "profit_note": "5000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ21～30個",
@@ -3699,11 +3699,11 @@
       "cost_note": null,
       "profit_note": "10000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "アグネス",
       "area": "ニキビ・ハイリュウシュ5～10個",
@@ -3723,11 +3723,11 @@
       "cost_note": null,
       "profit_note": "5000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "イオン導入",
       "area": "トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
@@ -3747,11 +3747,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "イオン導入",
       "area": "ビタミンC＋ｱﾙｹﾞﾏｽｸ",
@@ -3771,11 +3771,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　2×2㎝",
@@ -3795,11 +3795,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　全顔",
@@ -3819,11 +3819,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サブシジョン",
       "area": "ジュベルック　半顔",
@@ -3843,11 +3843,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "カスタマイズ",
@@ -3867,11 +3867,11 @@
       "cost_note": "11,000",
       "profit_note": "33000",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "トラネキサム酸",
@@ -3891,11 +3891,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ビタミンC",
@@ -3915,11 +3915,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ラコス",
@@ -3939,11 +3939,11 @@
       "cost_note": "3,750",
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "頬・鼻（毛穴）・首：1部位",
@@ -3963,11 +3963,11 @@
       "cost_note": "¥5,500",
       "profit_note": "¥16,500",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "サーマニードル",
       "area": "顔全体",
@@ -3987,11 +3987,11 @@
       "cost_note": "¥5,500",
       "profit_note": "¥27,500",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
@@ -4011,11 +4011,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
@@ -4035,11 +4035,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4059,11 +4059,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4083,11 +4083,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
@@ -4107,11 +4107,12 @@
       "cost_note": "5,000",
       "profit_note": "11,500",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入有り",
@@ -4131,11 +4132,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
@@ -4155,11 +4157,12 @@
       "cost_note": "¥3,000",
       "profit_note": "¥10,200",
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル",
       "area": "導入無し",
@@ -4179,11 +4182,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
@@ -4203,11 +4207,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入有り",
@@ -4227,11 +4232,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
@@ -4251,11 +4257,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ハイドラフェイシャル背中",
       "area": "導入無し",
@@ -4275,11 +4282,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "ピーリング"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング",
       "area": "プラズマのみ",
@@ -4299,11 +4307,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "エクソソームアンプル",
@@ -4323,11 +4331,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "タイトニングセラム",
@@ -4347,11 +4355,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "ヒト臍帯由来幹細胞培養上清液",
@@ -4371,11 +4379,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "ビタミンC",
@@ -4395,11 +4403,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "プラセンタ",
@@ -4419,11 +4427,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "リジュランセラム修復",
@@ -4443,11 +4451,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "お尻（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4467,11 +4475,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体",
@@ -4491,11 +4499,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4515,11 +4523,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
@@ -4539,11 +4547,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "圧出",
       "area": "",
@@ -4563,7 +4571,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
@@ -11311,7 +11319,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "10錠",
@@ -11331,11 +11339,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "90錠",
@@ -11355,11 +11363,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "10錠",
@@ -11379,11 +11387,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "30錠",
@@ -11403,7 +11411,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -11455,7 +11463,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1か月84カプセル",
@@ -11475,11 +11483,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1週間21カプセル",
@@ -11499,7 +11507,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -11671,7 +11679,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "リベルサス",
       "area": "3㎎30錠",
@@ -11691,11 +11699,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "リベルサス",
       "area": "7㎎30錠",
@@ -11715,7 +11723,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -11743,7 +11751,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "防己黄耆湯",
       "area": "90包",
@@ -11763,11 +11771,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "医療痩身",
       "provider_type": "医療（Ns施術）",
       "treatment": "防風通聖散",
       "area": "90包",
@@ -11787,7 +11795,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "医療痩身"
       ]
     },
     {
@@ -14263,7 +14271,7 @@
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ウーバーピール",
@@ -14283,11 +14291,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "プラズマリフティング＋美容液",
       "area": "エクソソームアンプル",
@@ -14307,11 +14315,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ヒアルロン酸",
@@ -14331,11 +14339,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "美肌治療",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "美白",
@@ -14355,7 +14363,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "美肌治療"
+        "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
@@ -14407,7 +14415,7 @@
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹",
@@ -14427,11 +14435,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹　1320S",
@@ -14451,11 +14459,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）",
@@ -14475,11 +14483,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）　880S",
@@ -14499,11 +14507,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
@@ -14523,11 +14531,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
@@ -14547,11 +14555,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上　180S",
@@ -14571,11 +14579,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上（ライト）　120S",
@@ -14595,11 +14603,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト",
@@ -14619,11 +14627,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト　1200S",
@@ -14643,11 +14651,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）",
@@ -14667,11 +14675,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）800S",
@@ -14691,11 +14699,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット",
@@ -14715,11 +14723,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット　120S",
@@ -14739,11 +14747,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕",
@@ -14763,11 +14771,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕　540S",
@@ -14787,11 +14795,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）",
@@ -14811,11 +14819,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）　360S",
@@ -14835,11 +14843,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも",
@@ -14859,11 +14867,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも　840S",
@@ -14883,11 +14891,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り",
@@ -14907,11 +14915,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り　1680S",
@@ -14931,11 +14939,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
@@ -14955,11 +14963,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
@@ -14979,11 +14987,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
@@ -15003,11 +15011,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
@@ -15027,11 +15035,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
@@ -15051,11 +15059,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
@@ -15075,11 +15083,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
@@ -15099,11 +15107,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
@@ -15123,11 +15131,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -15147,11 +15155,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -15171,11 +15179,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -15195,11 +15203,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
@@ -15219,11 +15227,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
@@ -15243,11 +15251,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
@@ -15267,11 +15275,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射",
       "area": "顔1cc",
@@ -15291,11 +15299,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射FATXCORE",
       "area": "顔1cc",
@@ -15315,11 +15323,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体10cc",
@@ -15339,11 +15347,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体1cc",
@@ -15363,11 +15371,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体20cc",
@@ -15387,11 +15395,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "医療ボディ痩身",
+      "category": "医療痩身",
       "provider_type": "医療",
       "treatment": "脂肪溶解注射（ボディコントゥア）",
       "area": "身体5cc",
@@ -15411,11 +15419,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療ボディ痩身"
+        "医療痩身"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "タレ目形成",
       "area": "",
@@ -15435,11 +15443,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "ネックリフト",
       "area": "",
@@ -15459,11 +15467,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "中顔面リフト",
       "area": "4本",
@@ -15483,11 +15491,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "二重埋没法（1年間保証付）",
       "area": "",
@@ -15507,12 +15515,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -15531,12 +15539,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -15555,12 +15563,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "点眼麻酔",
       "area": "",
       "sessions": "1回",
@@ -15579,11 +15587,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "麻酔"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "",
@@ -15603,11 +15611,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "ハムラ法",
@@ -15627,11 +15635,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "目の下のくま・たるみ取り",
       "area": "裏ハムラ法",
@@ -15651,11 +15659,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
+      "category": "目元のクマたるみ治療（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "眉下切開",
       "area": "",
@@ -15675,12 +15683,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "目元のクマたるみ治療（オペ）"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "笑気麻酔",
       "area": "",
       "sessions": "1回",
@@ -15699,12 +15707,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "笑気麻酔",
       "area": "30分",
       "sessions": "1回",
@@ -15723,11 +15731,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "自然癒着法",
       "area": "4点留め",
@@ -15747,11 +15755,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "二重形成（埋没）",
+      "category": "目元の形成（オペ）",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "自然癒着法",
       "area": "6点留め",
@@ -15771,12 +15779,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "二重形成（埋没）"
+        "目元の形成（オペ）"
       ]
     },
     {
-      "category": "脱脂",
-      "provider_type": "医療（Dr.オペ）",
+      "category": "麻酔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "静脈麻酔",
       "area": "",
       "sessions": "1回",
@@ -15795,11 +15803,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脱脂"
+        "麻酔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "ジョールファット",
       "area": "",
@@ -15819,11 +15827,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "頬",
       "area": "",
@@ -15843,11 +15851,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "頬➕顎下",
       "area": "",
@@ -15867,11 +15875,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     },
     {
-      "category": "脂肪吸引",
+      "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.オペ）",
       "treatment": "顎下",
       "area": "",
@@ -15891,7 +15899,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "脂肪吸引"
+        "しわ・たるみ・小顔"
       ]
     }
   ],
