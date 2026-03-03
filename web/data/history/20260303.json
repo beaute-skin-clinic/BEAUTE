@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:48:45.574Z",
+    "generated_at": "2026-03-03T01:53:45.312Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -11323,7 +11323,7 @@
       ]
     },
     {
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "10錠",
@@ -11343,11 +11343,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ]
     },
     {
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "provider_type": "医療（Ns施術）",
       "treatment": "アカルボース（糖質乳収剤）",
       "area": "90錠",
@@ -11367,11 +11368,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ]
     },
     {
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "10錠",
@@ -11391,11 +11393,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ]
     },
     {
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "provider_type": "医療（Ns施術）",
       "treatment": "サノレックス（食欲抑制）",
       "area": "30錠",
@@ -11415,6 +11418,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ]
     },
@@ -11492,11 +11496,12 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "医療痩身"
+        "医療痩身",
+        "内服（痩身）"
       ]
     },
     {
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "provider_type": "医療（Ns施術）",
       "treatment": "ゼニカル（脂質排泄）",
       "area": "1週間21カプセル",
@@ -11516,6 +11521,7 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ]
     },
