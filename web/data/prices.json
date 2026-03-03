@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T06:47:49.961Z",
+    "generated_at": "2026-03-03T06:49:12.368Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 676,
     "records_with_cost": 66
@@ -2486,15 +2486,15 @@
       "area": "3部位以上なら1部位あたり",
       "sessions": "",
       "old_price": "22000",
-      "price": "13200",
-      "first_price": "15400",
-      "repeat_price": "13200",
+      "price": "27500",
+      "first_price": "20625",
+      "repeat_price": "19250",
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "11880",
-      "prepaid_50": "11880",
+      "prepaid_30": "24750",
+      "prepaid_50": "24750",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null
