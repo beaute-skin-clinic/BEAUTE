@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:37:46.897Z",
+    "generated_at": "2026-03-03T01:38:02.866Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 664,
     "records_with_cost": 70
@@ -11801,7 +11801,7 @@
       "area": "",
       "sessions": "",
       "old_price": null,
-      "price": "770",
+      "price": "771",
       "first_price": null,
       "repeat_price": null,
       "bundle_price": null,
@@ -11810,7 +11810,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": "616",
-      "prepaid_50": "577",
+      "prepaid_50": "578",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
