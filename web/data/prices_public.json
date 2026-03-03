@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T00:43:58.307Z",
+    "generated_at": "2026-03-03T00:45:48.660Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70,
@@ -11313,10 +11313,10 @@
       "prepaid_manual": "8800"
     },
     {
-      "category": "オプション",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "エクソソームアンプル",
-      "area": "",
+      "category": "美肌治療",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "エクソソームアンプル",
       "sessions": "",
       "old_price": null,
       "price": "11000",
@@ -11326,9 +11326,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": "9900",
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_10": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
