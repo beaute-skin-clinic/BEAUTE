@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T04:24:14.086Z",
+    "generated_at": "2026-03-03T04:24:30.570Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 672,
-    "records_with_cost": 63
+    "total_records": 669,
+    "records_with_cost": 62
   },
   "treatments": [
     {
@@ -2543,78 +2543,6 @@
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": "3,000",
-      "categories": [
-        "ボトックス"
-      ]
-    },
-    {
-      "category": "ボトックス",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス",
-      "area": "",
-      "sessions": "",
-      "old_price": null,
-      "price": "770000",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": "77000",
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "693000",
-      "prepaid_50": "693000",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": "15,000",
-      "categories": [
-        "ボトックス"
-      ]
-    },
-    {
-      "category": "ボトックス",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス",
-      "area": "",
-      "sessions": "",
-      "old_price": null,
-      "price": "33000",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null,
-      "categories": [
-        "ボトックス"
-      ]
-    },
-    {
-      "category": "ボトックス",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス",
-      "area": "",
-      "sessions": "",
-      "old_price": null,
-      "price": "55000",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null,
       "categories": [
         "ボトックス"
       ]
