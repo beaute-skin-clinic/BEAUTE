@@ -10474,7 +10474,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Ns施術）",
       "treatment": "シナール",
       "area": "30錠",
@@ -10492,7 +10492,6 @@
       "prepaid_50": "1237",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）",
         "内服"
@@ -10518,7 +10517,6 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
@@ -10569,7 +10567,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "デキサンVG5g",
       "area": "",
@@ -10587,7 +10585,6 @@
       "prepaid_50": "577",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
@@ -10611,12 +10608,11 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Ns施術）",
       "treatment": "トレチノイン 5g",
       "area": "",
@@ -10634,7 +10630,6 @@
       "prepaid_50": "1237",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "外用薬"
       ]
@@ -10659,13 +10654,12 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "ハイドロキノン4g",
       "area": "",
@@ -10683,7 +10677,6 @@
       "prepaid_50": "1650",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -10709,7 +10702,6 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
@@ -10733,12 +10725,11 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "リンデロンVG5g",
       "area": "",
@@ -10756,12 +10747,11 @@
       "prepaid_50": "577",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "デキサン VG 5g",
       "area": "",
@@ -10779,12 +10769,11 @@
       "prepaid_50": "577",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "テラコートリル 5g",
       "area": "",
@@ -10802,7 +10791,6 @@
       "prepaid_50": "660",
       "prepaid_manual": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
@@ -14715,7 +14703,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
@@ -14739,7 +14726,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
@@ -14763,7 +14749,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
