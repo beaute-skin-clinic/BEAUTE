@@ -414,10 +414,11 @@
   <div class="type-filter" id="typeFilter">
     <button class="type-btn active" data-type="all">すべて</button>
     <button class="type-btn" data-type="医療（Dr.施術）">Dr.施術</button>
-    <button class="type-btn" data-type="医療（Ns施術）">Ns施術</button>
     <button class="type-btn" data-type="医療（Dr.オペ）">Dr.オペ</button>
+    <button class="type-btn" data-type="医療（Ns施術）">Ns施術</button>
     <button class="type-btn" data-type="医療（その他）">その他</button>
     <button class="type-btn" data-type="エステ">エステ</button>
+    <button class="type-btn" data-type="なし">なし</button>
   </div>
 
   <div class="category-tabs" id="categoryTabs">
@@ -521,7 +522,7 @@ const PP10_KEYWORDS = [
   "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェット", "ハイドラ", "オプション",
 ];
 
-const PROVIDER_TYPES = ["", "医療（Dr.施術）", "医療（Dr.オペ）", "医療（Ns施術）", "エステ", "医療（その他）"];
+const PROVIDER_TYPES = ["", "医療（Dr.施術）", "医療（Dr.オペ）", "医療（Ns施術）", "医療（その他）", "エステ"];
 
 const CATEGORY_ORDER = [
   '肌質改善／肌育',
@@ -634,7 +635,9 @@ function rebuildCategoryTabs() {
   // 区分フィルターに応じて対象カテゴリを絞る
   const filtered = currentType === 'all'
     ? editedData.treatments
-    : editedData.treatments.filter(t => t.provider_type === currentType);
+    : currentType === 'なし'
+      ? editedData.treatments.filter(t => !t.provider_type)
+      : editedData.treatments.filter(t => t.provider_type === currentType);
 
   const categories = [...new Set(filtered.flatMap(t => t.categories || [t.category]))]
     .sort((a, b) => {
@@ -765,7 +768,8 @@ function render() {
     const t = treatments[i];
     // 区分フィルター
     if (currentType !== 'all') {
-      if (t.provider_type !== currentType) continue;
+      if (currentType === 'なし') { if (t.provider_type) continue; }
+      else if (t.provider_type !== currentType) continue;
     }
     if (currentCategory !== 'all' && !(t.categories || [t.category]).includes(currentCategory)) continue;
     if (searchQuery) {
