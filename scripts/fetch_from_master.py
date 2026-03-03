@@ -89,7 +89,7 @@ def clean_price(value: str) -> str:
     return v
 
 
-def calc_prepaid_prices(price_str: str, provider_type: str, treatment: str, category: str) -> dict:
+def calc_prepaid_prices(price_str: str, provider_type: str, treatment: str, categories: list) -> dict:
     """プリペイド3ティア価格を自動計算"""
     result = {"prepaid_10": None, "prepaid_30": None, "prepaid_50": None}
 
@@ -108,7 +108,8 @@ def calc_prepaid_prices(price_str: str, provider_type: str, treatment: str, cate
     # 10万ティア: 対象施術かチェック
     rate_10 = rates.get("10万", 0)
     if rate_10 > 0:
-        is_eligible = any(kw in (treatment or "") or kw in (category or "")
+        cat_str = " ".join(categories) if categories else ""
+        is_eligible = any(kw in (treatment or "") or kw in cat_str
                          for kw in PP10_ELIGIBLE_KEYWORDS)
         if is_eligible:
             result["prepaid_10"] = str(math.floor(price * (100 - rate_10) / 100))
@@ -205,16 +206,20 @@ def main():
 
         provider_type = get(row, "provider_type")
         treatment = get(row, "treatment")
-        category = get(row, "category")
+        category_raw = get(row, "category")
+        # カンマ区切りで複数カテゴリ対応
+        categories = [c.strip() for c in category_raw.split(",") if c.strip()] if category_raw else []
+        category = categories[0] if categories else ""
 
         # プリペイド3ティア自動計算
-        pp = calc_prepaid_prices(price, provider_type, treatment, category)
+        pp = calc_prepaid_prices(price, provider_type, treatment, categories)
 
         # スプレッドシートの手動プリペイド価格があればオーバーライド用に保持
         manual_pp = clean_price(get(row, "prepaid_price")) or None
 
         record = {
             "category": category,
+            "categories": categories,
             "provider_type": provider_type or None,
             "treatment": treatment,
             "area": get(row, "area"),
@@ -325,8 +330,11 @@ def main():
     print()
     print("【カテゴリ別件数】")
     from collections import Counter
-    for cat, n in sorted(Counter(r["category"] for r in records).items(),
-                         key=lambda x: -x[1]):
+    cat_counter = Counter()
+    for r in records:
+        for cat in r.get("categories", [r["category"]]):
+            cat_counter[cat] += 1
+    for cat, n in sorted(cat_counter.items(), key=lambda x: -x[1]):
         print(f"  {cat}: {n}件")
 
 

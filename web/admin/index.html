@@ -252,6 +252,32 @@
       background: #fff;
     }
 
+    /* ===== カテゴリ複数選択ドロップダウン ===== */
+    .cat-multi-dropdown {
+      position: absolute; background: #fff;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      padding: 6px; min-width: 220px; max-height: 300px;
+      overflow-y: auto; z-index: 50;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .cat-check-label {
+      display: block; padding: 3px 6px;
+      font-size: 12px; cursor: pointer; border-radius: 4px;
+    }
+    .cat-check-label:hover { background: var(--accent); }
+    .cat-checkbox { margin-right: 4px; }
+    .cat-new-row { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 4px; }
+    .cat-new-input {
+      width: 100%; padding: 4px 6px; font-size: 11px;
+      border: 1px solid var(--border); border-radius: 4px;
+    }
+    .cat-done-btn {
+      width: 100%; margin-top: 6px; padding: 4px;
+      background: var(--admin-bg); color: #fff; border: none;
+      border-radius: 4px; font-size: 11px; cursor: pointer;
+    }
+    .cat-done-btn:hover { opacity: 0.85; }
+
     /* ===== 行アクションボタン ===== */
     .row-actions { display: flex; gap: 2px; justify-content: center; }
     .row-btn {
@@ -597,7 +623,7 @@ function rebuildCategoryTabs() {
           : t.provider_type === currentType
       );
 
-  const categories = [...new Set(filtered.map(t => t.category))]
+  const categories = [...new Set(filtered.flatMap(t => t.categories || [t.category]))]
     .sort((a, b) => {
       const ai = CATEGORY_ORDER.indexOf(a);
       const bi = CATEGORY_ORDER.indexOf(b);
@@ -654,7 +680,7 @@ function initTypeFilter() {
 // ============================================================
 // PP自動計算（Python fetch_from_master.py から移植）
 // ============================================================
-function calcPrepaidPrices(priceStr, providerType, treatment, category) {
+function calcPrepaidPrices(priceStr, providerType, treatment, categories) {
   const result = { prepaid_10: null, prepaid_30: null, prepaid_50: null };
   if (!priceStr || !providerType) return result;
 
@@ -667,8 +693,9 @@ function calcPrepaidPrices(priceStr, providerType, treatment, category) {
   // 10万ティア: 対象施術かチェック
   const rate10 = rates["10万"] || 0;
   if (rate10 > 0) {
+    const catStr = (categories || []).join(' ');
     const isEligible = PP10_KEYWORDS.some(kw =>
-      (treatment || '').includes(kw) || (category || '').includes(kw)
+      (treatment || '').includes(kw) || catStr.includes(kw)
     );
     if (isEligible) {
       result.prepaid_10 = String(Math.floor(price * (100 - rate10) / 100));
@@ -693,7 +720,7 @@ function calcPrepaidPrices(priceStr, providerType, treatment, category) {
 // 行のPP値を再計算して更新
 function recalcPrepaid(rowIdx) {
   const t = editedData.treatments[rowIdx];
-  const pp = calcPrepaidPrices(t.price, t.provider_type, t.treatment, t.category);
+  const pp = calcPrepaidPrices(t.price, t.provider_type, t.treatment, t.categories || [t.category]);
   t.prepaid_10 = pp.prepaid_10;
   t.prepaid_30 = pp.prepaid_30;
   t.prepaid_50 = pp.prepaid_50;
@@ -731,12 +758,12 @@ function render() {
         if (t.provider_type !== currentType) continue;
       }
     }
-    if (currentCategory !== 'all' && t.category !== currentCategory) continue;
+    if (currentCategory !== 'all' && !(t.categories || [t.category]).includes(currentCategory)) continue;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       if (!(t.treatment || '').toLowerCase().includes(q) &&
           !(t.area || '').toLowerCase().includes(q) &&
-          !(t.category || '').toLowerCase().includes(q)) continue;
+          !(t.categories || [t.category]).some(c => (c || '').toLowerCase().includes(q))) continue;
     }
     if (showCostOnly && !t.cost_note && !t.profit_note) continue;
     filteredIndices.push(i);
@@ -777,7 +804,7 @@ function render() {
     const ppCls50 = t.prepaid_50 ? 'price-auto' : 'price-small';
 
     return `<tr class="${rowClass}" data-idx="${idx}">
-      <td class="${cellCls('category')}"><span class="editable" data-field="category" data-idx="${idx}" data-type="category">${t.category ? `<span class="cat-badge">${esc(t.category)}</span>` : ''}</span></td>
+      <td class="${cellCls('categories')}"><span class="editable" data-field="categories" data-idx="${idx}" data-type="categories">${(t.categories || [t.category]).filter(Boolean).map(c => `<span class="cat-badge">${esc(c)}</span>`).join(' ')}</span></td>
       <td class="${cellCls('provider_type')}"><span class="editable" data-field="provider_type" data-idx="${idx}" data-type="provider">${esc(t.provider_type || '')}</span></td>
       <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span></td>
       <td class="${cellCls('area')}"><span class="editable" data-field="area" data-idx="${idx}" data-type="text">${esc(t.area || '')}</span></td>
@@ -818,8 +845,8 @@ document.addEventListener('click', function(e) {
     startEditing(editable);
     return;
   }
-  // 編集中のセル以外をクリックしたら確定
-  if (editingCell && !e.target.closest('.edit-input, .edit-select')) {
+  // 編集中のセル以外をクリックしたら確定（カテゴリドロップダウン内は除外）
+  if (editingCell && !e.target.closest('.edit-input, .edit-select, .cat-multi-dropdown')) {
     finishEditing();
   }
 });
@@ -850,22 +877,47 @@ function startEditing(el) {
     select.focus();
     select.addEventListener('change', () => finishEditing());
     select.addEventListener('keydown', handleEditKeydown);
-  } else if (type === 'category') {
-    const categories = [...new Set(editedData.treatments.map(t => t.category))].sort();
-    const select = document.createElement('select');
-    select.className = 'edit-select';
-    categories.forEach(cat => {
-      const opt = document.createElement('option');
-      opt.value = cat;
-      opt.textContent = cat;
-      if (cat === currentVal) opt.selected = true;
-      select.appendChild(opt);
+  } else if (type === 'categories') {
+    const allCategories = [...new Set(editedData.treatments.flatMap(t => t.categories || [t.category]))].sort();
+    const currentCats = editedData.treatments[idx].categories || [];
+
+    const dropdown = document.createElement('div');
+    dropdown.className = 'cat-multi-dropdown';
+
+    allCategories.forEach(cat => {
+      const label = document.createElement('label');
+      label.className = 'cat-check-label';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = cat;
+      cb.checked = currentCats.includes(cat);
+      cb.className = 'cat-checkbox';
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(' ' + cat));
+      dropdown.appendChild(label);
     });
+
+    const newCatRow = document.createElement('div');
+    newCatRow.className = 'cat-new-row';
+    const newInput = document.createElement('input');
+    newInput.type = 'text';
+    newInput.placeholder = '新しいカテゴリ...';
+    newInput.className = 'cat-new-input';
+    newCatRow.appendChild(newInput);
+    dropdown.appendChild(newCatRow);
+
+    const doneBtn = document.createElement('button');
+    doneBtn.textContent = '確定';
+    doneBtn.className = 'cat-done-btn';
+    doneBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      finishCategoryEditing(idx, dropdown, newInput);
+    });
+    dropdown.appendChild(doneBtn);
+
+    el.style.position = 'relative';
     el.innerHTML = '';
-    el.appendChild(select);
-    select.focus();
-    select.addEventListener('change', () => finishEditing());
-    select.addEventListener('keydown', handleEditKeydown);
+    el.appendChild(dropdown);
   } else {
     // text or price
     const input = document.createElement('input');
@@ -938,7 +990,16 @@ function finishEditing() {
   const { el, idx, field, type, originalVal } = editingCell;
   let newVal;
 
-  if (type === 'provider' || type === 'category') {
+  if (type === 'categories') {
+    // カテゴリ複数選択はfinishCategoryEditingで処理
+    const dropdown = el.querySelector('.cat-multi-dropdown');
+    const newInput = dropdown ? dropdown.querySelector('.cat-new-input') : null;
+    if (dropdown) {
+      finishCategoryEditing(idx, dropdown, newInput);
+    }
+    editingCell = null;
+    return;
+  } else if (type === 'provider') {
     const select = el.querySelector('select');
     newVal = select ? select.value : originalVal;
   } else if (type === 'price') {
@@ -971,13 +1032,46 @@ function finishEditing() {
   }
 
   // PP再計算（価格 or 施術者区分が変わった場合）
-  if (field === 'price' || field === 'provider_type' || field === 'treatment' || field === 'category') {
+  if (field === 'price' || field === 'provider_type' || field === 'treatment') {
     recalcPrepaid(idx);
   }
 
   editingCell = null;
 
   // 該当行だけ再描画
+  render();
+  updateSaveBar();
+}
+
+function finishCategoryEditing(idx, dropdown, newInput) {
+  const checked = Array.from(dropdown.querySelectorAll('.cat-checkbox:checked')).map(cb => cb.value);
+  const newCat = newInput ? newInput.value.trim() : '';
+  if (newCat && !checked.includes(newCat)) checked.push(newCat);
+  if (checked.length === 0) checked.push('未分類');
+
+  editedData.treatments[idx].categories = checked;
+  editedData.treatments[idx].category = checked[0];
+
+  // 変更トラッキング
+  const orig = allData.treatments[idx];
+  if (orig && !addedRows.has(idx)) {
+    const origCats = JSON.stringify(orig.categories || [orig.category]);
+    const newCats = JSON.stringify(checked);
+    if (origCats !== newCats) {
+      if (!changes.has(idx)) changes.set(idx, new Set());
+      changes.get(idx).add('categories');
+    } else {
+      if (changes.has(idx)) {
+        changes.get(idx).delete('categories');
+        if (changes.get(idx).size === 0) changes.delete(idx);
+      }
+    }
+  }
+
+  // PP再計算
+  recalcPrepaid(idx);
+
+  editingCell = null;
   render();
   updateSaveBar();
 }
@@ -992,8 +1086,10 @@ function cancelEditing() {
 // CRUD操作
 // ============================================================
 function addNewRow() {
+  const defaultCat = currentCategory !== 'all' ? currentCategory : (CATEGORY_ORDER[0] || '');
   const newTreatment = {
-    category: currentCategory !== 'all' ? currentCategory : (CATEGORY_ORDER[0] || ''),
+    category: defaultCat,
+    categories: [defaultCat],
     provider_type: null,
     treatment: '',
     area: '',
@@ -1016,7 +1112,7 @@ function addNewRow() {
   // 現在のカテゴリの先頭に追加
   let insertIdx = 0;
   if (currentCategory !== 'all') {
-    insertIdx = editedData.treatments.findIndex(t => t.category === currentCategory);
+    insertIdx = editedData.treatments.findIndex(t => (t.categories || [t.category]).includes(currentCategory));
     if (insertIdx === -1) insertIdx = editedData.treatments.length;
   }
 
@@ -1329,8 +1425,11 @@ async function saveChanges() {
     // 2. 空の施術名の行を除去（新規追加で未入力のもの）
     editedData.treatments = editedData.treatments.filter(t => t.treatment && t.treatment.trim());
 
-    // 3. 全行のPP再計算
+    // 3. category と categories の同期 + 全行のPP再計算
     editedData.treatments.forEach((t, i) => {
+      if (t.categories && t.categories.length > 0) {
+        t.category = t.categories[0];
+      }
       recalcPrepaid(i);
     });
 

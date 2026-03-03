@@ -518,7 +518,7 @@ function rebuildCategoryTabs() {
     );
   }
 
-  const categories = [...new Set(filtered.map(t => t.category))]
+  const categories = [...new Set(filtered.flatMap(t => t.categories || [t.category]))]
     .sort((a, b) => {
       const ai = CATEGORY_ORDER.indexOf(a);
       const bi = CATEGORY_ORDER.indexOf(b);
@@ -601,14 +601,14 @@ function render() {
     );
   }
   if (currentCategory !== 'all') {
-    treatments = treatments.filter(t => t.category === currentCategory);
+    treatments = treatments.filter(t => (t.categories || [t.category]).includes(currentCategory));
   }
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     treatments = treatments.filter(t =>
       (t.treatment || '').toLowerCase().includes(q) ||
       (t.area || '').toLowerCase().includes(q) ||
-      (t.category || '').toLowerCase().includes(q)
+      (t.categories || [t.category]).some(c => (c || '').toLowerCase().includes(q))
     );
   }
 
@@ -617,12 +617,14 @@ function render() {
     return;
   }
 
-  // カテゴリごとにグループ
+  // カテゴリごとにグループ（複数カテゴリの施術は各セクションに表示）
   const byCat = {};
   treatments.forEach(t => {
-    const cat = t.category || '未分類';
-    if (!byCat[cat]) byCat[cat] = [];
-    byCat[cat].push(t);
+    const cats = (t.categories && t.categories.length > 0) ? t.categories : [t.category || '未分類'];
+    cats.forEach(cat => {
+      if (!byCat[cat]) byCat[cat] = [];
+      byCat[cat].push(t);
+    });
   });
 
   const sortedCats = Object.keys(byCat).sort((a, b) => {
