@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:48:22.865Z",
+    "generated_at": "2026-03-03T01:48:45.574Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -16094,7 +16094,8 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬"
+        "内服・外用薬",
+        "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
       "treatment": "ミノマイシン",
