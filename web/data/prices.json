@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:34:39.173Z",
+    "generated_at": "2026-03-03T01:36:16.881Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70
@@ -11569,7 +11569,7 @@
     {
       "category": "内服・外用薬",
       "provider_type": "医療（Ns施術）",
-      "treatment": "イソトレチノイン",
+      "treatment": "トレチノイン",
       "area": "",
       "sessions": "",
       "old_price": null,
