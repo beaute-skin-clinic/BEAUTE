@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T00:45:48.660Z",
+    "generated_at": "2026-03-03T01:27:40.515Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70,
@@ -176,8 +176,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "990",
-      "prepaid_50": "990",
+      "prepaid_30": "880",
+      "prepaid_50": "825",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -814,8 +814,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -836,8 +836,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -3300,8 +3300,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "594",
+      "prepaid_30": "528",
+      "prepaid_50": "495",
       "prepaid_manual": "594",
       "categories": [
         "麻酔"
@@ -3322,8 +3322,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "1980",
+      "prepaid_30": "1760",
+      "prepaid_50": "1650",
       "prepaid_manual": "1980",
       "categories": [
         "麻酔"
@@ -10286,7 +10286,8 @@
       "prepaid_50": "2475",
       "prepaid_manual": null,
       "categories": [
-        "点滴・注射"
+        "点滴・注射",
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
@@ -10308,7 +10309,8 @@
       "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
-        "点滴・注射"
+        "点滴・注射",
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
@@ -10330,7 +10332,8 @@
       "prepaid_50": "6600",
       "prepaid_manual": null,
       "categories": [
-        "点滴・注射"
+        "点滴・注射",
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
@@ -10374,7 +10377,8 @@
       "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
-        "点滴・注射"
+        "点滴・注射",
+        "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
@@ -14242,8 +14246,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "990",
+      "prepaid_30": "880",
+      "prepaid_50": "825",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14264,8 +14268,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14286,8 +14290,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14396,8 +14400,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14418,8 +14422,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14484,8 +14488,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": "49500",
+      "prepaid_30": "44000",
+      "prepaid_50": "41250",
       "prepaid_manual": null,
       "categories": [
         "麻酔"
