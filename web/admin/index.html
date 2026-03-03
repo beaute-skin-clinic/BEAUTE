@@ -228,6 +228,7 @@
     .price-warn { font-size: 9px; color: #e67e22; font-weight: bold; white-space: nowrap; }
     .price-warn-high { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
     .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
+    .pp-excluded { font-size: 9px; color: #bbb; white-space: nowrap; }
 
     .td-cost {
       background: var(--cost-bg) !important;
@@ -838,6 +839,29 @@ function calcPrepaidPrices(priceStr, providerType, treatment, categories) {
   return result;
 }
 
+// PP対象外判定: 値が無いセルが「対象外」か「未設定」かを返す
+function getPpStatus(t, tier) {
+  const price = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+  const ptype = t.provider_type;
+  if (!ptype || isNaN(price) || price === 0) return '';
+
+  const rates = PREPAID_RATES[ptype];
+  if (!rates) return '';
+
+  const rate = rates[tier] || 0;
+  if (rate === 0) return '対象外';
+
+  // 10万ティアはキーワード該当チェック
+  if (tier === '10万') {
+    const catStr = (t.categories || [t.category] || []).filter(Boolean).join(' ');
+    const isEligible = PP10_KEYWORDS.some(kw =>
+      (t.treatment || '').includes(kw) || catStr.includes(kw)
+    );
+    if (!isEligible) return '対象外';
+  }
+  return '';
+}
+
 // 行のPP値を再計算して更新
 function recalcPrepaid(rowIdx) {
   const t = editedData.treatments[rowIdx];
@@ -1086,13 +1110,16 @@ function render() {
 
     const cellCls = (field) => changedFields.has(field) && !isDeleted ? ' cell-changed' : '';
 
-    // PP表示: 自動計算値かmanual値
-    const ppDisp10 = t.prepaid_10 || t.prepaid_manual || '';
-    const ppDisp30 = t.prepaid_30 || '';
-    const ppDisp50 = t.prepaid_50 || '';
-    const ppCls10 = t.prepaid_10 ? 'price-auto' : 'price-small';
-    const ppCls30 = t.prepaid_30 ? 'price-auto' : 'price-small';
-    const ppCls50 = t.prepaid_50 ? 'price-auto' : 'price-small';
+    // PP表示: 対象外(rate=0)は常に強制、それ以外は自動計算値→manual値→キーワード判定
+    const ppStat10 = getPpStatus(t, '10万');
+    const ppStat30 = getPpStatus(t, '30万');
+    const ppStat50 = getPpStatus(t, '50万');
+    const ppDisp10 = ppStat10 === '対象外' ? '対象外' : (t.prepaid_10 || t.prepaid_manual || '');
+    const ppDisp30 = ppStat30 === '対象外' ? '対象外' : (t.prepaid_30 || '');
+    const ppDisp50 = ppStat50 === '対象外' ? '対象外' : (t.prepaid_50 || '');
+    const ppCls10 = (t.prepaid_10 && ppStat10 !== '対象外') ? 'price-auto' : 'price-small';
+    const ppCls30 = (t.prepaid_30 && ppStat30 !== '対象外') ? 'price-auto' : 'price-small';
+    const ppCls50 = (t.prepaid_50 && ppStat50 !== '対象外') ? 'price-auto' : 'price-small';
 
     return `<tr class="${rowClass}" data-idx="${idx}">
       <td class="drag-handle" draggable="true">${isDeleted ? '' : '☰'}</td>
@@ -1109,9 +1136,9 @@ function render() {
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${(t.campaign_price === '設定なし' || t.campaign_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.campaign_price)}</span>${discountWarn(t.campaign_price, t.price)}</td>
       <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${(t.monitor_full_price === '設定なし' || t.monitor_full_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_full_price)}</span>${discountWarn(t.monitor_full_price, t.price)}</td>
       <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${(t.monitor_eye_price === '設定なし' || t.monitor_eye_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_eye_price)}</span>${discountWarn(t.monitor_eye_price, t.price)}</td>
-      <td class="${ppCls10}">${fmt(ppDisp10)}</td>
-      <td class="${ppCls30}">${fmt(ppDisp30)}</td>
-      <td class="${ppCls50}">${fmt(ppDisp50)}</td>
+      <td class="${ppCls10}">${ppDisp10 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp10)}</td>
+      <td class="${ppCls30}">${ppDisp30 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp30)}</td>
+      <td class="${ppCls50}">${ppDisp50 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp50)}</td>
       <td class="td-cost${cellCls('cost_note')}"><span class="editable cost-val" data-field="cost_note" data-idx="${idx}" data-type="text">${esc(t.cost_note || '')}</span></td>
       <td class="td-cost${cellCls('profit_note')}"><span class="editable profit-val-pos" data-field="profit_note" data-idx="${idx}" data-type="text">${esc(t.profit_note || '')}</span></td>
       <td class="col-action">
