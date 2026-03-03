@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T06:58:12.998Z",
+    "generated_at": "2026-03-03T07:00:17.821Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 678,
+    "total_records": 680,
     "records_with_cost": 68,
     "note": "公開用データ（コスト情報除去済み）"
   },
@@ -2188,7 +2188,7 @@
     {
       "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ヒアルロン酸（コピー）（コピー）",
+      "treatment": "ヒアルロン酸",
       "area": "レスチレン",
       "sessions": "",
       "old_price": null,
@@ -2211,10 +2211,10 @@
       "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルローニターゼ",
-      "area": "ボラックス（アラガン）",
+      "area": "当院部分修正（1cc）",
       "sessions": "",
       "old_price": null,
-      "price": "22000",
+      "price": "38500",
       "first_price": null,
       "repeat_price": null,
       "bundle_price": null,
@@ -2222,8 +2222,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_30": "34650",
+      "prepaid_50": "34650",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2232,8 +2232,52 @@
     {
       "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ヒアルローニターゼ",
-      "area": "",
+      "treatment": "ヒアルローニターゼ（コピー）",
+      "area": "当院修正（1本）",
+      "sessions": "",
+      "old_price": null,
+      "price": "38500",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "34650",
+      "prepaid_50": "34650",
+      "prepaid_manual": null,
+      "categories": [
+        "ヒアルロン酸"
+      ]
+    },
+    {
+      "category": "ヒアルロン酸",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヒアルローニターゼ（コピー）",
+      "area": "他院院修正（1本）",
+      "sessions": "",
+      "old_price": null,
+      "price": "38500",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "34650",
+      "prepaid_50": "34650",
+      "prepaid_manual": null,
+      "categories": [
+        "ヒアルロン酸"
+      ]
+    },
+    {
+      "category": "ヒアルロン酸",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヒアルローニターゼ（コピー）",
+      "area": "当院修正（1部位）",
       "sessions": "",
       "old_price": null,
       "price": "38500",
