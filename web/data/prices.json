@@ -12483,8 +12483,8 @@
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ウーバーピール",
-      "area": "",
+      "treatment": "ヴェルヴェットスキン（美容液オプション）",
+      "area": "ウーバーピール",
       "sessions": "",
       "old_price": null,
       "price": "11000",
@@ -12523,10 +12523,10 @@
       "profit_note": null
     },
     {
-      "category": "オプション",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "ヒアルロン酸",
-      "area": "",
+      "category": "美肌治療",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヴェルヴェットスキン（美容液オプション）",
+      "area": "ヒアルロン酸",
       "sessions": "",
       "old_price": null,
       "price": "5500",
@@ -12544,10 +12544,10 @@
       "profit_note": null
     },
     {
-      "category": "オプション",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "美白",
-      "area": "",
+      "category": "美肌治療",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヴェルヴェットスキン（美容液オプション）",
+      "area": "美白",
       "sessions": "",
       "old_price": null,
       "price": "11000",
