@@ -8,7 +8,7 @@
   "treatments": [
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "お尻",
       "sessions": "",
@@ -20,9 +20,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_10": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "26400",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -184,7 +184,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコW",
       "area": "",
       "sessions": "20％",
@@ -197,8 +197,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "34650",
-      "prepaid_50": "34650",
+      "prepaid_30": "30800",
+      "prepaid_50": "28875",
       "prepaid_manual": "30800",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -206,7 +206,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "V＋Iライン",
       "sessions": "",
@@ -218,9 +218,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -228,7 +228,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "デコルテ",
       "sessions": "",
@@ -240,9 +240,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -250,7 +250,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "リップ",
       "sessions": "",
@@ -262,9 +262,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "4950",
-      "prepaid_50": "4950",
+      "prepaid_10": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": "4400",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -272,7 +272,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "片手の甲",
       "sessions": "",
@@ -284,9 +284,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "7524",
-      "prepaid_50": "7524",
+      "prepaid_10": "7524",
+      "prepaid_30": "6688",
+      "prepaid_50": "6270",
       "prepaid_manual": "6688",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -294,7 +294,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "肘下（手の甲含まず）",
       "sessions": "",
@@ -306,9 +306,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_10": "19800",
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": "17600",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -316,7 +316,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "背中から肩甲骨",
       "sessions": "",
@@ -328,9 +328,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": "13200",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -338,7 +338,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "脇",
       "sessions": "",
@@ -350,9 +350,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "7920",
-      "prepaid_50": "7920",
+      "prepaid_10": "7920",
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": "7040",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -360,7 +360,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "顔全体",
       "sessions": "20％",
@@ -372,9 +372,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": "13200",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -382,7 +382,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコトーニング",
       "area": "首",
       "sessions": "",
@@ -394,9 +394,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -404,7 +404,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコフラクショナル",
       "area": "頬+鼻",
       "sessions": "",
@@ -416,9 +416,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "17820",
-      "prepaid_50": "17820",
+      "prepaid_10": "17820",
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": "15840",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -426,7 +426,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピコフラクショナル",
       "area": "顔全体",
       "sessions": "20％",
@@ -438,9 +438,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_10": "19800",
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": "17600",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -624,7 +624,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "お尻",
       "sessions": "",
@@ -636,9 +636,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_10": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "26400",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -646,7 +646,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "手の甲",
       "sessions": "",
@@ -658,9 +658,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": "13200",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -668,7 +668,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "背中から肩甲骨",
       "sessions": "",
@@ -680,9 +680,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_10": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "26400",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -690,7 +690,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "腕（肘上・腕下）",
       "sessions": "",
@@ -702,9 +702,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_10": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "26400",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -712,7 +712,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬のみ",
       "sessions": "",
@@ -724,9 +724,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "11880",
-      "prepaid_50": "11880",
+      "prepaid_10": "11880",
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": "10560",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -734,7 +734,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "頬＋鼻",
       "sessions": "",
@@ -746,9 +746,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -756,7 +756,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
       "area": "首・デコルテ",
       "sessions": "",
@@ -768,9 +768,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_10": "19800",
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": "17600",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -778,7 +778,7 @@
     },
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル（フォトダブル）",
       "area": "顔全体",
       "sessions": "20％",
@@ -790,9 +790,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": "13200",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -844,7 +844,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
       "sessions": "",
@@ -857,8 +857,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "17820",
-      "prepaid_50": "17820",
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": "15840",
       "categories": [
         "しわ・たるみ・小顔"
@@ -866,7 +866,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "アクネトーニング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -879,8 +879,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "53460",
-      "prepaid_50": "53460",
+      "prepaid_30": "47520",
+      "prepaid_50": "44550",
       "prepaid_manual": "47520",
       "categories": [
         "しわ・たるみ・小顔"
@@ -932,7 +932,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
       "sessions": "",
@@ -945,8 +945,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "43200",
-      "prepaid_50": "43200",
+      "prepaid_30": "38400",
+      "prepaid_50": "36000",
       "prepaid_manual": "38400",
       "categories": [
         "しわ・たるみ・小顔"
@@ -954,7 +954,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "スマイルリフト",
       "area": "口腔内",
       "sessions": "20.00%",
@@ -967,8 +967,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "129600",
-      "prepaid_50": "129600",
+      "prepaid_30": "115200",
+      "prepaid_50": "108000",
       "prepaid_manual": "115200",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1064,7 +1064,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピーリング",
       "area": "全顔",
       "sessions": "",
@@ -1076,9 +1076,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "22320",
-      "prepaid_50": "22320",
+      "prepaid_10": "22320",
+      "prepaid_30": "19840",
+      "prepaid_50": "18600",
       "prepaid_manual": "19840",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1086,7 +1086,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ピーリング",
       "area": "全顔",
       "sessions": "20.00%",
@@ -1098,9 +1098,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "66960",
-      "prepaid_50": "66960",
+      "prepaid_10": "66960",
+      "prepaid_30": "59520",
+      "prepaid_50": "55800",
       "prepaid_manual": "59520",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1108,7 +1108,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（スタンダード）680s",
       "sessions": "",
@@ -1121,8 +1121,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "74250",
-      "prepaid_50": "74250",
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": "66000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1130,7 +1130,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（プレミアム）880s",
       "sessions": "",
@@ -1143,8 +1143,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "89100",
-      "prepaid_50": "89100",
+      "prepaid_30": "79200",
+      "prepaid_50": "74250",
       "prepaid_manual": "79200",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1152,7 +1152,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（ライト）356s",
       "sessions": "",
@@ -1165,8 +1165,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "53460",
-      "prepaid_50": "53460",
+      "prepaid_30": "47520",
+      "prepaid_50": "44550",
       "prepaid_manual": "47520",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1174,7 +1174,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "ハイフアイシャワー®224s",
       "sessions": "",
@@ -1187,8 +1187,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "22320",
-      "prepaid_50": "22320",
+      "prepaid_30": "19840",
+      "prepaid_50": "18600",
       "prepaid_manual": "19840",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1196,7 +1196,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）324s",
       "sessions": "",
@@ -1209,8 +1209,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "33300",
-      "prepaid_50": "33300",
+      "prepaid_30": "29600",
+      "prepaid_50": "27750",
       "prepaid_manual": "29600",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1218,7 +1218,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
       "sessions": "",
@@ -1231,8 +1231,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "24750",
-      "prepaid_50": "24750",
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": "22000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1240,7 +1240,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
       "sessions": "",
@@ -1252,9 +1252,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "55620",
-      "prepaid_50": "55620",
+      "prepaid_10": "55620",
+      "prepaid_30": "49440",
+      "prepaid_50": "46350",
       "prepaid_manual": "49440",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1262,7 +1262,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ2d",
       "area": "トーニング➕タイトニング",
       "sessions": "20.00%",
@@ -1274,9 +1274,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "166860",
-      "prepaid_50": "166860",
+      "prepaid_10": "166860",
+      "prepaid_30": "148320",
+      "prepaid_50": "139050",
       "prepaid_manual": "148320",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1284,7 +1284,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
       "sessions": "",
@@ -1296,9 +1296,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "148500",
-      "prepaid_50": "148500",
+      "prepaid_10": "148500",
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": "132000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1306,7 +1306,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ4d",
       "area": "全顔",
       "sessions": "20.00%",
@@ -1318,9 +1318,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "445500",
-      "prepaid_50": "445500",
+      "prepaid_10": "445500",
+      "prepaid_30": "396000",
+      "prepaid_50": "371250",
       "prepaid_manual": "396000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1328,7 +1328,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
       "sessions": "",
@@ -1340,9 +1340,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "189000",
-      "prepaid_50": "189000",
+      "prepaid_10": "189000",
+      "prepaid_30": "168000",
+      "prepaid_50": "157500",
       "prepaid_manual": "168000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1350,7 +1350,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ6d",
       "area": "全顔",
       "sessions": "20.00%",
@@ -1362,9 +1362,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "567000",
-      "prepaid_50": "567000",
+      "prepaid_10": "567000",
+      "prepaid_30": "504000",
+      "prepaid_50": "472500",
       "prepaid_manual": "504000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1372,7 +1372,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
       "sessions": "",
@@ -1384,9 +1384,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_10": "49500",
+      "prepaid_30": "44000",
+      "prepaid_50": "41250",
       "prepaid_manual": "44000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1394,7 +1394,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナアイ2d",
       "area": "目元の治療",
       "sessions": "20.00%",
@@ -1406,9 +1406,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "148500",
-      "prepaid_50": "148500",
+      "prepaid_10": "148500",
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": "132000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1416,7 +1416,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
       "sessions": "",
@@ -1428,9 +1428,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "43200",
-      "prepaid_50": "43200",
+      "prepaid_10": "43200",
+      "prepaid_30": "38400",
+      "prepaid_50": "36000",
       "prepaid_manual": "38400",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1438,7 +1438,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "フォトナアイ粘膜無し表面のみ",
       "area": "目元の治療",
       "sessions": "20.00%",
@@ -1450,9 +1450,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "129600",
-      "prepaid_50": "129600",
+      "prepaid_10": "129600",
+      "prepaid_30": "115200",
+      "prepaid_50": "108000",
       "prepaid_manual": "115200",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1460,7 +1460,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルニューマ",
       "area": "100ショット",
       "sessions": "",
@@ -1473,8 +1473,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "24750",
-      "prepaid_50": "24750",
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": "22000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1482,7 +1482,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルニューマ",
       "area": "200ショット",
       "sessions": "",
@@ -1495,8 +1495,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": "44000",
+      "prepaid_50": "41250",
       "prepaid_manual": "44000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1504,7 +1504,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルニューマ",
       "area": "300ショット",
       "sessions": "",
@@ -1517,8 +1517,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "74250",
-      "prepaid_50": "74250",
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": "66000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1526,7 +1526,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルニューマ",
       "area": "400ショット",
       "sessions": "",
@@ -1539,8 +1539,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "99000",
-      "prepaid_50": "99000",
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": "88000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1548,7 +1548,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルニューマ",
       "area": "500ショット",
       "sessions": "",
@@ -1561,8 +1561,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "123750",
-      "prepaid_50": "123750",
+      "prepaid_30": "110000",
+      "prepaid_50": "103125",
       "prepaid_manual": "110000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1570,7 +1570,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
       "sessions": "132,000",
@@ -1583,8 +1583,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "173250",
-      "prepaid_50": "173250",
+      "prepaid_30": "154000",
+      "prepaid_50": "144375",
       "prepaid_manual": "154000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1592,7 +1592,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマープレミアム（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（プレミアム）ボ500ハ680S",
       "sessions": "154000",
@@ -1605,8 +1605,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "198000",
-      "prepaid_50": "198000",
+      "prepaid_30": "176000",
+      "prepaid_50": "165000",
       "prepaid_manual": "176000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1614,7 +1614,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（ライト）ボ200sハ356s",
       "sessions": "",
@@ -1627,8 +1627,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "105300",
-      "prepaid_50": "105300",
+      "prepaid_30": "93600",
+      "prepaid_50": "87750",
       "prepaid_manual": "93600",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1724,7 +1724,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔スタンダード",
       "sessions": "",
@@ -1737,8 +1737,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "26820",
-      "prepaid_50": "26820",
+      "prepaid_30": "23840",
+      "prepaid_50": "22350",
       "prepaid_manual": "23840",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1746,7 +1746,7 @@
     },
     {
       "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "白玉ハイフトーニング",
       "area": "全顔ライト",
       "sessions": "",
@@ -1759,8 +1759,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "17820",
-      "prepaid_50": "17820",
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": "15840",
       "categories": [
         "しわ・たるみ・小顔"
@@ -3456,7 +3456,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "イオン導入",
       "area": "トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -3468,9 +3468,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "7920",
-      "prepaid_50": "7920",
+      "prepaid_10": "7920",
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": "7040",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3478,7 +3478,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "イオン導入",
       "area": "ビタミンC＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -3490,9 +3490,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "7920",
-      "prepaid_50": "7920",
+      "prepaid_10": "7920",
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": "7040",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3566,7 +3566,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル",
       "area": "カスタマイズ",
       "sessions": "",
@@ -3579,8 +3579,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": "44000",
+      "prepaid_50": "41250",
       "prepaid_manual": "44000",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3588,7 +3588,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "トラネキサム酸",
       "sessions": "",
@@ -3600,9 +3600,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "4950",
-      "prepaid_50": "4950",
+      "prepaid_10": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": "4400",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3610,7 +3610,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ビタミンC",
       "sessions": "",
@@ -3622,9 +3622,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "4950",
-      "prepaid_50": "4950",
+      "prepaid_10": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": "4400",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3632,7 +3632,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル（美容液オプション）",
       "area": "ラコス",
       "sessions": "",
@@ -3644,9 +3644,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_10": "19800",
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": "17600",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3654,7 +3654,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル",
       "area": "頬・鼻（毛穴）・首：1部位",
       "sessions": "",
@@ -3667,8 +3667,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "26400",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3676,7 +3676,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "サーマニードル",
       "area": "顔全体",
       "sessions": "",
@@ -3689,8 +3689,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "39600",
-      "prepaid_50": "39600",
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": "35200",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3698,7 +3698,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
       "sessions": "",
@@ -3710,9 +3710,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "17820",
-      "prepaid_50": "17820",
+      "prepaid_10": "17820",
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": "15840",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3720,7 +3720,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体",
       "sessions": "20.00%",
@@ -3732,9 +3732,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "53460",
-      "prepaid_50": "53460",
+      "prepaid_10": "53460",
+      "prepaid_30": "47520",
+      "prepaid_50": "44550",
       "prepaid_manual": "47520",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3742,7 +3742,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -3754,9 +3754,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "23760",
-      "prepaid_50": "23760",
+      "prepaid_10": "23760",
+      "prepaid_30": "21120",
+      "prepaid_50": "19800",
       "prepaid_manual": "21120",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -3764,7 +3764,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ダーマペン4",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "20.00%",
@@ -3776,9 +3776,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "71280",
-      "prepaid_50": "71280",
+      "prepaid_10": "71280",
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": "63360",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -4124,7 +4124,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "お尻（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -4136,9 +4136,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "59400",
-      "prepaid_50": "59400",
+      "prepaid_10": "59400",
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": "52800",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -4146,7 +4146,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体",
       "sessions": "",
@@ -4158,9 +4158,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "26730",
-      "prepaid_50": "26730",
+      "prepaid_10": "26730",
+      "prepaid_30": "23760",
+      "prepaid_50": "22275",
       "prepaid_manual": "23760",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -4168,7 +4168,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "",
@@ -4180,9 +4180,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "32670",
-      "prepaid_50": "32670",
+      "prepaid_10": "32670",
+      "prepaid_30": "29040",
+      "prepaid_50": "27225",
       "prepaid_manual": "29040",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -4190,7 +4190,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン",
       "area": "顔全体（ヒアルロン酸＋マスク＋麻酔付き）",
       "sessions": "20.00%",
@@ -4202,9 +4202,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "98010",
-      "prepaid_50": "98010",
+      "prepaid_10": "98010",
+      "prepaid_30": "87120",
+      "prepaid_50": "81675",
       "prepaid_manual": "87120",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -10989,7 +10989,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "エステ",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ハーブピーリング",
       "area": "顔",
       "sessions": "",
@@ -11003,7 +11003,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "24750",
       "prepaid_30": "22000",
-      "prepaid_50": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null,
       "categories": [
         "エステフェイシャル"
@@ -11011,7 +11011,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "エステ",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ハーブピーリング背中",
       "area": "背中",
       "sessions": "",
@@ -11025,7 +11025,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "39600",
       "prepaid_30": "35200",
-      "prepaid_50": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null,
       "categories": [
         "エステフェイシャル"
@@ -11033,7 +11033,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "エステ",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ハーブピーリング背中半分",
       "area": "背中半分",
       "sessions": "",
@@ -11047,7 +11047,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "24750",
       "prepaid_30": "22000",
-      "prepaid_50": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null,
       "categories": [
         "エステフェイシャル"
@@ -11297,7 +11297,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "エステ",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ＯＰイオン導入",
       "area": "ＶＣor トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
       "sessions": "",
@@ -11311,7 +11311,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "7920",
       "prepaid_30": "7040",
-      "prepaid_50": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null,
       "categories": [
         "エステフェイシャル"
@@ -13079,7 +13079,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ウーバーピール",
       "sessions": "",
@@ -13091,9 +13091,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -13123,7 +13123,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "ヒアルロン酸",
       "sessions": "",
@@ -13135,9 +13135,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "4950",
-      "prepaid_50": "4950",
+      "prepaid_10": "4950",
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": "4400",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -13145,7 +13145,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Dr.施術）",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ヴェルヴェットスキン（美容液オプション）",
       "area": "美白",
       "sessions": "",
@@ -13157,9 +13157,9 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "9900",
-      "prepaid_50": "9900",
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800",
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア"
@@ -13211,7 +13211,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹",
       "sessions": "10.00%",
@@ -13224,8 +13224,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "396000",
+      "prepaid_50": "371250",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13233,7 +13233,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹　1320S",
       "sessions": "20.00%",
@@ -13246,8 +13246,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13255,7 +13255,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）",
       "sessions": "10.00%",
@@ -13268,8 +13268,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "297000",
+      "prepaid_50": "278437",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13277,7 +13277,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "お腹（ライト）　880S",
       "sessions": "20.00%",
@@ -13290,8 +13290,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13299,7 +13299,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
       "sessions": "10.00%",
@@ -13312,8 +13312,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "55687",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13321,7 +13321,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上",
       "sessions": "10.00%",
@@ -13334,8 +13334,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13343,7 +13343,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上　180S",
       "sessions": "20.00%",
@@ -13356,8 +13356,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13365,7 +13365,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ひざ上（ライト）　120S",
       "sessions": "20.00%",
@@ -13378,8 +13378,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13387,7 +13387,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト",
       "sessions": "10.00%",
@@ -13400,8 +13400,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "396000",
+      "prepaid_50": "371250",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13409,7 +13409,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト　1200S",
       "sessions": "20.00%",
@@ -13422,8 +13422,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13431,7 +13431,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）",
       "sessions": "10.00%",
@@ -13444,8 +13444,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "297000",
+      "prepaid_50": "278437",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13453,7 +13453,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ウエスト（ライト）800S",
       "sessions": "20.00%",
@@ -13466,8 +13466,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13475,7 +13475,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット",
       "sessions": "10.00%",
@@ -13488,8 +13488,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13497,7 +13497,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "ブラファット　120S",
       "sessions": "20.00%",
@@ -13510,8 +13510,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13519,7 +13519,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕",
       "sessions": "10.00%",
@@ -13532,8 +13532,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13541,7 +13541,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕　540S",
       "sessions": "20.00%",
@@ -13554,8 +13554,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13563,7 +13563,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）",
       "sessions": "10.00%",
@@ -13576,8 +13576,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "118800",
+      "prepaid_50": "111375",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13585,7 +13585,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "二の腕（ライト）　360S",
       "sessions": "20.00%",
@@ -13598,8 +13598,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13607,7 +13607,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも",
       "sessions": "10.00%",
@@ -13620,8 +13620,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "297000",
+      "prepaid_50": "278437",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13629,7 +13629,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "内ももor外もも　840S",
       "sessions": "20.00%",
@@ -13642,8 +13642,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13651,7 +13651,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り",
       "sessions": "10.00%",
@@ -13664,8 +13664,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "534600",
+      "prepaid_50": "501187",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13673,7 +13673,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ウルトラフォーマーMPT",
       "area": "太もも周り　1680S",
       "sessions": "20.00%",
@@ -13686,8 +13686,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "178200",
+      "prepaid_50": "167062",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13695,7 +13695,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
       "sessions": "20.00%",
@@ -13708,8 +13708,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "33000",
+      "prepaid_50": "30937",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13717,7 +13717,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位1エリア",
       "sessions": "20.00%",
@@ -13730,8 +13730,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "44000",
+      "prepaid_50": "41250",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13739,7 +13739,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
       "sessions": "20.00%",
@@ -13752,8 +13752,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13761,7 +13761,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位2エリア同時施術",
       "sessions": "20.00%",
@@ -13774,8 +13774,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13783,7 +13783,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
       "sessions": "20.00%",
@@ -13796,8 +13796,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13805,7 +13805,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位3エリア同時施術",
       "sessions": "20.00%",
@@ -13818,8 +13818,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13827,7 +13827,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
       "sessions": "20.00%",
@@ -13840,8 +13840,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13849,7 +13849,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体1部位4エリア同時施術",
       "sessions": "20.00%",
@@ -13862,8 +13862,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "176000",
+      "prepaid_50": "165000",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13871,7 +13871,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "10％",
@@ -13884,8 +13884,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "198000",
+      "prepaid_50": "185625",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13893,7 +13893,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "20.00%",
@@ -13906,8 +13906,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "330000",
+      "prepaid_50": "309375",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13915,7 +13915,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "30.00%",
@@ -13928,8 +13928,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "264000",
+      "prepaid_50": "247500",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13937,7 +13937,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　2カップ同時施術",
       "sessions": "40.00%",
@@ -13950,8 +13950,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "440000",
+      "prepaid_50": "412500",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13959,7 +13959,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
       "sessions": "10％",
@@ -13972,8 +13972,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "396000",
+      "prepaid_50": "371250",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
@@ -13981,7 +13981,7 @@
     },
     {
       "category": "医療痩身",
-      "provider_type": "医療",
+      "provider_type": "医療（Ns施術）",
       "treatment": "脂肪冷却（クラツーα）",
       "area": "身体　4カップ同時施術",
       "sessions": "20.00%",
@@ -13994,8 +13994,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "660000",
+      "prepaid_50": "618750",
       "prepaid_manual": null,
       "categories": [
         "医療痩身"
