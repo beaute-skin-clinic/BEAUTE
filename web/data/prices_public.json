@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T04:09:52.728Z",
+    "generated_at": "2026-03-03T04:11:31.330Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 674,
     "records_with_cost": 64,
@@ -2380,11 +2380,11 @@
     {
       "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（アラガン）（コピー）",
+      "treatment": "ボトックス（ニューロノックス）",
       "area": "50単位",
       "sessions": "",
-      "old_price": "110000",
-      "price": "66000",
+      "old_price": "44000",
+      "price": "44000",
       "first_price": "設定なし",
       "repeat_price": null,
       "bundle_price": null,
@@ -2392,8 +2392,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "59400",
-      "prepaid_50": "59400",
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
