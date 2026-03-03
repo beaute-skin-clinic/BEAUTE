@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T00:33:33.850Z",
+    "generated_at": "2026-03-03T00:43:58.307Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70,
@@ -22,8 +22,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -41,8 +41,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "148500",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -60,8 +60,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1980",
+      "prepaid_50": "1980",
       "prepaid_manual": null
     },
     {
@@ -79,8 +79,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -98,8 +98,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -117,8 +117,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "990",
+      "prepaid_50": "990",
       "prepaid_manual": null
     },
     {
@@ -136,8 +136,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -155,8 +155,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "990",
+      "prepaid_50": "990",
       "prepaid_manual": null
     },
     {
@@ -174,8 +174,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "34650",
+      "prepaid_50": "34650",
       "prepaid_manual": "30800"
     },
     {
@@ -193,8 +193,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -212,8 +212,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -231,8 +231,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": "4400"
     },
     {
@@ -250,8 +250,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7524",
+      "prepaid_50": "7524",
       "prepaid_manual": "6688"
     },
     {
@@ -269,8 +269,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
@@ -288,8 +288,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -307,8 +307,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7920",
       "prepaid_manual": "7040"
     },
     {
@@ -326,8 +326,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -345,8 +345,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -364,8 +364,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -383,8 +383,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
@@ -402,8 +402,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "990",
+      "prepaid_50": "990",
       "prepaid_manual": null
     },
     {
@@ -421,8 +421,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -440,8 +440,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "990",
+      "prepaid_50": "990",
       "prepaid_manual": null
     },
     {
@@ -459,8 +459,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -478,8 +478,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "99000",
       "prepaid_manual": null
     },
     {
@@ -497,8 +497,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -516,8 +516,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -535,8 +535,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "99000",
       "prepaid_manual": null
     },
     {
@@ -554,8 +554,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -573,8 +573,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -592,8 +592,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -611,8 +611,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -630,8 +630,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "11880",
+      "prepaid_50": "11880",
       "prepaid_manual": "10560"
     },
     {
@@ -649,8 +649,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -668,8 +668,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
@@ -687,8 +687,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -706,8 +706,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -725,8 +725,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -744,8 +744,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -763,8 +763,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "53460",
+      "prepaid_50": "53460",
       "prepaid_manual": "47520"
     },
     {
@@ -782,8 +782,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -801,8 +801,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "89100",
+      "prepaid_50": "89100",
       "prepaid_manual": "79200"
     },
     {
@@ -820,8 +820,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "43200",
+      "prepaid_50": "43200",
       "prepaid_manual": "38400"
     },
     {
@@ -839,8 +839,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "129600",
+      "prepaid_50": "129600",
       "prepaid_manual": "115200"
     },
     {
@@ -858,8 +858,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "37800",
+      "prepaid_50": "37800",
       "prepaid_manual": "33600"
     },
     {
@@ -877,8 +877,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "113400",
+      "prepaid_50": "113400",
       "prepaid_manual": "100800"
     },
     {
@@ -896,8 +896,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -915,8 +915,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "53460",
+      "prepaid_50": "53460",
       "prepaid_manual": "47520"
     },
     {
@@ -934,8 +934,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22320",
+      "prepaid_50": "22320",
       "prepaid_manual": "19840"
     },
     {
@@ -953,8 +953,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66960",
+      "prepaid_50": "66960",
       "prepaid_manual": "59520"
     },
     {
@@ -972,8 +972,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "74250",
+      "prepaid_50": "74250",
       "prepaid_manual": "66000"
     },
     {
@@ -991,8 +991,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "89100",
+      "prepaid_50": "89100",
       "prepaid_manual": "79200"
     },
     {
@@ -1010,8 +1010,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "53460",
+      "prepaid_50": "53460",
       "prepaid_manual": "47520"
     },
     {
@@ -1029,8 +1029,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22320",
+      "prepaid_50": "22320",
       "prepaid_manual": "19840"
     },
     {
@@ -1048,8 +1048,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "33300",
+      "prepaid_50": "33300",
       "prepaid_manual": "29600"
     },
     {
@@ -1067,8 +1067,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24750",
+      "prepaid_50": "24750",
       "prepaid_manual": "22000"
     },
     {
@@ -1086,8 +1086,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "55620",
+      "prepaid_50": "55620",
       "prepaid_manual": "49440"
     },
     {
@@ -1105,8 +1105,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "166860",
+      "prepaid_50": "166860",
       "prepaid_manual": "148320"
     },
     {
@@ -1124,8 +1124,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "148500",
+      "prepaid_50": "148500",
       "prepaid_manual": "132000"
     },
     {
@@ -1143,8 +1143,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "445500",
+      "prepaid_50": "445500",
       "prepaid_manual": "396000"
     },
     {
@@ -1162,8 +1162,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "189000",
+      "prepaid_50": "189000",
       "prepaid_manual": "168000"
     },
     {
@@ -1181,8 +1181,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "567000",
+      "prepaid_50": "567000",
       "prepaid_manual": "504000"
     },
     {
@@ -1200,8 +1200,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": "44000"
     },
     {
@@ -1219,8 +1219,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "148500",
+      "prepaid_50": "148500",
       "prepaid_manual": "132000"
     },
     {
@@ -1238,8 +1238,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "43200",
+      "prepaid_50": "43200",
       "prepaid_manual": "38400"
     },
     {
@@ -1257,8 +1257,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "129600",
+      "prepaid_50": "129600",
       "prepaid_manual": "115200"
     },
     {
@@ -1276,8 +1276,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24750",
+      "prepaid_50": "24750",
       "prepaid_manual": "22000"
     },
     {
@@ -1295,8 +1295,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": "44000"
     },
     {
@@ -1314,8 +1314,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "74250",
+      "prepaid_50": "74250",
       "prepaid_manual": "66000"
     },
     {
@@ -1333,8 +1333,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "99000",
       "prepaid_manual": "88000"
     },
     {
@@ -1352,8 +1352,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "123750",
+      "prepaid_50": "123750",
       "prepaid_manual": "110000"
     },
     {
@@ -1371,8 +1371,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "173250",
+      "prepaid_50": "173250",
       "prepaid_manual": "154000"
     },
     {
@@ -1390,8 +1390,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "198000",
+      "prepaid_50": "198000",
       "prepaid_manual": "176000"
     },
     {
@@ -1409,8 +1409,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "105300",
+      "prepaid_50": "105300",
       "prepaid_manual": "93600"
     },
     {
@@ -1428,8 +1428,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22320",
+      "prepaid_50": "22320",
       "prepaid_manual": "19840"
     },
     {
@@ -1447,8 +1447,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66960",
+      "prepaid_50": "66960",
       "prepaid_manual": "59520"
     },
     {
@@ -1466,8 +1466,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -1485,8 +1485,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "89100",
+      "prepaid_50": "89100",
       "prepaid_manual": "79200"
     },
     {
@@ -1504,8 +1504,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26820",
+      "prepaid_50": "26820",
       "prepaid_manual": "23840"
     },
     {
@@ -1523,8 +1523,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -1542,8 +1542,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -1561,8 +1561,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -1580,8 +1580,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1599,8 +1599,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -1618,8 +1618,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1637,8 +1637,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -1656,8 +1656,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -1675,8 +1675,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1694,8 +1694,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -1713,8 +1713,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1732,8 +1732,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "118800",
+      "prepaid_50": "118800",
       "prepaid_manual": null
     },
     {
@@ -1751,8 +1751,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1770,8 +1770,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1789,8 +1789,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -1808,8 +1808,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -1827,8 +1827,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -1846,8 +1846,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -1865,8 +1865,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -1884,8 +1884,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -1903,8 +1903,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "34650",
+      "prepaid_50": "34650",
       "prepaid_manual": null
     },
     {
@@ -1922,8 +1922,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -1941,8 +1941,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -1960,8 +1960,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -1979,8 +1979,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -1998,8 +1998,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -2017,8 +2017,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "693000",
+      "prepaid_50": "693000",
       "prepaid_manual": null
     },
     {
@@ -2036,8 +2036,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -2055,8 +2055,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24750",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -2074,8 +2074,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -2093,8 +2093,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "74250",
+      "prepaid_50": "74250",
       "prepaid_manual": null
     },
     {
@@ -2112,8 +2112,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -2131,8 +2131,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "89100",
+      "prepaid_50": "89100",
       "prepaid_manual": null
     },
     {
@@ -2150,8 +2150,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -2169,8 +2169,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24750",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -2188,8 +2188,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "12375",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -2207,8 +2207,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -2226,8 +2226,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -2245,8 +2245,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -2264,8 +2264,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -2283,8 +2283,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -2302,8 +2302,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "44550",
+      "prepaid_50": "44550",
       "prepaid_manual": null
     },
     {
@@ -2321,8 +2321,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -2340,8 +2340,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -2359,8 +2359,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -2378,8 +2378,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -2397,8 +2397,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -2416,8 +2416,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "118800",
+      "prepaid_50": "118800",
       "prepaid_manual": null
     },
     {
@@ -2435,8 +2435,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "11880",
+      "prepaid_50": "11880",
       "prepaid_manual": null
     },
     {
@@ -2455,7 +2455,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "39600",
       "prepaid_manual": "39600"
     },
     {
@@ -2474,7 +2474,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "69300",
       "prepaid_manual": "69300"
     },
     {
@@ -2493,7 +2493,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "17325",
       "prepaid_manual": "17325"
     },
     {
@@ -2512,7 +2512,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "24750",
       "prepaid_manual": "24750"
     },
     {
@@ -2531,7 +2531,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "39600",
       "prepaid_manual": "39600"
     },
     {
@@ -2550,7 +2550,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "69300",
       "prepaid_manual": "69300"
     },
     {
@@ -2569,7 +2569,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "103950",
       "prepaid_manual": "103950"
     },
     {
@@ -2588,7 +2588,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "138600",
       "prepaid_manual": "138600"
     },
     {
@@ -2607,7 +2607,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "173250",
       "prepaid_manual": "173250"
     },
     {
@@ -2626,7 +2626,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "49500",
       "prepaid_manual": "49500"
     },
     {
@@ -2645,7 +2645,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "198000"
     },
     {
@@ -2664,7 +2664,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "297000",
       "prepaid_manual": "297000"
     },
     {
@@ -2683,7 +2683,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "396000",
       "prepaid_manual": "396000"
     },
     {
@@ -2702,7 +2702,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "495000",
       "prepaid_manual": "495000"
     },
     {
@@ -2721,7 +2721,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "594000",
       "prepaid_manual": "594000"
     },
     {
@@ -2740,7 +2740,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "29700",
       "prepaid_manual": "29700"
     },
     {
@@ -2759,7 +2759,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "118800",
       "prepaid_manual": "118800"
     },
     {
@@ -2778,7 +2778,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "178200",
       "prepaid_manual": "178200"
     },
     {
@@ -2797,7 +2797,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "237600",
       "prepaid_manual": "237600"
     },
     {
@@ -2816,7 +2816,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "297000",
       "prepaid_manual": "297000"
     },
     {
@@ -2835,7 +2835,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "356400",
       "prepaid_manual": "356400"
     },
     {
@@ -2854,7 +2854,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "594",
       "prepaid_manual": "594"
     },
     {
@@ -2873,7 +2873,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "1980",
       "prepaid_manual": "1980"
     },
     {
@@ -2891,8 +2891,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
@@ -2910,8 +2910,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -2929,8 +2929,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -2948,8 +2948,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -2967,8 +2967,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7920",
       "prepaid_manual": "7040"
     },
     {
@@ -2986,8 +2986,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7920",
       "prepaid_manual": "7040"
     },
     {
@@ -3005,8 +3005,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": "39600"
     },
     {
@@ -3024,8 +3024,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "99000",
       "prepaid_manual": "99000"
     },
     {
@@ -3043,8 +3043,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "79200",
       "prepaid_manual": "79200"
     },
     {
@@ -3062,8 +3062,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "49500",
+      "prepaid_50": "49500",
       "prepaid_manual": "44000"
     },
     {
@@ -3081,8 +3081,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": "4400"
     },
     {
@@ -3100,8 +3100,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": "4400"
     },
     {
@@ -3119,8 +3119,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
@@ -3138,8 +3138,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
@@ -3157,8 +3157,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "39600",
       "prepaid_manual": "35200"
     },
     {
@@ -3176,8 +3176,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -3195,8 +3195,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "53460",
+      "prepaid_50": "53460",
       "prepaid_manual": "47520"
     },
     {
@@ -3214,8 +3214,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "23760",
+      "prepaid_50": "23760",
       "prepaid_manual": "21120"
     },
     {
@@ -3233,8 +3233,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "71280",
+      "prepaid_50": "71280",
       "prepaid_manual": "63360"
     },
     {
@@ -3252,8 +3252,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "23760",
+      "prepaid_50": "23760",
       "prepaid_manual": "21120"
     },
     {
@@ -3271,8 +3271,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "71280",
+      "prepaid_50": "71280",
       "prepaid_manual": "63360"
     },
     {
@@ -3290,8 +3290,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17820",
+      "prepaid_50": "17820",
       "prepaid_manual": "15840"
     },
     {
@@ -3309,8 +3309,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "53460",
+      "prepaid_50": "53460",
       "prepaid_manual": "47520"
     },
     {
@@ -3328,8 +3328,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35640",
+      "prepaid_50": "35640",
       "prepaid_manual": "31680"
     },
     {
@@ -3347,8 +3347,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "106920",
+      "prepaid_50": "106920",
       "prepaid_manual": "95040"
     },
     {
@@ -3366,8 +3366,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26730",
+      "prepaid_50": "26730",
       "prepaid_manual": "23760"
     },
     {
@@ -3385,8 +3385,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "80190",
+      "prepaid_50": "80190",
       "prepaid_manual": "71280"
     },
     {
@@ -3404,15 +3404,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋エクソソームアンプル",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "エクソソームアンプル",
       "sessions": "",
       "old_price": null,
       "price": "22000",
@@ -3423,15 +3423,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": "17600"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋タイトニングセラム",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "タイトニングセラム",
       "sessions": "",
       "old_price": null,
       "price": "16500",
@@ -3442,15 +3442,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋ヒト臍帯由来幹細胞培養上清液",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "ヒト臍帯由来幹細胞培養上清液",
       "sessions": "",
       "old_price": null,
       "price": "33000",
@@ -3461,15 +3461,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": "26400"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋ビタミンC",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "ビタミンC",
       "sessions": "",
       "old_price": null,
       "price": "14300",
@@ -3480,15 +3480,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "12870",
+      "prepaid_50": "12870",
       "prepaid_manual": "11440"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋プラセンタ",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "プラセンタ",
       "sessions": "",
       "old_price": null,
       "price": "14300",
@@ -3499,15 +3499,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "12870",
+      "prepaid_50": "12870",
       "prepaid_manual": "11440"
     },
     {
       "category": "美肌治療",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング",
-      "area": "プラズマ＋リジェンセラム修復",
+      "treatment": "プラズマリフティング＋美容液",
+      "area": "リジュランセラム修復",
       "sessions": "",
       "old_price": null,
       "price": "16500",
@@ -3518,8 +3518,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": "13200"
     },
     {
@@ -3537,8 +3537,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": "52800"
     },
     {
@@ -3556,8 +3556,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26730",
+      "prepaid_50": "26730",
       "prepaid_manual": "23760"
     },
     {
@@ -3575,8 +3575,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "32670",
+      "prepaid_50": "32670",
       "prepaid_manual": "29040"
     },
     {
@@ -3594,8 +3594,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "98010",
+      "prepaid_50": "98010",
       "prepaid_manual": "87120"
     },
     {
@@ -3613,8 +3613,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "495",
+      "prepaid_50": "495",
       "prepaid_manual": "440"
     },
     {
@@ -3631,9 +3631,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "11880",
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -3650,9 +3650,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "35640",
+      "prepaid_30": "31680",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -3669,9 +3669,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "59400",
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -3688,9 +3688,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "11880",
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -3707,9 +3707,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "19800",
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -3726,9 +3726,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "99000",
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": null
     },
     {
@@ -3745,9 +3745,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "59400",
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -3764,9 +3764,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "11880",
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -3783,9 +3783,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "59400",
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -3802,9 +3802,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "35640",
+      "prepaid_30": "31680",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -3821,9 +3821,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -3840,9 +3840,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "74250",
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": null
     },
     {
@@ -3859,9 +3859,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "44550",
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -3878,9 +3878,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -3897,9 +3897,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "11880",
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -3916,9 +3916,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "59400",
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -3935,9 +3935,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "35640",
+      "prepaid_30": "31680",
+      "prepaid_50": "29700",
       "prepaid_manual": null
     },
     {
@@ -3954,9 +3954,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "14850",
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -3974,8 +3974,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "440",
+      "prepaid_50": "412",
       "prepaid_manual": null
     },
     {
@@ -3993,8 +3993,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -4012,8 +4012,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -4031,8 +4031,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -4050,8 +4050,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -4069,8 +4069,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -4088,8 +4088,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -4107,8 +4107,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -4126,8 +4126,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "140800",
+      "prepaid_50": "132000",
       "prepaid_manual": null
     },
     {
@@ -4145,8 +4145,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": null
     },
     {
@@ -4164,8 +4164,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -4183,8 +4183,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -4202,8 +4202,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -4221,8 +4221,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8448",
+      "prepaid_50": "7920",
       "prepaid_manual": null
     },
     {
@@ -4240,8 +4240,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "67584",
+      "prepaid_50": "63360",
       "prepaid_manual": null
     },
     {
@@ -4259,8 +4259,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -4278,8 +4278,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "3520",
+      "prepaid_50": "3300",
       "prepaid_manual": null
     },
     {
@@ -4297,8 +4297,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "28160",
+      "prepaid_50": "26400",
       "prepaid_manual": null
     },
     {
@@ -4316,8 +4316,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -4335,8 +4335,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "3520",
+      "prepaid_50": "3300",
       "prepaid_manual": null
     },
     {
@@ -4354,8 +4354,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "28160",
+      "prepaid_50": "26400",
       "prepaid_manual": null
     },
     {
@@ -4373,8 +4373,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -4392,8 +4392,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -4411,8 +4411,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -4430,8 +4430,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -4449,8 +4449,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8448",
+      "prepaid_50": "7920",
       "prepaid_manual": null
     },
     {
@@ -4468,8 +4468,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "67584",
+      "prepaid_50": "63360",
       "prepaid_manual": null
     },
     {
@@ -4487,8 +4487,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -4506,8 +4506,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "3520",
+      "prepaid_50": "3300",
       "prepaid_manual": null
     },
     {
@@ -4525,8 +4525,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "28160",
+      "prepaid_50": "26400",
       "prepaid_manual": null
     },
     {
@@ -4544,8 +4544,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -4563,8 +4563,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -4582,8 +4582,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -4601,8 +4601,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -4620,8 +4620,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -4639,8 +4639,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -4658,8 +4658,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -4677,8 +4677,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2112",
+      "prepaid_50": "1980",
       "prepaid_manual": null
     },
     {
@@ -4696,8 +4696,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "16896",
+      "prepaid_50": "15840",
       "prepaid_manual": null
     },
     {
@@ -4715,8 +4715,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -4734,8 +4734,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "3520",
+      "prepaid_50": "3300",
       "prepaid_manual": null
     },
     {
@@ -4753,8 +4753,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "28160",
+      "prepaid_50": "26400",
       "prepaid_manual": null
     },
     {
@@ -4772,8 +4772,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -4791,8 +4791,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "70400",
+      "prepaid_50": "66000",
       "prepaid_manual": null
     },
     {
@@ -4810,8 +4810,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "352000",
+      "prepaid_50": "330000",
       "prepaid_manual": null
     },
     {
@@ -4829,8 +4829,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "563200",
+      "prepaid_50": "528000",
       "prepaid_manual": null
     },
     {
@@ -4848,8 +4848,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -4867,8 +4867,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8448",
+      "prepaid_50": "7920",
       "prepaid_manual": null
     },
     {
@@ -4886,8 +4886,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "67584",
+      "prepaid_50": "63360",
       "prepaid_manual": null
     },
     {
@@ -4905,8 +4905,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -4924,8 +4924,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2112",
+      "prepaid_50": "1980",
       "prepaid_manual": null
     },
     {
@@ -4943,8 +4943,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "16896",
+      "prepaid_50": "15840",
       "prepaid_manual": null
     },
     {
@@ -4962,8 +4962,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -4981,8 +4981,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5000,8 +5000,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5019,8 +5019,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5038,8 +5038,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5057,8 +5057,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5076,8 +5076,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5095,8 +5095,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5114,8 +5114,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5133,8 +5133,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5152,8 +5152,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5171,8 +5171,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5190,8 +5190,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5209,8 +5209,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5228,8 +5228,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5247,8 +5247,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5266,8 +5266,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2112",
+      "prepaid_50": "1980",
       "prepaid_manual": null
     },
     {
@@ -5285,8 +5285,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "16896",
+      "prepaid_50": "15840",
       "prepaid_manual": null
     },
     {
@@ -5304,8 +5304,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5323,8 +5323,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -5342,8 +5342,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -5361,8 +5361,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -5380,8 +5380,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "440",
+      "prepaid_50": "412",
       "prepaid_manual": null
     },
     {
@@ -5399,8 +5399,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -5418,8 +5418,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "126720",
+      "prepaid_50": "118800",
       "prepaid_manual": null
     },
     {
@@ -5437,8 +5437,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "74250",
       "prepaid_manual": null
     },
     {
@@ -5456,8 +5456,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null
     },
     {
@@ -5475,8 +5475,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -5494,8 +5494,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -5513,8 +5513,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -5532,8 +5532,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -5551,8 +5551,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -5570,8 +5570,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -5589,8 +5589,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -5608,8 +5608,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -5627,8 +5627,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "17600",
+      "prepaid_50": "16500",
       "prepaid_manual": null
     },
     {
@@ -5646,8 +5646,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "140800",
+      "prepaid_50": "132000",
       "prepaid_manual": null
     },
     {
@@ -5665,8 +5665,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": null
     },
     {
@@ -5684,8 +5684,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -5703,8 +5703,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -5722,8 +5722,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -5741,8 +5741,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -5760,8 +5760,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -5779,8 +5779,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -5798,8 +5798,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -5817,8 +5817,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "126720",
+      "prepaid_50": "118800",
       "prepaid_manual": null
     },
     {
@@ -5836,8 +5836,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "74250",
       "prepaid_manual": null
     },
     {
@@ -5855,8 +5855,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -5874,8 +5874,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -5893,8 +5893,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -5912,8 +5912,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -5931,8 +5931,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "105600",
+      "prepaid_50": "99000",
       "prepaid_manual": null
     },
     {
@@ -5950,8 +5950,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": null
     },
     {
@@ -5969,8 +5969,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -5988,8 +5988,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "105600",
+      "prepaid_50": "99000",
       "prepaid_manual": null
     },
     {
@@ -6007,8 +6007,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": null
     },
     {
@@ -6026,8 +6026,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -6045,8 +6045,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -6064,8 +6064,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -6083,8 +6083,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null
     },
     {
@@ -6102,8 +6102,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -6121,8 +6121,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -6140,8 +6140,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "149600",
+      "prepaid_50": "140250",
       "prepaid_manual": null
     },
     {
@@ -6159,8 +6159,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1196800",
+      "prepaid_50": "1122000",
       "prepaid_manual": null
     },
     {
@@ -6178,8 +6178,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "748000",
+      "prepaid_50": "701250",
       "prepaid_manual": null
     },
     {
@@ -6197,8 +6197,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -6216,8 +6216,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -6235,8 +6235,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -6254,8 +6254,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -6273,8 +6273,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "6600",
+      "prepaid_50": "6187",
       "prepaid_manual": null
     },
     {
@@ -6292,8 +6292,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -6311,8 +6311,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "33000",
+      "prepaid_50": "30937",
       "prepaid_manual": null
     },
     {
@@ -6330,8 +6330,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -6349,8 +6349,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -6368,8 +6368,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -6387,8 +6387,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -6406,8 +6406,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -6425,8 +6425,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -6444,8 +6444,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -6463,8 +6463,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -6482,8 +6482,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -6501,8 +6501,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "30800",
+      "prepaid_50": "28875",
       "prepaid_manual": null
     },
     {
@@ -6520,8 +6520,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "316800",
+      "prepaid_50": "297000",
       "prepaid_manual": null
     },
     {
@@ -6539,8 +6539,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "198000",
+      "prepaid_50": "185625",
       "prepaid_manual": null
     },
     {
@@ -6558,8 +6558,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "30800",
+      "prepaid_50": "28875",
       "prepaid_manual": null
     },
     {
@@ -6577,8 +6577,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "246400",
+      "prepaid_50": "231000",
       "prepaid_manual": null
     },
     {
@@ -6596,8 +6596,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "154000",
+      "prepaid_50": "144375",
       "prepaid_manual": null
     },
     {
@@ -6615,8 +6615,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "23760",
+      "prepaid_50": "22275",
       "prepaid_manual": null
     },
     {
@@ -6634,8 +6634,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "190080",
+      "prepaid_50": "178200",
       "prepaid_manual": null
     },
     {
@@ -6653,8 +6653,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "118800",
+      "prepaid_50": "111375",
       "prepaid_manual": null
     },
     {
@@ -6672,8 +6672,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "15840",
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -6691,8 +6691,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "126720",
+      "prepaid_50": "118800",
       "prepaid_manual": null
     },
     {
@@ -6710,8 +6710,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "79200",
+      "prepaid_50": "74250",
       "prepaid_manual": null
     },
     {
@@ -6729,8 +6729,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -6748,8 +6748,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -6767,8 +6767,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -6786,8 +6786,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19800",
+      "prepaid_50": "18562",
       "prepaid_manual": null
     },
     {
@@ -6805,8 +6805,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "158400",
+      "prepaid_50": "148500",
       "prepaid_manual": null
     },
     {
@@ -6824,8 +6824,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "92812",
       "prepaid_manual": null
     },
     {
@@ -6843,8 +6843,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -6862,8 +6862,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -6881,8 +6881,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -6900,8 +6900,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -6919,8 +6919,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -6938,8 +6938,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -6957,8 +6957,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4928",
+      "prepaid_50": "4620",
       "prepaid_manual": null
     },
     {
@@ -6976,8 +6976,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39424",
+      "prepaid_50": "36960",
       "prepaid_manual": null
     },
     {
@@ -6995,8 +6995,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24640",
+      "prepaid_50": "23100",
       "prepaid_manual": null
     },
     {
@@ -7014,8 +7014,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "23760",
+      "prepaid_50": "22275",
       "prepaid_manual": null
     },
     {
@@ -7033,8 +7033,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "190080",
+      "prepaid_50": "178200",
       "prepaid_manual": null
     },
     {
@@ -7052,8 +7052,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "118800",
+      "prepaid_50": "111375",
       "prepaid_manual": null
     },
     {
@@ -7071,8 +7071,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -7090,8 +7090,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -7109,8 +7109,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -7128,8 +7128,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -7147,8 +7147,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "42240",
+      "prepaid_50": "39600",
       "prepaid_manual": null
     },
     {
@@ -7166,8 +7166,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": null
     },
     {
@@ -7185,8 +7185,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -7204,8 +7204,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -7223,8 +7223,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7242,8 +7242,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -7261,8 +7261,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -7280,8 +7280,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7299,8 +7299,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -7318,8 +7318,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -7337,8 +7337,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7356,8 +7356,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "16720",
+      "prepaid_50": "15675",
       "prepaid_manual": null
     },
     {
@@ -7375,8 +7375,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "134400",
+      "prepaid_50": "126000",
       "prepaid_manual": null
     },
     {
@@ -7394,8 +7394,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84000",
+      "prepaid_50": "78750",
       "prepaid_manual": null
     },
     {
@@ -7413,8 +7413,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -7432,8 +7432,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -7451,8 +7451,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7470,8 +7470,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null
     },
     {
@@ -7489,8 +7489,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -7508,8 +7508,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -7527,8 +7527,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null
     },
     {
@@ -7546,8 +7546,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7565,8 +7565,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null
     },
     {
@@ -7584,8 +7584,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "24640",
+      "prepaid_50": "23100",
       "prepaid_manual": null
     },
     {
@@ -7603,8 +7603,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "73920",
+      "prepaid_50": "69300",
       "prepaid_manual": null
     },
     {
@@ -7622,8 +7622,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "123200",
+      "prepaid_50": "115500",
       "prepaid_manual": null
     },
     {
@@ -7641,8 +7641,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "37600",
+      "prepaid_50": "35250",
       "prepaid_manual": null
     },
     {
@@ -7660,8 +7660,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "112800",
+      "prepaid_50": "105750",
       "prepaid_manual": null
     },
     {
@@ -7679,8 +7679,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "188000",
+      "prepaid_50": "176250",
       "prepaid_manual": null
     },
     {
@@ -7698,8 +7698,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null
     },
     {
@@ -7717,8 +7717,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7736,8 +7736,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null
     },
     {
@@ -7755,8 +7755,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -7774,8 +7774,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -7793,8 +7793,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -7812,8 +7812,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null
     },
     {
@@ -7831,8 +7831,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -7850,8 +7850,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -7869,8 +7869,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null
     },
     {
@@ -7888,8 +7888,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7907,8 +7907,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null
     },
     {
@@ -7926,8 +7926,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -7945,8 +7945,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -7964,8 +7964,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -7983,8 +7983,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -8002,8 +8002,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "56320",
+      "prepaid_50": "52800",
       "prepaid_manual": null
     },
     {
@@ -8021,8 +8021,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -8040,8 +8040,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8059,8 +8059,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "21120",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -8078,8 +8078,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -8097,8 +8097,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null
     },
     {
@@ -8116,8 +8116,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "35200",
+      "prepaid_50": "33000",
       "prepaid_manual": null
     },
     {
@@ -8135,8 +8135,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": null
     },
     {
@@ -8154,8 +8154,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "105600",
+      "prepaid_50": "99000",
       "prepaid_manual": null
     },
     {
@@ -8173,8 +8173,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "528000",
+      "prepaid_50": "495000",
       "prepaid_manual": null
     },
     {
@@ -8192,8 +8192,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "844800",
+      "prepaid_50": "792000",
       "prepaid_manual": null
     },
     {
@@ -8211,8 +8211,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "66000",
+      "prepaid_50": "61875",
       "prepaid_manual": null
     },
     {
@@ -8230,8 +8230,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "528000",
+      "prepaid_50": "495000",
       "prepaid_manual": null
     },
     {
@@ -8249,8 +8249,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "330000",
+      "prepaid_50": "309375",
       "prepaid_manual": null
     },
     {
@@ -8268,8 +8268,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8287,8 +8287,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null
     },
     {
@@ -8306,8 +8306,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "63360",
+      "prepaid_50": "59400",
       "prepaid_manual": null
     },
     {
@@ -8325,8 +8325,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "39600",
+      "prepaid_50": "37125",
       "prepaid_manual": null
     },
     {
@@ -8344,8 +8344,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8363,8 +8363,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "21120",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -8382,8 +8382,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -8401,8 +8401,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8420,8 +8420,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "16800",
+      "prepaid_50": "15750",
       "prepaid_manual": null
     },
     {
@@ -8439,8 +8439,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8458,8 +8458,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8477,8 +8477,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8496,8 +8496,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8515,8 +8515,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8534,8 +8534,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8553,8 +8553,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8572,8 +8572,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8591,8 +8591,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8610,8 +8610,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8629,8 +8629,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8648,8 +8648,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8667,8 +8667,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8686,8 +8686,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8705,8 +8705,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8724,8 +8724,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8743,8 +8743,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "21120",
+      "prepaid_50": "19800",
       "prepaid_manual": null
     },
     {
@@ -8762,8 +8762,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -8781,8 +8781,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -8800,8 +8800,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "84480",
+      "prepaid_50": "79200",
       "prepaid_manual": null
     },
     {
@@ -8819,8 +8819,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "52800",
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -8838,8 +8838,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "440",
+      "prepaid_50": "412",
       "prepaid_manual": null
     },
     {
@@ -8857,8 +8857,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8876,8 +8876,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8895,8 +8895,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null
     },
     {
@@ -8914,8 +8914,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -8933,8 +8933,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -8952,8 +8952,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null
     },
     {
@@ -8971,8 +8971,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1760",
+      "prepaid_50": "1650",
       "prepaid_manual": null
     },
     {
@@ -8990,8 +8990,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null
     },
     {
@@ -9009,8 +9009,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null
     },
     {
@@ -9028,8 +9028,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -9047,8 +9047,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1320",
+      "prepaid_50": "1237",
       "prepaid_manual": null
     },
     {
@@ -9066,8 +9066,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "5280",
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -9085,8 +9085,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -9104,8 +9104,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null
     },
     {
@@ -9123,8 +9123,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "616",
+      "prepaid_50": "577",
       "prepaid_manual": null
     },
     {
@@ -9142,8 +9142,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -9161,8 +9161,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1320",
+      "prepaid_50": "1237",
       "prepaid_manual": null
     },
     {
@@ -9180,8 +9180,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null
     },
     {
@@ -9199,8 +9199,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1760",
+      "prepaid_50": "1650",
       "prepaid_manual": null
     },
     {
@@ -9218,8 +9218,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7040",
+      "prepaid_50": "6600",
       "prepaid_manual": null
     },
     {
@@ -9237,8 +9237,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1320",
+      "prepaid_50": "1237",
       "prepaid_manual": null
     },
     {
@@ -9256,8 +9256,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -9275,8 +9275,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19360",
+      "prepaid_50": "18150",
       "prepaid_manual": null
     },
     {
@@ -9294,8 +9294,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "616",
+      "prepaid_50": "577",
       "prepaid_manual": null
     },
     {
@@ -9313,8 +9313,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -9332,8 +9332,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null
     },
     {
@@ -11308,15 +11308,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
-      "category": "美肌治療",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "プラズマリフティング＋美容液",
-      "area": "エクソソームアンプル",
+      "category": "オプション",
+      "provider_type": "医療（Ns施術）",
+      "treatment": "エクソソームアンプル",
+      "area": "",
       "sessions": "",
       "old_price": null,
       "price": "11000",
@@ -11326,9 +11326,9 @@
       "campaign_price": null,
       "monitor_full_price": null,
       "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_10": "9900",
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": "8800"
     },
     {
@@ -11346,8 +11346,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4950",
+      "prepaid_50": "4950",
       "prepaid_manual": "4400"
     },
     {
@@ -11365,8 +11365,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "9900",
+      "prepaid_50": "9900",
       "prepaid_manual": "8800"
     },
     {
@@ -11385,7 +11385,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "297000",
       "prepaid_manual": "297000"
     },
     {
@@ -11404,7 +11404,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "198000"
     },
     {
@@ -12221,7 +12221,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     },
     {
@@ -12240,7 +12240,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "594000",
       "prepaid_manual": "10％"
     },
     {
@@ -12259,7 +12259,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     },
     {
@@ -12278,7 +12278,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "118800",
       "prepaid_manual": "10％"
     },
     {
@@ -12297,7 +12297,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "990",
       "prepaid_manual": null
     },
     {
@@ -12316,7 +12316,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "14850",
       "prepaid_manual": null
     },
     {
@@ -12335,7 +12335,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -12354,7 +12354,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     },
     {
@@ -12373,7 +12373,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "346500",
       "prepaid_manual": "10％"
     },
     {
@@ -12392,7 +12392,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "396000",
       "prepaid_manual": "10％"
     },
     {
@@ -12411,7 +12411,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "396000",
       "prepaid_manual": "10％"
     },
     {
@@ -12430,7 +12430,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "4950",
       "prepaid_manual": null
     },
     {
@@ -12449,7 +12449,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "9900",
       "prepaid_manual": null
     },
     {
@@ -12468,7 +12468,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     },
     {
@@ -12487,7 +12487,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "247500",
       "prepaid_manual": "10％"
     },
     {
@@ -12506,7 +12506,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "49500",
       "prepaid_manual": null
     },
     {
@@ -12525,7 +12525,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "178200",
       "prepaid_manual": "10％"
     },
     {
@@ -12544,7 +12544,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     },
     {
@@ -12563,7 +12563,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "396000",
       "prepaid_manual": "10％"
     },
     {
@@ -12582,7 +12582,7 @@
       "monitor_eye_price": null,
       "prepaid_10": null,
       "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_50": "198000",
       "prepaid_manual": "10％"
     }
   ],
