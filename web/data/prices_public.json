@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T10:42:27.552Z",
+    "generated_at": "2026-03-03T10:42:59.890Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 485,
     "records_with_cost": 57,
@@ -1630,6 +1630,33 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
+      "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
+      "area": "ボルフォーマー（ライト）ボ200sハ356s",
+      "sessions": "",
+      "old_price": "198000",
+      "price": "117000",
+      "first_price": "設定なし",
+      "repeat_price": "設定なし",
+      "campaign_price": "設定なし",
+      "monitor_full_price": "設定なし",
+      "monitor_eye_price": "設定なし",
+      "prepaid_10": null,
+      "prepaid_30": "93600",
+      "prepaid_50": "87750",
+      "prepaid_manual": "93600",
+      "categories": [
+        "しわ・たるみ・小顔"
+      ],
+      "ticket_3": null,
+      "ticket_5": null,
+      "ticket_8": null,
+      "estepass_5": null,
+      "estepass_10": null,
+      "estepass_20": null
+    },
+    {
+      "category": "しわ・たるみ・小顔",
+      "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
       "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
       "sessions": null,
@@ -1671,33 +1698,6 @@
       "prepaid_30": "176000",
       "prepaid_50": "165000",
       "prepaid_manual": "176000",
-      "categories": [
-        "しわ・たるみ・小顔"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "estepass_5": null,
-      "estepass_10": null,
-      "estepass_20": null
-    },
-    {
-      "category": "しわ・たるみ・小顔",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
-      "area": "ボルフォーマー（ライト）ボ200sハ356s",
-      "sessions": "",
-      "old_price": "198000",
-      "price": "117000",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "93600",
-      "prepaid_50": "87750",
-      "prepaid_manual": "93600",
       "categories": [
         "しわ・たるみ・小顔"
       ],
