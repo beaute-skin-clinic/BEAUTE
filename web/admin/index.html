@@ -441,8 +441,9 @@
           <th>施術名</th>
           <th>部位／詳細</th>
           <th>回数</th>
-          <th>旧価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年3月末日まで</span></th>
-          <th>通常価格</th>
+          <th>旧通常価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年3月末日まで</span></th>
+          <th>旧初回価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年3月末日まで</span></th>
+          <th>通常価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年4月〜</span></th>
           <th>リピート</th>
           <th>CP</th>
           <th>モニ全顔</th>
@@ -547,7 +548,7 @@ const CATEGORY_ORDER = [
 ];
 
 const PRICE_FIELDS = [
-  'old_price', 'price', 'repeat_price',
+  'old_price', 'first_price', 'price', 'repeat_price',
   'campaign_price', 'monitor_full_price',
   'monitor_eye_price', 'prepaid_manual'
 ];
@@ -841,6 +842,7 @@ function render() {
       <td class="${cellCls('area')}"><span class="editable" data-field="area" data-idx="${idx}" data-type="text">${esc(t.area || '')}</span></td>
       <td class="${cellCls('sessions')}"><span class="editable" data-field="sessions" data-idx="${idx}" data-type="text">${esc(t.sessions || '')}</span></td>
       <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
+      <td class="price-small${cellCls('first_price')}"><span class="editable" data-field="first_price" data-idx="${idx}" data-type="price">${fmt(t.first_price)}</span></td>
       <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.price, t.area)}</span></td>
       <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.repeat_price, t.area)}</span></td>
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
@@ -1125,6 +1127,7 @@ function addNewRow() {
     area: '',
     sessions: '',
     old_price: null,
+    first_price: null,
     price: '',
     repeat_price: null,
     campaign_price: null,
