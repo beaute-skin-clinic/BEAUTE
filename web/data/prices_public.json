@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T02:08:33.451Z",
+    "generated_at": "2026-03-03T02:11:36.037Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 676,
     "records_with_cost": 70,
@@ -163,7 +163,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "キシロカイン麻酔",
       "area": "",
       "sessions": "",
@@ -176,8 +176,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "880",
-      "prepaid_50": "825",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -801,7 +801,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "局所麻酔0.5CC",
       "area": "",
       "sessions": "",
@@ -814,8 +814,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -823,7 +823,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "局所麻酔ブロック0.5CC",
       "area": "",
       "sessions": "",
@@ -836,8 +836,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -3287,7 +3287,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "目元用シール麻酔",
       "area": "目元2枚",
       "sessions": "",
@@ -3300,8 +3300,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "528",
-      "prepaid_50": "495",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": "594",
       "categories": [
         "麻酔"
@@ -3309,7 +3309,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "麻酔代",
       "area": "全顔",
       "sessions": "",
@@ -3322,8 +3322,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1760",
-      "prepaid_50": "1650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": "1980",
       "categories": [
         "麻酔"
@@ -14186,7 +14186,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -14199,8 +14199,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "880",
-      "prepaid_50": "825",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14208,7 +14208,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "局所麻酔",
       "area": "",
       "sessions": "1回",
@@ -14221,8 +14221,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "13200",
-      "prepaid_50": "12375",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14230,7 +14230,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "点眼麻酔",
       "area": "",
       "sessions": "1回",
@@ -14243,8 +14243,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "4400",
-      "prepaid_50": "4125",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14340,7 +14340,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "笑気麻酔",
       "area": "",
       "sessions": "1回",
@@ -14353,8 +14353,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "4400",
-      "prepaid_50": "4125",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14362,7 +14362,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "笑気麻酔",
       "area": "30分",
       "sessions": "1回",
@@ -14375,8 +14375,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14428,7 +14428,7 @@
     },
     {
       "category": "麻酔",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "静脈麻酔",
       "area": "",
       "sessions": "1回",
@@ -14441,8 +14441,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "44000",
-      "prepaid_50": "41250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "麻酔"
@@ -14796,14 +14796,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "264",
-      "prepaid_50": "247",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ペンレステープ麻酔",
       "area": "1枚",
       "sessions": "",
@@ -14818,14 +14818,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1760",
-      "prepaid_50": "1650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "リドカイン麻酔",
       "area": "1回",
       "sessions": "",
@@ -14840,14 +14840,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "4400",
-      "prepaid_50": "4125",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "笑気麻酔（30分）",
       "area": "1回",
       "sessions": "",
@@ -14862,14 +14862,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "8800",
-      "prepaid_50": "8250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ブロック麻酔",
       "area": "1回",
       "sessions": "",
@@ -14884,14 +14884,14 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "880",
-      "prepaid_50": "825",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
         "麻酔"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "局所麻酔",
       "area": "1回",
       "sessions": "",
