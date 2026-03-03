@@ -128,6 +128,26 @@
     }
     .search-box:focus { border-color: var(--primary); }
 
+    /* ===== 区分フィルター ===== */
+    .type-filter {
+      display: flex; gap: 0;
+      padding: 6px 14px; background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    .type-btn {
+      padding: 5px 16px;
+      border: 1.5px solid var(--border);
+      font-size: 12px; cursor: pointer;
+      background: #fff; color: var(--text-light);
+      transition: all 0.15s;
+      font-family: inherit; font-weight: 500;
+    }
+    .type-btn:first-child { border-radius: 8px 0 0 8px; }
+    .type-btn:last-child { border-radius: 0 8px 8px 0; }
+    .type-btn:not(:first-child) { border-left: none; }
+    .type-btn.active { background: var(--admin-bg); border-color: var(--admin-bg); color: #fff; }
+    .type-btn:not(.active):hover { background: #eee; }
+
     /* ===== カテゴリタブ ===== */
     .category-tabs {
       display: flex; gap: 6px; overflow-x: auto;
@@ -153,7 +173,7 @@
     .summary-bar span { color: #fff; font-weight: bold; }
 
     /* ===== テーブル ===== */
-    .main { padding: 10px; overflow: auto; height: calc(100vh - 144px); -webkit-overflow-scrolling: touch; }
+    .main { padding: 10px; overflow: auto; height: calc(100vh - 180px); -webkit-overflow-scrolling: touch; }
     .data-table {
       width: 100%; border-collapse: collapse;
       background: #fff; border-radius: 10px;
@@ -365,6 +385,12 @@
     </label>
   </div>
 
+  <div class="type-filter" id="typeFilter">
+    <button class="type-btn active" data-type="all">すべて</button>
+    <button class="type-btn" data-type="医療">医療</button>
+    <button class="type-btn" data-type="エステ">エステ</button>
+  </div>
+
   <div class="category-tabs" id="categoryTabs">
     <button class="tab-btn active" data-cat="all">すべて</button>
   </div>
@@ -455,17 +481,17 @@ const GH_STORAGE_KEY = 'beaute_github_settings';
 // プリペイド割引率テーブル（Python fetch_from_master.py から移植）
 // ============================================================
 const PREPAID_RATES = {
-  "看護師": {"10万": 10, "30万": 20, "50万": 25},
-  "Dr.":    {"10万": 0,  "30万": 10, "50万": 10},
-  "Dr.オペ": {"10万": 0,  "30万": 0,  "50万": 10},
-  "エステ":  {"10万": 10, "30万": 20, "50万": 20},
+  "医療（Ns施術）": {"10万": 10, "30万": 20, "50万": 25},
+  "医療（Dr.施術）": {"10万": 0,  "30万": 10, "50万": 10},
+  "医療（Dr.オペ）": {"10万": 0,  "30万": 0,  "50万": 10},
+  "エステ":          {"10万": 10, "30万": 20, "50万": 20},
 };
 const PP10_KEYWORDS = [
   "フォトナ", "ピコトーニング", "ピコフラクショナル", "フォトフェイシャル",
   "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェット", "ハイドラ", "オプション",
 ];
 
-const PROVIDER_TYPES = ["", "看護師", "Dr.", "Dr.オペ", "エステ"];
+const PROVIDER_TYPES = ["", "医療（Dr.施術）", "医療（Dr.オペ）", "医療（Ns施術）", "エステ"];
 
 const CATEGORY_ORDER = [
   'シミ取り（そばかす・肝斑・ほくろ）',
@@ -492,6 +518,7 @@ let changes = new Map();     // rowIndex → Set<field> 変更トラッキング
 let deletedRows = new Set(); // 削除予定の行インデックス
 let addedRows = new Set();   // 新規追加の行インデックス
 let currentCategory = 'all';
+let currentType = 'all';
 let searchQuery = '';
 let showCostOnly = false;
 let editingCell = null;      // 現在編集中のセル
@@ -542,7 +569,8 @@ async function loadData() {
     changes.clear();
     deletedRows.clear();
     addedRows.clear();
-    buildTabs();
+    rebuildCategoryTabs();
+    initTypeFilter();
     render();
     updateSaveBar();
     updateGitHubStatus();
@@ -556,12 +584,20 @@ async function loadData() {
 // ============================================================
 // カテゴリタブ
 // ============================================================
-function buildTabs() {
+function rebuildCategoryTabs() {
   const tabs = document.getElementById('categoryTabs');
-  // 既存のタブを「すべて」以外削除
-  tabs.querySelectorAll('.tab-btn:not([data-cat="all"])').forEach(b => b.remove());
+  tabs.innerHTML = '';
 
-  const categories = [...new Set(editedData.treatments.map(t => t.category))]
+  // 区分フィルターに応じて対象カテゴリを絞る
+  const filtered = currentType === 'all'
+    ? editedData.treatments
+    : editedData.treatments.filter(t =>
+        currentType === '医療'
+          ? (t.provider_type || '').startsWith('医療')
+          : t.provider_type === currentType
+      );
+
+  const categories = [...new Set(filtered.map(t => t.category))]
     .sort((a, b) => {
       const ai = CATEGORY_ORDER.indexOf(a);
       const bi = CATEGORY_ORDER.indexOf(b);
@@ -571,18 +607,28 @@ function buildTabs() {
       return ai - bi;
     });
 
+  // 「すべて」ボタン
+  const allBtn = document.createElement('button');
+  allBtn.className = 'tab-btn' + (currentCategory === 'all' ? ' active' : '');
+  allBtn.dataset.cat = 'all';
+  allBtn.textContent = 'すべて';
+  allBtn.addEventListener('click', () => selectCategory('all', allBtn));
+  tabs.appendChild(allBtn);
+
   categories.forEach(cat => {
     const btn = document.createElement('button');
-    btn.className = 'tab-btn';
+    btn.className = 'tab-btn' + (cat === currentCategory ? ' active' : '');
     btn.dataset.cat = cat;
     btn.textContent = cat;
     btn.addEventListener('click', () => selectCategory(cat, btn));
     tabs.appendChild(btn);
   });
 
-  tabs.querySelector('[data-cat="all"]').addEventListener('click', function() {
-    selectCategory('all', this);
-  });
+  // 現在のカテゴリが絞り込み後にない場合は「すべて」にリセット
+  if (currentCategory !== 'all' && !categories.includes(currentCategory)) {
+    currentCategory = 'all';
+    allBtn.classList.add('active');
+  }
 }
 
 function selectCategory(cat, btn) {
@@ -590,6 +636,19 @@ function selectCategory(cat, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   render();
+}
+
+function initTypeFilter() {
+  document.querySelectorAll('.type-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentType = btn.dataset.type;
+      currentCategory = 'all';
+      rebuildCategoryTabs();
+      render();
+    });
+  });
 }
 
 // ============================================================
@@ -664,6 +723,14 @@ function render() {
   filteredIndices = [];
   for (let i = 0; i < treatments.length; i++) {
     const t = treatments[i];
+    // 区分フィルター
+    if (currentType !== 'all') {
+      if (currentType === '医療') {
+        if (!(t.provider_type || '').startsWith('医療')) continue;
+      } else {
+        if (t.provider_type !== currentType) continue;
+      }
+    }
     if (currentCategory !== 'all' && t.category !== currentCategory) continue;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
@@ -1059,7 +1126,7 @@ function discardChanges() {
   changes.clear();
   deletedRows.clear();
   addedRows.clear();
-  buildTabs();
+  rebuildCategoryTabs();
   render();
   updateSaveBar();
   showToast('変更を破棄しました', '');
@@ -1301,7 +1368,7 @@ async function saveChanges() {
     changes.clear();
     deletedRows.clear();
     addedRows.clear();
-    buildTabs();
+    rebuildCategoryTabs();
     render();
     updateSaveBar();
 

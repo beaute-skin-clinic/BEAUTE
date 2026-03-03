@@ -263,6 +263,15 @@
     .price-table tbody tr:nth-child(even) .td-pp { background: #fdf6e8 !important; }
     .price-table tbody tr:hover .td-pp { background: #fef0d4 !important; }
 
+    /* 区分列 */
+    .price-table thead th.col-type,
+    .price-table tbody td.col-type {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 10px;
+      color: var(--text-light);
+    }
+
     /* 回数列 */
     .price-table thead th.col-sessions,
     .price-table tbody td.col-sessions {
@@ -502,7 +511,11 @@ function rebuildCategoryTabs() {
   // 区分でフィルターした施術のカテゴリのみ表示
   let filtered = allData.treatments;
   if (currentType !== 'all') {
-    filtered = filtered.filter(t => t.provider_type === currentType);
+    filtered = filtered.filter(t =>
+      currentType === '医療'
+        ? (t.provider_type || '').startsWith('医療')
+        : t.provider_type === currentType
+    );
   }
 
   const categories = [...new Set(filtered.map(t => t.category))]
@@ -581,7 +594,11 @@ function render() {
 
   // 区分フィルター
   if (currentType !== 'all') {
-    treatments = treatments.filter(t => t.provider_type === currentType);
+    treatments = treatments.filter(t =>
+      currentType === '医療'
+        ? (t.provider_type || '').startsWith('医療')
+        : t.provider_type === currentType
+    );
   }
   if (currentCategory !== 'all') {
     treatments = treatments.filter(t => t.category === currentCategory);
@@ -655,6 +672,7 @@ function render() {
     // ヘッダー
     html += `<thead><tr>`;
     html += `<th>施術</th>`;
+    html += `<th class="col-type">区分</th>`;
     html += `<th class="col-sessions">回数</th>`;
     if (hasNewPrice) html += `<th class="col-old">旧価格<span class="col-old-note">※改定前</span></th>`;
     html += `<th>通常価格</th>`;
@@ -684,6 +702,9 @@ function render() {
         if (t.area) nameHtml += `<span class="treat-area">${esc(t.area)}</span>`;
         if (!nameHtml) nameHtml = `<span class="treat-area">${esc(t.treatment || '—')}</span>`;
         html += `<td>${nameHtml}</td>`;
+
+        // 区分
+        html += `<td class="col-type">${esc(t.provider_type || '')}</td>`;
 
         // 回数
         html += `<td class="col-sessions">${t.sessions ? esc(t.sessions) : na()}</td>`;
