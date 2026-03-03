@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:53:45.312Z",
+    "generated_at": "2026-03-03T01:58:49.693Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -11423,7 +11423,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Ns施術）",
       "treatment": "シナール",
       "area": "30錠",
@@ -11443,7 +11443,6 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）",
         "内服"
@@ -11471,7 +11470,6 @@
       "profit_note": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
@@ -11526,7 +11524,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "デキサンVG5g",
       "area": "",
@@ -11546,7 +11544,6 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
@@ -11572,12 +11569,11 @@
       "profit_note": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "毛穴・ニキビ・肌の凹凸ケア",
       "provider_type": "医療（Ns施術）",
       "treatment": "トレチノイン 5g",
       "area": "",
@@ -11597,7 +11593,6 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "外用薬"
       ]
@@ -11624,13 +11619,12 @@
       "profit_note": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "ハイドロキノン4g",
       "area": "",
@@ -11650,7 +11644,6 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -11678,7 +11671,6 @@
       "profit_note": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
@@ -11704,12 +11696,11 @@
       "profit_note": null,
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "リンデロンVG5g",
       "area": "",
@@ -11729,12 +11720,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "デキサン VG 5g",
       "area": "",
@@ -11754,12 +11744,11 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "テラコートリル 5g",
       "area": "",
@@ -11779,7 +11768,6 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬",
         "外用薬"
       ]
     },
@@ -16048,7 +16036,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
@@ -16074,7 +16061,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
@@ -16100,7 +16086,6 @@
       "category": "内服",
       "categories": [
         "内服",
-        "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
       "provider_type": "医療（Ns施術）",
@@ -16118,8 +16103,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1760",
-      "prepaid_50": "1650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -16127,7 +16112,7 @@
       "categories": [
         "診察料"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "初診料",
       "area": "",
       "sessions": "",
@@ -16142,8 +16127,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "880",
-      "prepaid_50": "825",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -16151,7 +16136,7 @@
       "categories": [
         "診察料"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "再診料",
       "area": "",
       "sessions": "",

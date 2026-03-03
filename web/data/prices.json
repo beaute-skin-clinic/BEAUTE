@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:53:45.312Z",
+    "generated_at": "2026-03-03T01:58:49.693Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -16103,8 +16103,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1760",
-      "prepaid_50": "1650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -16112,7 +16112,7 @@
       "categories": [
         "診察料"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "初診料",
       "area": "",
       "sessions": "",
@@ -16127,8 +16127,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "880",
-      "prepaid_50": "825",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -16136,7 +16136,7 @@
       "categories": [
         "診察料"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "再診料",
       "area": "",
       "sessions": "",
