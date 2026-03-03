@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T07:07:25.555Z",
+    "generated_at": "2026-03-03T07:47:52.792Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 678,
     "records_with_cost": 66
@@ -11985,7 +11985,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング",
       "area": "顔",
       "sessions": "",
@@ -11999,7 +11999,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "24750",
       "prepaid_30": "22000",
-      "prepaid_50": "20625",
+      "prepaid_50": "22000",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -12009,7 +12009,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング背中",
       "area": "背中",
       "sessions": "",
@@ -12023,7 +12023,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "39600",
       "prepaid_30": "35200",
-      "prepaid_50": "33000",
+      "prepaid_50": "35200",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -12033,7 +12033,7 @@
     },
     {
       "category": "エステフェイシャル",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "エステ",
       "treatment": "ハーブピーリング背中半分",
       "area": "背中半分",
       "sessions": "",
@@ -12047,7 +12047,7 @@
       "monitor_eye_price": "設定なし",
       "prepaid_10": "24750",
       "prepaid_30": "22000",
-      "prepaid_50": "20625",
+      "prepaid_50": "22000",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
