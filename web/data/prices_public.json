@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:46:41.542Z",
+    "generated_at": "2026-03-03T01:47:18.296Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70,
@@ -10514,6 +10514,7 @@
       "prepaid_manual": null,
       "categories": [
         "内服",
+        "内服セット",
         "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
@@ -10655,7 +10656,8 @@
         "内服",
         "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
-        "美肌・肌質改善（シミ・くすみ・透明感）"
+        "美肌・肌質改善（シミ・くすみ・透明感）",
+        "内服セット"
       ]
     },
     {
