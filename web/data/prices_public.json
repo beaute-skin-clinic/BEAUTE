@@ -2231,6 +2231,69 @@
     },
     {
       "category": "ボトックス",
+      "categories": [
+        "ボトックス"
+      ],
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックス（アラガン）",
+      "area": "1部位（眉間・額・目尻・バニーライン・口角・ガミーライン・額）",
+      "sessions": "",
+      "old_price": null,
+      "price": 27500,
+      "first_price": null,
+      "repeat_price": 20625,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null
+    },
+    {
+      "category": "ボトックス",
+      "categories": [
+        "ボトックス"
+      ],
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックス（アラガン）",
+      "area": "2部位",
+      "sessions": "",
+      "old_price": null,
+      "price": 55000,
+      "first_price": null,
+      "repeat_price": 38500,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null
+    },
+    {
+      "category": "ボトックス",
+      "categories": [
+        "ボトックス"
+      ],
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックス（アラガン）",
+      "area": "3部位",
+      "sessions": "",
+      "old_price": null,
+      "price": 82500,
+      "first_price": null,
+      "repeat_price": 57750,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null
+    },
+    {
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "",
