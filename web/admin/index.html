@@ -221,10 +221,12 @@
     .per-unit { font-size: 9px; color: #aaa; font-weight: normal; }
     .btn-none-price { display: block; margin-top: 3px; font-size: 10px; padding: 2px 6px; border: 1px solid #ccc; border-radius: 4px; background: #f5f5f5; cursor: pointer; color: #888; }
     .btn-none-price:hover { background: #e8e8e8; }
-    .price-none { font-size: 10px; color: #aaa; font-style: italic; }
+    .price-none { font-size: 11px; color: #777; }
     .price-badges { display: inline-flex; gap: 4px; flex-wrap: wrap; }
     .price-up { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
     .price-down { font-size: 9px; color: #28a745; font-weight: bold; white-space: nowrap; }
+    .price-warn { font-size: 9px; color: #e67e22; font-weight: bold; white-space: nowrap; }
+    .price-warn-high { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
     .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
 
     .td-cost {
@@ -239,6 +241,18 @@
       outline: 2px solid var(--changed-border);
       outline-offset: -2px;
     }
+
+    /* ===== ドラッグ並べ替え ===== */
+    .drag-handle {
+      cursor: grab; text-align: center; color: #bbb;
+      font-size: 14px; padding: 0 4px !important; width: 20px;
+      user-select: none; white-space: nowrap;
+    }
+    .drag-handle:active { cursor: grabbing; }
+    tr.dragging { opacity: 0.3; }
+    tr.drag-over-above td { box-shadow: inset 0 2px 0 var(--primary); }
+    tr.drag-over-below td { box-shadow: inset 0 -2px 0 var(--primary); }
+    tr.drag-no-drop td { box-shadow: inset 0 0 0 2px #f87171; }
 
     /* ===== インライン編集 ===== */
     .editable { cursor: pointer; display: inline-block; min-height: 20px; min-width: 30px; width: 100%; border-radius: 3px; padding: 2px 4px; box-sizing: border-box; }
@@ -406,6 +420,7 @@
     <div class="header-right">
       <button class="btn-add" onclick="addNewRow()">+ 新規追加</button>
       <button class="btn-sm" onclick="window.print()">印刷</button>
+      <button class="btn-sm" onclick="window.open('../index.html','_blank')" title="公開ページを表示">👁 ユーザー画面</button>
       <span class="gh-status disconnected" id="ghStatus" onclick="openGitHubSettings()">GitHub未設定</span>
       <button class="btn-sm" onclick="doLogout()">ログアウト</button>
     </div>
@@ -442,6 +457,7 @@
     <table class="data-table" id="dataTable">
       <thead>
         <tr>
+          <th style="width:20px;padding:2px;"></th>
           <th>カテゴリ</th>
           <th>区分</th>
           <th>施術名</th>
@@ -463,7 +479,7 @@
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
@@ -563,11 +579,14 @@ const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note'
 // ============================================================
 // 状態管理
 // ============================================================
-let allData = null;          // 元データ（マスター）
+let originalData = null;     // 初回ロード時の元データ（破棄用・不変）
+let allData = null;          // 元データ（マスター・並べ替え追従）
 let editedData = null;       // 編集中データ（保存時にこれを書き出す）
 let changes = new Map();     // rowIndex → Set<field> 変更トラッキング
 let deletedRows = new Set(); // 削除予定の行インデックス
 let addedRows = new Set();   // 新規追加の行インデックス
+let orderChanged = false;    // 並べ替えフラグ
+let dragSourceIdx = null;    // ドラッグ中の行インデックス
 let currentCategory = 'all';
 let currentType = 'all';
 let searchQuery = '';
@@ -615,11 +634,13 @@ async function loadData() {
   try {
     const res = await fetch(DATA_URL + '?_=' + Date.now());
     allData = await res.json();
+    originalData = JSON.parse(JSON.stringify(allData));
     // ディープコピーして編集用データを作る
     editedData = JSON.parse(JSON.stringify(allData));
     changes.clear();
     deletedRows.clear();
     addedRows.clear();
+    orderChanged = false;
     rebuildCategoryTabs();
     initTypeFilter();
     render();
@@ -627,7 +648,7 @@ async function loadData() {
     updateGitHubStatus();
   } catch (e) {
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="18" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+      '<tr><td colspan="19" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
     console.error(e);
   }
 }
@@ -794,9 +815,135 @@ function priceCompareAll(newPrice, oldPrice, oldFirstPrice) {
   return '<br><span class="price-badges">' + [b1, b2].filter(Boolean).join(' ') + '</span>';
 }
 
+// 割引価格が通常価格以上かチェック（同額=⚠同額、割高=⚠割高）
+function discountWarn(discountVal, basePrice) {
+  if (!discountVal || discountVal === '設定なし' || discountVal === 'なし') return '';
+  if (!basePrice) return '';
+  const dv = parseInt(String(discountVal).replace(/[¥,\s]/g, ''), 10);
+  const bp = parseInt(String(basePrice).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(dv) || isNaN(bp)) return '';
+  if (dv > bp) return '<br><span class="price-warn-high">⚠割高</span>';
+  if (dv === bp) return '<br><span class="price-warn">⚠同額</span>';
+  return '';
+}
+
 function esc(str) {
   return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+
+// ============================================================
+// ドラッグ＆ドロップ並べ替え
+// ============================================================
+function rebaseIndex(oldIdx, fromIdx, toIdx) {
+  if (oldIdx === fromIdx) return toIdx;
+  if (fromIdx < toIdx) {
+    if (oldIdx > fromIdx && oldIdx <= toIdx) return oldIdx - 1;
+  } else {
+    if (oldIdx >= toIdx && oldIdx < fromIdx) return oldIdx + 1;
+  }
+  return oldIdx;
+}
+
+function reorderTreatment(fromIdx, toIdx) {
+  if (fromIdx === toIdx) return;
+
+  // 両配列を同期して並べ替え
+  const editItem = editedData.treatments.splice(fromIdx, 1)[0];
+  editedData.treatments.splice(toIdx, 0, editItem);
+  const origItem = allData.treatments.splice(fromIdx, 1)[0];
+  allData.treatments.splice(toIdx, 0, origItem);
+
+  // トラッキングのインデックスを再計算
+  const newChanges = new Map();
+  for (const [idx, fields] of changes) {
+    newChanges.set(rebaseIndex(idx, fromIdx, toIdx), fields);
+  }
+  changes = newChanges;
+
+  const newAdded = new Set();
+  for (const idx of addedRows) newAdded.add(rebaseIndex(idx, fromIdx, toIdx));
+  addedRows = newAdded;
+
+  const newDeleted = new Set();
+  for (const idx of deletedRows) newDeleted.add(rebaseIndex(idx, fromIdx, toIdx));
+  deletedRows = newDeleted;
+
+  orderChanged = true;
+  render();
+  updateSaveBar();
+}
+
+(function initDragAndDrop() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const tbody = document.getElementById('tableBody');
+
+    tbody.addEventListener('dragstart', function(e) {
+      const handle = e.target.closest('.drag-handle');
+      if (!handle) { e.preventDefault(); return; }
+      const tr = handle.closest('tr[data-idx]');
+      if (!tr) { e.preventDefault(); return; }
+      dragSourceIdx = parseInt(tr.dataset.idx);
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', dragSourceIdx);
+      setTimeout(() => tr.classList.add('dragging'), 0);
+    });
+
+    tbody.addEventListener('dragover', function(e) {
+      if (dragSourceIdx === null) return;
+      const tr = e.target.closest('tr[data-idx]');
+      if (!tr) return;
+      const targetIdx = parseInt(tr.dataset.idx);
+      if (targetIdx === dragSourceIdx) return;
+
+      // 同カテゴリチェック
+      const src = editedData.treatments[dragSourceIdx];
+      const tgt = editedData.treatments[targetIdx];
+      const srcCats = src.categories || [src.category];
+      const tgtCats = tgt.categories || [tgt.category];
+      if (!srcCats.some(c => tgtCats.includes(c))) {
+        e.dataTransfer.dropEffect = 'none';
+        tbody.querySelectorAll('.drag-over-above,.drag-over-below').forEach(el =>
+          el.classList.remove('drag-over-above', 'drag-over-below'));
+        tr.classList.add('drag-no-drop');
+        return;
+      }
+
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+
+      // インジケータ表示
+      tbody.querySelectorAll('.drag-over-above,.drag-over-below,.drag-no-drop').forEach(el =>
+        el.classList.remove('drag-over-above', 'drag-over-below', 'drag-no-drop'));
+      const rect = tr.getBoundingClientRect();
+      tr.classList.add(e.clientY < rect.top + rect.height / 2 ? 'drag-over-above' : 'drag-over-below');
+    });
+
+    tbody.addEventListener('drop', function(e) {
+      e.preventDefault();
+      if (dragSourceIdx === null) return;
+      const tr = e.target.closest('tr[data-idx]');
+      if (!tr) return;
+      const targetIdx = parseInt(tr.dataset.idx);
+      if (targetIdx === dragSourceIdx) return;
+
+      // 同カテゴリチェック
+      const src = editedData.treatments[dragSourceIdx];
+      const tgt = editedData.treatments[targetIdx];
+      const srcCats = src.categories || [src.category];
+      const tgtCats = tgt.categories || [tgt.category];
+      if (!srcCats.some(c => tgtCats.includes(c))) return;
+
+      reorderTreatment(dragSourceIdx, targetIdx);
+      dragSourceIdx = null;
+    });
+
+    tbody.addEventListener('dragend', function() {
+      dragSourceIdx = null;
+      tbody.querySelectorAll('.dragging,.drag-over-above,.drag-over-below,.drag-no-drop').forEach(el =>
+        el.classList.remove('dragging', 'drag-over-above', 'drag-over-below', 'drag-no-drop'));
+    });
+  });
+})();
 
 function render() {
   if (!editedData) return;
@@ -832,7 +979,7 @@ function render() {
 
   const tbody = document.getElementById('tableBody');
   if (filteredIndices.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="18" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
     return;
   }
 
@@ -859,6 +1006,7 @@ function render() {
     const ppCls50 = t.prepaid_50 ? 'price-auto' : 'price-small';
 
     return `<tr class="${rowClass}" data-idx="${idx}">
+      <td class="drag-handle" draggable="true">${isDeleted ? '' : '☰'}</td>
       <td class="${cellCls('categories')}"><span class="editable" data-field="categories" data-idx="${idx}" data-type="categories">${(t.categories || [t.category]).filter(Boolean).map(c => `<span class="cat-badge">${esc(c)}</span>`).join(' ')}</span></td>
       <td class="${cellCls('provider_type')}"><span class="editable" data-field="provider_type" data-idx="${idx}" data-type="provider">${esc(t.provider_type || '')}</span></td>
       <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span></td>
@@ -867,10 +1015,10 @@ function render() {
       <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
       <td class="price-small${cellCls('first_price')}"><span class="editable" data-field="first_price" data-idx="${idx}" data-type="price">${(t.first_price === '設定なし' || t.first_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.first_price)}</span></td>
       <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.price, t.area)}</span>${priceCompareAll(t.price, t.old_price, t.first_price)}</td>
-      <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.repeat_price, t.area)}</span></td>
-      <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
-      <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_full_price)}</span></td>
-      <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_eye_price)}</span></td>
+      <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${(t.repeat_price === '設定なし' || t.repeat_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmtWithUnit(t.repeat_price, t.area)}</span></td>
+      <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${(t.campaign_price === '設定なし' || t.campaign_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.campaign_price)}</span>${discountWarn(t.campaign_price, t.price)}</td>
+      <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${(t.monitor_full_price === '設定なし' || t.monitor_full_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_full_price)}</span>${discountWarn(t.monitor_full_price, t.price)}</td>
+      <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${(t.monitor_eye_price === '設定なし' || t.monitor_eye_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_eye_price)}</span>${discountWarn(t.monitor_eye_price, t.price)}</td>
       <td class="${ppCls10}">${fmt(ppDisp10)}</td>
       <td class="${ppCls30}">${fmt(ppDisp30)}</td>
       <td class="${ppCls50}">${fmt(ppDisp50)}</td>
@@ -990,8 +1138,9 @@ function startEditing(el) {
     }
     el.innerHTML = '';
     el.appendChild(input);
-    // 旧初回価格には「設定なし」ボタンを追加
-    if (field === 'first_price') {
+    // 「設定なし」ボタンを追加（旧初回価格・リピート・CP・モニ全顔・モニ目元）
+    const nonePriceFields = ['first_price', 'repeat_price', 'campaign_price', 'monitor_full_price', 'monitor_eye_price'];
+    if (nonePriceFields.includes(field)) {
       const noneBtn = document.createElement('button');
       noneBtn.textContent = '設定なし';
       noneBtn.className = 'btn-none-price';
@@ -1269,7 +1418,7 @@ function duplicateRow(idx) {
 // 変更管理 & 保存バー
 // ============================================================
 function getChangeCount() {
-  return changes.size + deletedRows.size + addedRows.size;
+  return changes.size + deletedRows.size + addedRows.size + (orderChanged ? 1 : 0);
 }
 
 function updateSaveBar() {
@@ -1290,10 +1439,12 @@ function updateSaveBar() {
 
 function discardChanges() {
   if (!confirm('すべての変更を破棄しますか？')) return;
-  editedData = JSON.parse(JSON.stringify(allData));
+  allData = JSON.parse(JSON.stringify(originalData));
+  editedData = JSON.parse(JSON.stringify(originalData));
   changes.clear();
   deletedRows.clear();
   addedRows.clear();
+  orderChanged = false;
   rebuildCategoryTabs();
   render();
   updateSaveBar();
@@ -1535,10 +1686,12 @@ async function saveChanges() {
     ], msg);
 
     // 10. 状態リセット
+    originalData = JSON.parse(JSON.stringify(editedData));
     allData = JSON.parse(JSON.stringify(editedData));
     changes.clear();
     deletedRows.clear();
     addedRows.clear();
+    orderChanged = false;
     rebuildCategoryTabs();
     render();
     updateSaveBar();

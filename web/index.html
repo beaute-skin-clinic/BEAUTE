@@ -258,6 +258,8 @@
     .price-badges { display: inline-flex; gap: 4px; flex-wrap: wrap; }
     .price-up { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
     .price-down { font-size: 9px; color: #28a745; font-weight: bold; white-space: nowrap; }
+    .price-warn { font-size: 9px; color: #e67e22; font-weight: bold; white-space: nowrap; }
+    .price-warn-high { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
 
     /* PP列 */
     .td-pp {
@@ -600,6 +602,18 @@ function priceCompareAll(newPrice, oldPrice, oldFirstPrice) {
   return '<br><span class="price-badges">' + [b1, b2].filter(Boolean).join(' ') + '</span>';
 }
 
+// 割引価格が通常価格以上かチェック
+function discountWarn(discountVal, basePrice) {
+  if (!discountVal || discountVal === '設定なし' || discountVal === 'なし') return '';
+  if (!basePrice) return '';
+  const dv = parseInt(String(discountVal).replace(/[¥,\s]/g, ''), 10);
+  const bp = parseInt(String(basePrice).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(dv) || isNaN(bp)) return '';
+  if (dv > bp) return '<br><span class="price-warn-high">⚠割高</span>';
+  if (dv === bp) return '<br><span class="price-warn">⚠同額</span>';
+  return '';
+}
+
 // first_priceまたはold_priceがあるか判定
 function hasOldPrices(treatments) {
   return treatments.some(t => t.first_price || t.old_price);
@@ -738,14 +752,14 @@ function render() {
         html += `<td>${priceCell(t.price, 'p-val')}${priceCompareAll(t.price, t.old_price, t.first_price)}</td>`;
 
         // リピート割
-        html += `<td>${priceCell(t.repeat_price, 'p-repeat')}</td>`;
+        html += `<td>${(t.repeat_price === '設定なし' || t.repeat_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.repeat_price, 'p-repeat')}</td>`;
 
         // CP
-        html += `<td>${priceCell(t.campaign_price, 'p-campaign')}</td>`;
+        html += `<td>${(t.campaign_price === '設定なし' || t.campaign_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.campaign_price, 'p-campaign')}${discountWarn(t.campaign_price, t.price)}</td>`;
 
         // モニター
-        html += `<td>${priceCell(t.monitor_full_price, 'p-monitor')}</td>`;
-        html += `<td>${priceCell(t.monitor_eye_price, 'p-monitor')}</td>`;
+        html += `<td>${(t.monitor_full_price === '設定なし' || t.monitor_full_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.monitor_full_price, 'p-monitor')}${discountWarn(t.monitor_full_price, t.price)}</td>`;
+        html += `<td>${(t.monitor_eye_price === '設定なし' || t.monitor_eye_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.monitor_eye_price, 'p-monitor')}${discountWarn(t.monitor_eye_price, t.price)}</td>`;
 
         // PP列
         html += `<td class="td-pp">${priceCell(t.prepaid_10, 'p-pp')}</td>`;
