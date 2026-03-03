@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T02:01:46.230Z",
+    "generated_at": "2026-03-03T02:02:39.936Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -15970,7 +15970,7 @@
         "医療痩身"
       ],
       "provider_type": "医療（その他）",
-      "treatment": "リベルサス",
+      "treatment": "リベルサス7mg ",
       "area": "30錠",
       "sessions": "",
       "price": "24200"
@@ -15984,18 +15984,19 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "6160",
-      "prepaid_50": "5775",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ],
-      "provider_type": "医療（Ns施術）",
-      "treatment": "マンジャロ",
-      "area": "2.5mg（1本）",
+      "provider_type": "医療（その他）",
+      "treatment": "マンジャロ2.5mg",
+      "area": "1本",
       "sessions": "",
       "price": "7700"
     },
@@ -16008,18 +16009,19 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "7920",
-      "prepaid_50": "7425",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ],
-      "provider_type": "医療（Ns施術）",
-      "treatment": "マンジャロ",
-      "area": "5mg（1本）",
+      "provider_type": "医療（その他）",
+      "treatment": "マンジャロ5mg",
+      "area": "1本",
       "sessions": "",
       "price": "9900"
     },
