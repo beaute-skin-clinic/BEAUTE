@@ -3,8 +3,7 @@
     "generated_at": "2026-03-03T07:07:25.555Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 678,
-    "records_with_cost": 66,
-    "note": "公開用データ（コスト情報除去済み）"
+    "records_with_cost": 66
   },
   "treatments": [
     {
@@ -2068,8 +2067,8 @@
       "monitor_full_price": "65450",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": "73150",
+      "prepaid_50": "73150",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2090,8 +2089,8 @@
       "monitor_full_price": "65450",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": "73150",
+      "prepaid_50": "73150",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2112,8 +2111,8 @@
       "monitor_full_price": "65450",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": "73150",
+      "prepaid_50": "73150",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2134,8 +2133,8 @@
       "monitor_full_price": "65450",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": "73150",
+      "prepaid_50": "73150",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2156,8 +2155,8 @@
       "monitor_full_price": "65450",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": "73150",
+      "prepaid_50": "73150",
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2178,8 +2177,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2200,8 +2199,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2222,8 +2221,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2244,8 +2243,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "34650",
-      "prepaid_50": "34650",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2266,8 +2265,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ヒアルロン酸"
@@ -2290,8 +2289,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "24750",
-      "prepaid_50": "24750",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2311,8 +2310,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2332,8 +2331,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "74250",
-      "prepaid_50": "74250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2351,8 +2350,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "59400",
-      "prepaid_50": "59400",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
@@ -2373,8 +2372,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "89100",
-      "prepaid_50": "89100",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
@@ -2395,8 +2394,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
@@ -2419,8 +2418,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "24750",
-      "prepaid_50": "24750",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2440,8 +2439,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "49500",
-      "prepaid_50": "49500",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2461,8 +2460,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "74250",
-      "prepaid_50": "74250",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null
     },
     {
@@ -2480,8 +2479,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "39600",
-      "prepaid_50": "39600",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
@@ -2502,8 +2501,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "69300",
-      "prepaid_50": "69300",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"
@@ -2524,8 +2523,8 @@
       "monitor_full_price": "",
       "monitor_eye_price": "",
       "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "ボトックス"

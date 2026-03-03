@@ -599,6 +599,15 @@ const PP10_KEYWORDS = [
   "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェット", "ハイドラ", "オプション",
 ];
 
+// 30万/50万: 施術別の割引率オーバーライド（通常10%→5%）
+const PP_REDUCED_RATE_TREATMENTS = [
+  { keywords: ['ヒアルロン酸'], provider: '医療（Dr.施術）', rate: 5 },
+  { keywords: ['サーマニードルアイ'], provider: '医療（Dr.施術）', rate: 5 },
+];
+
+// 30万/50万: 対象外の施術キーワード
+const PP_EXCLUDED_30_50 = ['ボトックス', 'ヒアルローニターゼ', 'ヒアルロニダーゼ'];
+
 const PROVIDER_TYPES = ["", "医療（Dr.施術）", "医療（Dr.オペ）", "医療（Ns施術）", "医療（その他）", "エステ"];
 
 const CATEGORY_ORDER = [
@@ -824,16 +833,36 @@ function calcPrepaidPrices(priceStr, providerType, treatment, categories) {
     }
   }
 
+  // 30万/50万: 施術別の対象外チェック
+  const tName = treatment || '';
+  const isExcluded30_50 = PP_EXCLUDED_30_50.some(kw => tName.includes(kw));
+
+  // 30万/50万: 施術別の割引率オーバーライド判定
+  function getEffectiveRate(tier) {
+    const baseRate = rates[tier] || 0;
+    if (baseRate === 0) return 0;
+    for (const rule of PP_REDUCED_RATE_TREATMENTS) {
+      if (providerType === rule.provider && rule.keywords.some(kw => tName.includes(kw))) {
+        return rule.rate;
+      }
+    }
+    return baseRate;
+  }
+
   // 30万ティア
-  const rate30 = rates["30万"] || 0;
-  if (rate30 > 0) {
-    result.prepaid_30 = String(Math.floor(price * (100 - rate30) / 100));
+  if (!isExcluded30_50) {
+    const rate30 = getEffectiveRate("30万");
+    if (rate30 > 0) {
+      result.prepaid_30 = String(Math.floor(price * (100 - rate30) / 100));
+    }
   }
 
   // 50万ティア
-  const rate50 = rates["50万"] || 0;
-  if (rate50 > 0) {
-    result.prepaid_50 = String(Math.floor(price * (100 - rate50) / 100));
+  if (!isExcluded30_50) {
+    const rate50 = getEffectiveRate("50万");
+    if (rate50 > 0) {
+      result.prepaid_50 = String(Math.floor(price * (100 - rate50) / 100));
+    }
   }
 
   return result;
@@ -859,6 +888,13 @@ function getPpStatus(t, tier) {
     );
     if (!isEligible) return '対象外';
   }
+
+  // 30万/50万: 施術別の対象外チェック
+  if (tier === '30万' || tier === '50万') {
+    const tName = t.treatment || '';
+    if (PP_EXCLUDED_30_50.some(kw => tName.includes(kw))) return '対象外';
+  }
+
   return '';
 }
 

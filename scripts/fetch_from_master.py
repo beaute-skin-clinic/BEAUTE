@@ -70,6 +70,15 @@ PP10_ELIGIBLE_KEYWORDS = [
     "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェット", "ハイドラ", "オプション",
 ]
 
+# 30万/50万: 施術別の割引率オーバーライド（通常10%→5%）
+PP_REDUCED_RATE_TREATMENTS = [
+    {"keywords": ["ヒアルロン酸"], "provider": "Dr.", "rate": 5},
+    {"keywords": ["サーマニードルアイ"], "provider": "Dr.", "rate": 5},
+]
+
+# 30万/50万: 対象外の施術キーワード
+PP_EXCLUDED_30_50 = ["ボトックス", "ヒアルローニターゼ", "ヒアルロニダーゼ"]
+
 
 def fetch_csv(spreadsheet_id: str) -> list[list[str]]:
     """GoogleスプレッドシートをCSVとして取得"""
@@ -119,15 +128,31 @@ def calc_prepaid_prices(price_str: str, provider_type: str, treatment: str, cate
         if is_eligible:
             result["prepaid_10"] = str(math.floor(price * (100 - rate_10) / 100))
 
+    # 30万/50万: 施術別の対象外チェック
+    t_name = treatment or ""
+    is_excluded_30_50 = any(kw in t_name for kw in PP_EXCLUDED_30_50)
+
+    # 30万/50万: 施術別の割引率オーバーライド判定
+    def get_effective_rate(tier):
+        base_rate = rates.get(tier, 0)
+        if base_rate == 0:
+            return 0
+        for rule in PP_REDUCED_RATE_TREATMENTS:
+            if provider_type == rule["provider"] and any(kw in t_name for kw in rule["keywords"]):
+                return rule["rate"]
+        return base_rate
+
     # 30万ティア
-    rate_30 = rates.get("30万", 0)
-    if rate_30 > 0:
-        result["prepaid_30"] = str(math.floor(price * (100 - rate_30) / 100))
+    if not is_excluded_30_50:
+        rate_30 = get_effective_rate("30万")
+        if rate_30 > 0:
+            result["prepaid_30"] = str(math.floor(price * (100 - rate_30) / 100))
 
     # 50万ティア
-    rate_50 = rates.get("50万", 0)
-    if rate_50 > 0:
-        result["prepaid_50"] = str(math.floor(price * (100 - rate_50) / 100))
+    if not is_excluded_30_50:
+        rate_50 = get_effective_rate("50万")
+        if rate_50 > 0:
+            result["prepaid_50"] = str(math.floor(price * (100 - rate_50) / 100))
 
     return result
 
