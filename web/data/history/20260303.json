@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T06:56:47.400Z",
+    "generated_at": "2026-03-03T06:58:12.998Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 676,
-    "records_with_cost": 66
+    "total_records": 678,
+    "records_with_cost": 68
   },
   "treatments": [
     {
@@ -2338,7 +2338,55 @@
       "category": "ヒアルロン酸",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ヒアルロン酸",
-      "area": "   \t ボルベラ（アラガン）",
+      "area": "ボルベラ（アラガン）",
+      "sessions": "",
+      "old_price": null,
+      "price": "77000",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": "19,000",
+      "categories": [
+        "ヒアルロン酸"
+      ]
+    },
+    {
+      "category": "ヒアルロン酸",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヒアルロン酸",
+      "area": "ボラックス（アラガン）",
+      "sessions": "",
+      "old_price": null,
+      "price": "77000",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "69300",
+      "prepaid_50": "69300",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": "19,000",
+      "categories": [
+        "ヒアルロン酸"
+      ]
+    },
+    {
+      "category": "ヒアルロン酸",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ヒアルロン酸（コピー）（コピー）",
+      "area": "レスチレン",
       "sessions": "",
       "old_price": null,
       "price": "77000",
