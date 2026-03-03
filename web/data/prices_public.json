@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:38:14.399Z",
+    "generated_at": "2026-03-03T01:45:13.351Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70,
@@ -10490,11 +10490,12 @@
       "categories": [
         "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
-        "美肌・肌質改善（シミ・くすみ・透明感）"
+        "美肌・肌質改善（シミ・くすみ・透明感）",
+        "内服"
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "内服",
       "provider_type": "医療（Ns施術）",
       "treatment": "シミ肝斑セット",
       "area": "トラネキサム酸・シナール・ユベラＮ30錠",
@@ -10512,6 +10513,7 @@
       "prepaid_50": "4950",
       "prepaid_manual": null,
       "categories": [
+        "内服",
         "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
@@ -10584,7 +10586,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "内服",
       "provider_type": "医療（Ns施術）",
       "treatment": "トラネキサム酸",
       "area": "30錠",
@@ -10602,6 +10604,7 @@
       "prepaid_50": "2475",
       "prepaid_manual": null,
       "categories": [
+        "内服",
         "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
@@ -10631,7 +10634,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "内服",
       "provider_type": "医療（Ns施術）",
       "treatment": "ニキビ・肌荒れセット",
       "area": "シナール・ユベラＮ・ビフロキシン30錠",
@@ -10649,6 +10652,7 @@
       "prepaid_50": "4125",
       "prepaid_manual": null,
       "categories": [
+        "内服",
         "内服・外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
@@ -10680,7 +10684,7 @@
       ]
     },
     {
-      "category": "内服・外用薬",
+      "category": "内服",
       "provider_type": "医療（Ns施術）",
       "treatment": "ヘリオケア",
       "area": "",
@@ -10698,6 +10702,7 @@
       "prepaid_50": "6600",
       "prepaid_manual": null,
       "categories": [
+        "内服",
         "内服・外用薬",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
@@ -14565,8 +14570,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4576",
+      "prepaid_50": "4290",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14587,8 +14592,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4576",
+      "prepaid_50": "4290",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14609,8 +14614,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "10560",
+      "prepaid_50": "9900",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14631,8 +14636,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "19360",
+      "prepaid_50": "18150",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14653,8 +14658,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "6160",
+      "prepaid_50": "5775",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14675,8 +14680,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "7920",
+      "prepaid_50": "7425",
       "prepaid_manual": null,
       "category": "医療痩身",
       "categories": [
@@ -14697,8 +14702,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null,
       "category": "内服・外用薬",
       "categories": [
@@ -14719,8 +14724,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "528",
+      "prepaid_50": "495",
       "prepaid_manual": null,
       "category": "内服・外用薬",
       "categories": [
@@ -14741,8 +14746,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "2640",
+      "prepaid_50": "2475",
       "prepaid_manual": null,
       "category": "内服・外用薬",
       "categories": [
@@ -14763,8 +14768,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1760",
+      "prepaid_50": "1650",
       "prepaid_manual": null,
       "category": "診察料",
       "categories": [
@@ -14785,8 +14790,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "880",
+      "prepaid_50": "825",
       "prepaid_manual": null,
       "category": "診察料",
       "categories": [
@@ -14807,8 +14812,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "264",
+      "prepaid_50": "247",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
@@ -14829,8 +14834,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "1760",
+      "prepaid_50": "1650",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
@@ -14851,8 +14856,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "4400",
+      "prepaid_50": "4125",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
@@ -14873,8 +14878,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "8800",
+      "prepaid_50": "8250",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
@@ -14895,8 +14900,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "880",
+      "prepaid_50": "825",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
@@ -14917,8 +14922,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
+      "prepaid_30": "13200",
+      "prepaid_50": "12375",
       "prepaid_manual": null,
       "category": "麻酔",
       "categories": [
