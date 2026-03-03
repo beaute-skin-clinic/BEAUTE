@@ -413,7 +413,10 @@
 
   <div class="type-filter" id="typeFilter">
     <button class="type-btn active" data-type="all">すべて</button>
-    <button class="type-btn" data-type="医療">医療</button>
+    <button class="type-btn" data-type="医療（Dr.施術）">Dr.施術</button>
+    <button class="type-btn" data-type="医療（Ns施術）">Ns施術</button>
+    <button class="type-btn" data-type="医療（Dr.オペ）">Dr.オペ</button>
+    <button class="type-btn" data-type="医療（その他）">その他</button>
     <button class="type-btn" data-type="エステ">エステ</button>
   </div>
 
@@ -631,11 +634,7 @@ function rebuildCategoryTabs() {
   // 区分フィルターに応じて対象カテゴリを絞る
   const filtered = currentType === 'all'
     ? editedData.treatments
-    : editedData.treatments.filter(t =>
-        currentType === '医療'
-          ? (t.provider_type || '').startsWith('医療')
-          : t.provider_type === currentType
-      );
+    : editedData.treatments.filter(t => t.provider_type === currentType);
 
   const categories = [...new Set(filtered.flatMap(t => t.categories || [t.category]))]
     .sort((a, b) => {
@@ -766,11 +765,7 @@ function render() {
     const t = treatments[i];
     // 区分フィルター
     if (currentType !== 'all') {
-      if (currentType === '医療') {
-        if (!(t.provider_type || '').startsWith('医療')) continue;
-      } else {
-        if (t.provider_type !== currentType) continue;
-      }
+      if (t.provider_type !== currentType) continue;
     }
     if (currentCategory !== 'all' && !(t.categories || [t.category]).includes(currentCategory)) continue;
     if (searchQuery) {

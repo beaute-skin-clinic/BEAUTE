@@ -426,7 +426,10 @@
 
 <div class="type-filter" id="typeFilter">
   <button class="type-btn active" data-type="all">すべて</button>
-  <button class="type-btn" data-type="医療">医療</button>
+  <button class="type-btn" data-type="医療（Dr.施術）">Dr.施術</button>
+  <button class="type-btn" data-type="医療（Ns施術）">Ns施術</button>
+  <button class="type-btn" data-type="医療（Dr.オペ）">Dr.オペ</button>
+  <button class="type-btn" data-type="医療（その他）">その他</button>
   <button class="type-btn" data-type="エステ">エステ</button>
 </div>
 
@@ -514,11 +517,7 @@ function rebuildCategoryTabs() {
   // 区分でフィルターした施術のカテゴリのみ表示
   let filtered = allData.treatments;
   if (currentType !== 'all') {
-    filtered = filtered.filter(t =>
-      currentType === '医療'
-        ? (t.provider_type || '').startsWith('医療')
-        : t.provider_type === currentType
-    );
+    filtered = filtered.filter(t => t.provider_type === currentType);
   }
 
   const categories = [...new Set(filtered.flatMap(t => t.categories || [t.category]))]
@@ -597,11 +596,7 @@ function render() {
 
   // 区分フィルター
   if (currentType !== 'all') {
-    treatments = treatments.filter(t =>
-      currentType === '医療'
-        ? (t.provider_type || '').startsWith('医療')
-        : t.provider_type === currentType
-    );
+    treatments = treatments.filter(t => t.provider_type === currentType);
   }
   if (currentCategory !== 'all') {
     treatments = treatments.filter(t => (t.categories || [t.category]).includes(currentCategory));
