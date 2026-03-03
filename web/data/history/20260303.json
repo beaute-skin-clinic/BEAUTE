@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:45:49.320Z",
+    "generated_at": "2026-03-03T01:46:05.517Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -16039,8 +16039,9 @@
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
-      "category": "内服・外用薬",
+      "category": "内服",
       "categories": [
+        "内服",
         "内服・外用薬"
       ],
       "provider_type": "医療（Ns施術）",
@@ -16088,8 +16089,9 @@
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
-      "category": "内服・外用薬",
+      "category": "内服",
       "categories": [
+        "内服",
         "内服・外用薬"
       ],
       "provider_type": "医療（Ns施術）",
