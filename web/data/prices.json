@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T04:11:31.330Z",
+    "generated_at": "2026-03-03T04:24:14.086Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 674,
-    "records_with_cost": 64
+    "total_records": 672,
+    "records_with_cost": 63
   },
   "treatments": [
     {
@@ -2459,29 +2459,6 @@
         "ボトックス"
       ],
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（ニューロノックス）",
-      "area": "1部位（眉間・額・目尻・バニーライン・口角・ガミーライン・額）",
-      "sessions": "",
-      "old_price": "22000",
-      "price": "14300",
-      "first_price": "16500",
-      "repeat_price": 20625,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "12870",
-      "prepaid_50": "12870",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null
-    },
-    {
-      "category": "ボトックス",
-      "categories": [
-        "ボトックス"
-      ],
-      "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス（アラガン）",
       "area": "2部位",
       "sessions": "",
@@ -2495,29 +2472,6 @@
       "prepaid_10": null,
       "prepaid_30": "49500",
       "prepaid_50": "49500",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null
-    },
-    {
-      "category": "ボトックス",
-      "categories": [
-        "ボトックス"
-      ],
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（ニューロノックス）",
-      "area": "2部位",
-      "sessions": "",
-      "old_price": "44000",
-      "price": "26400",
-      "first_price": "30800",
-      "repeat_price": "26400",
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "23760",
-      "prepaid_50": "23760",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null
@@ -2547,36 +2501,13 @@
     },
     {
       "category": "ボトックス",
-      "categories": [
-        "ボトックス"
-      ],
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（ニューロノックス）",
-      "area": "3部位",
-      "sessions": "",
-      "old_price": "66000",
-      "price": "39600",
-      "first_price": "46200",
-      "repeat_price": "39600",
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "35640",
-      "prepaid_50": "35640",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null
-    },
-    {
-      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス（アラガン）",
       "area": "50単位",
       "sessions": "",
       "old_price": "110000",
       "price": "66000",
-      "first_price": "設定なし",
+      "first_price": null,
       "repeat_price": null,
       "bundle_price": null,
       "campaign_price": null,
@@ -2595,36 +2526,12 @@
     {
       "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（ニューロノックス）",
-      "area": "50単位",
-      "sessions": "",
-      "old_price": "44000",
-      "price": "44000",
-      "first_price": "設定なし",
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "39600",
-      "prepaid_50": "39600",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": "1,500",
-      "categories": [
-        "ボトックス"
-      ]
-    },
-    {
-      "category": "ボトックス",
-      "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス（アラガン）",
       "area": "100単位",
       "sessions": "",
       "old_price": "220000",
       "price": "99000",
-      "first_price": "設定なし",
+      "first_price": null,
       "repeat_price": null,
       "bundle_price": null,
       "campaign_price": null,
@@ -2643,12 +2550,60 @@
     {
       "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックスリフト（アラガン）",
-      "area": "1回",
+      "treatment": "ボトックス",
+      "area": "",
       "sessions": "",
-      "old_price": "55000",
+      "old_price": null,
+      "price": "770000",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": "77000",
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "693000",
+      "prepaid_50": "693000",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": "15,000",
+      "categories": [
+        "ボトックス"
+      ]
+    },
+    {
+      "category": "ボトックス",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックス",
+      "area": "",
+      "sessions": "",
+      "old_price": null,
+      "price": "33000",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": null,
+      "categories": [
+        "ボトックス"
+      ]
+    },
+    {
+      "category": "ボトックス",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ボトックス",
+      "area": "",
+      "sessions": "",
+      "old_price": null,
       "price": "55000",
-      "first_price": "設定なし",
+      "first_price": null,
       "repeat_price": null,
       "bundle_price": null,
       "campaign_price": null,
@@ -2659,7 +2614,7 @@
       "prepaid_50": "49500",
       "prepaid_manual": null,
       "cost_note": null,
-      "profit_note": "4,500",
+      "profit_note": null,
       "categories": [
         "ボトックス"
       ]
