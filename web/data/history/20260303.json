@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:36:44.657Z",
+    "generated_at": "2026-03-03T01:37:19.191Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70
@@ -11538,7 +11538,8 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "内服・外用薬",
+        "外用薬"
       ]
     },
     {
@@ -11640,6 +11641,7 @@
       "profit_note": null,
       "categories": [
         "内服・外用薬",
+        "外用薬",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
