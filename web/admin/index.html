@@ -218,6 +218,7 @@
 
     .price-val { font-weight: bold; color: var(--text); white-space: nowrap; }
     .price-small { font-size: 11px; color: var(--text-light); white-space: nowrap; }
+    .per-unit { font-size: 9px; color: #aaa; font-weight: normal; }
     .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
 
     .td-cost {
@@ -751,6 +752,24 @@ function fmt(val) {
   return '¥' + n.toLocaleString('ja-JP');
 }
 
+// 部位／詳細から数量を抽出（2部位、50単位、30錠 等）
+function parseUnitCount(area) {
+  const m = (area || '').match(/^(\d+)(部位|単位|錠|本|個|cc|ml|カプセル|包|枚)/);
+  return (m && parseInt(m[1]) > 1) ? { count: parseInt(m[1]), unit: m[2] } : null;
+}
+
+// 価格 + 単価注釈
+function fmtWithUnit(val, area) {
+  const base = fmt(val);
+  if (!base) return '';
+  const u = parseUnitCount(area);
+  if (!u) return base;
+  const n = parseInt(String(val).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(n)) return base;
+  const per = Math.round(n / u.count);
+  return base + `<br><span class="per-unit">1${u.unit}あたり ¥${per.toLocaleString('ja-JP')}</span>`;
+}
+
 function esc(str) {
   return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
@@ -822,8 +841,8 @@ function render() {
       <td class="${cellCls('area')}"><span class="editable" data-field="area" data-idx="${idx}" data-type="text">${esc(t.area || '')}</span></td>
       <td class="${cellCls('sessions')}"><span class="editable" data-field="sessions" data-idx="${idx}" data-type="text">${esc(t.sessions || '')}</span></td>
       <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
-      <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmt(t.price)}</span></td>
-      <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmt(t.repeat_price)}</span></td>
+      <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.price, t.area)}</span></td>
+      <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.repeat_price, t.area)}</span></td>
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
       <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_full_price)}</span></td>
       <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_eye_price)}</span></td>
