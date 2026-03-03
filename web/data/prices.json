@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T03:07:33.514Z",
+    "generated_at": "2026-03-03T03:19:13.476Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 679,
     "records_with_cost": 70
@@ -2441,7 +2441,7 @@
       "sessions": "",
       "old_price": "27500",
       "price": 27500,
-      "first_price": null,
+      "first_price": "22000",
       "repeat_price": 20625,
       "campaign_price": null,
       "monitor_full_price": null,
@@ -2464,7 +2464,7 @@
       "sessions": "",
       "old_price": "55000",
       "price": 55000,
-      "first_price": null,
+      "first_price": "41250",
       "repeat_price": 38500,
       "campaign_price": null,
       "monitor_full_price": null,
