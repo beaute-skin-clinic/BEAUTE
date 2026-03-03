@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:36:16.881Z",
+    "generated_at": "2026-03-03T01:36:44.657Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 662,
     "records_with_cost": 70,
@@ -10608,7 +10608,7 @@
     {
       "category": "内服・外用薬",
       "provider_type": "医療（Ns施術）",
-      "treatment": "トレチノイン",
+      "treatment": "トレチノイン 5g",
       "area": "",
       "sessions": "",
       "old_price": null,
@@ -10625,7 +10625,8 @@
       "prepaid_manual": null,
       "categories": [
         "内服・外用薬",
-        "毛穴・ニキビ・肌の凹凸ケア"
+        "毛穴・ニキビ・肌の凹凸ケア",
+        "外用薬"
       ]
     },
     {
