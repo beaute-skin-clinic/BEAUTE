@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T03:23:56.862Z",
+    "generated_at": "2026-03-03T04:00:17.183Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 679,
     "records_with_cost": 70,
@@ -2300,7 +2300,7 @@
       "sessions": "",
       "old_price": "110000",
       "price": "66000",
-      "first_price": null,
+      "first_price": "設定なし",
       "repeat_price": null,
       "bundle_price": null,
       "campaign_price": null,
@@ -2322,7 +2322,7 @@
       "sessions": "",
       "old_price": "220000",
       "price": "99000",
-      "first_price": null,
+      "first_price": "設定なし",
       "repeat_price": null,
       "bundle_price": null,
       "campaign_price": null,
