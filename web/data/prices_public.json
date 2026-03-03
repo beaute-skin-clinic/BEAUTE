@@ -2,7 +2,7 @@
   "metadata": {
     "generated_at": "2026-03-03T01:38:14.399Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 664,
+    "total_records": 677,
     "records_with_cost": 70,
     "note": "公開用データ（コスト情報除去済み）"
   },
@@ -10726,50 +10726,6 @@
       ]
     },
     {
-      "category": "医療痩身",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "リベルサス",
-      "area": "3㎎30錠",
-      "sessions": "",
-      "old_price": null,
-      "price": "13200",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "10560",
-      "prepaid_50": "9900",
-      "prepaid_manual": null,
-      "categories": [
-        "医療痩身"
-      ]
-    },
-    {
-      "category": "医療痩身",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "リベルサス",
-      "area": "7㎎30錠",
-      "sessions": "",
-      "old_price": null,
-      "price": "24200",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "19360",
-      "prepaid_50": "18150",
-      "prepaid_manual": null,
-      "categories": [
-        "医療痩身"
-      ]
-    },
-    {
       "category": "内服・外用薬",
       "provider_type": "医療（Ns施術）",
       "treatment": "リンデロンVG5g",
@@ -10836,50 +10792,6 @@
       "categories": [
         "内服・外用薬",
         "外用薬"
-      ]
-    },
-    {
-      "category": "医療痩身",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "防己黄耆湯",
-      "area": "90包",
-      "sessions": "",
-      "old_price": null,
-      "price": "3300",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "2640",
-      "prepaid_50": "2475",
-      "prepaid_manual": null,
-      "categories": [
-        "医療痩身"
-      ]
-    },
-    {
-      "category": "医療痩身",
-      "provider_type": "医療（Ns施術）",
-      "treatment": "防風通聖散",
-      "area": "90包",
-      "sessions": "",
-      "old_price": null,
-      "price": "3300",
-      "first_price": null,
-      "repeat_price": null,
-      "bundle_price": null,
-      "campaign_price": null,
-      "monitor_full_price": null,
-      "monitor_eye_price": null,
-      "prepaid_10": null,
-      "prepaid_30": "2640",
-      "prepaid_50": "2475",
-      "prepaid_manual": null,
-      "categories": [
-        "医療痩身"
       ]
     },
     {
@@ -14643,6 +14555,380 @@
       "categories": [
         "しわ・たるみ・小顔"
       ]
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "防風通聖散（便秘改善）",
+      "area": "90包",
+      "sessions": "",
+      "price": "5720"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "防已黄耆湯",
+      "area": "90包",
+      "sessions": "",
+      "price": "5720"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "リベルサス",
+      "area": "3mg 30錠",
+      "sessions": "",
+      "price": "13200"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "リベルサス",
+      "area": "7mg 30錠",
+      "sessions": "",
+      "price": "24200"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "マンジャロ",
+      "area": "2.5mg（1本）",
+      "sessions": "",
+      "price": "7700"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "医療痩身",
+      "categories": [
+        "医療痩身"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "マンジャロ",
+      "area": "5mg（1本）",
+      "sessions": "",
+      "price": "9900"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "内服・外用薬",
+      "categories": [
+        "内服・外用薬"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "イソトレチノイン",
+      "area": "1ヶ月",
+      "sessions": "",
+      "price": "16500"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "内服・外用薬",
+      "categories": [
+        "内服・外用薬"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "イソトレチノイン",
+      "area": "1錠",
+      "sessions": "",
+      "price": "660"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "内服・外用薬",
+      "categories": [
+        "内服・外用薬"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "ミノマイシン",
+      "area": "1ヶ月（30錠）",
+      "sessions": "",
+      "price": "3300"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "診察料",
+      "categories": [
+        "診察料"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "初診料",
+      "area": "",
+      "sessions": "",
+      "price": "2200"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "診察料",
+      "categories": [
+        "診察料"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "再診料",
+      "area": "",
+      "sessions": "",
+      "price": "1100"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "ペンレステープ麻酔",
+      "area": "1枚",
+      "sessions": "",
+      "price": "330"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "リドカイン麻酔",
+      "area": "1回",
+      "sessions": "",
+      "price": "2200"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "笑気麻酔（30分）",
+      "area": "1回",
+      "sessions": "",
+      "price": "5500"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "ブロック麻酔",
+      "area": "1回",
+      "sessions": "",
+      "price": "11000"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "局所麻酔",
+      "area": "1回",
+      "sessions": "",
+      "price": "1100"
+    },
+    {
+      "old_price": null,
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": null,
+      "prepaid_50": null,
+      "prepaid_manual": null,
+      "category": "麻酔",
+      "categories": [
+        "麻酔"
+      ],
+      "provider_type": "医療（Ns施術）",
+      "treatment": "手術局所麻酔",
+      "area": "1回",
+      "sessions": "",
+      "price": "16500"
     }
   ],
   "prepaid_discount_rates": {
