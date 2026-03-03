@@ -73,6 +73,38 @@
     }
     .search-box:focus { border-color: var(--primary); }
 
+    /* ===== 区分フィルター ===== */
+    .type-filter {
+      display: flex;
+      gap: 0;
+      padding: 6px 14px;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    .type-btn {
+      padding: 5px 16px;
+      border: 1.5px solid var(--border);
+      font-size: 12px;
+      cursor: pointer;
+      background: #fff;
+      color: var(--text-light);
+      transition: all 0.15s;
+      font-family: inherit;
+      font-weight: 500;
+    }
+    .type-btn:first-child { border-radius: 8px 0 0 8px; }
+    .type-btn:last-child { border-radius: 0 8px 8px 0; }
+    .type-btn:not(:first-child) { border-left: none; }
+    .type-btn.active {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+      color: #fff;
+    }
+    .type-btn:not(.active):hover {
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+
     /* ===== カテゴリタブ ===== */
     .category-tabs {
       display: flex;
@@ -106,7 +138,7 @@
     .main {
       padding: 10px;
       overflow: auto;
-      height: calc(100vh - 140px);
+      height: calc(100vh - 176px);
       -webkit-overflow-scrolling: touch;
     }
 
@@ -353,7 +385,7 @@
     @media (min-width: 900px) {
       .site-header h1 { font-size: 22px; }
       .main { max-width: 1200px; margin: 0 auto; padding: 14px 20px; }
-      .controls, .category-tabs { max-width: 1200px; margin: 0 auto; }
+      .controls, .type-filter, .category-tabs { max-width: 1200px; margin: 0 auto; }
       .price-table { font-size: 13px; }
       .price-table thead th { font-size: 11px; padding: 8px; }
       .price-table tbody td { padding: 6px 10px; }
@@ -383,6 +415,12 @@
   </div>
 </div>
 
+<div class="type-filter" id="typeFilter">
+  <button class="type-btn active" data-type="all">すべて</button>
+  <button class="type-btn" data-type="医療">医療</button>
+  <button class="type-btn" data-type="エステ">エステ</button>
+</div>
+
 <div class="category-tabs" id="categoryTabs">
   <button class="tab-btn active" data-cat="all">すべて</button>
 </div>
@@ -403,6 +441,7 @@ const DATA_URL = './data/prices_public.json';
 
 let allData = null;
 let currentCategory = 'all';
+let currentType = 'all';
 let searchQuery = '';
 
 const CATEGORY_ORDER = [
@@ -419,7 +458,7 @@ const CATEGORY_ORDER = [
   '内服・外用薬',
   'フェイシャル',
   'リラクゼーション',
-  'ボディ',
+  'エステボディ',
   'エステその他', 'エステブライダル', 'エステマタニティ',
   'オプション',
 ];
@@ -441,8 +480,32 @@ async function loadData() {
 }
 
 function buildTabs() {
+  rebuildCategoryTabs();
+
+  // 区分フィルターのクリック
+  document.querySelectorAll('.type-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentType = btn.dataset.type;
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = 'all';
+      rebuildCategoryTabs();
+      render();
+    });
+  });
+}
+
+function rebuildCategoryTabs() {
   const tabs = document.getElementById('categoryTabs');
-  const categories = [...new Set(allData.treatments.map(t => t.category))]
+  tabs.innerHTML = '';
+
+  // 区分でフィルターした施術のカテゴリのみ表示
+  let filtered = allData.treatments;
+  if (currentType !== 'all') {
+    filtered = filtered.filter(t => t.provider_type === currentType);
+  }
+
+  const categories = [...new Set(filtered.map(t => t.category))]
     .sort((a, b) => {
       const ai = CATEGORY_ORDER.indexOf(a);
       const bi = CATEGORY_ORDER.indexOf(b);
@@ -452,9 +515,26 @@ function buildTabs() {
       return ai - bi;
     });
 
+  // 「すべて」ボタン
+  const allBtn = document.createElement('button');
+  allBtn.className = 'tab-btn active';
+  allBtn.dataset.cat = 'all';
+  allBtn.textContent = 'すべて';
+  allBtn.addEventListener('click', () => {
+    currentCategory = 'all';
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    allBtn.classList.add('active');
+    render();
+  });
+  tabs.appendChild(allBtn);
+
   categories.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'tab-btn';
+    if (cat === currentCategory) {
+      btn.classList.add('active');
+      allBtn.classList.remove('active');
+    }
     btn.dataset.cat = cat;
     btn.textContent = cat;
     btn.addEventListener('click', () => {
@@ -464,13 +544,6 @@ function buildTabs() {
       render();
     });
     tabs.appendChild(btn);
-  });
-
-  document.querySelector('[data-cat="all"]').addEventListener('click', () => {
-    currentCategory = 'all';
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelector('[data-cat="all"]').classList.add('active');
-    render();
   });
 }
 
@@ -506,6 +579,10 @@ function render() {
   const main = document.getElementById('mainContent');
   let treatments = allData.treatments;
 
+  // 区分フィルター
+  if (currentType !== 'all') {
+    treatments = treatments.filter(t => t.provider_type === currentType);
+  }
   if (currentCategory !== 'all') {
     treatments = treatments.filter(t => t.category === currentCategory);
   }
