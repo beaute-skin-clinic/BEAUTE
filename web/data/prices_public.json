@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T04:25:59.611Z",
+    "generated_at": "2026-03-03T04:26:46.888Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 674,
     "records_with_cost": 64,
@@ -2317,7 +2317,7 @@
     {
       "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "ボトックス（アラガン）（コピー）",
+      "treatment": "ボトックス（アラガン）",
       "area": "100単位",
       "sessions": "",
       "old_price": "220000",
