@@ -9337,7 +9337,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "CHニュアンス",
       "area": "顔",
@@ -9356,7 +9356,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "CHニュアンス",
       "area": "顔➕首➕デコルテ",
@@ -9375,7 +9375,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "アフター再生トリートメント",
       "area": "",
@@ -9394,7 +9394,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "エピダーマルスキン30分",
       "area": "顔",
@@ -9413,7 +9413,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "エピダーマルスキン45分",
       "area": "顔",
@@ -9432,7 +9432,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "スキンメイド60分",
       "area": "顔",
@@ -9451,7 +9451,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "スキンメイド90分",
       "area": "顔",
@@ -9470,7 +9470,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "トロイピール",
       "area": "顔",
@@ -9489,7 +9489,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ハーブピーリング",
       "area": "顔",
@@ -9508,7 +9508,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ハーブピーリング背中",
       "area": "背中",
@@ -9527,7 +9527,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ハーブピーリング背中半分",
       "area": "背中半分",
@@ -9546,7 +9546,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨアンストレス",
       "area": "顔",
@@ -9565,7 +9565,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨイラストリアス",
       "area": "顔",
@@ -9584,7 +9584,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨコモデックス",
       "area": "顔",
@@ -9603,7 +9603,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨシャトーデボーテ",
       "area": "顔",
@@ -9622,7 +9622,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨシルク",
       "area": "顔",
@@ -9641,7 +9641,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨビオフィート",
       "area": "顔",
@@ -9660,7 +9660,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨフォーエバーヤング",
       "area": "顔",
@@ -9679,7 +9679,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨミューズ",
       "area": "顔",
@@ -9698,7 +9698,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＣＨローズドメーラ",
       "area": "顔",
@@ -9717,7 +9717,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "Ｈ２ハイドロフェイシャル顔60分",
       "area": "顔",
@@ -9736,7 +9736,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "Ｈ２ハイドロフェイシャル顔＋頭70分",
       "area": "顔＋頭",
@@ -9755,7 +9755,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰイオン導入",
       "area": "ＶＣor トラネキサム酸＋ｱﾙｹﾞﾏｽｸ",
@@ -9774,7 +9774,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰエクソソームアンプル導入",
       "area": "",
@@ -9793,7 +9793,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰガビラン10分",
       "area": "",
@@ -9812,7 +9812,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰシルクコラーゲン",
       "area": "顔",
@@ -9831,7 +9831,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰヒーライト10分",
       "area": "顔",
@@ -9850,7 +9850,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマのみ",
       "area": "",
@@ -9869,7 +9869,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋エクソソームアンプル",
@@ -9888,7 +9888,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋タイトニング",
@@ -9907,7 +9907,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋ヒト臍帯由来幹細胞培養上清液",
@@ -9926,7 +9926,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋プラセンタ",
@@ -9945,7 +9945,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋リジェンセラム",
@@ -9964,7 +9964,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋純正エクソソーム",
@@ -9983,7 +9983,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰプラズマリフティング",
       "area": "プラズマ＋ＶＣ",
@@ -10002,7 +10002,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰヘッドカッサ10分",
       "area": "",
@@ -10021,7 +10021,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰヘッドマッサージ10分",
       "area": "",
@@ -10040,7 +10040,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰ幹細胞美容液導入",
       "area": "",
@@ -10059,7 +10059,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＯＰ肌質別マスク",
       "area": "",
@@ -10078,7 +10078,7 @@
       "prepaid_manual": null
     },
     {
-      "category": "フェイシャル",
+      "category": "エステフェイシャル",
       "provider_type": "エステ",
       "treatment": "ＶＶＳトリートメント",
       "area": "顔",
@@ -11370,7 +11370,7 @@
       "prepaid_manual": "8800"
     },
     {
-      "category": "バーティカルリフト",
+      "category": "スレッド（糸リフト）",
       "provider_type": "医療",
       "treatment": "PDO",
       "area": "",
@@ -11389,7 +11389,7 @@
       "prepaid_manual": "297000"
     },
     {
-      "category": "バーティカルリフト",
+      "category": "スレッド（糸リフト）",
       "provider_type": "医療",
       "treatment": "PDO",
       "area": "中顔面",
