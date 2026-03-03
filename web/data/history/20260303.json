@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:37:19.191Z",
+    "generated_at": "2026-03-03T01:37:27.602Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 662,
+    "total_records": 664,
     "records_with_cost": 70
   },
   "treatments": [
@@ -11765,7 +11765,58 @@
       "cost_note": null,
       "profit_note": null,
       "categories": [
-        "内服・外用薬"
+        "内服・外用薬",
+        "外用薬"
+      ]
+    },
+    {
+      "category": "内服・外用薬",
+      "provider_type": "医療（Ns施術）",
+      "treatment": "リンデロンVG5g（コピー）",
+      "area": "",
+      "sessions": "",
+      "old_price": null,
+      "price": "770",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "616",
+      "prepaid_50": "577",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": null,
+      "categories": [
+        "内服・外用薬",
+        "外用薬"
+      ]
+    },
+    {
+      "category": "内服・外用薬",
+      "provider_type": "医療（Ns施術）",
+      "treatment": "リンデロンVG5g（コピー）（コピー）",
+      "area": "",
+      "sessions": "",
+      "old_price": null,
+      "price": "770",
+      "first_price": null,
+      "repeat_price": null,
+      "bundle_price": null,
+      "campaign_price": null,
+      "monitor_full_price": null,
+      "monitor_eye_price": null,
+      "prepaid_10": null,
+      "prepaid_30": "616",
+      "prepaid_50": "577",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": null,
+      "categories": [
+        "内服・外用薬",
+        "外用薬"
       ]
     },
     {
