@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T02:02:39.936Z",
+    "generated_at": "2026-03-03T02:06:48.457Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70,
@@ -10475,7 +10475,7 @@
     },
     {
       "category": "毛穴・ニキビ・肌の凹凸ケア",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "シナール",
       "area": "30錠",
       "sessions": "",
@@ -10488,8 +10488,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1320",
-      "prepaid_50": "1237",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "毛穴・ニキビ・肌の凹凸ケア",
@@ -10499,7 +10499,7 @@
     },
     {
       "category": "内服",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "シミ肝斑セット",
       "area": "トラネキサム酸・シナール・ユベラＮ30錠",
       "sessions": "",
@@ -10512,11 +10512,12 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "5280",
-      "prepaid_50": "4950",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服",
+        "内服セット",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
     },
@@ -10590,7 +10591,7 @@
     },
     {
       "category": "内服",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "トラネキサム酸",
       "area": "30錠",
       "sessions": "",
@@ -10603,8 +10604,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "2640",
-      "prepaid_50": "2475",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服",
@@ -10636,7 +10637,7 @@
     },
     {
       "category": "内服",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ニキビ・肌荒れセット",
       "area": "シナール・ユベラＮ・ビフロキシン30錠",
       "sessions": "",
@@ -10649,11 +10650,12 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "4400",
-      "prepaid_50": "4125",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服",
+        "内服セット",
         "毛穴・ニキビ・肌の凹凸ケア",
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ]
@@ -10684,9 +10686,9 @@
     },
     {
       "category": "内服",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ヘリオケア",
-      "area": "",
+      "area": " 30カプセル（1日1粒目安）",
       "sessions": "",
       "old_price": null,
       "price": "8800",
@@ -10697,8 +10699,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "7040",
-      "prepaid_50": "6600",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服",
@@ -10707,7 +10709,7 @@
     },
     {
       "category": "内服",
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ユベラN",
       "area": "30錠",
       "sessions": "",
@@ -10720,8 +10722,8 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "1320",
-      "prepaid_50": "1237",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
         "内服",
@@ -14703,15 +14705,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "13200",
-      "prepaid_50": "12375",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "内服",
       "categories": [
         "内服",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "イソトレチノイン",
       "area": "1ヶ月",
       "sessions": "",
@@ -14726,15 +14728,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "528",
-      "prepaid_50": "495",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "内服",
       "categories": [
         "内服",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "イソトレチノイン",
       "area": "1錠",
       "sessions": "",
@@ -14749,15 +14751,15 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "2640",
-      "prepaid_50": "2475",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "category": "内服",
       "categories": [
         "内服",
         "毛穴・ニキビ・肌の凹凸ケア"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "ミノマイシン",
       "area": "1ヶ月（30錠）",
       "sessions": "",
