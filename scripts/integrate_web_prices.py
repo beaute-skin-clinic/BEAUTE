@@ -731,7 +731,79 @@ def _area_match(w_area, m_area, w_detail=""):
         if len(wa) < 15 and len(ma) < 15:
             return True
 
+    # N部位/N単位 prefix matching (for remapped ボトックス entries etc.)
+    # "1部位" matches "1部位(眉間・額・...)"
+    # "2部位" matches "2部位"
+    # Skip "per unit" descriptions like "3部位以上なら..."
+    unit_pat = re.compile(r'^(\d+(?:部位|単位))')
+    wa_unit = unit_pat.match(wa)
+    ma_unit = unit_pat.match(ma)
+    if wa_unit and ma_unit and wa_unit.group(1) == ma_unit.group(1):
+        # Ensure not a "per unit" bulk pricing description
+        if "以上" not in wa and "あたり" not in wa:
+            return True
+
     return False
+
+
+# ── ボトックス Pre-processing ──
+def _preprocess_botox(web_data):
+    """Remap ボトックス web entries to match master naming convention.
+
+    Web structure:   treatment=ボトックス, area=アラガン/ニューロノックス, sessions=N部位
+    Master structure: treatment=ボトックス（アラガン）, area=N部位（眉間・額・...）
+
+    Also handles:
+    - area=アラガンボトックスリフト → treatment=ボトックスリフト（アラガン）
+    - area=アラガンまとめ買い → treatment=ボトックス（アラガン）, area=100単位
+    - area=アラガンオーダーメイド → treatment=ボトックス（アラガン）, area=オーダーメイド...
+    """
+    DRUG_NAMES = ["アラガン", "ニューロノックス"]
+    remapped = 0
+
+    for w in web_data:
+        if w["treatment"] != "ボトックス":
+            continue
+
+        area = w["area"]
+        matched_drug = None
+        for drug in DRUG_NAMES:
+            if area.startswith(drug):
+                matched_drug = drug
+                break
+
+        if not matched_drug:
+            continue
+
+        suffix = area[len(matched_drug):]
+
+        if "ボトックスリフト" in suffix:
+            # ボトックスリフト（アラガン）/ ボトックスリフト（ニューロノックス）
+            w["treatment"] = f"ボトックスリフト（{matched_drug}）"
+            w["area"] = ""
+        elif "まとめ買い" in suffix:
+            # ボトックス（アラガン）with sessions (e.g., 100単位) as area
+            w["treatment"] = f"ボトックス（{matched_drug}）"
+            w["area"] = w.get("sessions", "")
+            w["sessions"] = ""
+        elif "オーダーメイド" in suffix:
+            # Special product — remap treatment but keep distinctive area
+            w["treatment"] = f"ボトックス（{matched_drug}）"
+            w["area"] = f"オーダーメイド {w.get('sessions', '')}"
+            w["sessions"] = ""
+        elif suffix == "":
+            # Plain drug name: area=アラガン → treatment=ボトックス（アラガン）
+            # Move sessions (1部位, 2部位) to area for matching
+            w["treatment"] = f"ボトックス（{matched_drug}）"
+            w["area"] = w.get("sessions", "")
+            w["sessions"] = ""
+
+        remapped += 1
+
+    if remapped:
+        print(f"  Pre-processed {remapped} ボトックス entries (remapped to master naming)")
+
+    return web_data
 
 
 # ── Update Logic ──
@@ -812,6 +884,9 @@ def main():
     with open(web_json_path, "w", encoding="utf-8") as f:
         json.dump(web_data, f, ensure_ascii=False, indent=2)
     print(f"  Saved scraped data to {web_json_path}")
+
+    # Step 1.5: Pre-process special cases for matching
+    web_data = _preprocess_botox(web_data)
 
     # Step 2: Read master data
     print(f"\nReading {PRICES_JSON} ...")
