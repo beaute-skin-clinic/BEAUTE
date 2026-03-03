@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-03T01:58:49.693Z",
+    "generated_at": "2026-03-03T02:00:11.112Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 677,
     "records_with_cost": 70
@@ -15884,16 +15884,17 @@
       "monitor_full_price": null,
       "monitor_eye_price": null,
       "prepaid_10": null,
-      "prepaid_30": "4576",
-      "prepaid_50": "4290",
+      "prepaid_30": null,
+      "prepaid_50": null,
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
-      "category": "医療痩身",
+      "category": "内服（痩身）",
       "categories": [
+        "内服（痩身）",
         "医療痩身"
       ],
-      "provider_type": "医療（Ns施術）",
+      "provider_type": "医療（その他）",
       "treatment": "防風通聖散（便秘改善）",
       "area": "90包",
       "sessions": "",
