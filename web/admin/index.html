@@ -242,6 +242,47 @@
       outline-offset: -2px;
     }
 
+    /* ===== 目視確認チェック ===== */
+    .data-table tbody tr.row-verified {
+      background: #f0faf0 !important;
+    }
+    .data-table tbody tr.row-verified:nth-child(even) {
+      background: #e8f5e8 !important;
+    }
+    .verify-btn {
+      width: 22px; height: 22px;
+      border: 1.5px solid #ccc; border-radius: 4px;
+      background: #fff; cursor: pointer;
+      font-size: 13px; line-height: 20px;
+      text-align: center; padding: 0;
+      color: transparent; transition: all 0.15s;
+    }
+    .verify-btn:hover { border-color: #28a745; background: #f0fff0; }
+    .verify-btn.checked {
+      background: #28a745; border-color: #28a745;
+      color: #fff;
+    }
+    .verify-bar {
+      display: flex; align-items: center; gap: 10px;
+      padding: 6px 16px; background: #e7f3e7;
+      border-bottom: 1px solid #b7dbb7;
+      font-size: 12px; color: #2d5a2d;
+    }
+    .verify-bar .verify-count { font-weight: bold; font-size: 13px; }
+    .verify-bar select {
+      padding: 3px 6px; border: 1px solid #a0c8a0;
+      border-radius: 4px; font-size: 11px;
+      background: #fff; color: #2d5a2d;
+      font-family: inherit;
+    }
+    .verify-bar .verify-reset {
+      margin-left: auto; padding: 3px 10px;
+      border: 1px solid #c44; border-radius: 4px;
+      background: #fff; color: #c44; font-size: 11px;
+      cursor: pointer; font-family: inherit;
+    }
+    .verify-bar .verify-reset:hover { background: #fef2f2; }
+
     /* ===== ドラッグ並べ替え ===== */
     .drag-handle {
       cursor: grab; text-align: center; color: #bbb;
@@ -453,11 +494,23 @@
     <div>全件: <span id="summaryTotal">-</span>件</div>
   </div>
 
+  <div class="verify-bar" id="verifyBar">
+    <span>✅ 目視確認</span>
+    <span class="verify-count" id="verifyCount">0/0件</span>
+    <select id="verifyFilter" onchange="render()">
+      <option value="all">すべて表示</option>
+      <option value="unchecked">未確認のみ</option>
+      <option value="checked">確認済のみ</option>
+    </select>
+    <button class="verify-reset" onclick="resetVerified()">リセット</button>
+  </div>
+
   <main class="main">
     <table class="data-table" id="dataTable">
       <thead>
         <tr>
           <th style="width:20px;padding:2px;"></th>
+          <th style="width:28px;padding:2px;font-size:9px;text-align:center;">確認</th>
           <th>カテゴリ</th>
           <th>区分</th>
           <th>施術名</th>
@@ -479,7 +532,7 @@
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="20" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
@@ -594,6 +647,30 @@ let showCostOnly = false;
 let editingCell = null;      // 現在編集中のセル
 let filteredIndices = [];    // フィルタ後のインデックス配列
 
+// ── 目視確認チェック ──
+const VERIFY_STORAGE_KEY = 'beaute_verified_rows';
+let verifiedSet = new Set(JSON.parse(localStorage.getItem(VERIFY_STORAGE_KEY) || '[]'));
+
+function getVerifyKey(t) {
+  return [t.treatment || '', t.area || '', t.sessions || ''].join('|');
+}
+function isVerified(t) { return verifiedSet.has(getVerifyKey(t)); }
+function toggleVerify(idx) {
+  if (!editedData) return;
+  const t = editedData.treatments[idx];
+  const key = getVerifyKey(t);
+  if (verifiedSet.has(key)) verifiedSet.delete(key);
+  else verifiedSet.add(key);
+  localStorage.setItem(VERIFY_STORAGE_KEY, JSON.stringify([...verifiedSet]));
+  render();
+}
+function resetVerified() {
+  if (!confirm('確認チェックをすべてリセットしますか？')) return;
+  verifiedSet.clear();
+  localStorage.setItem(VERIFY_STORAGE_KEY, '[]');
+  render();
+}
+
 // ============================================================
 // 認証
 // ============================================================
@@ -648,7 +725,7 @@ async function loadData() {
     updateGitHubStatus();
   } catch (e) {
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="19" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
+      '<tr><td colspan="20" style="text-align:center;padding:30px;color:red;">データ取得エラー</td></tr>';
     console.error(e);
   }
 }
@@ -968,8 +1045,17 @@ function render() {
           !(t.categories || [t.category]).some(c => (c || '').toLowerCase().includes(q))) continue;
     }
     if (showCostOnly && !t.cost_note && !t.profit_note) continue;
+    // 確認フィルター
+    const vf = document.getElementById('verifyFilter').value;
+    if (vf === 'unchecked' && isVerified(t)) continue;
+    if (vf === 'checked' && !isVerified(t)) continue;
     filteredIndices.push(i);
   }
+
+  // 確認カウント更新
+  const totalVisible = filteredIndices.length;
+  const verifiedVisible = filteredIndices.filter(i => isVerified(treatments[i])).length;
+  document.getElementById('verifyCount').textContent = `${verifiedVisible}/${totalVisible}件`;
 
   // サマリー更新
   const withCost = filteredIndices.filter(i => treatments[i].cost_note || treatments[i].profit_note).length;
@@ -979,7 +1065,7 @@ function render() {
 
   const tbody = document.getElementById('tableBody');
   if (filteredIndices.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="19" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="20" style="text-align:center;padding:30px;color:#999;">該当データなし</td></tr>';
     return;
   }
 
@@ -995,6 +1081,9 @@ function render() {
     else if (isAdded) rowClass = 'row-added';
     else if (isChanged) rowClass = 'row-changed';
 
+    const verified = isVerified(t);
+    if (verified && !rowClass) rowClass = 'row-verified';
+
     const cellCls = (field) => changedFields.has(field) && !isDeleted ? ' cell-changed' : '';
 
     // PP表示: 自動計算値かmanual値
@@ -1007,6 +1096,7 @@ function render() {
 
     return `<tr class="${rowClass}" data-idx="${idx}">
       <td class="drag-handle" draggable="true">${isDeleted ? '' : '☰'}</td>
+      <td style="text-align:center;padding:2px;"><button class="verify-btn${verified ? ' checked' : ''}" onclick="toggleVerify(${idx})" title="目視確認">${verified ? '✓' : ''}</button></td>
       <td class="${cellCls('categories')}"><span class="editable" data-field="categories" data-idx="${idx}" data-type="categories">${(t.categories || [t.category]).filter(Boolean).map(c => `<span class="cat-badge">${esc(c)}</span>`).join(' ')}</span></td>
       <td class="${cellCls('provider_type')}"><span class="editable" data-field="provider_type" data-idx="${idx}" data-type="provider">${esc(t.provider_type || '')}</span></td>
       <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span></td>
