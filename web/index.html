@@ -254,6 +254,8 @@
     .p-campaign { color: var(--campaign); font-weight: 700; }
     .p-monitor { color: var(--monitor); font-weight: 600; }
     .p-na { color: #ccc; font-size: 11px; }
+    .price-up { font-size: 9px; color: #d9534f; font-weight: bold; }
+    .price-down { font-size: 9px; color: #28a745; font-weight: bold; }
 
     /* PP列 */
     .td-pp {
@@ -579,18 +581,25 @@ function priceCell(val, cls) {
   return f ? `<span class="${cls}">${f}</span>` : na();
 }
 
+// 旧初回価格と新通常価格の比較インジケーター
+function priceCompare(newPrice, oldFirstPrice) {
+  if (!newPrice || !oldFirstPrice) return '';
+  const np = parseInt(String(newPrice).replace(/[¥,\s]/g, ''), 10);
+  const ofp = parseInt(String(oldFirstPrice).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(np) || isNaN(ofp) || np === ofp) return '';
+  if (np > ofp) return '<br><span class="price-up">↑値上り</span>';
+  return '<br><span class="price-down">↓値下げ</span>';
+}
+
 
 // first_priceがあるか判定
 function hasFirstPrice(treatments) {
   return treatments.some(t => t.first_price);
 }
 
-// 表示用の価格を解決: first_price があればそれが新価格、price が旧価格
+// 表示用の価格を解決: price=新通常価格、first_price=旧初回価格
 function resolveDisplayPrice(t) {
-  if (t.first_price) {
-    return { display: t.first_price, old: t.price };
-  }
-  return { display: t.price, old: null };
+  return { display: t.price, oldFirst: t.first_price || null };
 }
 
 function render() {
@@ -679,8 +688,8 @@ function render() {
     html += `<th>施術</th>`;
     html += `<th class="col-type">区分</th>`;
     html += `<th class="col-sessions">回数</th>`;
-    if (hasNewPrice) html += `<th class="col-old">旧価格<span class="col-old-note">※改定前</span></th>`;
-    html += `<th>通常価格</th>`;
+    if (hasNewPrice) html += `<th class="col-old">旧初回価格<span class="col-old-note">※改定前</span></th>`;
+    html += `<th>通常価格<span class="col-old-note">※2026年4月〜</span></th>`;
     html += `<th>リピート割</th>`;
     html += `<th>CP</th>`;
     html += `<th>モニター<br>全顔出し</th>`;
@@ -717,9 +726,9 @@ function render() {
         // 旧価格・通常価格（first_priceがあれば新旧を入れ替え）
         const dp = resolveDisplayPrice(t);
         if (hasNewPrice) {
-          html += `<td class="col-old">${dp.old ? `<span class="p-old">${fmt(dp.old)}</span>` : na()}</td>`;
+          html += `<td class="col-old">${dp.oldFirst ? `<span class="p-old">${fmt(dp.oldFirst)}</span>` : na()}</td>`;
         }
-        html += `<td>${priceCell(dp.display, 'p-val')}</td>`;
+        html += `<td>${priceCell(dp.display, 'p-val')}${priceCompare(t.price, t.first_price)}</td>`;
 
         // リピート割
         html += `<td>${priceCell(t.repeat_price, 'p-repeat')}</td>`;

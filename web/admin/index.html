@@ -219,6 +219,8 @@
     .price-val { font-weight: bold; color: var(--text); white-space: nowrap; }
     .price-small { font-size: 11px; color: var(--text-light); white-space: nowrap; }
     .per-unit { font-size: 9px; color: #aaa; font-weight: normal; }
+    .price-up { font-size: 9px; color: #d9534f; font-weight: bold; }
+    .price-down { font-size: 9px; color: #28a745; font-weight: bold; }
     .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
 
     .td-cost {
@@ -771,6 +773,16 @@ function fmtWithUnit(val, area) {
   return base + `<br><span class="per-unit">1${u.unit}あたり ¥${per.toLocaleString('ja-JP')}</span>`;
 }
 
+// 旧初回価格と新通常価格の比較インジケーター
+function priceCompare(newPrice, oldFirstPrice) {
+  if (!newPrice || !oldFirstPrice) return '';
+  const np = parseInt(String(newPrice).replace(/[¥,\s]/g, ''), 10);
+  const ofp = parseInt(String(oldFirstPrice).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(np) || isNaN(ofp) || np === ofp) return '';
+  if (np > ofp) return '<br><span class="price-up">↑値上り</span>';
+  return '<br><span class="price-down">↓値下げ</span>';
+}
+
 function esc(str) {
   return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
@@ -843,7 +855,7 @@ function render() {
       <td class="${cellCls('sessions')}"><span class="editable" data-field="sessions" data-idx="${idx}" data-type="text">${esc(t.sessions || '')}</span></td>
       <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
       <td class="price-small${cellCls('first_price')}"><span class="editable" data-field="first_price" data-idx="${idx}" data-type="price">${fmt(t.first_price)}</span></td>
-      <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.price, t.area)}</span></td>
+      <td class="price-val${cellCls('price')}"><span class="editable" data-field="price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.price, t.area)}</span>${priceCompare(t.price, t.first_price)}</td>
       <td class="price-small${cellCls('repeat_price')}"><span class="editable" data-field="repeat_price" data-idx="${idx}" data-type="price">${fmtWithUnit(t.repeat_price, t.area)}</span></td>
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${fmt(t.campaign_price)}</span></td>
       <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${fmt(t.monitor_full_price)}</span></td>
