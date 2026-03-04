@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:42:29.854Z",
+    "generated_at": "2026-03-04T12:43:21.285Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1073,7 +1073,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】フォトナ2D",
+      "treatment": "フォトナ2D",
       "area": "スムーススキン・スムースライト",
       "sessions": null,
       "old_price": "66000",
@@ -1101,7 +1101,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】フォトナ4D",
+      "treatment": "フォトナ4D",
       "area": "スムーススキン・スムースライト・ミラーピール・スマイルリフト",
       "sessions": null,
       "old_price": "220000",
@@ -1129,7 +1129,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】フォトナ6D",
+      "treatment": "フォトナ6D",
       "area": "スムーススキン・スムースライト・ミラーピール・スマイルリフト・リップレーズ・フォトナアイ2D",
       "sessions": null,
       "old_price": "275000",
@@ -1409,8 +1409,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】スムースライト※オプション",
-      "area": "",
+      "treatment": "フォトナ※オプション",
+      "area": "スムースタイト",
       "sessions": null,
       "old_price": "44000",
       "price": "44000",
