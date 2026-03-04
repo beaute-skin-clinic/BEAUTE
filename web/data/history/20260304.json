@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T10:41:34.049Z",
+    "generated_at": "2026-03-04T10:43:33.400Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72
@@ -823,7 +823,7 @@
       "provider_type": "医療（Ns施術）",
       "treatment": "ピコW",
       "area": "ピコトーニング＋ピコフラクショナル",
-      "sessions": null,
+      "sessions": "1回",
       "old_price": 49500,
       "price": "38500",
       "first_price": 29700,
@@ -851,7 +851,7 @@
       "provider_type": "医療（Ns施術）",
       "treatment": "ピコW",
       "area": "ピコトーニング＋フォトフェイシャル",
-      "sessions": null,
+      "sessions": "1回",
       "old_price": 49500,
       "price": "38500",
       "first_price": 29700,
