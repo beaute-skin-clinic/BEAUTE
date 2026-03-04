@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:58:18.722Z",
+    "generated_at": "2026-03-04T12:59:05.608Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -2031,7 +2031,7 @@
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマー",
-      "area": "ボルフォーマー（ライト）",
+      "area": "ライト",
       "sessions": null,
       "old_price": "132000",
       "price": "117000",
@@ -2060,7 +2060,7 @@
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマー",
-      "area": "ボルフォーマー（スタンダード）",
+      "area": "スタンダード",
       "sessions": null,
       "old_price": "198000",
       "price": "192500",
@@ -2089,7 +2089,7 @@
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
       "treatment": "ボルフォーマー",
-      "area": "ボルフォーマー（プレミアム）",
+      "area": "プレミアム",
       "sessions": null,
       "old_price": "275000",
       "price": "220000",
