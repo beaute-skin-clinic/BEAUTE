@@ -335,6 +335,67 @@
     .check { color: #059669; font-weight: 700; }
     .cross { color: #ccc; }
 
+    /* ===== メリット・デメリット ===== */
+    .merit-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 8px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .merit-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      width: 32px;
+      text-align: center;
+    }
+    .merit-body {}
+    .merit-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #3a2e27;
+      margin-bottom: 2px;
+    }
+    .merit-desc {
+      font-size: 12px;
+      color: #7a6a5f;
+      line-height: 1.6;
+    }
+    .demerit-card {
+      background: #fff;
+      border-radius: 10px;
+      border-left: 3px solid #d1d5db;
+      padding: 12px 14px;
+      margin: 8px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .demerit-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6b7280;
+      margin-bottom: 2px;
+    }
+    .demerit-desc {
+      font-size: 12px;
+      color: #9ca3af;
+      line-height: 1.6;
+    }
+    .section-subtitle {
+      font-size: 14px;
+      font-weight: 700;
+      color: #059669;
+      margin: 20px 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-subtitle.demerit {
+      color: #9ca3af;
+    }
+
     /* ===== 印刷モック ===== */
     .print-mock {
       background: #fff;
@@ -738,6 +799,100 @@
       <tr><td>印刷</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
       <tr><td>POP生成</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
     </table>
+  </div>
+
+  <!-- ===== 9. 導入メリット・デメリット ===== -->
+  <div class="section">
+    <span class="section-num">9</span>
+    <h2>このシステムを導入するメリット</h2>
+
+    <div class="section-subtitle">工数の大幅削減</div>
+
+    <div class="merit-card">
+      <div class="merit-icon">⏱️</div>
+      <div class="merit-body">
+        <div class="merit-title">料金表の更新が数秒で完了</div>
+        <div class="merit-desc">セルをクリック→入力→保存。Excelを開いて整形してPDF化して配る…という手間がなくなります。</div>
+      </div>
+    </div>
+
+    <div class="merit-card">
+      <div class="merit-icon">🖨️</div>
+      <div class="merit-body">
+        <div class="merit-title">印刷物・POPの作り直しが不要</div>
+        <div class="merit-desc">価格改定のたびにPOPやチラシを手作業で作り直す必要がありません。データを更新すれば印刷・POP全てに自動反映されます。</div>
+      </div>
+    </div>
+
+    <div class="merit-card">
+      <div class="merit-icon">📱</div>
+      <div class="merit-body">
+        <div class="merit-title">スタッフへの共有が一瞬</div>
+        <div class="merit-desc">URLを1つ共有するだけ。「最新の料金表どこ？」「あの施術いくらだっけ？」が即解決します。</div>
+      </div>
+    </div>
+
+    <div class="section-subtitle">情報の正確性・網羅性</div>
+
+    <div class="merit-card">
+      <div class="merit-icon">✅</div>
+      <div class="merit-body">
+        <div class="merit-title">全施術500件以上を一元管理</div>
+        <div class="merit-desc">通常価格・初回・リピート・CP・モニター・回数券・プリペイド割引まで、全ての料金体系を1つのデータで網羅します。</div>
+      </div>
+    </div>
+
+    <div class="merit-card">
+      <div class="merit-icon">🔄</div>
+      <div class="merit-body">
+        <div class="merit-title">常に「最新の1つ」だけが存在</div>
+        <div class="merit-desc">Excelファイルの「料金表_最新_v3_確定版.xlsx」問題がなくなります。全員が同じデータを参照できます。</div>
+      </div>
+    </div>
+
+    <div class="section-subtitle">リスク回避</div>
+
+    <div class="merit-card">
+      <div class="merit-icon">🛡️</div>
+      <div class="merit-body">
+        <div class="merit-title">データ破損・消失リスクの低減</div>
+        <div class="merit-desc">バージョン管理により全変更が記録されるため、誤って上書きしても過去の状態に戻せます。PCの故障でデータが消えることもありません。</div>
+      </div>
+    </div>
+
+    <div class="merit-card">
+      <div class="merit-icon">🔒</div>
+      <div class="merit-body">
+        <div class="merit-title">コスト情報の漏洩防止</div>
+        <div class="merit-desc">コストや利益情報はパスワード認証された管理者のみ閲覧可能。スタッフ画面には一切表示されません。</div>
+      </div>
+    </div>
+
+    <div class="merit-card">
+      <div class="merit-icon">📝</div>
+      <div class="merit-body">
+        <div class="merit-title">変更の証跡が残る</div>
+        <div class="merit-desc">「いつ・誰が・何を変更したか」が全て記録されます。言った言わない問題の防止、監査対応にも活用できます。</div>
+      </div>
+    </div>
+
+    <!-- デメリット -->
+    <div class="section-subtitle demerit">留意点（デメリット）</div>
+
+    <div class="demerit-card">
+      <div class="demerit-title">インターネット接続が必要</div>
+      <div class="demerit-desc">Webベースのシステムのため、閲覧・編集にはネット環境が必要です。ただし一度表示すればオフラインでも閲覧は可能です。</div>
+    </div>
+
+    <div class="demerit-card">
+      <div class="demerit-title">PC操作に慣れが必要</div>
+      <div class="demerit-desc">管理者による価格編集にはブラウザ操作が必要です。ただし「セルをクリック→数字を入力→保存」のシンプルな操作に限定しています。</div>
+    </div>
+
+    <div class="demerit-card">
+      <div class="demerit-title">URLの管理</div>
+      <div class="demerit-desc">ブックマークに登録するか、LINEグループにURLを固定しておく必要があります。</div>
+    </div>
   </div>
 
 </div>
