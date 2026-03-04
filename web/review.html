@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オーナー確認用 課題リスト | ボーテスキンクリニック</title>
+  <style>
+    :root {
+      --primary: #b07d62;
+      --primary-dark: #8a5c3f;
+      --bg: #faf7f4;
+      --text: #3a2e27;
+      --text-light: #7a6a5f;
+      --border: #e0d0c4;
+      --red: #dc2626;
+      --orange: #ea580c;
+      --green: #059669;
+      --blue: #2563eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      padding: 24px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    .header h1 { font-size: 20px; margin-bottom: 4px; }
+    .header .sub { font-size: 13px; opacity: 0.85; }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .summary-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .summary-card .num { font-size: 28px; font-weight: 700; }
+    .summary-card .label { font-size: 11px; color: var(--text-light); margin-top: 2px; }
+    .num-ok { color: var(--green); }
+    .num-warn { color: var(--orange); }
+    .num-err { color: var(--red); }
+
+    .section {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 12px 16px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+    }
+    .section-header:hover { background: #fdf8f5; }
+    .section-header .arrow { transition: transform 0.2s; font-size: 12px; }
+    .section.open .arrow { transform: rotate(90deg); }
+    .section-body { display: none; padding: 0 16px 16px; }
+    .section.open .section-body { display: block; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-red { background: #fef2f2; color: var(--red); }
+    .badge-orange { background: #fff7ed; color: var(--orange); }
+    .badge-blue { background: #eff6ff; color: var(--blue); }
+    .badge-green { background: #f0fdf4; color: var(--green); }
+
+    .priority { font-size: 12px; margin-left: auto; }
+    .priority-high { color: var(--red); font-weight: 700; }
+    .priority-mid { color: var(--orange); font-weight: 600; }
+    .priority-low { color: var(--blue); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    th {
+      background: #f5f0eb;
+      padding: 6px 8px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    td {
+      padding: 5px 8px;
+      border-bottom: 1px solid #f0e8e0;
+      vertical-align: top;
+    }
+    tr:hover { background: #fdf8f5; }
+
+    .note {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    .note strong { color: var(--orange); }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f5f0eb;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .check-item input[type="checkbox"] {
+      margin-top: 4px;
+      width: 16px; height: 16px;
+      accent-color: var(--green);
+    }
+    .check-item label { flex: 1; font-size: 13px; }
+    .check-item .detail { font-size: 11px; color: var(--text-light); display: block; margin-top: 2px; }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-light);
+      font-size: 11px;
+    }
+
+    @media print {
+      @page { size: A4; margin: 15mm; }
+      body { font-size: 12px; }
+      .header { background: var(--primary-dark) !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .section { break-inside: avoid; }
+      .section-body { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>📋 オーナー確認用 課題リスト</h1>
+    <div class="sub">料金管理システム — データ精査チェックリスト</div>
+    <div class="sub" style="margin-top:4px; font-size:11px;">作成日: 2026年3月4日 ｜ 総施術数: 506件</div>
+  </div>
+
+  <div class="summary">
+    <div class="summary-card">
+      <div class="num num-ok">506</div>
+      <div class="label">総施術数</div>
+    </div>
+    <div class="summary-card">
+      <div class="num num-err">4</div>
+      <div class="label">価格逆転</div>
+    </div>
+    <div class="summary-card">
+      <div class="num num-warn">43</div>
+      <div class="label">重複疑い</div>
+    </div>
+    <div class="summary-card">
+      <div class="num num-warn">27+</div>
+      <div class="label">薬剤名なし</div>
+    </div>
+    <div class="summary-card">
+      <div class="num num-ok">0</div>
+      <div class="label">施術名なし</div>
+    </div>
+  </div>
+
+  <!-- ===== 1. CP価格逆転 ===== -->
+  <div class="section open">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-red">要修正</span>
+      CP価格が通常価格より高い（4件）
+      <span class="priority priority-high">優先度: 高</span>
+    </div>
+    <div class="section-body">
+      <p style="font-size:13px; margin-bottom:8px;">
+        メンズ脱毛の4施術で、CP価格が通常価格の数倍になっています。<br>
+        おそらく<strong>回数パッケージの合計価格</strong>が単発行のCP列に入っています。
+      </p>
+      <table>
+        <tr><th>施術名</th><th>部位</th><th>通常価格</th><th>CP価格</th><th>差額</th></tr>
+        <tr><td>メンズ脱毛</td><td>全身（顔・うなじ・VIO除く）</td><td>¥187,000</td><td>¥440,000</td><td style="color:var(--red);">+¥253,000</td></tr>
+        <tr><td>メンズ脱毛</td><td>胸+お腹セット</td><td>¥38,500</td><td>¥198,000</td><td style="color:var(--red);">+¥159,500</td></tr>
+        <tr><td>メンズ脱毛</td><td>脚全体セット</td><td>¥38,500</td><td>¥204,600</td><td style="color:var(--red);">+¥166,100</td></tr>
+        <tr><td>メンズ脱毛</td><td>腕全体セット</td><td>¥29,700</td><td>¥158,400</td><td style="color:var(--red);">+¥128,700</td></tr>
+      </table>
+      <div class="note">
+        <strong>💡 確認ポイント:</strong> CP価格は回数パッケージの合計額ですか？それとも1回あたりの割引価格ですか？<br>
+        → 回数パッケージの場合、回数券列（3回券/5回券/8回券）に移動する必要があります。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 2. 重複行 ===== -->
+  <div class="section">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-orange">要確認</span>
+      同一施術名＋部位の重複行（43組）
+      <span class="priority priority-high">優先度: 高</span>
+    </div>
+    <div class="section-body">
+      <p style="font-size:13px; margin-bottom:8px;">
+        同じカテゴリ内で施術名＋部位が重複している行があります。<br>
+        これらは「1回 vs 3回」「薬剤A vs 薬剤B」のように本来区別されるべきデータです。
+      </p>
+
+      <h4 style="margin:12px 0 6px; font-size:13px;">パターンA: 1回 vs 回数パッケージ（区別なし）</h4>
+      <p style="font-size:12px; color:var(--text-light); margin-bottom:6px;">
+        通常価格の3倍の行が「単位」未記入で混在。3回券列に移動するか、単位を設定する必要あり。
+      </p>
+      <table>
+        <tr><th>カテゴリ</th><th>施術名</th><th>行1の価格</th><th>行2の価格</th><th>倍率</th></tr>
+        <tr><td>しわ・たるみ・小顔</td><td>ピーリング/全顔</td><td>¥24,800</td><td>¥74,400</td><td>3.0x</td></tr>
+        <tr><td colspan="5" style="color:var(--text-light);">...他多数（管理画面で検索してご確認ください）</td></tr>
+      </table>
+
+      <h4 style="margin:12px 0 6px; font-size:13px;">パターンB: 糸リフトの本数違い</h4>
+      <p style="font-size:12px; color:var(--text-light); margin-bottom:6px;">
+        スレッド（糸リフト）で10本/20本/40本/60本/80本/100本の行が全て同じ施術名・部位。
+      </p>
+
+      <h4 style="margin:12px 0 6px; font-size:13px;">パターンC: 脱毛の回数パッケージ</h4>
+      <p style="font-size:12px; color:var(--text-light); margin-bottom:6px;">
+        メンズ/レディース脱毛で1回/5回/8回の行が「単位」未記入で混在。
+      </p>
+
+      <div class="note">
+        <strong>💡 対処法:</strong><br>
+        ① 回数パッケージ（3回分）→ 回数券列に移動して元の行を削除<br>
+        ② 糸の本数など → 「部位/詳細」列に本数を入力して区別<br>
+        ③ 脱毛の回数 → 「単位」列に「1回」「5回」「8回」を入力
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 3. 注射メニュー ===== -->
+  <div class="section">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-orange">要確認</span>
+      Dr.手打ち注射・水光注射の薬剤名が未記入（27件+）
+      <span class="priority priority-mid">優先度: 中</span>
+    </div>
+    <div class="section-body">
+      <p style="font-size:13px; margin-bottom:8px;">
+        Dr.手打ち注射（13行）と水光注射（14行）で、すべて同じ施術名・部位のまま価格だけが異なる行が並んでいます。<br>
+        これらは使用する<strong>薬剤の違い</strong>による価格差のはずですが、区別がつきません。
+      </p>
+
+      <div class="check-item">
+        <input type="checkbox" id="c3a">
+        <label for="c3a">
+          <strong>Dr.手打ち注射</strong>（13行）に薬剤名を「部位/詳細」列に入力
+          <span class="detail">例: PRP、エクソソーム、ジュベルック、スネコス、リジュラン、等</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="c3b">
+        <label for="c3b">
+          <strong>水光注射（ハイコックス）</strong>（14行）に薬剤名を「部位/詳細」列に入力
+          <span class="detail">例: プレミアム美白、毛穴引き締め、肌育、等</span>
+        </label>
+      </div>
+
+      <div class="note">
+        <strong>💡 ヒント:</strong> 管理画面の検索で「Dr.手打ち注射」「水光注射」を検索すると該当行が一覧で確認できます。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 4. 局所麻酔の重複 ===== -->
+  <div class="section">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-blue">軽微</span>
+      局所麻酔の重複行（3行→1行に）
+      <span class="priority priority-low">優先度: 低</span>
+    </div>
+    <div class="section-body">
+      <p style="font-size:13px;">
+        「局所麻酔」が3行登録されています（すべて¥1,100、1回）。<br>
+        完全な重複のため、管理画面から2行を削除してください。
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== 5. カテゴリ確認 ===== -->
+  <div class="section">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-blue">確認</span>
+      カテゴリ構成の最終確認（24カテゴリ）
+      <span class="priority priority-low">優先度: 低</span>
+    </div>
+    <div class="section-body">
+      <p style="font-size:13px; margin-bottom:8px;">
+        現在のカテゴリ構成です。名前の変更・統合・追加があればお知らせください。
+      </p>
+      <table>
+        <tr><th>#</th><th>カテゴリ名</th><th>施術数</th><th>備考</th></tr>
+        <tr><td>1</td><td>肌質改善／肌育</td><td>27</td><td></td></tr>
+        <tr><td>2</td><td>ヒアルロン酸</td><td>10</td><td></td></tr>
+        <tr><td>3</td><td>ボトックス</td><td>12</td><td></td></tr>
+        <tr><td>4</td><td>毛穴・ニキビ・肌の凹凸ケア</td><td>51</td><td>重複多め</td></tr>
+        <tr><td>5</td><td>しわ・たるみ・小顔</td><td>49</td><td>重複多め</td></tr>
+        <tr><td>6</td><td>美肌・肌質改善（シミ・くすみ・透明感）</td><td>45</td><td></td></tr>
+        <tr><td>7</td><td>ピーリング</td><td>16</td><td></td></tr>
+        <tr><td>8</td><td>スレッド（糸リフト）</td><td>23</td><td>本数の区別必要</td></tr>
+        <tr><td>9</td><td>目元のクマたるみ治療（オペ）</td><td>4</td><td></td></tr>
+        <tr><td>10</td><td>目元の形成（オペ）</td><td>4</td><td></td></tr>
+        <tr><td>11</td><td>医療痩身</td><td>54</td><td></td></tr>
+        <tr><td>12</td><td>医療脱毛</td><td>95</td><td>回数券あり</td></tr>
+        <tr><td>13</td><td>点滴・注射</td><td>6</td><td></td></tr>
+        <tr><td>14</td><td>麻酔</td><td>17</td><td>重複あり</td></tr>
+        <tr><td>15</td><td>診察料</td><td>2</td><td></td></tr>
+        <tr><td>16</td><td>エステフェイシャル</td><td>40</td><td></td></tr>
+        <tr><td>17</td><td>リラクゼーション</td><td>22</td><td></td></tr>
+        <tr><td>18</td><td>エステボディ</td><td>34</td><td></td></tr>
+        <tr><td>19</td><td>エステブライダル</td><td>5</td><td></td></tr>
+        <tr><td>20</td><td>エステマタニティ</td><td>2</td><td></td></tr>
+        <tr><td>21</td><td>外用薬</td><td>5</td><td></td></tr>
+        <tr><td>22</td><td>内服</td><td>9</td><td></td></tr>
+        <tr><td>23</td><td>内服（痩身）</td><td>12</td><td></td></tr>
+        <tr><td>24</td><td>内服セット</td><td>2</td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== 6. 全体チェックリスト ===== -->
+  <div class="section open">
+    <div class="section-header" onclick="this.parentElement.classList.toggle('open')">
+      <span class="arrow">▶</span>
+      <span class="badge badge-green">TODO</span>
+      オーナー確認チェックリスト
+    </div>
+    <div class="section-body">
+      <div class="check-item">
+        <input type="checkbox" id="t1">
+        <label for="t1">
+          <strong>メンズ脱毛4件のCP価格を修正</strong>
+          <span class="detail">回数パッケージ価格なら回数券列に移動。1回あたり割引価格なら金額を修正。</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t2">
+        <label for="t2">
+          <strong>Dr.手打ち注射（13行）に薬剤名を入力</strong>
+          <span class="detail">管理画面 → 検索「Dr.手打ち注射」→ 部位/詳細列に薬剤名を入力</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t3">
+        <label for="t3">
+          <strong>水光注射（14行）に薬剤名を入力</strong>
+          <span class="detail">管理画面 → 検索「水光注射」→ 部位/詳細列に薬剤名を入力</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t4">
+        <label for="t4">
+          <strong>重複行の整理（回数パッケージの統合）</strong>
+          <span class="detail">3回分の合計価格行 → 回数券列に移動 or 単位を設定。瀬戸と一緒に作業。</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t5">
+        <label for="t5">
+          <strong>スレッド（糸リフト）の本数を部位/詳細に入力</strong>
+          <span class="detail">10本/20本/40本/60本/80本/100本を区別できるように。</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t6">
+        <label for="t6">
+          <strong>局所麻酔の重複行を削除</strong>
+          <span class="detail">3行のうち2行を管理画面から削除。</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t7">
+        <label for="t7">
+          <strong>カテゴリ名の最終確認</strong>
+          <span class="detail">24カテゴリの名前・並び順を確認。変更があれば連絡。</span>
+        </label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="t8">
+        <label for="t8">
+          <strong>全施術の価格を通し確認</strong>
+          <span class="detail">各カテゴリを開いて、価格に明らかな間違いがないかチェック。</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    ボーテスキンクリニック 料金管理システム ― このページは印刷して紙でも確認できます（🖨️ Ctrl+P）
+  </div>
+</div>
+
+</body>
+</html>

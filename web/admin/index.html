@@ -209,11 +209,22 @@
     .data-table tbody td:last-child { border-right: none; }
 
     .cat-badge {
-      display: inline-block; font-size: 9px;
-      padding: 1px 5px; border-radius: 8px;
+      display: inline-block; font-size: 8px;
+      padding: 1px 4px; border-radius: 8px;
       background: var(--accent); color: var(--primary-dark);
-      white-space: nowrap; max-width: 100%;
+      white-space: normal; max-width: 80px;
       overflow: hidden; text-overflow: ellipsis;
+      line-height: 1.2;
+    }
+    /* カテゴリ列を狭く */
+    .data-table thead th:nth-child(3),
+    .data-table tbody td:nth-child(3) {
+      max-width: 90px; width: 90px;
+    }
+    /* 区分の文字を小さめに */
+    .data-table thead th:nth-child(4),
+    .data-table tbody td:nth-child(4) {
+      font-size: 10px; max-width: 50px; white-space: normal; line-height: 1.2;
     }
 
     .price-val { font-weight: bold; color: var(--text); white-space: nowrap; }
@@ -229,6 +240,33 @@
     .price-warn-high { font-size: 9px; color: #d9534f; font-weight: bold; white-space: nowrap; }
     .price-auto { font-size: 11px; color: #9ca3af; font-style: italic; white-space: nowrap; }
     .pp-excluded { font-size: 9px; color: #bbb; white-space: nowrap; }
+    .pp-rate { font-size: 8px; color: #ccc; white-space: nowrap; letter-spacing: -0.5px; }
+
+    /* ===== 回数券列 ===== */
+    .data-table thead th.th-ticket { background: #064e3b; }
+    .td-ticket { background: #f0faf5 !important; }
+    .data-table tbody tr:nth-child(even) .td-ticket { background: #e6f5ed !important; }
+    .data-table tbody tr:hover .td-ticket { background: #d1fae5 !important; }
+    .data-table tbody tr.row-verified .td-ticket { background: #e0f5e0 !important; }
+    .p-ticket { color: #065f46; font-weight: 600; font-size: 11px; white-space: nowrap; }
+    .ticket-unit { font-size: 8px; color: #6ee7b7; white-space: nowrap; letter-spacing: -0.5px; }
+    .ticket-same { font-size: 8px; color: #e67e22; font-weight: 600; white-space: nowrap; }
+    .ticket-off { font-size: 8px; color: #059669; font-weight: 600; white-space: nowrap; }
+    .ticket-warn { font-size: 8px; color: #d9534f; font-weight: 600; white-space: nowrap; }
+    .ticket-badge { display: inline-block; background: #d1fae5; color: #065f46; border-radius: 8px; padding: 0 5px; font-size: 9px; margin-left: 4px; font-weight: 600; vertical-align: middle; }
+
+    /* ===== エステパス列 ===== */
+    .data-table thead th.th-ep { background: #7c2d8e; }
+    .td-ep { background: #fdf4ff !important; }
+    .data-table tbody tr:nth-child(even) .td-ep { background: #f5e6fa !important; }
+    .data-table tbody tr:hover .td-ep { background: #ede0f3 !important; }
+    .data-table tbody tr.row-verified .td-ep { background: #f0e8f5 !important; }
+    .p-ep { color: #6b21a8; font-weight: 600; font-size: 11px; white-space: nowrap; }
+    .ep-rate { font-size: 8px; color: #c084fc; white-space: nowrap; letter-spacing: -0.5px; }
+    .ep-excluded { font-size: 9px; color: #d8b4fe; white-space: nowrap; }
+    /* EP列はデフォルト非表示、エステカテゴリ選択時のみ表示 */
+    .col-ep { display: none; }
+    .show-ep .col-ep { display: table-cell; }
 
     .td-cost {
       background: var(--cost-bg) !important;
@@ -429,12 +467,17 @@
 
     /* ===== 印刷 ===== */
     @media print {
+      @page { size: A4 landscape; margin: 8mm 6mm; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      body { font-size: 9px; background: #fff; }
       #loginScreen, .save-bar, .modal-overlay, .toast { display: none !important; }
       .site-header, .controls, .category-tabs, .summary-bar { display: none !important; }
-      .main { padding: 0; }
-      .data-table { font-size: 9px; box-shadow: none; }
-      .data-table thead th { background: #333 !important; font-size: 8px; position: static; }
+      .main { padding: 4px 0; height: auto !important; overflow: visible !important; }
+      .data-table { font-size: 8px; box-shadow: none; border: 1px solid #999; }
+      .data-table thead th { background: #333 !important; font-size: 7px; position: static !important; padding: 3px 4px; }
+      .data-table tbody td { position: static !important; padding: 2px 3px; border: 1px solid #ddd; }
       .col-action { display: none !important; }
+      .cat-section { page-break-inside: auto; break-inside: auto; margin-bottom: 6px; }
     }
   </style>
 </head>
@@ -516,7 +559,7 @@
           <th>区分</th>
           <th>施術名</th>
           <th>部位／詳細</th>
-          <th>回数</th>
+          <th>単位</th>
           <th>旧通常価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年3月末日まで</span></th>
           <th>旧初回価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年3月末日まで</span></th>
           <th>通常価格<br><span style="font-size:8px;opacity:0.7;font-weight:normal;">※2026年4月〜</span></th>
@@ -524,16 +567,22 @@
           <th>CP</th>
           <th>モニ全顔</th>
           <th>モニ目元</th>
+          <th class="th-ticket">3回券</th>
+          <th class="th-ticket">5回券</th>
+          <th class="th-ticket">8回券</th>
           <th>PP10万</th>
           <th>PP30万</th>
           <th>PP50万</th>
+          <th class="th-ep col-ep">EP<br>5万</th>
+          <th class="th-ep col-ep">EP<br>10万</th>
+          <th class="th-ep col-ep">EP<br>20万</th>
           <th class="col-cost">コスト</th>
           <th class="col-cost">利益</th>
           <th class="col-action">操作</th>
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td colspan="20" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
+        <tr><td colspan="26" style="text-align:center;padding:30px;color:#999;">読み込み中...</td></tr>
       </tbody>
     </table>
   </main>
@@ -635,7 +684,8 @@ const CATEGORY_ORDER = [
 const PRICE_FIELDS = [
   'old_price', 'first_price', 'price', 'repeat_price',
   'campaign_price', 'monitor_full_price',
-  'monitor_eye_price', 'prepaid_manual'
+  'monitor_eye_price', 'ticket_3', 'ticket_5', 'ticket_8',
+  'prepaid_manual'
 ];
 const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note'];
 
@@ -788,11 +838,21 @@ function rebuildCategoryTabs() {
   }
 }
 
+const ESTE_CATEGORIES = ['エステフェイシャル', 'リラクゼーション', 'エステボディ', 'エステブライダル', 'エステマタニティ'];
+
 function selectCategory(cat, btn) {
   currentCategory = cat;
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  // エステカテゴリ選択時にEP列を表示
+  updateEpVisibility();
   render();
+}
+
+function updateEpVisibility() {
+  const table = document.getElementById('dataTable');
+  const isEste = ESTE_CATEGORIES.includes(currentCategory) || currentType === 'エステ';
+  table.classList.toggle('show-ep', isEste);
 }
 
 function initTypeFilter() {
@@ -803,6 +863,7 @@ function initTypeFilter() {
       currentType = btn.dataset.type;
       currentCategory = 'all';
       rebuildCategoryTabs();
+      updateEpVisibility();
       render();
     });
   });
@@ -898,6 +959,32 @@ function getPpStatus(t, tier) {
   return '';
 }
 
+// 施術ごとのPP実効割引率を取得（表示用）
+function getEffectivePpRate(t, tier) {
+  const ptype = t.provider_type;
+  if (!ptype) return 0;
+  const rates = PREPAID_RATES[ptype];
+  if (!rates) return 0;
+  const baseRate = rates[tier] || 0;
+  if (baseRate === 0) return 0;
+  if (tier === '10万') {
+    const catStr = (t.categories || [t.category] || []).filter(Boolean).join(' ');
+    const isEligible = PP10_KEYWORDS.some(kw =>
+      (t.treatment || '').includes(kw) || catStr.includes(kw)
+    );
+    return isEligible ? baseRate : 0;
+  }
+  // 30万/50万
+  const tName = t.treatment || '';
+  if (PP_EXCLUDED_30_50.some(kw => tName.includes(kw))) return 0;
+  for (const rule of PP_REDUCED_RATE_TREATMENTS) {
+    if (ptype === rule.provider && rule.keywords.some(kw => tName.includes(kw))) {
+      return rule.rate;
+    }
+  }
+  return baseRate;
+}
+
 // 行のPP値を再計算して更新
 function recalcPrepaid(rowIdx) {
   const t = editedData.treatments[rowIdx];
@@ -962,6 +1049,26 @@ function discountWarn(discountVal, basePrice) {
   if (dv > bp) return '<br><span class="price-warn-high">⚠割高</span>';
   if (dv === bp) return '<br><span class="price-warn">⚠同額</span>';
   return '';
+}
+
+// 回数券セル（単価比較付き）
+function ticketTd(t, field, count, idx, changedCls) {
+  const val = t[field];
+  if (!val) return `<td class="td-ticket${changedCls}"><span class="editable price-none" data-field="${field}" data-idx="${idx}" data-type="price">設定なし</span></td>`;
+  const base = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+  const unit = Math.round(Number(val) / count);
+  let badge = '';
+  if (!isNaN(base) && base > 0) {
+    if (unit < base) {
+      const pct = Math.round((base - unit) / base * 100);
+      badge = `<br><span class="ticket-unit">@${fmt(String(unit))}</span> <span class="ticket-off">${pct}%OFF</span>`;
+    } else if (unit === base) {
+      badge = `<br><span class="ticket-same">@${fmt(String(unit))}（同額）</span>`;
+    } else {
+      badge = `<br><span class="ticket-warn">@${fmt(String(unit))}（⚠割高）</span>`;
+    }
+  }
+  return `<td class="td-ticket${changedCls}"><span class="editable p-ticket" data-field="${field}" data-idx="${idx}" data-type="price">${fmt(val)}</span>${badge}</td>`;
 }
 
 function esc(str) {
@@ -1156,13 +1263,16 @@ function render() {
     const ppCls10 = (t.prepaid_10 && ppStat10 !== '対象外') ? 'price-auto' : 'price-small';
     const ppCls30 = (t.prepaid_30 && ppStat30 !== '対象外') ? 'price-auto' : 'price-small';
     const ppCls50 = (t.prepaid_50 && ppStat50 !== '対象外') ? 'price-auto' : 'price-small';
+    const ppRate10 = getEffectivePpRate(t, '10万');
+    const ppRate30 = getEffectivePpRate(t, '30万');
+    const ppRate50 = getEffectivePpRate(t, '50万');
 
     return `<tr class="${rowClass}" data-idx="${idx}">
       <td class="drag-handle" draggable="true">${isDeleted ? '' : '☰'}</td>
       <td style="text-align:center;padding:2px;"><button class="verify-btn${verified ? ' checked' : ''}" onclick="toggleVerify(${idx})" title="目視確認">${verified ? '✓' : ''}</button></td>
       <td class="${cellCls('categories')}"><span class="editable" data-field="categories" data-idx="${idx}" data-type="categories">${(t.categories || [t.category]).filter(Boolean).map(c => `<span class="cat-badge">${esc(c)}</span>`).join(' ')}</span></td>
       <td class="${cellCls('provider_type')}"><span class="editable" data-field="provider_type" data-idx="${idx}" data-type="provider">${esc(t.provider_type || '')}</span></td>
-      <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span></td>
+      <td class="${cellCls('treatment')}"><span class="editable" data-field="treatment" data-idx="${idx}" data-type="text">${esc(t.treatment || '')}</span>${(t.ticket_3 || t.ticket_5 || t.ticket_8) ? '<span class="ticket-badge">回数券</span>' : ''}</td>
       <td class="${cellCls('area')}"><span class="editable" data-field="area" data-idx="${idx}" data-type="text">${esc(t.area || '')}</span></td>
       <td class="${cellCls('sessions')}"><span class="editable" data-field="sessions" data-idx="${idx}" data-type="text">${esc(t.sessions || '')}</span></td>
       <td class="price-small${cellCls('old_price')}"><span class="editable" data-field="old_price" data-idx="${idx}" data-type="price">${fmt(t.old_price)}</span></td>
@@ -1172,9 +1282,15 @@ function render() {
       <td class="price-small${cellCls('campaign_price')}"><span class="editable" data-field="campaign_price" data-idx="${idx}" data-type="price">${(t.campaign_price === '設定なし' || t.campaign_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.campaign_price)}</span>${discountWarn(t.campaign_price, t.price)}</td>
       <td class="price-small${cellCls('monitor_full_price')}"><span class="editable" data-field="monitor_full_price" data-idx="${idx}" data-type="price">${(t.monitor_full_price === '設定なし' || t.monitor_full_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_full_price)}</span>${discountWarn(t.monitor_full_price, t.price)}</td>
       <td class="price-small${cellCls('monitor_eye_price')}"><span class="editable" data-field="monitor_eye_price" data-idx="${idx}" data-type="price">${(t.monitor_eye_price === '設定なし' || t.monitor_eye_price === 'なし') ? '<span class="price-none">設定なし</span>' : fmt(t.monitor_eye_price)}</span>${discountWarn(t.monitor_eye_price, t.price)}</td>
-      <td class="${ppCls10}">${ppDisp10 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp10)}</td>
-      <td class="${ppCls30}">${ppDisp30 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp30)}</td>
-      <td class="${ppCls50}">${ppDisp50 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp50)}</td>
+      ${ticketTd(t, 'ticket_3', 3, idx, cellCls('ticket_3'))}
+      ${ticketTd(t, 'ticket_5', 5, idx, cellCls('ticket_5'))}
+      ${ticketTd(t, 'ticket_8', 8, idx, cellCls('ticket_8'))}
+      <td class="${ppCls10}">${ppDisp10 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp10)}${ppRate10 > 0 && ppDisp10 && ppDisp10 !== '対象外' ? `<br><span class="pp-rate">${ppRate10}%OFF</span>` : ''}</td>
+      <td class="${ppCls30}">${ppDisp30 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp30)}${ppRate30 > 0 && ppDisp30 && ppDisp30 !== '対象外' ? `<br><span class="pp-rate">${ppRate30}%OFF</span>` : ''}</td>
+      <td class="${ppCls50}">${ppDisp50 === '対象外' ? '<span class="pp-excluded">対象外</span>' : fmt(ppDisp50)}${ppRate50 > 0 && ppDisp50 && ppDisp50 !== '対象外' ? `<br><span class="pp-rate">${ppRate50}%OFF</span>` : ''}</td>
+      <td class="td-ep col-ep">${t.estepass_5 ? `<span class="p-ep">${fmt(t.estepass_5)}</span><br><span class="ep-rate">5%OFF</span>` : (t.provider_type === 'エステ' ? '<span class="ep-excluded">対象外</span>' : '')}</td>
+      <td class="td-ep col-ep">${t.estepass_10 ? `<span class="p-ep">${fmt(t.estepass_10)}</span><br><span class="ep-rate">10%OFF</span>` : (t.provider_type === 'エステ' ? '<span class="ep-excluded">対象外</span>' : '')}</td>
+      <td class="td-ep col-ep">${t.estepass_20 ? `<span class="p-ep">${fmt(t.estepass_20)}</span><br><span class="ep-rate">20%OFF</span>` : (t.provider_type === 'エステ' ? '<span class="ep-excluded">対象外</span>' : '')}</td>
       <td class="td-cost${cellCls('cost_note')}"><span class="editable cost-val" data-field="cost_note" data-idx="${idx}" data-type="text">${esc(t.cost_note || '')}</span></td>
       <td class="td-cost${cellCls('profit_note')}"><span class="editable profit-val-pos" data-field="profit_note" data-idx="${idx}" data-type="text">${esc(t.profit_note || '')}</span></td>
       <td class="col-action">
@@ -1475,10 +1591,16 @@ function addNewRow() {
     campaign_price: null,
     monitor_full_price: null,
     monitor_eye_price: null,
+    ticket_3: null,
+    ticket_5: null,
+    ticket_8: null,
     prepaid_10: null,
     prepaid_30: null,
     prepaid_50: null,
     prepaid_manual: null,
+    estepass_5: null,
+    estepass_10: null,
+    estepass_20: null,
     cost_note: null,
     profit_note: null,
   };

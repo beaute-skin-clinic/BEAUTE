@@ -184,11 +184,16 @@
       z-index: 2;
     }
     .price-table thead th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 3;
+    }
+    .price-table thead th:nth-child(2) {
       text-align: left;
       padding-left: 10px;
       position: sticky;
-      left: 0;
-      z-index: 2;
+      left: 80px;
+      z-index: 3;
       min-width: 120px;
       max-width: 180px;
     }
@@ -208,10 +213,16 @@
       white-space: nowrap;
     }
     .price-table tbody td:first-child {
+      position: sticky;
+      left: 0;
+      background: inherit;
+      z-index: 1;
+    }
+    .price-table tbody td:nth-child(2) {
       text-align: left;
       padding-left: 10px;
       position: sticky;
-      left: 0;
+      left: 80px;
       background: inherit;
       z-index: 1;
       white-space: normal;
@@ -222,10 +233,13 @@
     .price-table tbody td:last-child { border-right: none; }
 
     .price-table tbody tr:nth-child(even) { background: #faf7f4; }
-    .price-table tbody tr:nth-child(even) td:first-child { background: #faf7f4; }
-    .price-table tbody tr:nth-child(odd) td:first-child { background: #fff; }
+    .price-table tbody tr:nth-child(even) td:first-child,
+    .price-table tbody tr:nth-child(even) td:nth-child(2) { background: #faf7f4; }
+    .price-table tbody tr:nth-child(odd) td:first-child,
+    .price-table tbody tr:nth-child(odd) td:nth-child(2) { background: #fff; }
     .price-table tbody tr:hover { background: #fdf2e9 !important; }
-    .price-table tbody tr:hover td:first-child { background: #fdf2e9 !important; }
+    .price-table tbody tr:hover td:first-child,
+    .price-table tbody tr:hover td:nth-child(2) { background: #fdf2e9 !important; }
 
     /* 施術名セル */
     .treat-name { font-weight: 600; font-size: 12px; color: var(--primary-dark); }
@@ -266,8 +280,31 @@
       background: var(--pp-bg) !important;
     }
     .p-pp { color: var(--pp-text); font-weight: 600; font-size: 11px; }
+    .pp-rate { font-size: 8px; color: #cbb690; white-space: nowrap; letter-spacing: -0.5px; }
+    .pp-excluded { font-size: 9px; color: #c5b79e; white-space: nowrap; }
     .price-table tbody tr:nth-child(even) .td-pp { background: #fdf6e8 !important; }
     .price-table tbody tr:hover .td-pp { background: #fef0d4 !important; }
+
+    /* 回数券列 */
+    .price-table thead th.th-ticket { background: #064e3b; }
+    .td-ticket { background: #f0faf5 !important; }
+    .price-table tbody tr:nth-child(even) .td-ticket { background: #e6f5ed !important; }
+    .price-table tbody tr:hover .td-ticket { background: #d1fae5 !important; }
+    .p-ticket { color: #065f46; font-weight: 600; font-size: 11px; }
+    .ticket-unit { font-size: 8px; color: #6ee7b7; white-space: nowrap; letter-spacing: -0.5px; }
+    .ticket-same { font-size: 8px; color: #e67e22; font-weight: 600; white-space: nowrap; }
+    .ticket-off { font-size: 8px; color: #059669; font-weight: 600; white-space: nowrap; }
+    .ticket-warn { font-size: 8px; color: #d9534f; font-weight: 600; white-space: nowrap; }
+    .ticket-badge { display: inline-block; background: #d1fae5; color: #065f46; border-radius: 8px; padding: 0 5px; font-size: 9px; margin-left: 4px; font-weight: 600; vertical-align: middle; }
+
+    /* エステパス列 */
+    .price-table thead th.th-ep { background: #7c2d8e; }
+    .td-ep { background: #fdf4ff !important; }
+    .price-table tbody tr:nth-child(even) .td-ep { background: #f5e6fa !important; }
+    .price-table tbody tr:hover .td-ep { background: #ede0f3 !important; }
+    .p-ep { color: #6b21a8; font-weight: 600; font-size: 11px; }
+    .ep-rate { font-size: 8px; color: #c084fc; white-space: nowrap; letter-spacing: -0.5px; }
+    .ep-excluded { font-size: 9px; color: #d8b4fe; white-space: nowrap; }
 
     /* 区分列 */
     .price-table thead th.col-type,
@@ -276,9 +313,12 @@
       white-space: nowrap;
       font-size: 10px;
       color: var(--text-light);
+      width: 80px;
+      min-width: 80px;
+      max-width: 80px;
     }
 
-    /* 回数列 */
+    /* 単位列 */
     .price-table thead th.col-sessions,
     .price-table tbody td.col-sessions {
       text-align: center;
@@ -383,18 +423,124 @@
 
     /* ===== 印刷 ===== */
     @media print {
-      .site-header { position: static; box-shadow: none; }
-      .controls, .category-tabs, .print-btn { display: none !important; }
-      .main { padding: 0; }
-      body { font-size: 10px; }
-      .cat-section { break-inside: avoid; }
-      .price-table { min-width: auto; font-size: 9px; }
-      .price-table thead th { font-size: 8px; padding: 4px; }
-      .price-table tbody td { padding: 3px 4px; }
-      .price-table thead th:first-child,
-      .price-table tbody td:first-child { position: static; }
-      .table-wrap { overflow: visible; }
+      @page {
+        size: A4 landscape;
+        margin: 8mm 6mm;
+      }
+
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+      body { font-size: 9px; background: #fff; }
+
+      /* 非表示要素 */
+      .controls, .category-tabs, .type-filter,
+      .print-btn, .mobile-block, .site-footer,
+      .prepaid-info, .old-price-toggle,
+      #oldPriceToggleWrap { display: none !important; }
+
+      /* ヘッダー: 印刷用にコンパクト化 */
+      .site-header {
+        position: static;
+        box-shadow: none;
+        padding: 8px 12px;
+        background: var(--primary-dark) !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+      .site-header h1 { font-size: 14px; }
+      .site-header .subtitle { font-size: 10px; }
+      .update-time { font-size: 9px; }
+
+      /* メインコンテンツ: スクロール制約を解除 */
+      .main {
+        padding: 4px 0;
+        height: auto !important;
+        overflow: visible !important;
+        max-width: none;
+      }
+
+      /* カテゴリセクション */
+      .cat-section {
+        margin-bottom: 6px;
+        page-break-inside: auto;
+        break-inside: auto;
+      }
+      .cat-header {
+        position: static;
+        font-size: 11px;
+        padding: 4px 10px;
+        border-radius: 4px 4px 0 0;
+        background: var(--primary) !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+
+      /* テーブル */
+      .table-wrap {
+        overflow: visible;
+        box-shadow: none;
+        border-radius: 0 0 4px 4px;
+      }
+      .price-table {
+        min-width: auto;
+        width: 100%;
+        font-size: 8px;
+        table-layout: auto;
+        border: 1px solid #999;
+      }
+      .price-table thead th {
+        font-size: 7px;
+        padding: 3px 4px;
+        position: static !important;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: var(--primary-dark) !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+      .price-table thead th.th-pp {
+        background: #78350f !important;
+      }
+      .price-table thead th.th-ticket {
+        background: #064e3b !important;
+      }
+      .price-table thead th.th-ep {
+        background: #7c2d8e !important;
+      }
+      .price-table tbody td {
+        padding: 2px 3px;
+        position: static !important;
+        border: 1px solid #ddd;
+        font-size: 8px;
+      }
+      .price-table tbody td:nth-child(2) {
+        min-width: 80px;
+        max-width: 140px;
+      }
+      .price-table tbody tr:nth-child(even) { background: #f9f9f9 !important; }
+      .price-table tbody tr:hover { background: inherit !important; }
+
+      /* PP/回数券/EP列の背景色を維持 */
+      .td-pp { background: #fef9ef !important; }
+      .td-ticket { background: #f0faf5 !important; }
+      .td-ep { background: #fdf4ff !important; }
+      .price-table tbody tr:nth-child(even) .td-pp { background: #fdf6e8 !important; }
+      .price-table tbody tr:nth-child(even) .td-ticket { background: #e6f5ed !important; }
+      .price-table tbody tr:nth-child(even) .td-ep { background: #f5e6fa !important; }
+
+      /* グループ区切りを明確に */
+      .group-first td { border-top: 2px solid #999 !important; }
+
+      /* 印刷用フッター */
+      .print-footer {
+        display: block !important;
+        text-align: center;
+        font-size: 8px;
+        color: #999;
+        padding: 6px 0;
+        margin-top: 8px;
+        border-top: 1px solid #ddd;
+      }
     }
+
+    /* 画面上では印刷フッター非表示 */
+    .print-footer { display: none; }
 
     /* ===== デスクトップ ===== */
     @media (min-width: 900px) {
@@ -448,7 +594,11 @@
   <div class="no-results" id="loadingMsg">読み込み中...</div>
 </main>
 
-<button class="print-btn" onclick="window.print()">🖨️ 印刷</button>
+<button class="print-btn" onclick="preparePrint()">🖨️ 印刷</button>
+
+<div class="print-footer">
+  ボーテスキンクリニック 料金表 ※税込 ― 印刷日: <span id="printDate"></span> ― ※価格は予告なく変更する場合がございます。
+</div>
 
 <footer class="site-footer">
   <div>ボーテスキンクリニック</div>
@@ -484,6 +634,72 @@ const CATEGORY_ORDER = [
   'エステボディ',
   'エステブライダル', 'エステマタニティ',
 ];
+
+// PP割引率テーブル
+const PREPAID_RATES = {
+  "医療（Ns施術）": {"10万": 10, "30万": 20, "50万": 25},
+  "医療（Dr.施術）": {"10万": 0,  "30万": 10, "50万": 10},
+  "医療（Dr.オペ）": {"10万": 0,  "30万": 0,  "50万": 10},
+  "エステ":          {"10万": 10, "30万": 20, "50万": 20},
+  "医療（その他）":   {"10万": 0,  "30万": 0,  "50万": 0},
+};
+const PP10_KEYWORDS = [
+  "フォトナ", "ピコトーニング", "ピコフラクショナル", "フォトフェイシャル",
+  "イオン導入", "ピーリング", "ダーマペン", "ヴェルヴェットスキン", "ハイドラフェイシャル",
+];
+const PP_REDUCED_RATE_TREATMENTS = [
+  { keywords: ['ヒアルロン酸'], provider: '医療（Dr.施術）', rate: 5 },
+  { keywords: ['サーマニードルアイ'], provider: '医療（Dr.施術）', rate: 5 },
+];
+const PP_EXCLUDED_30_50 = ['ボトックス', 'ヒアルローニターゼ', 'ヒアルロニダーゼ'];
+
+// 施術ごとのPP実効割引率を取得（表示用）
+function getEffectivePpRate(t, tier) {
+  const ptype = t.provider_type;
+  if (!ptype) return 0;
+  const rates = PREPAID_RATES[ptype];
+  if (!rates) return 0;
+  const baseRate = rates[tier] || 0;
+  if (baseRate === 0) return 0;
+  if (tier === '10万') {
+    const catStr = (t.categories || [t.category] || []).filter(Boolean).join(' ');
+    const isEligible = PP10_KEYWORDS.some(kw =>
+      (t.treatment || '').includes(kw) || catStr.includes(kw)
+    );
+    return isEligible ? baseRate : 0;
+  }
+  const tName = t.treatment || '';
+  if (PP_EXCLUDED_30_50.some(kw => tName.includes(kw))) return 0;
+  for (const rule of PP_REDUCED_RATE_TREATMENTS) {
+    if (ptype === rule.provider && rule.keywords.some(kw => tName.includes(kw))) {
+      return rule.rate;
+    }
+  }
+  return baseRate;
+}
+
+// PP対象外判定
+function getPpStatus(t, tier) {
+  const price = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+  const ptype = t.provider_type;
+  if (!ptype || isNaN(price) || price === 0) return '';
+  const rates = PREPAID_RATES[ptype];
+  if (!rates) return '';
+  const rate = rates[tier] || 0;
+  if (rate === 0) return '対象外';
+  if (tier === '10万') {
+    const catStr = (t.categories || [t.category] || []).filter(Boolean).join(' ');
+    const isEligible = PP10_KEYWORDS.some(kw =>
+      (t.treatment || '').includes(kw) || catStr.includes(kw)
+    );
+    if (!isEligible) return '対象外';
+  }
+  if (tier === '30万' || tier === '50万') {
+    const tName = t.treatment || '';
+    if (PP_EXCLUDED_30_50.some(kw => tName.includes(kw))) return '対象外';
+  }
+  return '';
+}
 
 async function loadData() {
   try {
@@ -697,15 +913,21 @@ function render() {
       groups[groups.length - 1].push(t);
     });
 
+    const ESTE_CATS = ['エステフェイシャル', 'リラクゼーション', 'エステボディ', 'エステブライダル', 'エステマタニティ'];
+    const isEsteCat = ESTE_CATS.includes(cat);
+
+    // このカテゴリに回数券データがあるか判定
+    const hasTicket = items.some(t => t.ticket_3 || t.ticket_5 || t.ticket_8);
+
     html += `<div class="cat-section">`;
     html += `<div class="cat-header">${esc(cat)}</div>`;
     html += `<div class="table-wrap"><table class="price-table">`;
 
     // ヘッダー
     html += `<thead><tr>`;
-    html += `<th>施術</th>`;
     html += `<th class="col-type">区分</th>`;
-    html += `<th class="col-sessions">回数</th>`;
+    html += `<th>施術<br><span style="font-size:9px;font-weight:normal;opacity:0.7;">（部位／詳細）</span></th>`;
+    html += `<th class="col-sessions">単位</th>`;
     if (hasNewPrice) {
       html += `<th class="col-old">旧通常価格<span class="col-old-note">※改定前</span></th>`;
       html += `<th class="col-old">旧初回価格<span class="col-old-note">※改定前</span></th>`;
@@ -715,9 +937,19 @@ function render() {
     html += `<th>CP</th>`;
     html += `<th>モニター<br>全顔出し</th>`;
     html += `<th>モニター<br>目元のみ</th>`;
+    if (hasTicket) {
+      html += `<th class="th-ticket">3回券</th>`;
+      html += `<th class="th-ticket">5回券</th>`;
+      html += `<th class="th-ticket">8回券</th>`;
+    }
     html += `<th class="th-pp">PP<br>10万</th>`;
     html += `<th class="th-pp">PP<br>30万</th>`;
     html += `<th class="th-pp">PP<br>50万</th>`;
+    if (isEsteCat) {
+      html += `<th class="th-ep">EP<br>5万</th>`;
+      html += `<th class="th-ep">EP<br>10万</th>`;
+      html += `<th class="th-ep">EP<br>20万</th>`;
+    }
     html += `</tr></thead>`;
 
     // ボディ
@@ -736,12 +968,18 @@ function render() {
         }
         if (t.area) nameHtml += `<span class="treat-area">${esc(t.area)}</span>`;
         if (!nameHtml) nameHtml = `<span class="treat-area">${esc(t.treatment || '—')}</span>`;
-        html += `<td>${nameHtml}</td>`;
+        // 回数券バッジ
+        if (t.ticket_3 || t.ticket_5 || t.ticket_8) {
+          nameHtml += `<span class="ticket-badge">回数券</span>`;
+        }
 
         // 区分
         html += `<td class="col-type">${esc(t.provider_type || '')}</td>`;
 
-        // 回数
+        // 施術名セル
+        html += `<td>${nameHtml}</td>`;
+
+        // 単位（データソースでクリーニング済み）
         html += `<td class="col-sessions">${t.sessions ? esc(t.sessions) : na()}</td>`;
 
         // 旧通常価格・旧初回価格・通常価格
@@ -761,10 +999,57 @@ function render() {
         html += `<td>${(t.monitor_full_price === '設定なし' || t.monitor_full_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.monitor_full_price, 'p-monitor')}${discountWarn(t.monitor_full_price, t.price)}</td>`;
         html += `<td>${(t.monitor_eye_price === '設定なし' || t.monitor_eye_price === 'なし') ? '<span class="price-none">設定なし</span>' : priceCell(t.monitor_eye_price, 'p-monitor')}${discountWarn(t.monitor_eye_price, t.price)}</td>`;
 
+        // 回数券列
+        function ticketCell(val, count) {
+          if (!val) return '<span class="price-none">設定なし</span>';
+          const f = fmt(val);
+          if (!f) return '<span class="price-none">設定なし</span>';
+          const base = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+          const unit = Math.round(Number(val) / count);
+          let badge = '';
+          if (!isNaN(base) && base > 0) {
+            if (unit < base) {
+              const pct = Math.round((base - unit) / base * 100);
+              badge = `<span class="ticket-unit">@${fmt(String(unit))}</span> <span class="ticket-off">${pct}%OFF</span>`;
+            } else if (unit === base) {
+              badge = `<span class="ticket-same">@${fmt(String(unit))}（同額）</span>`;
+            } else {
+              badge = `<span class="ticket-warn">@${fmt(String(unit))}（⚠割高）</span>`;
+            }
+          }
+          return `<span class="p-ticket">${f}</span>${badge ? '<br>' + badge : ''}`;
+        }
+        if (hasTicket) {
+          html += `<td class="td-ticket">${ticketCell(t.ticket_3, 3)}</td>`;
+          html += `<td class="td-ticket">${ticketCell(t.ticket_5, 5)}</td>`;
+          html += `<td class="td-ticket">${ticketCell(t.ticket_8, 8)}</td>`;
+        }
+
         // PP列
-        html += `<td class="td-pp">${priceCell(t.prepaid_10, 'p-pp')}</td>`;
-        html += `<td class="td-pp">${priceCell(t.prepaid_30, 'p-pp')}</td>`;
-        html += `<td class="td-pp">${priceCell(t.prepaid_50, 'p-pp')}</td>`;
+        const ppS10 = getPpStatus(t, '10万');
+        const ppS30 = getPpStatus(t, '30万');
+        const ppS50 = getPpStatus(t, '50万');
+        const ppR10 = t.prepaid_10 && ppS10 !== '対象外' ? getEffectivePpRate(t, '10万') : 0;
+        const ppR30 = t.prepaid_30 && ppS30 !== '対象外' ? getEffectivePpRate(t, '30万') : 0;
+        const ppR50 = t.prepaid_50 && ppS50 !== '対象外' ? getEffectivePpRate(t, '50万') : 0;
+        function ppCell(status, val, rate) {
+          if (status === '対象外') return `<span class="pp-excluded">対象外</span>`;
+          return priceCell(val, 'p-pp') + (rate > 0 ? `<br><span class="pp-rate">${rate}%OFF</span>` : '');
+        }
+        html += `<td class="td-pp">${ppCell(ppS10, t.prepaid_10, ppR10)}</td>`;
+        html += `<td class="td-pp">${ppCell(ppS30, t.prepaid_30, ppR30)}</td>`;
+        html += `<td class="td-pp">${ppCell(ppS50, t.prepaid_50, ppR50)}</td>`;
+
+        // エステパス列（エステカテゴリのみ）
+        if (isEsteCat) {
+          function epCell(val, rate) {
+            if (!val) return `<span class="ep-excluded">対象外</span>`;
+            return `<span class="p-ep">${fmt(val)}</span><br><span class="ep-rate">${rate}%OFF</span>`;
+          }
+          html += `<td class="td-ep">${epCell(t.estepass_5, 5)}</td>`;
+          html += `<td class="td-ep">${epCell(t.estepass_10, 10)}</td>`;
+          html += `<td class="td-ep">${epCell(t.estepass_20, 20)}</td>`;
+        }
 
         html += `</tr>`;
       });
@@ -803,6 +1088,17 @@ document.getElementById('oldPriceToggle').addEventListener('click', () => {
     ? '<span class="toggle-arrow">▶</span> 旧価格を非表示'
     : '<span class="toggle-arrow">▶</span> 旧価格を表示';
 });
+
+// 印刷準備
+function preparePrint() {
+  const el = document.getElementById('printDate');
+  if (el) {
+    el.textContent = new Date().toLocaleDateString('ja-JP', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+  }
+  window.print();
+}
 
 loadData();
 </script>

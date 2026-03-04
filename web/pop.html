@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>施術POP生成 | ボーテスキンクリニック</title>
+  <style>
+    :root {
+      --primary: #b07d62;
+      --primary-light: #d4a98a;
+      --primary-dark: #8a5c3f;
+      --accent: #e8d5c4;
+      --bg: #faf7f4;
+      --text: #3a2e27;
+      --text-light: #7a6a5f;
+      --border: #e0d0c4;
+      --gold: #c9a96e;
+      --gold-dark: #a68345;
+      --gold-light: #f5ecd7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* ===== 操作パネル（画面のみ表示）===== */
+    .toolbar {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .toolbar h1 { font-size: 16px; margin-bottom: 8px; }
+    .toolbar-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .toolbar select, .toolbar input {
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      font-size: 13px;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-family: inherit;
+    }
+    .toolbar select option { color: #333; background: #fff; }
+    .toolbar input::placeholder { color: rgba(255,255,255,0.6); }
+    .toolbar button {
+      padding: 6px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+    }
+    .btn-add { background: #fff; color: var(--primary-dark); }
+    .btn-add:hover { background: var(--accent); }
+    .btn-print { background: var(--gold); color: #fff; }
+    .btn-print:hover { background: var(--gold-dark); }
+    .btn-clear { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.3) !important; }
+    .btn-clear:hover { background: rgba(255,255,255,0.3); }
+
+    .selected-list {
+      margin-top: 8px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .selected-tag {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 14px;
+      padding: 3px 10px;
+      font-size: 11px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .selected-tag .remove {
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 14px;
+    }
+    .selected-tag .remove:hover { opacity: 1; }
+    .toolbar-hint {
+      font-size: 11px;
+      opacity: 0.7;
+      margin-top: 6px;
+    }
+
+    /* ===== POPプレビュー領域 ===== */
+    .preview-area {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    /* ===== A4ページ ===== */
+    .a4-page {
+      width: 297mm;
+      min-height: 210mm;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      padding: 10mm;
+      display: flex;
+      gap: 8mm;
+    }
+
+    /* ===== 施術POPカード（A4半分）===== */
+    .pop-card {
+      flex: 1;
+      border: 2.5px solid var(--gold);
+      border-radius: 12px;
+      padding: 8mm;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 上部の装飾ライン */
+    .pop-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--primary), var(--gold));
+    }
+
+    .pop-clinic {
+      text-align: center;
+      font-size: 9px;
+      color: var(--gold-dark);
+      letter-spacing: 0.15em;
+      margin-top: 2mm;
+      margin-bottom: 3mm;
+    }
+
+    .pop-category {
+      text-align: center;
+      font-size: 10px;
+      color: var(--primary);
+      background: var(--accent);
+      border-radius: 20px;
+      padding: 2px 16px;
+      display: inline-block;
+      margin: 0 auto 3mm;
+      font-weight: 500;
+    }
+
+    .pop-treatment-name {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 1mm;
+      line-height: 1.3;
+    }
+
+    .pop-area {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-light);
+      margin-bottom: 4mm;
+    }
+
+    .pop-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2mm 0;
+    }
+
+    /* 価格テーブル */
+    .pop-prices {
+      flex: 1;
+    }
+
+    .pop-price-row {
+      display: flex;
+      align-items: baseline;
+      padding: 2mm 0;
+      border-bottom: 1px dotted var(--border);
+    }
+    .pop-price-row:last-child { border-bottom: none; }
+
+    .pop-price-label {
+      font-size: 11px;
+      color: var(--text-light);
+      width: 70px;
+      flex-shrink: 0;
+    }
+
+    .pop-price-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      flex: 1;
+      text-align: right;
+    }
+    .pop-price-value.main-price {
+      font-size: 24px;
+      color: var(--primary-dark);
+    }
+    .pop-price-value.discount {
+      color: #dc2626;
+    }
+    .pop-price-value.campaign {
+      color: #dc2626;
+      font-size: 20px;
+    }
+    .pop-price-value.monitor {
+      color: #0891b2;
+      font-size: 16px;
+    }
+    .pop-price-value.ticket {
+      color: #065f46;
+      font-size: 16px;
+    }
+    .pop-price-value .yen { font-size: 0.65em; font-weight: 500; }
+    .pop-price-value .tax { font-size: 9px; font-weight: 400; color: var(--text-light); margin-left: 4px; }
+    .pop-price-value .unit-price { font-size: 9px; color: #059669; font-weight: 500; }
+    .pop-price-na { font-size: 12px; color: #ccc; font-style: italic; }
+
+    /* PP割引セクション */
+    .pop-pp-section {
+      margin-top: 3mm;
+      background: var(--gold-light);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 3mm 4mm;
+    }
+    .pop-pp-title {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 2mm;
+      text-align: center;
+    }
+    .pop-pp-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      padding: 1mm 0;
+    }
+    .pop-pp-tier { color: var(--gold-dark); font-weight: 600; }
+    .pop-pp-price { font-weight: 700; color: var(--text); }
+
+    /* 回数券セクション */
+    .pop-ticket-section {
+      margin-top: 3mm;
+      background: #f0faf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 8px;
+      padding: 3mm 4mm;
+    }
+    .pop-ticket-title {
+      font-size: 9px;
+      font-weight: 700;
+      color: #065f46;
+      margin-bottom: 2mm;
+      text-align: center;
+    }
+    .pop-ticket-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 10px;
+      padding: 1mm 0;
+    }
+    .pop-ticket-tier { color: #065f46; font-weight: 600; }
+    .pop-ticket-price { font-weight: 700; color: var(--text); }
+    .pop-ticket-unit { font-size: 8px; color: #059669; margin-left: 4px; }
+
+    /* フッター */
+    .pop-footer {
+      margin-top: auto;
+      padding-top: 3mm;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 8px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* 空カード */
+    .pop-card.empty {
+      border: 2px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    /* ===== 印刷スタイル ===== */
+    @media print {
+      @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      body { background: #fff; }
+      .toolbar { display: none !important; }
+      .preview-area { padding: 0; gap: 0; }
+      .a4-page {
+        width: 297mm;
+        height: 210mm;
+        box-shadow: none;
+        border-radius: 0;
+        page-break-after: always;
+        margin: 0;
+      }
+      .a4-page:last-child { page-break-after: avoid; }
+    }
+
+    /* ===== 治療選択モーダル ===== */
+    .treatment-list {
+      max-height: 200px;
+      overflow-y: auto;
+      background: rgba(0,0,0,0.2);
+      border-radius: 8px;
+      margin-top: 6px;
+    }
+    .treatment-list-item {
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.1s;
+    }
+    .treatment-list-item:hover {
+      background: rgba(255,255,255,0.15);
+    }
+    .treatment-list-item .item-cat {
+      font-size: 9px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== 操作パネル ===== -->
+<div class="toolbar">
+  <h1>📄 施術POP生成（A4横 × 2施術）</h1>
+  <div class="toolbar-row">
+    <select id="catSelect">
+      <option value="">カテゴリを選択...</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="施術名で検索..." style="width:200px;">
+    <button class="btn-print" onclick="window.print()">🖨️ 印刷</button>
+    <button class="btn-clear" onclick="clearAll()">クリア</button>
+  </div>
+  <div id="treatmentListWrap" class="treatment-list" style="display:none;"></div>
+  <div class="selected-list" id="selectedList"></div>
+  <div class="toolbar-hint">施術を選択するとPOPプレビューが表示されます。2施術ごとにA4横1ページに配置されます。</div>
+</div>
+
+<!-- ===== POPプレビュー ===== -->
+<div class="preview-area" id="previewArea">
+  <div style="color:var(--text-light); padding:60px; text-align:center;">
+    上のメニューから施術を選択してください。
+  </div>
+</div>
+
+<script>
+const DATA_URL = './data/prices_public.json';
+
+let allData = null;
+let selectedTreatments = [];
+
+function fmt(val) {
+  if (!val) return null;
+  const n = parseInt(String(val).replace(/[¥,\s]/g, ''), 10);
+  if (isNaN(n)) return null;
+  return n.toLocaleString('ja-JP');
+}
+
+function fmtYen(val) {
+  const f = fmt(val);
+  if (!f) return '<span class="pop-price-na">設定なし</span>';
+  return '<span class="yen">¥</span>' + f + '<span class="tax">(税込)</span>';
+}
+
+async function loadData() {
+  const res = await fetch(DATA_URL);
+  allData = await res.json();
+  buildCategorySelect();
+  updateList();
+}
+
+function buildCategorySelect() {
+  const sel = document.getElementById('catSelect');
+  const cats = [...new Set(allData.treatments.flatMap(t => t.categories || [t.category]))].sort();
+  cats.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    sel.appendChild(opt);
+  });
+}
+
+function getFilteredTreatments() {
+  let items = allData.treatments;
+  const cat = document.getElementById('catSelect').value;
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+  if (cat) {
+    items = items.filter(t => (t.categories || [t.category]).includes(cat));
+  }
+  if (q) {
+    items = items.filter(t =>
+      (t.treatment || '').toLowerCase().includes(q) ||
+      (t.area || '').toLowerCase().includes(q)
+    );
+  }
+  return items;
+}
+
+function updateList() {
+  const items = getFilteredTreatments();
+  const wrap = document.getElementById('treatmentListWrap');
+
+  if (!document.getElementById('catSelect').value && !document.getElementById('searchInput').value.trim()) {
+    wrap.style.display = 'none';
+    return;
+  }
+
+  wrap.innerHTML = '';
+  wrap.style.display = items.length > 0 ? 'block' : 'none';
+
+  items.slice(0, 50).forEach((t, i) => {
+    const div = document.createElement('div');
+    div.className = 'treatment-list-item';
+    const cat = (t.categories || [t.category])[0] || '';
+    const area = t.area ? ` / ${t.area}` : '';
+    const sessions = t.sessions ? ` [${t.sessions}]` : '';
+    const price = fmt(t.price) ? `¥${fmt(t.price)}` : '';
+    div.innerHTML = `<strong>${esc(t.treatment || '—')}${esc(area)}${esc(sessions)}</strong> ${price} <span class="item-cat">${esc(cat)}</span>`;
+    div.addEventListener('click', () => addTreatment(t));
+    wrap.appendChild(div);
+  });
+
+  if (items.length > 50) {
+    const more = document.createElement('div');
+    more.className = 'treatment-list-item';
+    more.style.textAlign = 'center';
+    more.style.opacity = '0.6';
+    more.textContent = `...他 ${items.length - 50}件（検索で絞り込んでください）`;
+    wrap.appendChild(more);
+  }
+}
+
+function addTreatment(t) {
+  // Avoid duplicates by checking unique combo
+  const key = (t.treatment || '') + '|' + (t.area || '') + '|' + (t.price || '');
+  if (selectedTreatments.some(s => (s.treatment || '') + '|' + (s.area || '') + '|' + (s.price || '') === key)) return;
+
+  selectedTreatments.push(t);
+  renderSelected();
+  renderPOP();
+}
+
+function removeTreatment(idx) {
+  selectedTreatments.splice(idx, 1);
+  renderSelected();
+  renderPOP();
+}
+
+function clearAll() {
+  selectedTreatments = [];
+  renderSelected();
+  renderPOP();
+}
+
+function renderSelected() {
+  const list = document.getElementById('selectedList');
+  list.innerHTML = '';
+  selectedTreatments.forEach((t, i) => {
+    const tag = document.createElement('span');
+    tag.className = 'selected-tag';
+    const area = t.area ? ` / ${t.area}` : '';
+    tag.innerHTML = `${esc(t.treatment)}${esc(area)} <span class="remove" onclick="removeTreatment(${i})">✕</span>`;
+    list.appendChild(tag);
+  });
+}
+
+function renderPOP() {
+  const area = document.getElementById('previewArea');
+
+  if (selectedTreatments.length === 0) {
+    area.innerHTML = '<div style="color:var(--text-light); padding:60px; text-align:center;">上のメニューから施術を選択してください。</div>';
+    return;
+  }
+
+  let html = '';
+
+  // 2施術ずつA4ページに配置
+  for (let i = 0; i < selectedTreatments.length; i += 2) {
+    html += '<div class="a4-page">';
+    html += buildCard(selectedTreatments[i]);
+    if (i + 1 < selectedTreatments.length) {
+      html += buildCard(selectedTreatments[i + 1]);
+    } else {
+      html += '<div class="pop-card empty">（空きスペース）</div>';
+    }
+    html += '</div>';
+  }
+
+  area.innerHTML = html;
+}
+
+function buildCard(t) {
+  const cat = (t.categories || [t.category])[0] || '';
+  const area = t.area || '';
+  const basePrice = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+
+  let html = '<div class="pop-card">';
+
+  // クリニック名
+  html += '<div class="pop-clinic">BEAUTE SKIN CLINIC</div>';
+
+  // カテゴリ
+  if (cat) {
+    html += `<div style="text-align:center;"><span class="pop-category">${esc(cat)}</span></div>`;
+  }
+
+  // 施術名
+  html += `<div class="pop-treatment-name">${esc(t.treatment || '—')}</div>`;
+
+  // 部位/詳細
+  if (area) {
+    html += `<div class="pop-area">${esc(area)}</div>`;
+  }
+
+  html += '<hr class="pop-divider">';
+
+  // 価格セクション
+  html += '<div class="pop-prices">';
+
+  // 通常価格
+  html += `<div class="pop-price-row">
+    <span class="pop-price-label">通常価格</span>
+    <span class="pop-price-value main-price">${fmtYen(t.price)}</span>
+  </div>`;
+
+  // 単位
+  if (t.sessions) {
+    html += `<div style="text-align:right; font-size:10px; color:var(--text-light); margin-top:-2mm;">${esc(t.sessions)}</div>`;
+  }
+
+  // リピート割
+  if (t.repeat_price && t.repeat_price !== '設定なし' && t.repeat_price !== 'なし') {
+    html += `<div class="pop-price-row">
+      <span class="pop-price-label">リピート割</span>
+      <span class="pop-price-value discount">${fmtYen(t.repeat_price)}</span>
+    </div>`;
+  }
+
+  // CP
+  if (t.campaign_price && t.campaign_price !== '設定なし' && t.campaign_price !== 'なし') {
+    html += `<div class="pop-price-row">
+      <span class="pop-price-label">CP価格</span>
+      <span class="pop-price-value campaign">${fmtYen(t.campaign_price)}</span>
+    </div>`;
+  }
+
+  // モニター
+  if (t.monitor_full_price && t.monitor_full_price !== '設定なし' && t.monitor_full_price !== 'なし') {
+    html += `<div class="pop-price-row">
+      <span class="pop-price-label">モニター全顔</span>
+      <span class="pop-price-value monitor">${fmtYen(t.monitor_full_price)}</span>
+    </div>`;
+  }
+  if (t.monitor_eye_price && t.monitor_eye_price !== '設定なし' && t.monitor_eye_price !== 'なし') {
+    html += `<div class="pop-price-row">
+      <span class="pop-price-label">モニター目元</span>
+      <span class="pop-price-value monitor">${fmtYen(t.monitor_eye_price)}</span>
+    </div>`;
+  }
+
+  html += '</div>'; // .pop-prices
+
+  // 回数券
+  if (t.ticket_3 || t.ticket_5 || t.ticket_8) {
+    html += '<div class="pop-ticket-section">';
+    html += '<div class="pop-ticket-title">回数券</div>';
+    if (t.ticket_3) {
+      const unit3 = Math.round(Number(t.ticket_3) / 3);
+      html += `<div class="pop-ticket-row">
+        <span class="pop-ticket-tier">3回券</span>
+        <span class="pop-ticket-price">¥${fmt(t.ticket_3)}<span class="pop-ticket-unit">(@¥${fmt(String(unit3))})</span></span>
+      </div>`;
+    }
+    if (t.ticket_5) {
+      const unit5 = Math.round(Number(t.ticket_5) / 5);
+      html += `<div class="pop-ticket-row">
+        <span class="pop-ticket-tier">5回券</span>
+        <span class="pop-ticket-price">¥${fmt(t.ticket_5)}<span class="pop-ticket-unit">(@¥${fmt(String(unit5))})</span></span>
+      </div>`;
+    }
+    if (t.ticket_8) {
+      const unit8 = Math.round(Number(t.ticket_8) / 8);
+      html += `<div class="pop-ticket-row">
+        <span class="pop-ticket-tier">8回券</span>
+        <span class="pop-ticket-price">¥${fmt(t.ticket_8)}<span class="pop-ticket-unit">(@¥${fmt(String(unit8))})</span></span>
+      </div>`;
+    }
+    html += '</div>';
+  }
+
+  // PP割引
+  if (t.prepaid_10 || t.prepaid_30 || t.prepaid_50) {
+    html += '<div class="pop-pp-section">';
+    html += '<div class="pop-pp-title">プリペイド割引</div>';
+    if (t.prepaid_10) {
+      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP10万</span><span class="pop-pp-price">¥${fmt(t.prepaid_10)}</span></div>`;
+    }
+    if (t.prepaid_30) {
+      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP30万</span><span class="pop-pp-price">¥${fmt(t.prepaid_30)}</span></div>`;
+    }
+    if (t.prepaid_50) {
+      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP50万</span><span class="pop-pp-price">¥${fmt(t.prepaid_50)}</span></div>`;
+    }
+    html += '</div>';
+  }
+
+  // フッター
+  html += `<div class="pop-footer">
+    ※表示価格はすべて税込です。<br>
+    価格は予告なく変更する場合がございます。
+  </div>`;
+
+  html += '</div>'; // .pop-card
+  return html;
+}
+
+function esc(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// イベント
+document.getElementById('catSelect').addEventListener('change', updateList);
+let searchTimer;
+document.getElementById('searchInput').addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(updateList, 200);
+});
+
+loadData();
+</script>
+
+</body>
+</html>

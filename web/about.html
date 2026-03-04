@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料金管理システム概要 | ボーテスキンクリニック</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', -apple-system, sans-serif;
+      background: #faf7f4;
+      color: #3a2e27;
+      font-size: 15px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== ヒーロー ===== */
+    .hero {
+      background: linear-gradient(135deg, #8a5c3f 0%, #b07d62 50%, #c9a96e 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 3px 14px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .hero .sub { font-size: 13px; opacity: 0.85; }
+    .hero .status {
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+    }
+    .hero .dot {
+      width: 8px; height: 8px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ===== コンテナ ===== */
+    .container { max-width: 520px; margin: 0 auto; padding: 0 16px; }
+
+    /* ===== セクション ===== */
+    .section {
+      padding: 32px 0;
+      border-bottom: 1px solid #e8ddd4;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-num {
+      display: inline-block;
+      width: 28px; height: 28px;
+      background: #b07d62;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .section p {
+      color: #7a6a5f;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    /* ===== 画面モック ===== */
+    .screen-mock {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin: 16px 0;
+    }
+    .screen-bar {
+      background: #8a5c3f;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .screen-bar .dots {
+      display: flex; gap: 4px;
+    }
+    .screen-bar .dot-r { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); }
+    .screen-bar .url {
+      flex: 1;
+      background: rgba(255,255,255,0.15);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.8);
+    }
+    .screen-body {
+      padding: 16px;
+    }
+
+    /* テーブルモック */
+    .mock-header {
+      background: #8a5c3f;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 6px 6px 0 0;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .mock-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+      margin-bottom: 12px;
+    }
+    .mock-table th {
+      background: #5a3d2a;
+      color: #fff;
+      padding: 4px 6px;
+      text-align: center;
+      font-size: 9px;
+    }
+    .mock-table td {
+      padding: 4px 6px;
+      border-bottom: 1px solid #f0e8e0;
+      text-align: center;
+    }
+    .mock-table tr:nth-child(even) { background: #faf7f4; }
+    .mock-table .name { text-align: left; font-weight: 600; color: #8a5c3f; }
+    .mock-table .price { font-weight: 700; }
+    .mock-table .pp { color: #92400e; font-size: 9px; }
+    .mock-table .cost { background: #fff9f0; color: #b45309; font-weight: 600; }
+    .mock-table .profit { background: #f0fdf4; color: #166534; font-weight: 600; }
+
+    /* フィルターモック */
+    .mock-filters {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .mock-pill {
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 9px;
+      border: 1px solid #e0d0c4;
+      color: #7a6a5f;
+    }
+    .mock-pill.active {
+      background: #b07d62;
+      border-color: #b07d62;
+      color: #fff;
+    }
+
+    /* ===== 機能カード ===== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .feature-icon { font-size: 28px; margin-bottom: 6px; }
+    .feature-label { font-size: 12px; font-weight: 600; color: #3a2e27; }
+    .feature-desc { font-size: 10px; color: #7a6a5f; margin-top: 2px; }
+
+    /* ===== POPモック ===== */
+    .pop-mock {
+      background: #fff;
+      border: 2px solid #c9a96e;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      margin: 12px 0;
+      position: relative;
+    }
+    .pop-mock::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #c9a96e, #b07d62, #c9a96e);
+      border-radius: 10px 10px 0 0;
+    }
+    .pop-clinic-name { font-size: 8px; color: #c9a96e; letter-spacing: 0.15em; margin-top: 4px; }
+    .pop-cat { display: inline-block; background: #e8d5c4; color: #8a5c3f; border-radius: 10px; padding: 1px 10px; font-size: 9px; margin: 6px 0; }
+    .pop-name { font-size: 18px; font-weight: 800; color: #8a5c3f; }
+    .pop-area { font-size: 11px; color: #7a6a5f; margin-bottom: 8px; }
+    .pop-price-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dotted #e0d0c4; font-size: 12px; }
+    .pop-price-row:last-child { border-bottom: none; }
+    .pop-label { color: #7a6a5f; }
+    .pop-val { font-weight: 700; }
+    .pop-val.main { font-size: 16px; color: #8a5c3f; }
+
+    /* ===== バージョン管理 ===== */
+    .timeline {
+      margin: 16px 0;
+      padding-left: 20px;
+      border-left: 2px solid #e0d0c4;
+    }
+    .timeline-item {
+      padding: 8px 0 8px 16px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -25px;
+      top: 12px;
+      width: 10px;
+      height: 10px;
+      background: #b07d62;
+      border-radius: 50%;
+      border: 2px solid #faf7f4;
+    }
+    .timeline-date { font-size: 11px; color: #b07d62; font-weight: 600; }
+    .timeline-msg { font-size: 12px; color: #3a2e27; }
+
+    /* ===== 権限 ===== */
+    .access-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 12px 0;
+    }
+    .access-table th {
+      background: #8a5c3f;
+      color: #fff;
+      padding: 8px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .access-table td {
+      padding: 8px;
+      border-bottom: 1px solid #e8ddd4;
+      text-align: center;
+      font-size: 12px;
+    }
+    .access-table tr:nth-child(even) { background: #fff; }
+    .check { color: #059669; font-weight: 700; }
+    .cross { color: #ccc; }
+
+    /* ===== 印刷モック ===== */
+    .print-mock {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 12px;
+      margin: 12px 0;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+      transform: rotate(-1deg);
+    }
+    .print-mock .sheet-label {
+      font-size: 9px;
+      color: #aaa;
+      text-align: right;
+      margin-bottom: 4px;
+    }
+
+    /* ===== フッター ===== */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: #b07d62;
+      font-size: 11px;
+    }
+
+    /* ===== 強調 ===== */
+    .highlight {
+      background: linear-gradient(transparent 60%, #f5dfc4 60%);
+      font-weight: 700;
+    }
+    .tag {
+      display: inline-block;
+      background: #f0e8e0;
+      color: #8a5c3f;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* ===== 管理者モック ===== */
+    .admin-bar {
+      background: #1a1a2e;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .admin-bar .badge {
+      background: #dc2626;
+      color: #fff;
+      font-size: 8px;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .admin-bar .url {
+      flex: 1;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.6);
+    }
+    .edit-cell {
+      background: #fefce8 !important;
+      border: 1.5px solid #facc15 !important;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== ヒーロー ===== -->
+<div class="hero">
+  <div class="hero-badge">INTERNAL DOCUMENT</div>
+  <h1>ボーテスキンクリニック<br>料金管理システム</h1>
+  <div class="sub">システム概要資料</div>
+  <div class="status"><span class="dot"></span> 現在構築中</div>
+</div>
+
+<div class="container">
+
+  <!-- ===== 1. システム概要 ===== -->
+  <div class="section">
+    <span class="section-num">1</span>
+    <h2>全施術の料金を<br>一元管理するシステム</h2>
+    <p>クリニックの全施術（500件以上）の料金・割引・コストを一括管理し、<span class="highlight">ブラウザ上で閲覧・編集・印刷</span>ができるシステムです。</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <div class="feature-label">料金一覧</div>
+        <div class="feature-desc">全施術を検索・フィルター</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✏️</div>
+        <div class="feature-label">インライン編集</div>
+        <div class="feature-desc">クリックして即編集</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖨️</div>
+        <div class="feature-label">印刷対応</div>
+        <div class="feature-desc">A4横でそのまま印刷</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <div class="feature-label">施術POP生成</div>
+        <div class="feature-desc">院内掲示用を自動生成</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 2. ユーザー画面 ===== -->
+  <div class="section">
+    <span class="section-num">2</span>
+    <h2>ユーザー画面（スタッフ用）</h2>
+    <p>パスワード不要で閲覧できる画面です。<br>カテゴリ・区分・検索で絞り込みができます。</p>
+
+    <div class="screen-mock">
+      <div class="screen-bar">
+        <div class="dots"><span class="dot-r"></span><span class="dot-r"></span><span class="dot-r"></span></div>
+        <div class="url">beaute-clinic.github.io</div>
+      </div>
+      <div class="screen-body">
+        <div style="text-align:center; font-size:11px; color:#b07d62; font-weight:700; margin-bottom:6px;">ボーテスキンクリニック<br><span style="font-size:9px;font-weight:400;">料金表 ※税込</span></div>
+
+        <div class="mock-filters">
+          <span class="mock-pill active">すべて</span>
+          <span class="mock-pill">Dr.施術</span>
+          <span class="mock-pill">Dr.オペ</span>
+          <span class="mock-pill">Ns施術</span>
+          <span class="mock-pill">エステ</span>
+        </div>
+        <div class="mock-filters">
+          <span class="mock-pill active">すべて</span>
+          <span class="mock-pill">ヒアルロン酸</span>
+          <span class="mock-pill">ボトックス</span>
+          <span class="mock-pill">医療脱毛</span>
+        </div>
+
+        <div class="mock-header">肌質改善／肌育</div>
+        <table class="mock-table">
+          <tr><th>区分</th><th>施術名</th><th>単位</th><th>通常価格</th><th>リピ割</th><th>PP30万</th></tr>
+          <tr><td>Dr.</td><td class="name">水光注射<br><span style="font-size:8px;color:#999;">リジュラン</span></td><td>1cc</td><td class="price">¥33,000</td><td>—</td><td class="pp">¥29,700</td></tr>
+          <tr><td>Dr.</td><td class="name">Dr.手打ち注射<br><span style="font-size:8px;color:#999;">ジュベルック</span></td><td>1cc</td><td class="price">¥33,000</td><td>—</td><td class="pp">¥29,700</td></tr>
+          <tr><td>Dr.</td><td class="name">ヒアルロン酸<br><span style="font-size:8px;color:#999;">ボリフト（アラガン）</span></td><td>1本</td><td class="price">¥77,000</td><td>—</td><td class="pp">¥69,300</td></tr>
+        </table>
+        <div style="text-align:center;font-size:9px;color:#aaa;">...500件以上の施術</div>
+      </div>
+    </div>
+    <p style="font-size:12px;">※ コストや利益はこの画面では<strong>表示されません</strong></p>
+  </div>
+
+  <!-- ===== 3. 管理者画面 ===== -->
+  <div class="section">
+    <span class="section-num">3</span>
+    <h2>管理者画面（オーナー用）</h2>
+    <p><span class="highlight">パスワード認証</span>でログインする管理画面です。<br>セルをクリックして直接編集 → 即時保存できます。</p>
+
+    <div class="screen-mock">
+      <div class="admin-bar">
+        <span class="badge">管理者専用</span>
+        <div class="url">beaute-clinic.github.io/admin/</div>
+      </div>
+      <div class="screen-body" style="background:#f8f8f8;">
+        <div style="display:flex; gap:6px; margin-bottom:8px; font-size:9px;">
+          <span style="background:#059669;color:#fff;padding:2px 8px;border-radius:4px;">+ 新規追加</span>
+          <span style="background:#444;color:#fff;padding:2px 8px;border-radius:4px;">印刷</span>
+          <span style="background:#059669;color:#fff;padding:2px 8px;border-radius:4px;">GitHub接続済</span>
+        </div>
+        <table class="mock-table">
+          <tr><th>施術名</th><th>部位</th><th>通常価格</th><th style="background:#78350f;">コスト</th><th style="background:#166534;">利益</th></tr>
+          <tr><td class="name">水光注射</td><td>リジュラン</td><td class="price edit-cell">¥33,000</td><td class="cost">7,000</td><td class="profit">26,000</td></tr>
+          <tr><td class="name">水光注射</td><td>ジュベルック</td><td class="price">¥66,000</td><td class="cost">10,000</td><td class="profit">56,000</td></tr>
+          <tr><td class="name">Dr.手打ち注射</td><td>リジュラン</td><td class="price">¥44,000</td><td class="cost">10,000</td><td class="profit">34,000</td></tr>
+        </table>
+        <div style="font-size:9px;color:#666;text-align:center;">
+          <span style="background:#fefce8;border:1px solid #facc15;padding:1px 6px;border-radius:3px;">黄色セル</span> = クリックして編集中
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:13px; margin-top:8px;">
+      <strong>管理者のみ見える情報:</strong><br>
+      <span class="tag">コスト</span> <span class="tag">利益</span> <span class="tag">利益メモ</span>
+    </p>
+  </div>
+
+  <!-- ===== 4. 即時反映 ===== -->
+  <div class="section">
+    <span class="section-num">4</span>
+    <h2>編集 → ユーザー画面に即時反映</h2>
+    <p>管理画面で保存すると、<span class="highlight">ユーザー画面に即時反映</span>されます。</p>
+
+    <div style="display:flex; align-items:center; gap:8px; margin:16px 0; justify-content:center;">
+      <div style="background:#1a1a2e;color:#fff;padding:8px 14px;border-radius:8px;font-size:11px;text-align:center;">
+        <div style="font-size:8px;opacity:0.7;">管理者画面で</div>
+        <strong>価格を編集</strong>
+      </div>
+      <div style="font-size:20px;color:#b07d62;">→</div>
+      <div style="background:#b07d62;color:#fff;padding:8px 14px;border-radius:8px;font-size:11px;text-align:center;">
+        <div style="font-size:8px;opacity:0.9;">保存ボタンを</div>
+        <strong>クリック</strong>
+      </div>
+      <div style="font-size:20px;color:#b07d62;">→</div>
+      <div style="background:#059669;color:#fff;padding:8px 14px;border-radius:8px;font-size:11px;text-align:center;">
+        <div style="font-size:8px;opacity:0.9;">ユーザー画面に</div>
+        <strong>即時反映</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 5. 印刷 ===== -->
+  <div class="section">
+    <span class="section-num">5</span>
+    <h2>そのまま印刷できます</h2>
+    <p>ブラウザの印刷機能（Ctrl+P）で<span class="highlight">A4横サイズ</span>に最適化された状態で印刷できます。</p>
+
+    <div class="print-mock">
+      <div class="sheet-label">A4 横 ← →</div>
+      <div style="text-align:center;font-size:9px;background:#8a5c3f;color:#fff;padding:4px;border-radius:4px;">ボーテスキンクリニック 料金表 ※税込</div>
+      <div style="margin-top:6px;">
+        <div style="background:#b07d62;color:#fff;padding:2px 6px;border-radius:3px 3px 0 0;font-size:9px;font-weight:600;">医療脱毛</div>
+        <table class="mock-table" style="font-size:8px;">
+          <tr><th>施術名</th><th>単位</th><th>通常価格</th><th>3回券</th><th>5回券</th><th>8回券</th></tr>
+          <tr><td class="name">キッズ脱毛</td><td>Iライン</td><td>¥8,800</td><td>—</td><td style="color:#065f46;">¥44,000</td><td style="color:#065f46;">¥70,400</td></tr>
+          <tr><td class="name">レディース脱毛</td><td>VIO</td><td>¥22,000</td><td>—</td><td style="color:#065f46;">¥110,000</td><td style="color:#065f46;">¥176,000</td></tr>
+        </table>
+      </div>
+      <div style="text-align:center;font-size:7px;color:#aaa;margin-top:6px;border-top:1px solid #eee;padding-top:4px;">
+        ボーテスキンクリニック 料金表 — 印刷日: 2026年3月4日
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 6. POP ===== -->
+  <div class="section">
+    <span class="section-num">6</span>
+    <h2>施術POPを自動生成</h2>
+    <p>施術を選ぶだけで、<span class="highlight">院内掲示用のPOP</span>が自動で作成されます。A4横に2施術を配置して印刷できます。</p>
+
+    <div style="display:flex; gap:8px;">
+      <div class="pop-mock" style="flex:1;">
+        <div class="pop-clinic-name">BEAUTE SKIN CLINIC</div>
+        <div class="pop-cat">ヒアルロン酸</div>
+        <div class="pop-name">ヒアルロン酸</div>
+        <div class="pop-area">ボリフト（アラガン）</div>
+        <div class="pop-price-row">
+          <span class="pop-label">通常価格</span>
+          <span class="pop-val main">¥77,000</span>
+        </div>
+        <div class="pop-price-row">
+          <span class="pop-label">モニター</span>
+          <span class="pop-val" style="color:#0891b2;">¥65,450</span>
+        </div>
+        <div style="background:#f5ecd7;border-radius:6px;padding:4px 8px;margin-top:6px;font-size:9px;">
+          <div style="font-weight:700;color:#a68345;text-align:center;">プリペイド割引</div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:#a68345;">PP30万</span><span style="font-weight:700;">¥73,150</span></div>
+        </div>
+      </div>
+      <div class="pop-mock" style="flex:1;">
+        <div class="pop-clinic-name">BEAUTE SKIN CLINIC</div>
+        <div class="pop-cat">医療脱毛</div>
+        <div class="pop-name">キッズ脱毛</div>
+        <div class="pop-area">Iライン</div>
+        <div class="pop-price-row">
+          <span class="pop-label">通常価格</span>
+          <span class="pop-val main">¥8,800</span>
+        </div>
+        <div style="background:#f0faf5;border-radius:6px;padding:4px 8px;margin-top:6px;font-size:9px;">
+          <div style="font-weight:700;color:#065f46;text-align:center;">回数券</div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:#065f46;">5回券</span><span style="font-weight:700;">¥44,000</span></div>
+          <div style="display:flex;justify-content:space-between;"><span style="color:#065f46;">8回券</span><span style="font-weight:700;">¥70,400</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;font-size:10px;color:#aaa;margin-top:4px;">↑ A4横 1ページに2施術</div>
+  </div>
+
+  <!-- ===== 7. バージョン管理 ===== -->
+  <div class="section">
+    <span class="section-num">7</span>
+    <h2>変更履歴が全て残ります</h2>
+    <p>データの変更は全て<span class="highlight">バージョン管理</span>されています。<br>いつ・何を変更したかを後から確認できます。</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2026/03/03 19:56</div>
+        <div class="timeline-msg">ハーブピーリング他2件を更新</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2026/03/03 16:30</div>
+        <div class="timeline-msg">112件の施術を区分変更＆PP値再計算</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2026/03/02 22:15</div>
+        <div class="timeline-msg">ヒアルロン酸他4件を更新</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2026/03/02 21:40</div>
+        <div class="timeline-msg">ボトックス（アラガン）を更新</div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; margin-top:8px;">
+      過去のバージョンに戻すこともできます。<br>
+      「言った・言わない」を防ぐための証跡になります。
+    </p>
+  </div>
+
+  <!-- ===== 8. 権限 ===== -->
+  <div class="section">
+    <span class="section-num">8</span>
+    <h2>権限による表示制御</h2>
+    <p>コストと利益の情報は<span class="highlight">管理者（オーナー）のみ</span>が閲覧できます。</p>
+
+    <table class="access-table">
+      <tr>
+        <th></th>
+        <th>スタッフ<br><span style="font-size:9px;font-weight:400;">(ユーザー画面)</span></th>
+        <th>オーナー<br><span style="font-size:9px;font-weight:400;">(管理者画面)</span></th>
+      </tr>
+      <tr><td>料金の閲覧</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+      <tr><td>PP/EP割引の閲覧</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+      <tr><td>回数券の閲覧</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+      <tr><td>料金の編集</td><td class="cross">✕</td><td class="check">&#10003;</td></tr>
+      <tr><td>施術の追加・削除</td><td class="cross">✕</td><td class="check">&#10003;</td></tr>
+      <tr><td>コスト・利益の閲覧</td><td class="cross">✕</td><td class="check">&#10003;</td></tr>
+      <tr><td>変更履歴の閲覧</td><td class="cross">✕</td><td class="check">&#10003;</td></tr>
+      <tr><td>印刷</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+      <tr><td>POP生成</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<div class="footer">
+  ボーテスキンクリニック 料金管理システム<br>
+  社内共有資料 ― 2026年3月
+</div>
+
+</body>
+</html>
