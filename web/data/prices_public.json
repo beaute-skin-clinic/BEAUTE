@@ -3,8 +3,7 @@
     "generated_at": "2026-03-04T03:58:26.530Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
-    "records_with_cost": 72,
-    "note": "公開用データ（コスト情報除去済み）"
+    "records_with_cost": 72
   },
   "treatments": [
     {
@@ -3306,7 +3305,7 @@
       "provider_type": "医療（Dr.オペ）",
       "treatment": "ショートスレッド",
       "area": null,
-      "sessions": "40本以上10本追加",
+      "sessions": "追加10本あたり（40本以上）",
       "old_price": null,
       "price": "19250",
       "first_price": "設定なし",
