@@ -780,24 +780,75 @@ function showUpdateTime() {
 }
 
 let deployTimer = null;
+let deployElapsed = 0;
 function startDeployCountdown() {
   if (deployTimer) clearInterval(deployTimer);
-  let sec = 30;
+  deployElapsed = 0;
   const el = document.getElementById('adminUpdateTime');
   const baseText = el.textContent;
+  const savedAt = editedData?.metadata?.generated_at;
+  if (!savedAt) return;
+
+  // GitHub Pages の公開JSONのURL を組み立て
+  const gh = getGitHubSettings();
+  const publicJsonUrl = gh
+    ? `https://${gh.owner}.github.io/${gh.repo}/data/prices_public.json`
+    : null;
+
   el.style.color = '#fbbf24';
-  el.textContent = baseText + '　⏳ ユーザー画面反映まで ' + sec + '秒';
-  deployTimer = setInterval(() => {
-    sec--;
-    if (sec <= 0) {
-      clearInterval(deployTimer);
-      deployTimer = null;
-      el.style.color = '';
-      el.textContent = baseText + '　✅ ユーザー画面に反映済み';
-      setTimeout(() => { el.textContent = baseText; }, 5000);
-    } else {
-      el.textContent = baseText + '　⏳ ユーザー画面反映まで ' + sec + '秒';
+  el.textContent = baseText + '　⏳ ユーザー画面に反映中...';
+
+  async function checkDeploy() {
+    deployElapsed += 5;
+    el.textContent = baseText + `　⏳ ユーザー画面に反映中...（${deployElapsed}秒経過）`;
+
+    if (!publicJsonUrl) {
+      // GitHub未設定の場合は60秒で打ち切り
+      if (deployElapsed >= 60) {
+        clearInterval(deployTimer); deployTimer = null;
+        el.style.color = '';
+        el.textContent = baseText + '　⚠️ 反映確認できません（GitHub未設定）';
+        return;
+      }
+      return;
     }
+
+    try {
+      const res = await fetch(publicJsonUrl + '?_=' + Date.now());
+      if (res.ok) {
+        const pub = await res.json();
+        if (pub.metadata?.generated_at === savedAt) {
+          // 反映確認OK！
+          clearInterval(deployTimer); deployTimer = null;
+          el.style.color = '#4ade80';
+          el.textContent = baseText + '　✅ ユーザー画面に反映されました！';
+          showToast('✅ ユーザー画面に反映されました！確認してください', 'success');
+          setTimeout(() => { el.style.color = ''; el.textContent = baseText; }, 10000);
+          return;
+        }
+      }
+    } catch (e) { /* ネットワークエラーは無視してリトライ */ }
+
+    // 2分経っても反映されなければ打ち切り
+    if (deployElapsed >= 120) {
+      clearInterval(deployTimer); deployTimer = null;
+      el.style.color = '#f87171';
+      el.textContent = baseText + '　⚠️ 反映に時間がかかっています。しばらく待ってリロードしてください';
+      setTimeout(() => { el.style.color = ''; el.textContent = baseText; }, 15000);
+    }
+  }
+
+  // 最初の15秒はデプロイ待ち（チェック不要）、その後5秒ごとに確認
+  setTimeout(() => {
+    checkDeploy();
+    deployTimer = setInterval(checkDeploy, 5000);
+  }, 15000);
+  // 15秒間はカウント表示
+  let waitSec = 0;
+  const waitTimer = setInterval(() => {
+    waitSec++;
+    if (waitSec >= 15) { clearInterval(waitTimer); return; }
+    el.textContent = baseText + `　⏳ デプロイ中...（${waitSec}秒経過）`;
   }, 1000);
 }
 
