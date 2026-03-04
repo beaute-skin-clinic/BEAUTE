@@ -703,11 +703,13 @@ function getPpStatus(t, tier) {
 
 async function loadData() {
   try {
-    const res = await fetch(DATA_URL);
+    const res = await fetch(DATA_URL + '?_=' + Date.now());
     allData = await res.json();
+    const genAt = new Date(allData.metadata.generated_at);
     document.getElementById('updateTime').textContent =
-      '最終更新: ' + new Date(allData.metadata.generated_at).toLocaleString('ja-JP', {
-        year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'
+      '最終更新: ' + genAt.toLocaleString('ja-JP', {
+        year: 'numeric', month: 'long', day: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
       });
     buildTabs();
     render();
