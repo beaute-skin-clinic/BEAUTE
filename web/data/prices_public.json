@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T13:00:02.857Z",
+    "generated_at": "2026-03-04T13:06:28.137Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 503,
+    "total_records": 502,
     "records_with_cost": 72,
     "note": "公開用データ（コスト情報除去済み）"
   },
@@ -1565,7 +1565,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "356s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1591,7 +1592,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "680s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1617,7 +1619,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "880s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1643,7 +1646,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "224s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1669,7 +1673,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "324s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1903,7 +1908,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B200s/H356s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1929,7 +1935,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B400s/H680s"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1955,7 +1962,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B500s/H680S"
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -3280,7 +3288,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "脂肪溶解注射",
+      "treatment": "脂肪溶解注射（顔）",
       "area": "FatXCore",
       "sessions": "1cc",
       "old_price": "13200",
@@ -12001,32 +12009,6 @@
       "old_price": "11000",
       "price": "11000",
       "first_price": "8800",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": null,
-      "prepaid_50": null,
-      "prepaid_manual": null,
-      "categories": [
-        "医療痩身"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "monitor_eye_only_price": null
-    },
-    {
-      "category": "医療痩身",
-      "provider_type": "医療",
-      "treatment": "脂肪溶解注射FATXCORE",
-      "area": "顔",
-      "sessions": "1cc",
-      "old_price": null,
-      "price": "13200",
-      "first_price": "設定なし",
       "repeat_price": "設定なし",
       "bundle_price": null,
       "campaign_price": "設定なし",
