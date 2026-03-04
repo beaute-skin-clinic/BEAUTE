@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T11:46:34.753Z",
+    "generated_at": "2026-03-04T11:47:56.627Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72
@@ -1381,8 +1381,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "スムースライト",
-      "area": "スムースライト",
+      "treatment": "フォトナ",
+      "area": "スムースタイト",
       "sessions": null,
       "old_price": "55000",
       "price": "55000",
@@ -1392,7 +1392,7 @@
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
+      "prepaid_10": "49500",
       "prepaid_30": "44000",
       "prepaid_50": "41250",
       "prepaid_manual": "44000",
