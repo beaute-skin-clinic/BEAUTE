@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:41:17.736Z",
+    "generated_at": "2026-03-04T12:42:29.854Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1185,7 +1185,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】フォトナアイ2D",
+      "treatment": "フォトナアイ2D",
       "area": "表面＋粘膜",
       "sessions": null,
       "old_price": "77000",
@@ -1213,8 +1213,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】スマイルリフト",
-      "area": "口腔内照射",
+      "treatment": "フォトナ",
+      "area": "スマイルリフト（口腔内照射）",
       "sessions": null,
       "old_price": "66000",
       "price": "48000",
@@ -1269,7 +1269,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "リップレーズ",
       "sessions": null,
       "old_price": "33000",
@@ -1297,7 +1297,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "ミラーピール",
       "sessions": null,
       "old_price": "33000",
@@ -1325,7 +1325,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "スムーストーニング",
       "sessions": null,
       "old_price": "33000",
@@ -1353,8 +1353,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】アクネトーニング",
-      "area": "全顔",
+      "treatment": "フォトナ",
+      "area": "アクネトーニング",
       "sessions": null,
       "old_price": "33000",
       "price": "19800",
@@ -1381,8 +1381,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】スムースライト",
-      "area": "",
+      "treatment": "フォトナ",
+      "area": "スムースタイト",
       "sessions": null,
       "old_price": "55000",
       "price": "55000",
