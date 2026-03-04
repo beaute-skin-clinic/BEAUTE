@@ -579,6 +579,7 @@
           <th class="th-ep col-ep">EP<br>20万</th>
           <th class="col-cost">コスト</th>
           <th class="col-cost">利益</th>
+          <th class="col-cost">管理者メモ</th>
           <th class="col-action">操作</th>
         </tr>
       </thead>
@@ -688,7 +689,7 @@ const PRICE_FIELDS = [
   'monitor_eye_price', 'ticket_3', 'ticket_5', 'ticket_8',
   'prepaid_manual'
 ];
-const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note'];
+const TEXT_FIELDS = ['treatment', 'area', 'sessions', 'cost_note', 'profit_note', 'admin_memo'];
 
 // ============================================================
 // 状態管理
@@ -1330,6 +1331,7 @@ function render() {
       <td class="td-ep col-ep">${t.estepass_20 ? `<span class="p-ep">${fmt(t.estepass_20)}</span><br><span class="ep-rate">20%OFF</span>` : (t.provider_type === 'エステ' ? '<span class="ep-excluded">対象外</span>' : '')}</td>
       <td class="td-cost${cellCls('cost_note')}"><span class="editable cost-val" data-field="cost_note" data-idx="${idx}" data-type="text">${esc(t.cost_note || '')}</span></td>
       <td class="td-cost${cellCls('profit_note')}"><span class="editable profit-val-pos" data-field="profit_note" data-idx="${idx}" data-type="text">${esc(t.profit_note || '')}</span></td>
+      <td class="td-cost${cellCls('admin_memo')}"><span class="editable" data-field="admin_memo" data-idx="${idx}" data-type="text">${esc(t.admin_memo || '')}</span></td>
       <td class="col-action">
         <div class="row-actions">
           ${isDeleted
@@ -1640,6 +1642,7 @@ function addNewRow() {
     estepass_20: null,
     cost_note: null,
     profit_note: null,
+    admin_memo: null,
   };
 
   // 現在のカテゴリの先頭に追加
@@ -2030,7 +2033,7 @@ function generatePublicData(fullData) {
     treatments: fullData.treatments.map(t => {
       const pub = {};
       for (const [k, v] of Object.entries(t)) {
-        if (k !== 'cost_note' && k !== 'profit_note') pub[k] = v;
+        if (k !== 'cost_note' && k !== 'profit_note' && k !== 'admin_memo') pub[k] = v;
       }
       return pub;
     }),
