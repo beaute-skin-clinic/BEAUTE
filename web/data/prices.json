@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T07:33:37.125Z",
+    "generated_at": "2026-03-04T07:34:51.140Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 506,
+    "total_records": 505,
     "records_with_cost": 72
   },
   "treatments": [
@@ -24,34 +24,6 @@
       "prepaid_30": "26400",
       "prepaid_50": "24750",
       "prepaid_manual": "26400",
-      "cost_note": null,
-      "profit_note": null,
-      "categories": [
-        "美肌・肌質改善（シミ・くすみ・透明感）"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "monitor_eye_only_price": null
-    },
-    {
-      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "CO2レーザー",
-      "area": "ピコトーニング",
-      "sessions": "取り放題",
-      "old_price": 165000,
-      "price": "165000",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "148500",
-      "prepaid_50": "148500",
-      "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
       "categories": [
