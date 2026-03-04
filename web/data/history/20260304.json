@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:43:21.285Z",
+    "generated_at": "2026-03-04T12:49:33.885Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1661,7 +1661,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "オーダーメイドハイフ（ライト）",
       "sessions": null,
       "old_price": "66000",
@@ -1690,7 +1690,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "オーダーメイドハイフ（スタンダード）",
       "sessions": null,
       "old_price": "110000",
@@ -1719,7 +1719,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "オーダーメイドハイフ（プレミアム）",
       "sessions": null,
       "old_price": "132000",
@@ -1748,7 +1748,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "ハイフアイシャワー®",
       "sessions": null,
       "old_price": "33000",
@@ -1777,7 +1777,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）",
       "sessions": null,
       "old_price": "44000",
@@ -1806,7 +1806,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
+      "treatment": "フェイシャルハイフ（UFMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
       "sessions": null,
       "old_price": "27500",
