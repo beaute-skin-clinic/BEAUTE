@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T14:51:10.429Z",
+    "generated_at": "2026-03-04T14:59:19.096Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72,
@@ -1548,7 +1548,7 @@
       "area": "オーダーメイドハイフ（ライト）",
       "sessions": null,
       "old_price": "66000",
-      "price": "59400",
+      "price": "57750",
       "first_price": "49800",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1556,17 +1556,16 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "47520",
-      "prepaid_50": "44550",
+      "prepaid_30": "46200",
+      "prepaid_50": "43312",
       "prepaid_manual": "47520",
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": "138600",
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "356s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1575,7 +1574,7 @@
       "area": "オーダーメイドハイフ（スタンダード）",
       "sessions": null,
       "old_price": "110000",
-      "price": "82500",
+      "price": "88000",
       "first_price": "66000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1583,17 +1582,16 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "66000",
-      "prepaid_50": "61875",
+      "prepaid_30": "70400",
+      "prepaid_50": "66000",
       "prepaid_manual": "66000",
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": "264000",
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "680s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1602,7 +1600,7 @@
       "area": "オーダーメイドハイフ（プレミアム）",
       "sessions": null,
       "old_price": "132000",
-      "price": "99000",
+      "price": "110000",
       "first_price": "79200",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1610,17 +1608,16 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "79200",
-      "prepaid_50": "74250",
+      "prepaid_30": "88000",
+      "prepaid_50": "82500",
       "prepaid_manual": "79200",
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": "330000",
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "880s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1646,8 +1643,7 @@
       "ticket_3": "82500",
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "224s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1673,8 +1669,7 @@
       "ticket_3": "108900",
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "324s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1908,8 +1903,7 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "B200s/H356s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1935,8 +1929,7 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "B400s/H680s"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
@@ -1962,8 +1955,7 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null,
-      "admin_memo": "B500s/H680S"
+      "monitor_eye_only_price": null
     },
     {
       "category": "しわ・たるみ・小顔",
