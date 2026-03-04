@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:49:33.885Z",
+    "generated_at": "2026-03-04T12:57:27.484Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -2030,8 +2030,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "ボルフォーマースタンダード（ボルニューマ＋ウルトラフォーマーMPT）",
-      "area": "ボルフォーマー（スタンダード）ボ400ハ680s",
+      "treatment": "ボルフォーマー",
+      "area": "ボルフォーマー（スタンダード）",
       "sessions": null,
       "old_price": null,
       "price": "192500",
@@ -2053,13 +2053,14 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B400s/H680s"
     },
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "ボルフォーマープレミアム（ボルニューマ＋ウルトラフォーマーMPT）",
-      "area": "ボルフォーマー（プレミアム）ボ500ハ680S",
+      "treatment": "ボルフォーマー",
+      "area": "ボルフォーマー（プレミアム）",
       "sessions": null,
       "old_price": null,
       "price": "220000",
@@ -2081,13 +2082,14 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B500s/H680S"
     },
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "ボルフォーマーライト（ボルニューマ＋ウルトラフォーマーMPT）",
-      "area": "ボルフォーマー（ライト）ボ200sハ356s",
+      "treatment": "ボルフォーマー",
+      "area": "ボルフォーマー（ライト）",
       "sessions": null,
       "old_price": null,
       "price": "117000",
@@ -2109,7 +2111,8 @@
       "ticket_3": null,
       "ticket_5": null,
       "ticket_8": null,
-      "monitor_eye_only_price": null
+      "monitor_eye_only_price": null,
+      "admin_memo": "B200s/H356s"
     },
     {
       "category": "しわ・たるみ・小顔",
