@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T13:34:12.996Z",
+    "generated_at": "2026-03-04T14:19:38.072Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72,
@@ -1262,16 +1262,16 @@
       "area": "アクネトーニング",
       "sessions": null,
       "old_price": "33000",
-      "price": "19800",
+      "price": "33000",
       "first_price": "19800",
       "repeat_price": "設定なし",
       "bundle_price": null,
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": "17820",
-      "prepaid_30": "15840",
-      "prepaid_50": "14850",
+      "prepaid_10": "29700",
+      "prepaid_30": "26400",
+      "prepaid_50": "24750",
       "prepaid_manual": "15840",
       "categories": [
         "しわ・たるみ・小顔"
