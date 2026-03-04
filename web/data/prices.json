@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T11:33:28.475Z",
+    "generated_at": "2026-03-04T11:46:14.871Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1353,8 +1353,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】アクネトーニング",
-      "area": "全顔",
+      "treatment": "フォトナ",
+      "area": "アクネトーニング",
       "sessions": null,
       "old_price": "33000",
       "price": "19800",
