@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T07:27:57.480Z",
+    "generated_at": "2026-03-04T07:29:36.593Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72
@@ -640,8 +640,8 @@
       "prepaid_30": "990",
       "prepaid_50": "990",
       "prepaid_manual": null,
-      "cost_note": "1s4.5円",
-      "profit_note": "1s4.5円",
+      "cost_note": "4.5円",
+      "profit_note": "4.5円",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
       ],
@@ -667,34 +667,6 @@
       "prepaid_10": null,
       "prepaid_30": "4950",
       "prepaid_50": "4950",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null,
-      "categories": [
-        "美肌・肌質改善（シミ・くすみ・透明感）"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "monitor_eye_only_price": null
-    },
-    {
-      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "ピコスポット",
-      "area": "両前腕（肘下・手・甲・指）",
-      "sessions": null,
-      "old_price": "110000",
-      "price": "110000",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "99000",
-      "prepaid_50": "99000",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -751,6 +723,34 @@
       "prepaid_10": null,
       "prepaid_30": "69300",
       "prepaid_50": "69300",
+      "prepaid_manual": null,
+      "cost_note": null,
+      "profit_note": null,
+      "categories": [
+        "美肌・肌質改善（シミ・くすみ・透明感）"
+      ],
+      "ticket_3": null,
+      "ticket_5": null,
+      "ticket_8": null,
+      "monitor_eye_only_price": null
+    },
+    {
+      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "ピコスポット",
+      "area": "両前腕（肘下・手・甲・指）",
+      "sessions": null,
+      "old_price": "110000",
+      "price": "110000",
+      "first_price": "設定なし",
+      "repeat_price": "設定なし",
+      "bundle_price": null,
+      "campaign_price": "設定なし",
+      "monitor_full_price": "設定なし",
+      "monitor_eye_price": "設定なし",
+      "prepaid_10": null,
+      "prepaid_30": "99000",
+      "prepaid_50": "99000",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
