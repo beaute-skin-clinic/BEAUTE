@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:59:05.608Z",
+    "generated_at": "2026-03-04T13:00:02.857Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72,
@@ -3281,7 +3281,7 @@
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
       "treatment": "脂肪溶解注射",
-      "area": "FATXCORE",
+      "area": "FatXCore",
       "sessions": "1cc",
       "old_price": "13200",
       "price": "13200",
