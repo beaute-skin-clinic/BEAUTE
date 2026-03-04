@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T10:39:33.358Z",
+    "generated_at": "2026-03-04T10:40:31.023Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72
@@ -570,8 +570,8 @@
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
-      "area": "全顔（フォトシングル）",
-      "sessions": null,
+      "area": "全顔",
+      "sessions": "シングル",
       "old_price": 16500,
       "price": "16500",
       "first_price": "8800",
@@ -598,8 +598,8 @@
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Ns施術）",
       "treatment": "フォトフェイシャル",
-      "area": "全顔（フォトダブル）",
-      "sessions": null,
+      "area": "全顔",
+      "sessions": "ダブル",
       "old_price": 27500,
       "price": "16500",
       "first_price": "16500",
