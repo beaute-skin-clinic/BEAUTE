@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T10:40:31.023Z",
+    "generated_at": "2026-03-04T10:41:34.049Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72,
@@ -560,16 +560,16 @@
       "area": "全顔",
       "sessions": "ダブル",
       "old_price": 27500,
-      "price": "16500",
+      "price": "27500",
       "first_price": "16500",
       "repeat_price": 16500,
       "bundle_price": null,
       "campaign_price": "設定なし",
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
-      "prepaid_10": "14850",
-      "prepaid_30": "13200",
-      "prepaid_50": "12375",
+      "prepaid_10": "24750",
+      "prepaid_30": "22000",
+      "prepaid_50": "20625",
       "prepaid_manual": "13200",
       "categories": [
         "美肌・肌質改善（シミ・くすみ・透明感）"
