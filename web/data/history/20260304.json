@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T06:44:06.595Z",
+    "generated_at": "2026-03-04T07:02:43.860Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
-    "total_records": 507,
+    "total_records": 506,
     "records_with_cost": 72
   },
   "treatments": [
@@ -163,34 +163,6 @@
       "prepaid_10": null,
       "prepaid_30": "990",
       "prepaid_50": "990",
-      "prepaid_manual": null,
-      "cost_note": null,
-      "profit_note": null,
-      "categories": [
-        "美肌・肌質改善（シミ・くすみ・透明感）"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "monitor_eye_only_price": null
-    },
-    {
-      "category": "美肌・肌質改善（シミ・くすみ・透明感）",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "CO2レーザー",
-      "area": "稗粒腫",
-      "sessions": null,
-      "old_price": 5500,
-      "price": "5500",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "4950",
-      "prepaid_50": "4950",
       "prepaid_manual": null,
       "cost_note": null,
       "profit_note": null,
@@ -598,7 +570,7 @@
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ピコスポット",
-      "area": "テスト値",
+      "area": null,
       "sessions": "10mm〜（1mmにつき）",
       "old_price": 1100,
       "price": "1100",
