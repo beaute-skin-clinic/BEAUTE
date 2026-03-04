@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T13:18:11.574Z",
+    "generated_at": "2026-03-04T13:21:53.684Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1950,7 +1950,7 @@
       "area": "300ショット",
       "sessions": null,
       "old_price": "99000",
-      "price": "82500",
+      "price": "85800",
       "first_price": "66000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1958,15 +1958,15 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "66000",
-      "prepaid_50": "61875",
+      "prepaid_30": "68640",
+      "prepaid_50": "64350",
       "prepaid_manual": "66000",
       "cost_note": null,
       "profit_note": null,
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": "257400",
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1978,7 +1978,7 @@
       "area": "400ショット",
       "sessions": null,
       "old_price": "132000",
-      "price": "110000",
+      "price": "113850",
       "first_price": "88000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1986,8 +1986,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "88000",
-      "prepaid_50": "82500",
+      "prepaid_30": "91080",
+      "prepaid_50": "85387",
       "prepaid_manual": "88000",
       "cost_note": null,
       "profit_note": null,
