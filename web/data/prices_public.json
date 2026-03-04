@@ -3478,7 +3478,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "1本",
       "old_price": "55000",
@@ -3503,7 +3503,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "4本",
       "old_price": "220000",
@@ -3528,7 +3528,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "6本",
       "old_price": "330000",
@@ -3553,7 +3553,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "8本",
       "old_price": "440000",
@@ -3578,7 +3578,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "10本",
       "old_price": "550000",
@@ -3603,7 +3603,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPCL",
+      "treatment": "ロングスレッド（PCL）",
       "area": null,
       "sessions": "12本",
       "old_price": "660000",
@@ -3628,7 +3628,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "1本",
       "old_price": "33000",
@@ -3653,7 +3653,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "4本",
       "old_price": "132000",
@@ -3678,7 +3678,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "6本",
       "old_price": "198000",
@@ -3703,7 +3703,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "8本",
       "old_price": "264000",
@@ -3728,7 +3728,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "10本",
       "old_price": "330000",
@@ -3753,7 +3753,7 @@
     {
       "category": "スレッド（糸リフト）",
       "provider_type": "医療（Dr.オペ）",
-      "treatment": "ロングスレッドPDO",
+      "treatment": "ロングスレッド（PDO）",
       "area": null,
       "sessions": "12本",
       "old_price": "396000",
