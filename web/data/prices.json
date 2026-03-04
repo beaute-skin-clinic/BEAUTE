@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T05:21:49.635Z",
+    "generated_at": "2026-03-04T05:46:45.972Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72
@@ -95,7 +95,7 @@
       "provider_type": "医療（Dr.施術）",
       "treatment": "ADM",
       "area": "片頬",
-      "sessions": null,
+      "sessions": "片頬",
       "old_price": null,
       "price": "22000",
       "first_price": "設定なし",
@@ -2953,7 +2953,7 @@
       "treatment": "ボトックス（アラガン）",
       "area": "眉間・額・目尻・バニーライン・口角・ガミーライン・顎",
       "sessions": "3部位以上（1部位あたり）",
-      "old_price": "66000",
+      "old_price": "22000",
       "price": "27500",
       "first_price": "20625",
       "repeat_price": "19250",
