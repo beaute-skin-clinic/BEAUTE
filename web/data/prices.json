@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T11:58:21.774Z",
+    "generated_at": "2026-03-04T11:58:34.084Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1241,8 +1241,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "【フォトナ】人中短縮レーザー",
-      "area": "口周り治療",
+      "treatment": "【フォトナ】",
+      "area": "人中短縮レーザー",
       "sessions": null,
       "old_price": "44000",
       "price": "33000",
