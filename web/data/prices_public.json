@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T11:59:08.856Z",
+    "generated_at": "2026-03-04T12:04:53.856Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72,
@@ -1129,7 +1129,7 @@
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
       "treatment": "フォトナ",
-      "area": "スマイルリフト",
+      "area": "スマイルリフト（口腔内照射）",
       "sessions": null,
       "old_price": "66000",
       "price": "48000",
