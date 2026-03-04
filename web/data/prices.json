@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T12:16:02.930Z",
+    "generated_at": "2026-03-04T12:41:17.736Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72
@@ -1157,7 +1157,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】フォトナアイ",
+      "treatment": "フォトナアイ",
       "area": "表面（貼薬なし）",
       "sessions": null,
       "old_price": "66000",
@@ -1241,8 +1241,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "【フォトナ】人中短縮レーザー",
-      "area": "口周り治療",
+      "treatment": "フォトナ",
+      "area": "人中短縮レーザー",
       "sessions": null,
       "old_price": "44000",
       "price": "33000",
@@ -1269,8 +1269,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】リップレーズ",
-      "area": "",
+      "treatment": "【フォトナ】",
+      "area": "リップレーズ",
       "sessions": null,
       "old_price": "33000",
       "price": "33000",
@@ -1297,8 +1297,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】ミラーピール",
-      "area": "",
+      "treatment": "【フォトナ】",
+      "area": "ミラーピール",
       "sessions": null,
       "old_price": "33000",
       "price": "33000",
@@ -1325,8 +1325,8 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】スムーストーニング",
-      "area": "",
+      "treatment": "【フォトナ】",
+      "area": "スムーストーニング",
       "sessions": null,
       "old_price": "33000",
       "price": "33000",
@@ -1661,7 +1661,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（ライト）",
       "sessions": null,
       "old_price": "66000",
@@ -1690,7 +1690,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（スタンダード）",
       "sessions": null,
       "old_price": "110000",
@@ -1719,7 +1719,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "オーダーメイドハイフ（プレミアム）",
       "sessions": null,
       "old_price": "132000",
@@ -1748,7 +1748,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "ハイフアイシャワー®",
       "sessions": null,
       "old_price": "33000",
@@ -1777,7 +1777,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（全顔＋目元）",
       "sessions": null,
       "old_price": "44000",
@@ -1806,7 +1806,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "フェイシャルハイフ",
+      "treatment": "フェイシャルハイフ（ウルトラフォーマーMPT）",
       "area": "美肌ハイフシャワー（首のみ）",
       "sessions": null,
       "old_price": "27500",
