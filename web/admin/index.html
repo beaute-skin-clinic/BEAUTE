@@ -778,6 +778,28 @@ function showUpdateTime() {
   });
 }
 
+let deployTimer = null;
+function startDeployCountdown() {
+  if (deployTimer) clearInterval(deployTimer);
+  let sec = 30;
+  const el = document.getElementById('adminUpdateTime');
+  const baseText = el.textContent;
+  el.style.color = '#fbbf24';
+  el.textContent = baseText + '　⏳ ユーザー画面反映まで ' + sec + '秒';
+  deployTimer = setInterval(() => {
+    sec--;
+    if (sec <= 0) {
+      clearInterval(deployTimer);
+      deployTimer = null;
+      el.style.color = '';
+      el.textContent = baseText + '　✅ ユーザー画面に反映済み';
+      setTimeout(() => { el.textContent = baseText; }, 5000);
+    } else {
+      el.textContent = baseText + '　⏳ ユーザー画面反映まで ' + sec + '秒';
+    }
+  }, 1000);
+}
+
 // ============================================================
 // データ読み込み
 // ============================================================
@@ -1988,6 +2010,7 @@ async function saveChanges() {
 
     const shortSha = sha.substring(0, 7);
     showUpdateTime();
+    startDeployCountdown();
     showToast(`保存しました (${shortSha})`, 'success');
   } catch (e) {
     console.error('保存エラー:', e);
