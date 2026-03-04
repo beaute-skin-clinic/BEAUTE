@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T05:48:01.031Z",
+    "generated_at": "2026-03-04T05:48:35.390Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72
@@ -38,7 +38,7 @@
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
       "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
-      "area": null,
+      "area": "ほくろ・脂漏性角化症・稗粒腫",
       "sessions": "取り放題",
       "old_price": null,
       "price": "165000",
