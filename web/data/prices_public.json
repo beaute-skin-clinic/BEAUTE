@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T11:58:34.084Z",
+    "generated_at": "2026-03-04T11:59:08.856Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 503,
     "records_with_cost": 72,
@@ -1154,7 +1154,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "人中短縮レーザー",
       "sessions": null,
       "old_price": "44000",
@@ -1180,7 +1180,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "リップレーズ",
       "sessions": null,
       "old_price": "33000",
@@ -1206,7 +1206,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "ミラーピール",
       "sessions": null,
       "old_price": "33000",
@@ -1232,7 +1232,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "スムーストーニング",
       "sessions": null,
       "old_price": "33000",
@@ -1284,7 +1284,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】",
+      "treatment": "フォトナ",
       "area": "スムースタイト",
       "sessions": null,
       "old_price": "55000",
@@ -1310,7 +1310,7 @@
     {
       "category": "しわ・たるみ・小顔",
       "provider_type": "医療（Ns施術）",
-      "treatment": "【フォトナ】スムースライト※オプション",
+      "treatment": "フォトナ（オプション）",
       "area": "スムースタイト",
       "sessions": null,
       "old_price": "44000",
