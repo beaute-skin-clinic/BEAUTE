@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T03:57:43.395Z",
+    "generated_at": "2026-03-04T03:58:26.530Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 506,
     "records_with_cost": 72,
@@ -110,7 +110,7 @@
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "CO2レ",
+      "treatment": "CO2レーザー",
       "area": "ほくろ・脂漏性角化症・稗粒腫",
       "sessions": "1個〜3mmまで",
       "old_price": null,
@@ -135,8 +135,8 @@
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "CO2レーザー（ほくろ・脂漏性角化症・稗粒腫）",
-      "area": null,
+      "treatment": "CO2レーザー",
+      "area": "ほくろ・脂漏性角化症・稗粒腫",
       "sessions": "追加1mmごと",
       "old_price": null,
       "price": "1100",
@@ -160,8 +160,8 @@
     {
       "category": "美肌・肌質改善（シミ・くすみ・透明感）",
       "provider_type": "医療（Dr.施術）",
-      "treatment": "Co２ハイリュウシュ",
-      "area": "",
+      "treatment": "CO2レーザー",
+      "area": "稗粒腫",
       "sessions": null,
       "old_price": null,
       "price": "5500",
