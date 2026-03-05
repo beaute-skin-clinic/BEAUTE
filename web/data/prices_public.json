@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-05T16:56:40.637Z",
+    "generated_at": "2026-03-05T16:59:05.222Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72,
@@ -2040,9 +2040,9 @@
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "ジュベルック",
-      "sessions": "3cc",
+      "sessions": "追加1㏄",
       "old_price": null,
-      "price": "66000",
+      "price": "16500",
       "first_price": "設定なし",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -2050,8 +2050,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "59400",
-      "prepaid_50": "59400",
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": null,
       "categories": [
         "肌質改善／肌育"
@@ -2066,9 +2066,9 @@
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
       "area": "ジュベルック",
-      "sessions": "追加1㏄",
+      "sessions": "3cc",
       "old_price": null,
-      "price": "16500",
+      "price": "66000",
       "first_price": "設定なし",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -2076,8 +2076,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_30": "59400",
+      "prepaid_50": "59400",
       "prepaid_manual": null,
       "categories": [
         "肌質改善／肌育"
