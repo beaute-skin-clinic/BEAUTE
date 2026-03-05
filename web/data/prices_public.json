@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-05T19:02:34.330Z",
+    "generated_at": "2026-03-05T19:19:32.012Z",
     "source": "Excel corrected + field name fix",
     "total_records": 535,
     "medical_records": 339,
@@ -3702,7 +3702,7 @@
       "monitor_eye_only_price": null
     },
     {
-      "category": "注入治療",
+      "category": "ボトックス",
       "provider_type": "医療（Dr.施術）",
       "treatment": "ボトックス",
       "area": "リタッチ",
@@ -3720,7 +3720,7 @@
       "prepaid_50": null,
       "prepaid_manual": null,
       "categories": [
-        "注入治療"
+        "ボトックス"
       ],
       "ticket_3": null,
       "ticket_5": null,
