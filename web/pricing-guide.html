@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ボーテスキンクリニック 料金制度まとめ</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F1;
+    --warm-white: #FFFCF8;
+    --sand: #E8DDD3;
+    --camel: #C4A882;
+    --bronze: #9E7B5B;
+    --espresso: #5C3D2E;
+    --deep-brown: #3A2518;
+    --gold: #B8935A;
+    --soft-red: #C45C4D;
+    --muted-blue: #6B8FAD;
+    --sage: #8FA88B;
+    --light-gold: #F5ECD7;
+    --highlight-yellow: #FFF3D6;
+    --highlight-blue: #E8F0F8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--cream);
+    color: var(--deep-brown);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  .edit-toolbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--espresso); color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 10px 24px; font-size: 13px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+  .edit-toolbar .toolbar-left { display: flex; align-items: center; gap: 12px; }
+  .edit-toolbar .toolbar-right { display: flex; align-items: center; gap: 10px; }
+  .edit-mode-toggle { position: relative; width: 44px; height: 24px; background: rgba(255,255,255,0.2); border-radius: 12px; cursor: pointer; transition: background 0.2s; }
+  .edit-mode-toggle.active { background: var(--sage); }
+  .edit-mode-toggle::after { content: ''; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: #fff; border-radius: 50%; transition: transform 0.2s; }
+  .edit-mode-toggle.active::after { transform: translateX(20px); }
+  .toolbar-btn { background: rgba(255,255,255,0.15); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-family: 'Noto Sans JP', sans-serif; cursor: pointer; transition: background 0.15s; }
+  .toolbar-btn:hover { background: rgba(255,255,255,0.25); }
+  .toolbar-btn.primary { background: var(--gold); font-weight: 600; }
+  .toolbar-btn.primary:hover { background: #C9A46A; }
+  .toolbar-status { font-size: 11px; opacity: 0.7; }
+  body { padding-top: 52px; }
+
+  body.editing [contenteditable="true"] { outline: none; position: relative; }
+  body.editing [contenteditable="true"]:hover { box-shadow: 0 0 0 2px rgba(107,143,173,0.3); border-radius: 4px; }
+  body.editing [contenteditable="true"]:focus { box-shadow: 0 0 0 2px var(--muted-blue); border-radius: 4px; background: rgba(232,240,248,0.3); }
+  body.editing td[contenteditable="true"]:hover { box-shadow: inset 0 0 0 2px rgba(107,143,173,0.3); border-radius: 0; }
+  body.editing td[contenteditable="true"]:focus { box-shadow: inset 0 0 0 2px var(--muted-blue); border-radius: 0; background: rgba(232,240,248,0.15); }
+
+  .header { text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--sand); }
+  .header .clinic-name { font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--bronze); margin-bottom: 12px; }
+  .header h1 { font-weight: 600; font-size: 22px; color: var(--deep-brown); letter-spacing: 1px; margin-bottom: 8px; }
+  .header .date { font-size: 13px; color: var(--bronze); font-weight: 400; }
+  .change-badge { display: inline-block; background: var(--highlight-blue); color: var(--muted-blue); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-top: 16px; letter-spacing: 0.5px; }
+
+  .section { margin-bottom: 44px; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .section-number { width: 32px; height: 32px; background: var(--espresso); color: #fff; font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+  .section-title { font-size: 17px; font-weight: 600; color: var(--espresso); letter-spacing: 0.5px; }
+  .section-subtitle { font-size: 12px; color: var(--bronze); font-weight: 400; margin-left: 4px; }
+  .plan-name { text-align: center; font-size: 15px; font-weight: 600; color: var(--espresso); margin-bottom: 20px; letter-spacing: 1px; }
+  .plan-name span { color: var(--bronze); font-weight: 400; font-size: 13px; }
+
+  .table-wrap { background: var(--warm-white); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(92,61,46,0.06), 0 4px 16px rgba(92,61,46,0.04); }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { background: var(--espresso); color: #fff; font-weight: 500; font-size: 12px; padding: 14px 16px; text-align: center; letter-spacing: 0.5px; }
+  thead th:first-child { text-align: left; padding-left: 20px; }
+  tbody td { padding: 14px 16px; font-size: 13px; border-bottom: 1px solid rgba(200,186,172,0.3); text-align: center; vertical-align: top; }
+  tbody td:first-child { text-align: left; font-weight: 600; padding-left: 20px; color: var(--espresso); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: rgba(232,221,211,0.15); }
+
+  td.cell-na { vertical-align: middle; }
+
+  .discount { color: var(--soft-red); font-weight: 700; font-size: 15px; }
+  .discount-small { color: var(--soft-red); font-weight: 600; font-size: 13px; }
+  .na { color: #bbb; font-size: 14px; }
+  .sub-note { display: block; font-size: 11px; color: #888; margin-top: 4px; line-height: 1.5; }
+  .sub-note strong { color: var(--espresso); font-weight: 600; }
+  .menu-list { margin-top: 6px; font-size: 10.5px; color: #888; line-height: 1.6; text-align: center; }
+  .menu-list-item { display: inline-block; background: #F5F0EA; padding: 2px 8px; border-radius: 4px; margin: 2px 2px; white-space: nowrap; }
+
+  .tag { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-top: 4px; }
+  .tag-limited { background: #FFF0E0; color: #B87333; }
+  .tag-all { background: #E8F5E9; color: #558B2F; }
+  .tag-new { background: var(--highlight-blue); color: var(--muted-blue); }
+  .tag-exclude { background: #F5F5F5; color: #999; }
+  .tag-caution { background: #FFF3E0; color: #E65100; }
+
+  .notes-block { margin-top: 12px; padding: 14px 20px; background: var(--light-gold); border-radius: 8px; font-size: 12px; color: var(--espresso); line-height: 1.9; }
+  .notes-block strong { font-weight: 600; }
+  .conditions { margin-top: 16px; padding: 16px 20px; background: var(--warm-white); border: 1px solid var(--sand); border-radius: 10px; }
+  .conditions-title { font-size: 13px; font-weight: 600; color: var(--espresso); margin-bottom: 10px; }
+  .conditions ul { list-style: none; padding: 0; }
+  .conditions li { font-size: 12px; color: #666; padding: 4px 0 4px 18px; position: relative; line-height: 1.6; }
+  .conditions li::before { content: ''; width: 5px; height: 5px; background: var(--camel); border-radius: 50%; position: absolute; left: 0; top: 10px; }
+
+  .alert-box { margin-top: 16px; padding: 14px 20px; background: var(--highlight-yellow); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; font-size: 12px; color: var(--espresso); line-height: 1.9; }
+  .alert-box strong { font-weight: 700; color: var(--soft-red); }
+
+  .exclude-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .exclude-item { font-size: 10px; background: #F0EDED; color: #777; padding: 3px 10px; border-radius: 12px; font-weight: 500; }
+
+  .ref-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .ref-card { background: var(--warm-white); border-radius: 10px; padding: 20px 16px; text-align: center; box-shadow: 0 1px 4px rgba(92,61,46,0.06); border: 1px solid rgba(200,186,172,0.3); }
+  .ref-card-label { font-size: 12px; font-weight: 600; color: var(--bronze); margin-bottom: 8px; letter-spacing: 0.5px; }
+  .ref-card-rate { font-size: 28px; font-weight: 700; color: var(--soft-red); line-height: 1; margin-bottom: 4px; }
+  .ref-card-rate span { font-size: 14px; font-weight: 500; }
+  .ref-card-sub { font-size: 11px; color: #999; margin-top: 8px; line-height: 1.5; }
+  .ref-card-sub strong { color: var(--espresso); }
+
+  .divider { height: 1px; background: var(--sand); margin: 40px 0; }
+  .footer { text-align: center; font-size: 11px; color: #bbb; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--sand); }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--bronze); font-size: 13px; font-weight: 500; text-decoration: none; padding: 8px 16px; border: 1px solid var(--sand); border-radius: 8px; transition: all 0.15s; margin-bottom: 24px; }
+  .back-link:hover { background: var(--sand); color: var(--espresso); }
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px); background: var(--espresso); color: #fff; padding: 10px 24px; border-radius: 8px; font-size: 13px; opacity: 0; transition: all 0.3s; z-index: 1001; pointer-events: none; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media print { .edit-toolbar { display: none !important; } body { padding-top: 0; background: #fff; } .container { padding: 20px; max-width: 100%; } .table-wrap { box-shadow: none; border: 1px solid #ddd; } .ref-card { box-shadow: none; } }
+  @media (max-width: 640px) { .container { padding: 24px 16px 60px; } .header h1 { font-size: 18px; } .ref-cards { grid-template-columns: 1fr; } thead th, tbody td { padding: 10px 10px; font-size: 12px; } .discount { font-size: 13px; } .edit-toolbar { padding: 8px 12px; font-size: 11px; } }
+</style>
+</head>
+<body>
+
+<div class="edit-toolbar">
+  <div class="toolbar-left">
+    <div class="edit-mode-toggle" id="editToggle" onclick="toggleEdit()"></div>
+    <span id="editLabel">閲覧モード</span>
+  </div>
+  <div class="toolbar-right">
+    <span class="toolbar-status" id="editStatus"></span>
+    <button class="toolbar-btn" onclick="printPage()">🖨 印刷</button>
+    <button class="toolbar-btn primary" onclick="downloadHTML()">⬇ 保存</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="container" id="content">
+
+  <a href="./index.html" class="back-link">← 料金表に戻る</a>
+
+  <div class="header">
+    <div class="clinic-name">Beaute Skin Clinic</div>
+    <h1 contenteditable="false">料金制度まとめ</h1>
+    <div class="date" contenteditable="false">2026年3月 改定</div>
+    <div class="change-badge" contenteditable="false">BSCパスポート → ボーテプリペイド に名称変更</div>
+  </div>
+
+  <!-- Section 1: Prepaid -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <div>
+        <span class="section-title">ボーテプリペイド</span>
+        <span class="section-subtitle">（旧：BSCパスポート）</span>
+      </div>
+    </div>
+    <div class="plan-name" contenteditable="false">ボーテ・プリペイド <span>10万 ・ 30万 ・ 50万</span></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>カテゴリ</th>
+            <th>10万円<br><small style="font-weight:400;opacity:0.7">税込11万</small></th>
+            <th>30万円<br><small style="font-weight:400;opacity:0.7">税込33万</small></th>
+            <th>50万円<br><small style="font-weight:400;opacity:0.7">税込55万</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 看護師施術 -->
+          <tr>
+            <td contenteditable="false">看護師施術</td>
+            <td contenteditable="false">
+              <span class="discount">10%</span><span class="discount-small">オフ</span>
+              <br><span class="tag tag-limited">一部施術限定</span>
+              <div class="menu-list">
+                <span class="menu-list-item">フォトナ・ピコトーニング</span>
+                <span class="menu-list-item">ピコフラクショナル・フォトフェイシャル</span>
+                <span class="menu-list-item">イオン導入・ピーリング</span>
+                <span class="menu-list-item">ダーマペン・ヴェルヴェット</span>
+                <span class="menu-list-item">ハイドラ・オプション</span>
+              </div>
+            </td>
+            <td contenteditable="false">
+              <span class="discount">20%</span><span class="discount-small">オフ</span>
+              <br><span class="tag tag-all">全施術OK</span>
+            </td>
+            <td contenteditable="false">
+              <span class="discount">25%</span><span class="discount-small">オフ</span>
+              <br><span class="tag tag-all">全施術OK</span>
+            </td>
+          </tr>
+          <!-- ドクター施術：10万は―、30万・50万は同内容→結合 -->
+          <tr>
+            <td contenteditable="false">ドクター施術</td>
+            <td class="cell-na"><span class="na">―</span></td>
+            <td colspan="2" contenteditable="false">
+              <span class="discount">10%</span><span class="discount-small">オフ</span>
+              <span class="sub-note">一部の施術は5%オフです。</span>
+              <span class="sub-note">
+                <strong>5%のみ：</strong>ヒアルロン酸／CGスタイラー／サーマニードルアイ
+              </span>
+              <span class="sub-note" style="margin-top:6px;">
+                <span class="tag tag-exclude">対象外：ボトックス・ヒアルロニダーゼ</span>
+              </span>
+            </td>
+          </tr>
+          <!-- ドクターオペ：10万・30万は―→結合、50万のみ -->
+          <tr>
+            <td contenteditable="false">ドクターオペ</td>
+            <td colspan="2" class="cell-na"><span class="na">―</span></td>
+            <td contenteditable="false">
+              <span class="discount">10%</span><span class="discount-small">オフ</span>
+              <br><span class="tag tag-new">50万のみ</span>
+              <span class="sub-note" style="margin-top:6px;">
+                <span class="tag tag-caution">一部除外あり</span><br>
+                <span class="tag tag-caution">ドクターの指名不可</span>
+              </span>
+            </td>
+          </tr>
+          <!-- エステ -->
+          <tr>
+            <td contenteditable="false">エステ</td>
+            <td contenteditable="false"><span class="discount">10%</span><span class="discount-small">オフ</span></td>
+            <td contenteditable="false"><span class="discount">20%</span><span class="discount-small">オフ</span></td>
+            <td contenteditable="false"><span class="discount">20%</span><span class="discount-small">オフ</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notes-block" contenteditable="false">
+      <strong>有効期限：</strong>購入から1年間<br>
+      <strong>注意：</strong>紹介クーポンとの併用不可 ／ ホワイトニング・アートメイクは割引対象外<br>
+      ※一部除外の施術があります。対象メニューは変更になる場合があります。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Section 2: Referral -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <div>
+        <span class="section-title">お友達紹介制度</span>
+        <span class="section-subtitle">（新制度）</span>
+      </div>
+    </div>
+    <div class="ref-cards">
+      <div class="ref-card">
+        <div class="ref-card-label" contenteditable="false">ナース施術</div>
+        <div class="ref-card-rate" contenteditable="false">30%<span>オフ</span></div>
+        <div class="ref-card-sub" contenteditable="false">ボルニューマ／ハイフ<br>サーマニードル等</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card-label" contenteditable="false">ドクター注入施術</div>
+        <div class="ref-card-rate" contenteditable="false">15%<span>オフ</span></div>
+        <div class="ref-card-sub" contenteditable="false">ヒアルロン酸／肌質改善注射<br>ボトックス等<br><br><strong>※HA・サーマニードルアイ・CGスタイラーは5%</strong></div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card-label" contenteditable="false">エステ</div>
+        <div class="ref-card-rate" contenteditable="false">30%<span>オフ</span></div>
+        <div class="ref-card-sub" contenteditable="false">クリスティーナ／スキンメイド<br>ハーブリプロ等</div>
+      </div>
+    </div>
+    <div style="margin-bottom:12px;">
+      <div style="font-size:12px;font-weight:600;color:var(--espresso);margin-bottom:8px;">対象外施術</div>
+      <div class="exclude-list" contenteditable="false">
+        <span class="exclude-item">オペ</span>
+        <span class="exclude-item">ピコスポット</span>
+        <span class="exclude-item">CO2レーザー</span>
+        <span class="exclude-item">アグネス</span>
+        <span class="exclude-item">麻酔</span>
+        <span class="exclude-item">パック</span>
+        <span class="exclude-item">点滴</span>
+        <span class="exclude-item">オプション</span>
+        <span class="exclude-item">イオン導入</span>
+      </div>
+      <div style="font-size:11px;color:var(--sage);margin-top:8px;font-weight:500;" contenteditable="false">✓ ミネラルスチームサウナは対象にする</div>
+    </div>
+    <div class="conditions">
+      <div class="conditions-title">ご利用条件</div>
+      <ul>
+        <li contenteditable="false">1名のご紹介につき、いずれか1施術に1回のみ使用可能</li>
+        <li contenteditable="false">10,000円（税込）以上の施術限定</li>
+        <li contenteditable="false">当日使用不可（次回以降のご予約でご利用）</li>
+        <li contenteditable="false">他キャンペーン・割引との併用不可</li>
+        <li contenteditable="false">有効期限：紹介された方の初回来院日から3ヶ月</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Section 3: Coupon transition -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <div><span class="section-title">旧クーポンの移行</span></div>
+    </div>
+    <div class="alert-box" contenteditable="false">
+      これまでに配布した有効期限なしの紹介クーポンは、<strong>2026年3月末日</strong>を有効期限とさせていただきます。<br>
+      その代わり、2026年4月以降の紹介クーポンの内容と期間が適用されます。<br>
+      該当のお客さまへ事前にご案内をお願いいたします。<br>
+      ※1施術につき1枚のご利用に限ります。
+    </div>
+  </div>
+
+  <div class="footer" contenteditable="false">BEAUTE SKIN CLINIC ― 内部資料 ― 最終更新 2026.03</div>
+
+</div>
+
+<script>
+  let isEditing = false;
+  function toggleEdit() {
+    isEditing = !isEditing;
+    const toggle = document.getElementById('editToggle');
+    const label = document.getElementById('editLabel');
+    const status = document.getElementById('editStatus');
+    const editables = document.querySelectorAll('[contenteditable]');
+    toggle.classList.toggle('active', isEditing);
+    document.body.classList.toggle('editing', isEditing);
+    label.textContent = isEditing ? '✏️ 編集モード' : '閲覧モード';
+    status.textContent = isEditing ? 'テキストをクリックして編集' : '';
+    editables.forEach(el => { el.setAttribute('contenteditable', isEditing ? 'true' : 'false'); });
+    showToast(isEditing ? '編集モードON — テキストをクリックして編集できます' : '閲覧モードに戻りました');
+  }
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2500);
+  }
+  function printPage() { window.print(); }
+  function downloadHTML() {
+    const editables = document.querySelectorAll('[contenteditable]');
+    const wasEditing = isEditing;
+    editables.forEach(el => el.setAttribute('contenteditable', 'false'));
+    const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+    if (wasEditing) editables.forEach(el => el.setAttribute('contenteditable', 'true'));
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'beaute_料金制度まとめ.html';
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('ファイルを保存しました');
+  }
+</script>
+
+</body>
+</html>
