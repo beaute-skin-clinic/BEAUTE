@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T14:59:19.096Z",
+    "generated_at": "2026-03-05T04:24:34.036922+00:00",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72,
@@ -1756,7 +1756,7 @@
       "area": "100ショット",
       "sessions": null,
       "old_price": "33000",
-      "price": "27500",
+      "price": 28600,
       "first_price": "22000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1770,7 +1770,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 85800,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1782,7 +1782,7 @@
       "area": "200ショット",
       "sessions": null,
       "old_price": "66000",
-      "price": "55000",
+      "price": 57750,
       "first_price": "44000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1796,7 +1796,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 173250,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1808,7 +1808,7 @@
       "area": "300ショット",
       "sessions": null,
       "old_price": "99000",
-      "price": "82500",
+      "price": 85800,
       "first_price": "66000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1822,7 +1822,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 257400,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1834,7 +1834,7 @@
       "area": "400ショット",
       "sessions": null,
       "old_price": "132000",
-      "price": "110000",
+      "price": 113850,
       "first_price": "88000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1860,7 +1860,7 @@
       "area": "500ショット",
       "sessions": null,
       "old_price": "165000",
-      "price": "137500",
+      "price": 137500,
       "first_price": "99000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1886,7 +1886,7 @@
       "area": "ライト",
       "sessions": null,
       "old_price": "132000",
-      "price": "117000",
+      "price": 115500,
       "first_price": "93800",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1900,7 +1900,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 311850,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1912,7 +1912,7 @@
       "area": "スタンダード",
       "sessions": null,
       "old_price": "198000",
-      "price": "192500",
+      "price": 165000,
       "first_price": "132000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1926,7 +1926,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 445500,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
@@ -1938,7 +1938,7 @@
       "area": "プレミアム",
       "sessions": null,
       "old_price": "275000",
-      "price": "220000",
+      "price": 220000,
       "first_price": "154000",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -1952,7 +1952,7 @@
       "categories": [
         "しわ・たるみ・小顔"
       ],
-      "ticket_3": null,
+      "ticket_3": 475200,
       "ticket_5": null,
       "ticket_8": null,
       "monitor_eye_only_price": null
