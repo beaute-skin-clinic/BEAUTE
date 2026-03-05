@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-05T04:24:34.036922+00:00",
+    "generated_at": "2026-03-05T16:56:40.637Z",
     "master_spreadsheet": "https://docs.google.com/spreadsheets/d/1aoRw1sc5Jw1S2RwP4EoTztzQHKGf2SWYoRAAbSScmZU",
     "total_records": 502,
     "records_with_cost": 72,
@@ -1764,8 +1764,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "22000",
-      "prepaid_50": "20625",
+      "prepaid_30": "22880",
+      "prepaid_50": "21450",
       "prepaid_manual": "22000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1790,8 +1790,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "44000",
-      "prepaid_50": "41250",
+      "prepaid_30": "46200",
+      "prepaid_50": "43312",
       "prepaid_manual": "44000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1816,8 +1816,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "66000",
-      "prepaid_50": "61875",
+      "prepaid_30": "68640",
+      "prepaid_50": "64350",
       "prepaid_manual": "66000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1842,8 +1842,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "88000",
-      "prepaid_50": "82500",
+      "prepaid_30": "91080",
+      "prepaid_50": "85387",
       "prepaid_manual": "88000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1894,8 +1894,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "93600",
-      "prepaid_50": "87750",
+      "prepaid_30": "92400",
+      "prepaid_50": "86625",
       "prepaid_manual": "93600",
       "categories": [
         "しわ・たるみ・小顔"
@@ -1920,8 +1920,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "154000",
-      "prepaid_50": "144375",
+      "prepaid_30": "132000",
+      "prepaid_50": "123750",
       "prepaid_manual": "154000",
       "categories": [
         "しわ・たるみ・小顔"
@@ -2013,36 +2013,10 @@
       "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
-      "area": "リジュラン",
-      "sessions": "追加1㏄",
-      "old_price": null,
-      "price": "22000",
-      "first_price": "設定なし",
-      "repeat_price": "設定なし",
-      "bundle_price": null,
-      "campaign_price": "設定なし",
-      "monitor_full_price": "設定なし",
-      "monitor_eye_price": "設定なし",
-      "prepaid_10": null,
-      "prepaid_30": "19800",
-      "prepaid_50": "19800",
-      "prepaid_manual": null,
-      "categories": [
-        "肌質改善／肌育"
-      ],
-      "ticket_3": null,
-      "ticket_5": null,
-      "ticket_8": null,
-      "monitor_eye_only_price": null
-    },
-    {
-      "category": "肌質改善／肌育",
-      "provider_type": "医療（Dr.施術）",
-      "treatment": "Dr.手打ち注射",
       "area": "ジュベルック",
-      "sessions": "追加1㏄",
+      "sessions": "1cc",
       "old_price": null,
-      "price": "16500",
+      "price": "33000",
       "first_price": "設定なし",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -2050,8 +2024,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "14850",
-      "prepaid_50": "14850",
+      "prepaid_30": "29700",
+      "prepaid_50": "29700",
       "prepaid_manual": null,
       "categories": [
         "肌質改善／肌育"
@@ -2078,6 +2052,32 @@
       "prepaid_10": null,
       "prepaid_30": "59400",
       "prepaid_50": "59400",
+      "prepaid_manual": null,
+      "categories": [
+        "肌質改善／肌育"
+      ],
+      "ticket_3": null,
+      "ticket_5": null,
+      "ticket_8": null,
+      "monitor_eye_only_price": null
+    },
+    {
+      "category": "肌質改善／肌育",
+      "provider_type": "医療（Dr.施術）",
+      "treatment": "Dr.手打ち注射",
+      "area": "ジュベルック",
+      "sessions": "追加1㏄",
+      "old_price": null,
+      "price": "16500",
+      "first_price": "設定なし",
+      "repeat_price": "設定なし",
+      "bundle_price": null,
+      "campaign_price": "設定なし",
+      "monitor_full_price": "設定なし",
+      "monitor_eye_price": "設定なし",
+      "prepaid_10": null,
+      "prepaid_30": "14850",
+      "prepaid_50": "14850",
       "prepaid_manual": null,
       "categories": [
         "肌質改善／肌育"
@@ -2169,10 +2169,10 @@
       "category": "肌質改善／肌育",
       "provider_type": "医療（Dr.施術）",
       "treatment": "Dr.手打ち注射",
-      "area": "ジュベルック",
-      "sessions": "1cc",
+      "area": "リジュラン",
+      "sessions": "追加1㏄",
       "old_price": null,
-      "price": "33000",
+      "price": "22000",
       "first_price": "設定なし",
       "repeat_price": "設定なし",
       "bundle_price": null,
@@ -2180,8 +2180,8 @@
       "monitor_full_price": "設定なし",
       "monitor_eye_price": "設定なし",
       "prepaid_10": null,
-      "prepaid_30": "29700",
-      "prepaid_50": "29700",
+      "prepaid_30": "19800",
+      "prepaid_50": "19800",
       "prepaid_manual": null,
       "categories": [
         "肌質改善／肌育"
