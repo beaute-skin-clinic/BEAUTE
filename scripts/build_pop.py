@@ -642,8 +642,9 @@ body {
     <button class="layout-btn" data-layout="6" onclick="setLayout(6)">▦ 6枚</button>
     <button class="layout-btn" data-layout="9" onclick="setLayout(9)">▩ 9枚</button>
     <span class="selected-count" id="selectedCount"></span>
+    <button class="btn-clear" id="btnSelectAll" onclick="selectAll()">☑ 全選択</button>
     <button class="btn-clear" id="btnClear" onclick="clearSelection()" style="display:none">✕ 選択解除</button>
-    <button class="btn-print" onclick="window.print()">🖨 印刷</button>
+    <button class="btn-print" onclick="window.print()">🖨 印刷 / PDF</button>
   </div>
 </div>
 
@@ -670,11 +671,6 @@ let currentCategory = null;
 let searchQuery = '';
 
 // ─── 初期化 ───
-function init() {
-  buildCategoryFilter();
-  buildList();
-  updatePreview();
-}
 
 function buildCategoryFilter() {
   const cats = [...new Set(TREATMENTS.map(t => t.sheet))];
@@ -730,6 +726,13 @@ function toggleSelect(id) {
   } else {
     selectedIds.add(id);
   }
+  buildList();
+  updatePreview();
+}
+
+function selectAll() {
+  const filtered = getFilteredTreatments();
+  filtered.forEach(t => selectedIds.add(t.id));
   buildList();
   updatePreview();
 }
@@ -919,8 +922,9 @@ function buildCard(t) {
 
 function updatePreview() {
   const count = selectedIds.size;
-  document.getElementById('selectedCount').textContent = count ? `${count}件選択中` : '';
+  document.getElementById('selectedCount').textContent = count ? `${count}件選択中（${currentLayout}枚レイアウト → 約${Math.ceil(count / (currentLayout <= 2 ? currentLayout : currentLayout))}ページ）` : '';
   document.getElementById('btnClear').style.display = count ? '' : 'none';
+  document.getElementById('btnSelectAll').style.display = count ? 'none' : '';
   document.getElementById('previewHint').style.display = count ? 'none' : '';
 
   const selected = TREATMENTS.filter(t => selectedIds.has(t.id));
@@ -935,7 +939,19 @@ function updatePreview() {
   container.innerHTML = selected.map(t => buildCard(t)).join('');
 }
 
-init();
+// URLパラメータ ?all=1&layout=1 で自動全選択
+function init() {
+  buildCategoryFilter();
+  buildList();
+  const params = new URLSearchParams(location.search);
+  if (params.get('all')) {
+    TREATMENTS.forEach(t => selectedIds.add(t.id));
+    const layout = parseInt(params.get('layout')) || 1;
+    setLayout(layout);
+    buildList();
+  }
+  updatePreview();
+}
 </script>
 </body>
 </html>'''
