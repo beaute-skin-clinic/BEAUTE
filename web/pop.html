@@ -1,667 +1,838 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>施術POP生成 | ボーテスキンクリニック</title>
-  <style>
-    :root {
-      --primary: #b07d62;
-      --primary-light: #d4a98a;
-      --primary-dark: #8a5c3f;
-      --accent: #e8d5c4;
-      --bg: #faf7f4;
-      --text: #3a2e27;
-      --text-light: #7a6a5f;
-      --border: #e0d0c4;
-      --gold: #c9a96e;
-      --gold-dark: #a68345;
-      --gold-light: #f5ecd7;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>施術POP ジェネレーター - BEAUTE SKIN CLINIC</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #B8935A;
+  --gold-light: #D4B87C;
+  --bronze: #9E7B5B;
+  --espresso: #5C3D2E;
+  --deep-brown: #3A2518;
+  --cream: #FAF6F1;
+  --sand: #E8DDD3;
+  --warm-white: #FFFCF8;
+  --sage: #7A9E76;
+  --sage-light: #E8F0E6;
+  --blue: #2563EB;
+  --blue-light: #EFF6FF;
+  --red: #DC2626;
+  --red-light: #FEF2F2;
+  --cyan: #0891B2;
+  --cyan-light: #ECFEFF;
+  --purple: #7C3AED;
+  --purple-light: #F5F3FF;
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      font-size: 14px;
-    }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* ===== 操作パネル（画面のみ表示）===== */
-    .toolbar {
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-      color: #fff;
-      padding: 16px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .toolbar h1 { font-size: 16px; margin-bottom: 8px; }
-    .toolbar-row {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .toolbar select, .toolbar input {
-      padding: 6px 10px;
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 8px;
-      font-size: 13px;
-      background: rgba(255,255,255,0.15);
-      color: #fff;
-      font-family: inherit;
-    }
-    .toolbar select option { color: #333; background: #fff; }
-    .toolbar input::placeholder { color: rgba(255,255,255,0.6); }
-    .toolbar button {
-      padding: 6px 16px;
-      border: none;
-      border-radius: 8px;
-      font-size: 13px;
-      cursor: pointer;
-      font-family: inherit;
-      font-weight: 600;
-    }
-    .btn-add { background: #fff; color: var(--primary-dark); }
-    .btn-add:hover { background: var(--accent); }
-    .btn-print { background: var(--gold); color: #fff; }
-    .btn-print:hover { background: var(--gold-dark); }
-    .btn-clear { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.3) !important; }
-    .btn-clear:hover { background: rgba(255,255,255,0.3); }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #f5f5f5;
+  color: var(--deep-brown);
+}
 
-    .selected-list {
-      margin-top: 8px;
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-    .selected-tag {
-      background: rgba(255,255,255,0.2);
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 14px;
-      padding: 3px 10px;
-      font-size: 11px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .selected-tag .remove {
-      cursor: pointer;
-      opacity: 0.7;
-      font-size: 14px;
-    }
-    .selected-tag .remove:hover { opacity: 1; }
-    .toolbar-hint {
-      font-size: 11px;
-      opacity: 0.7;
-      margin-top: 6px;
-    }
+/* ─── コントロールパネル ─── */
+.no-print {
+  /* 印刷時に完全に消すためのラッパー */
+}
+.control-panel {
+  background: var(--espresso);
+  color: #fff;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.control-row h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+}
+.control-row h1 span { color: var(--gold-light); }
 
-    /* ===== POPプレビュー領域 ===== */
-    .preview-area {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
+.search-box {
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 14px;
+  width: 300px;
+  font-family: inherit;
+}
+.search-box::placeholder { color: rgba(255,255,255,0.5); }
+.search-box:focus { outline: none; border-color: var(--gold); background: rgba(255,255,255,0.15); }
 
-    /* ===== A4ページ ===== */
-    .a4-page {
-      width: 297mm;
-      min-height: 210mm;
-      background: #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
-      border-radius: 4px;
-      padding: 10mm;
-      display: flex;
-      gap: 8mm;
-    }
+.cat-filter {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.cat-btn {
+  padding: 4px 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 16px;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.cat-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.cat-btn.active { background: var(--gold); border-color: var(--gold); color: #000; font-weight: 600; }
 
-    /* ===== 施術POPカード（A4半分）===== */
-    .pop-card {
-      flex: 1;
-      border: 2.5px solid var(--gold);
-      border-radius: 12px;
-      padding: 8mm;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-    }
+.action-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.layout-btn {
+  padding: 6px 14px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.layout-btn:hover { background: rgba(255,255,255,0.1); }
+.layout-btn.active { background: var(--gold); border-color: var(--gold); color: #000; font-weight: 600; }
 
-    /* 上部の装飾ライン */
-    .pop-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--gold), var(--primary), var(--gold));
-    }
+.btn-print {
+  padding: 8px 20px;
+  background: var(--gold);
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  margin-left: auto;
+}
+.btn-print:hover { background: var(--gold-light); }
 
-    .pop-clinic {
-      text-align: center;
-      font-size: 9px;
-      color: var(--gold-dark);
-      letter-spacing: 0.15em;
-      margin-top: 2mm;
-      margin-bottom: 3mm;
-    }
+.selected-count {
+  font-size: 12px;
+  color: var(--gold-light);
+}
+.btn-clear {
+  padding: 4px 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn-clear:hover { background: rgba(255,255,255,0.1); color: #fff; }
 
-    .pop-category {
-      text-align: center;
-      font-size: 10px;
-      color: var(--primary);
-      background: var(--accent);
-      border-radius: 20px;
-      padding: 2px 16px;
-      display: inline-block;
-      margin: 0 auto 3mm;
-      font-weight: 500;
-    }
+/* ─── 施術リスト（選択用） ─── */
+.list-panel {
+  padding: 16px 24px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.1s;
+  border: 1px solid transparent;
+}
+.list-item:hover { background: var(--cream); }
+.list-item.selected { background: #FEF3C7; border-color: #FCD34D; }
+.list-item .li-check {
+  width: 18px; height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  transition: all 0.15s;
+}
+.list-item.selected .li-check { background: var(--gold); border-color: var(--gold); color: #fff; }
+.list-item .li-name { font-weight: 600; }
+.list-item .li-area { color: #888; margin-left: 4px; }
+.list-item .li-price { margin-left: auto; font-weight: 700; color: var(--espresso); white-space: nowrap; }
 
-    .pop-treatment-name {
-      text-align: center;
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--primary-dark);
-      margin-bottom: 1mm;
-      line-height: 1.3;
-    }
+/* ─── カードプレビュー（画面用） ─── */
+.preview-area {
+  padding: 24px;
+}
+.preview-hint {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  padding: 60px 0;
+}
 
-    .pop-area {
-      text-align: center;
-      font-size: 12px;
-      color: var(--text-light);
-      margin-bottom: 4mm;
-    }
+/* カードグリッド — 可変高さで自然に流れる */
+.card-grid {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+}
+.card-grid.layout-1 { grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; }
+.card-grid.layout-2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid.layout-4 { grid-template-columns: repeat(2, 1fr); }
+.card-grid.layout-6 { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.card-grid.layout-9 { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
-    .pop-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2mm 0;
-    }
+/* ─── カード本体 ─── */
+.pop-card {
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px 16px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.layout-4 .pop-card { padding: 10px 10px 8px; border-radius: 8px; }
+.layout-6 .pop-card { padding: 7px 8px 6px; border-radius: 6px; border-width: 1.5px; }
+.layout-9 .pop-card { padding: 4px 5px 3px; border-radius: 5px; border-width: 1.5px; }
 
-    /* 価格テーブル */
-    .pop-prices {
-      flex: 1;
-    }
+.card-header {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.card-clinic {
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--bronze);
+  font-weight: 500;
+}
+.layout-4 .card-clinic { font-size: 7px; }
+.layout-6 .card-clinic { font-size: 6px; letter-spacing: 1.5px; }
+.layout-9 .card-clinic { font-size: 5px; letter-spacing: 1px; }
 
-    .pop-price-row {
-      display: flex;
-      align-items: baseline;
-      padding: 2mm 0;
-      border-bottom: 1px dotted var(--border);
-    }
-    .pop-price-row:last-child { border-bottom: none; }
+.card-category {
+  display: inline-block;
+  padding: 1px 10px;
+  background: var(--sage-light);
+  color: var(--sage);
+  border-radius: 20px;
+  font-size: 8px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.layout-4 .card-category { font-size: 7px; padding: 1px 8px; margin-top: 2px; }
+.layout-6 .card-category { font-size: 6px; padding: 1px 6px; margin-top: 1px; }
+.layout-9 .card-category { display: none; }
 
-    .pop-price-label {
-      font-size: 11px;
-      color: var(--text-light);
-      width: 70px;
-      flex-shrink: 0;
-    }
+.card-name {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin: 4px 0 2px;
+  color: var(--deep-brown);
+  line-height: 1.2;
+}
+.layout-1 .card-name { font-size: 30px; margin: 10px 0 4px; }
+.layout-4 .card-name { font-size: 14px; margin: 2px 0 1px; }
+.layout-6 .card-name { font-size: 12px; margin: 2px 0 0; }
+.layout-9 .card-name { font-size: 9px; margin: 1px 0 0; }
 
-    .pop-price-value {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text);
-      flex: 1;
-      text-align: right;
-    }
-    .pop-price-value.main-price {
-      font-size: 24px;
-      color: var(--primary-dark);
-    }
-    .pop-price-value.discount {
-      color: #dc2626;
-    }
-    .pop-price-value.campaign {
-      color: #dc2626;
-      font-size: 20px;
-    }
-    .pop-price-value.monitor {
-      color: #0891b2;
-      font-size: 16px;
-    }
-    .pop-price-value.ticket {
-      color: #065f46;
-      font-size: 16px;
-    }
-    .pop-price-value .yen { font-size: 0.65em; font-weight: 500; }
-    .pop-price-value .tax { font-size: 9px; font-weight: 400; color: var(--text-light); margin-left: 4px; }
-    .pop-price-value .unit-price { font-size: 9px; color: #059669; font-weight: 500; }
-    .pop-price-na { font-size: 12px; color: #ccc; font-style: italic; }
+.card-area {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 2px;
+}
+.layout-4 .card-area { font-size: 10px; }
+.layout-6 .card-area { font-size: 9px; }
+.layout-9 .card-area { font-size: 7px; }
 
-    /* PP割引セクション */
-    .pop-pp-section {
-      margin-top: 3mm;
-      background: var(--gold-light);
-      border: 1px solid var(--gold);
-      border-radius: 8px;
-      padding: 3mm 4mm;
-    }
-    .pop-pp-title {
-      font-size: 9px;
-      font-weight: 700;
-      color: var(--gold-dark);
-      margin-bottom: 2mm;
-      text-align: center;
-    }
-    .pop-pp-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 10px;
-      padding: 1mm 0;
-    }
-    .pop-pp-tier { color: var(--gold-dark); font-weight: 600; }
-    .pop-pp-price { font-weight: 700; color: var(--text); }
+.card-unit {
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+.layout-4 .card-unit { font-size: 9px; margin-bottom: 6px; }
+.layout-6 .card-unit { font-size: 8px; margin-bottom: 4px; }
+.layout-9 .card-unit { font-size: 6px; margin-bottom: 2px; }
 
-    /* 回数券セクション */
-    .pop-ticket-section {
-      margin-top: 3mm;
-      background: #f0faf5;
-      border: 1px solid #a7f3d0;
-      border-radius: 8px;
-      padding: 3mm 4mm;
-    }
-    .pop-ticket-title {
-      font-size: 9px;
-      font-weight: 700;
-      color: #065f46;
-      margin-bottom: 2mm;
-      text-align: center;
-    }
-    .pop-ticket-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-size: 10px;
-      padding: 1mm 0;
-    }
-    .pop-ticket-tier { color: #065f46; font-weight: 600; }
-    .pop-ticket-price { font-weight: 700; color: var(--text); }
-    .pop-ticket-unit { font-size: 8px; color: #059669; margin-left: 4px; }
+/* メイン価格 */
+.main-price {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--sand);
+}
+.layout-4 .main-price { margin-bottom: 6px; padding-bottom: 6px; }
+.layout-6 .main-price { margin-bottom: 4px; padding-bottom: 4px; }
+.layout-9 .main-price { margin-bottom: 2px; padding-bottom: 2px; }
+.main-price-label { font-size: 11px; color: #888; margin-bottom: 2px; }
+.layout-4 .main-price-label { font-size: 9px; }
+.layout-6 .main-price-label { font-size: 8px; }
+.layout-9 .main-price-label { font-size: 6px; margin-bottom: 0; }
+.main-price-value {
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--deep-brown);
+  letter-spacing: -1px;
+}
+.layout-1 .main-price-value { font-size: 48px; }
+.layout-4 .main-price-value { font-size: 22px; }
+.layout-6 .main-price-value { font-size: 18px; }
+.layout-9 .main-price-value { font-size: 14px; letter-spacing: 0; }
+.main-price-yen { font-size: 18px; font-weight: 700; }
+.layout-4 .main-price-yen { font-size: 12px; }
+.layout-6 .main-price-yen { font-size: 10px; }
+.layout-9 .main-price-yen { font-size: 8px; }
+.main-price-tax { font-size: 10px; color: #aaa; margin-left: 4px; }
+.layout-6 .main-price-tax { font-size: 8px; }
+.layout-9 .main-price-tax { display: none; }
 
-    /* フッター */
-    .pop-footer {
-      margin-top: auto;
-      padding-top: 3mm;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 8px;
-      color: var(--text-light);
-      line-height: 1.5;
-    }
+.old-price {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: -6px;
+  margin-bottom: 6px;
+}
+.old-price s { color: #bbb; }
+.old-price .direction { font-weight: 700; margin-left: 6px; }
+.old-price .direction.down { color: var(--blue); }
+.old-price .direction.up { color: var(--red); }
+.layout-4 .old-price { font-size: 9px; margin-top: -4px; }
+.layout-6 .old-price { font-size: 8px; margin-top: -3px; margin-bottom: 3px; }
+.layout-9 .old-price { font-size: 6px; margin-top: -2px; margin-bottom: 1px; }
 
-    /* 空カード */
-    .pop-card.empty {
-      border: 2px dashed var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-light);
-      font-size: 14px;
-    }
+/* サブ価格セクション */
+.sub-prices { display: grid; gap: 0; }
+.sub-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px dotted #e8e8e8;
+  font-size: 13px;
+}
+.layout-4 .sub-row { padding: 3px 0; font-size: 10px; }
+.layout-6 .sub-row { padding: 2px 0; font-size: 9px; }
+.layout-9 .sub-row { padding: 1px 0; font-size: 7px; }
+.sub-row:last-child { border-bottom: none; }
+.sub-label { color: #777; font-weight: 500; }
+.sub-value { font-weight: 700; color: var(--deep-brown); }
+.sub-value.first { color: var(--blue); }
+.sub-value.repeat { color: var(--purple); }
+.sub-value.campaign { color: var(--red); }
+.sub-value.monitor { color: var(--cyan); }
 
-    /* ===== 印刷スタイル ===== */
-    @media print {
-      @page {
-        size: A4 landscape;
-        margin: 0;
-      }
-      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-      body { background: #fff; }
-      .toolbar { display: none !important; }
-      .preview-area { padding: 0; gap: 0; }
-      .a4-page {
-        width: 297mm;
-        height: 210mm;
-        box-shadow: none;
-        border-radius: 0;
-        page-break-after: always;
-        margin: 0;
-      }
-      .a4-page:last-child { page-break-after: avoid; }
-    }
+/* 回数券ボックス */
+.ticket-box, .pp-box {
+  margin-top: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.layout-4 .ticket-box, .layout-4 .pp-box { margin-top: 5px; border-radius: 5px; }
+.layout-6 .ticket-box, .layout-6 .pp-box { margin-top: 4px; border-radius: 4px; }
+.layout-9 .ticket-box, .layout-9 .pp-box { margin-top: 2px; border-radius: 3px; }
+.ticket-header, .pp-header {
+  background: #f8f8f8;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+}
+.layout-4 .ticket-header, .layout-4 .pp-header { padding: 3px 8px; font-size: 8px; }
+.layout-6 .ticket-header, .layout-6 .pp-header { padding: 2px 6px; font-size: 7px; }
+.layout-9 .ticket-header, .layout-9 .pp-header { padding: 1px 5px; font-size: 6px; }
+.ticket-row, .pp-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+.layout-4 .ticket-row, .layout-4 .pp-row { padding: 2px 8px; font-size: 9px; }
+.layout-6 .ticket-row, .layout-6 .pp-row { padding: 2px 6px; font-size: 8px; }
+.layout-9 .ticket-row, .layout-9 .pp-row { padding: 1px 5px; font-size: 6px; }
+.ticket-row .tv, .pp-row .pv { font-weight: 700; }
 
-    /* ===== 治療選択モーダル ===== */
-    .treatment-list {
-      max-height: 200px;
-      overflow-y: auto;
-      background: rgba(0,0,0,0.2);
-      border-radius: 8px;
-      margin-top: 6px;
-    }
-    .treatment-list-item {
-      padding: 5px 10px;
-      font-size: 12px;
-      cursor: pointer;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      transition: background 0.1s;
-    }
-    .treatment-list-item:hover {
-      background: rgba(255,255,255,0.15);
-    }
-    .treatment-list-item .item-cat {
-      font-size: 9px;
-      opacity: 0.6;
-    }
-  </style>
+.pp-box { border-color: var(--sage-light); }
+.pp-header { background: var(--sage-light); color: var(--sage); }
+
+/* extras（1行コンパクト表示） */
+.extras {
+  margin-top: 6px;
+  padding: 5px 8px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  font-size: 10px;
+  color: #777;
+  line-height: 1.6;
+}
+.layout-6 .extras { font-size: 8px; margin-top: 4px; padding: 3px 6px; }
+.layout-9 .extras { font-size: 6px; margin-top: 2px; padding: 2px 4px; }
+
+/* バリアントテーブル */
+.var-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+  font-size: 11px;
+  table-layout: auto;
+}
+.layout-4 .var-table { font-size: 9px; margin-top: 4px; }
+.layout-6 .var-table { font-size: 7.5px; margin-top: 3px; }
+.layout-9 .var-table { font-size: 6px; margin-top: 2px; }
+
+.var-table thead th {
+  background: #f5f5f5;
+  padding: 3px 4px;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #999;
+  border-bottom: 1.5px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+.var-table thead th.vt-price { text-align: right; padding: 3px 2px; }
+
+.var-table tbody td {
+  padding: 3px 4px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.3;
+}
+.layout-6 .var-table th, .layout-6 .var-table td { padding: 2px 3px; }
+.layout-9 .var-table th, .layout-9 .var-table td { padding: 1px 2px; }
+
+.var-table .vt-area {
+  color: var(--deep-brown);
+  font-weight: 500;
+  max-width: 0;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.var-table .vt-price {
+  text-align: right;
+  font-weight: 600;
+  white-space: nowrap;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-variant-numeric: tabular-nums;
+  color: #444;
+}
+.var-table .vt-old { color: #aaa; font-weight: 400; }
+.var-table .vt-new { font-weight: 800; color: var(--deep-brown); }
+.var-table .price-down { color: var(--blue); font-weight: 800; }
+.var-table .price-up { color: var(--red); font-weight: 800; }
+.var-table thead th.vt-old-h { color: #bbb; }
+.var-table thead th.vt-new-h { color: var(--deep-brown); }
+
+/* テーブル内 割引列の色 */
+.var-table .vt-first { color: var(--blue); }
+.var-table .vt-repeat { color: var(--purple); }
+.var-table .vt-campaign { color: var(--red); font-weight: 700; }
+.var-table .vt-monitor { color: var(--cyan); }
+.var-table .vt-ticket { color: #d97706; }
+.var-table .vt-bp { color: #16a34a; }
+.var-table .vt-ep { color: #0d9488; }
+
+/* 割引色（単一バリアント） */
+.ticket-row .tv { color: #d97706; }
+.pp-row .pv-bp { color: #16a34a; }
+.pp-row .pv-ep { color: #0d9488; }
+
+/* 割引率バッジ（値の下に表示） */
+.disc { display: block; font-size: 0.7em; color: #bbb; font-weight: 400; letter-spacing: -0.3px; line-height: 1.1; }
+.layout-6 .disc { font-size: 0.65em; }
+.layout-9 .disc { font-size: 0.6em; }
+
+/* ========================================
+   印刷用CSS — A4横に確実にフィット
+   ======================================== */
+@page {
+  size: A4 portrait;
+  margin: 6mm;
+}
+
+@media print {
+  /* UI系を完全に消す */
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 0 !important;
+  }
+  .preview-hint { display: none !important; }
+
+  body {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .preview-area {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* カードグリッド — 印刷用 */
+  .card-grid {
+    gap: 4mm;
+    align-items: start;
+  }
+  .card-grid.layout-1 { max-width: none; grid-template-columns: 1fr; }
+  .card-grid.layout-2 { grid-template-columns: repeat(2, 1fr); }
+  .card-grid.layout-4 { grid-template-columns: repeat(2, 1fr); }
+  .card-grid.layout-6 { grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .card-grid.layout-9 { grid-template-columns: repeat(3, 1fr); gap: 2mm; }
+
+  .pop-card {
+    border-width: 2px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+</style>
 </head>
 <body>
 
-<!-- ===== 操作パネル ===== -->
-<div class="toolbar">
-  <h1>📄 施術POP生成（A4横 × 2施術）</h1>
-  <div class="toolbar-row">
-    <select id="catSelect">
-      <option value="">カテゴリを選択...</option>
-    </select>
-    <input type="text" id="searchInput" placeholder="施術名で検索..." style="width:200px;">
-    <button class="btn-print" onclick="window.print()">🖨️ 印刷</button>
-    <button class="btn-clear" onclick="clearAll()">クリア</button>
+<!-- コントロールパネル -->
+<div class="no-print">
+<div class="control-panel">
+  <div class="control-row">
+    <h1><span>BEAUTE</span> 施術POPジェネレーター</h1>
+    <input type="text" class="search-box" id="searchBox" placeholder="🔍 施術名・部位で検索...">
   </div>
-  <div id="treatmentListWrap" class="treatment-list" style="display:none;"></div>
-  <div class="selected-list" id="selectedList"></div>
-  <div class="toolbar-hint">施術を選択するとPOPプレビューが表示されます。2施術ごとにA4横1ページに配置されます。</div>
+  <div class="cat-filter" id="catFilter"></div>
+  <div class="action-row">
+    <button class="layout-btn" data-layout="1" onclick="setLayout(1)">▢ 1枚</button>
+    <button class="layout-btn" data-layout="2" onclick="setLayout(2)">◧ 2枚</button>
+    <button class="layout-btn active" data-layout="4" onclick="setLayout(4)">⊞ 4枚</button>
+    <button class="layout-btn" data-layout="6" onclick="setLayout(6)">▦ 6枚</button>
+    <button class="layout-btn" data-layout="9" onclick="setLayout(9)">▩ 9枚</button>
+    <span class="selected-count" id="selectedCount"></span>
+    <button class="btn-clear" id="btnClear" onclick="clearSelection()" style="display:none">✕ 選択解除</button>
+    <button class="btn-print" onclick="window.print()">🖨 印刷</button>
+  </div>
 </div>
 
-<!-- ===== POPプレビュー ===== -->
+<!-- 施術リスト -->
+<div class="list-panel" id="listPanel">
+  <div class="list-grid" id="listGrid"></div>
+</div>
+</div>
+
+<!-- カードプレビュー -->
 <div class="preview-area" id="previewArea">
-  <div style="color:var(--text-light); padding:60px; text-align:center;">
-    上のメニューから施術を選択してください。
-  </div>
+  <div class="preview-hint no-print" id="previewHint">↑ 施術を選択するとPOPカードが表示されます</div>
+  <div class="card-grid layout-4" id="cardGrid"></div>
 </div>
 
 <script>
-const DATA_URL = './data/prices_public.json';
+// ─── データ埋め込み ───
+const TREATMENTS = [{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"ピコトーニング","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":22000,"old_first":13200,"price":16500,"repeat":13200,"ticket_3":39600,"bp10":14850,"bp30":13200,"bp50":12375}},{"area":"片手の甲","unit":"1回","prices":{"old_price":8360,"price":8360,"bp10":7524,"bp30":6688,"bp50":6270}},{"area":"肘下（手の甲含まず）","unit":"1回","prices":{"old_price":22000,"price":22000,"bp10":19800,"bp30":17600,"bp50":16500}},{"area":"首","unit":"1回","prices":{"old_price":11000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}},{"area":"デコルテ","unit":"1回","prices":{"old_price":11000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}},{"area":"背中から肩甲骨","unit":"1回","prices":{"old_price":16500,"price":16500,"bp10":14850,"bp30":13200,"bp50":12375}},{"area":"リップ","unit":"1回","prices":{"old_price":5500,"price":5500,"bp10":4950,"bp30":4400,"bp50":4125}},{"area":"脇","unit":"1回","prices":{"old_price":8800,"price":8800,"bp10":7920,"bp30":7040,"bp50":6600}},{"area":"V＋Iライン","unit":"1回","prices":{"old_price":11000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}},{"area":"お尻","unit":"1回","prices":{"old_price":33000,"price":33000,"bp10":29700,"bp30":26400,"bp50":24750}}],"id":0},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"ピコフラクショナル","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":27500,"old_first":16500,"price":22000,"repeat":16500,"ticket_3":52800,"bp10":19800,"bp30":17600,"bp50":16500}}],"id":1},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"ピコスポット","variants":[{"area":"1回の範囲","unit":"1mmまで","prices":{"old_price":1100,"price":1100,"bp30":880,"bp50":825}},{"area":"1回の範囲","unit":"5mmまで","prices":{"old_price":5500,"price":5500,"bp30":4400,"bp50":4125}},{"area":"1回の範囲","unit":"10mmまで","prices":{"old_price":11000,"price":11000,"bp30":8800,"bp50":8250}},{"area":"1回の範囲","unit":"10mm〜（1mmにつき）","prices":{"old_price":1100,"price":1100,"bp30":880,"bp50":825}},{"area":"全顔","unit":"1回","prices":{"old_price":88000,"price":88000,"bp30":70400,"bp50":66000}},{"area":"眉下〜鼻下","unit":"1回","prices":{"old_price":77000,"price":77000,"bp30":61600,"bp50":57750}},{"area":"背中（肩甲骨 上 or 下）","unit":"1回","prices":{"old_price":110000,"price":110000,"bp30":88000,"bp50":82500}},{"area":"両前腕（肘下・手・甲・指）","unit":"1回","prices":{"old_price":110000,"price":110000,"bp30":88000,"bp50":82500}}],"id":2},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"ピコスポット（ADM）","variants":[{"area":"1㎜ごと","unit":"1回","prices":{"old_price":2200,"price":2200,"bp30":1760,"bp50":1650}},{"area":"片頬","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}}],"id":3},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトフェイシャル（フォトシングル）","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":16500,"old_first":8800,"price":16500,"bp10":14850,"bp30":13200,"bp50":12375}}],"id":4},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトフェイシャル（フォトダブル）","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":27500,"old_first":16500,"price":16500,"repeat":16500,"ticket_3":49500,"bp10":14850,"bp30":13200,"bp50":12375}}],"id":5},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトフェイシャル","variants":[{"area":"首・デコルテ","unit":"1回","prices":{"old_price":24200,"price":22000,"bp10":19800,"bp30":17600,"bp50":16500}},{"area":"手の甲","unit":"1回","prices":{"old_price":24200,"price":16500,"bp10":14850,"bp30":13200,"bp50":12375}},{"area":"腕（肘上・腕下）","unit":"1回","prices":{"old_price":31900,"price":33000,"bp10":29700,"bp30":26400,"bp50":24750}},{"area":"背中から肩甲骨","unit":"1回","prices":{"old_price":33000,"price":33000,"bp10":29700,"bp30":26400,"bp50":24750}},{"area":"お尻","unit":"1回","prices":{"old_price":33000,"price":33000,"bp10":29700,"bp30":26400,"bp50":24750}},{"area":"頬＋鼻","unit":"1回","prices":{"old_price":22000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}},{"area":"頬のみ","unit":"1回","prices":{"old_price":20900,"price":13200,"bp10":11880,"bp30":10560,"bp50":9900}}],"id":6},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"ピコW","variants":[{"area":"ピコトーニング\n＋ピコフラクショナル","unit":"1回","prices":{"old_price":49500,"old_first":29700,"price":38500,"repeat":29700,"ticket_3":89100,"bp30":30800,"bp50":28875}},{"area":"ピコトーニング\n＋フォトシェイシャル","unit":"1回","prices":{"old_price":49500,"old_first":29700,"price":38500,"repeat":29700,"ticket_3":89100,"bp30":30800,"bp50":28875}}],"id":7},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"CO2レーザー","variants":[{"area":"ほくろ・脂漏性角化症・稗粒腫","unit":"1個〜3mmまで","prices":{"old_price":5500,"price":5500,"bp30":4400,"bp50":4125}},{"area":"ほくろ・脂漏性角化症・稗粒腫","unit":"取り放題（30個）","prices":{"old_price":165000,"price":165000,"campaign":99000,"bp30":132000,"bp50":123750}},{"area":"ほくろ・脂漏性角化症・稗粒腫","unit":"追加1mmごと","prices":{"old_price":1100,"price":1100,"bp30":880,"bp50":825}}],"id":8},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナ2d","variants":[{"area":"トーニング➕タイトニング","unit":"1回","prices":{"old_price":66000,"price":52800,"ticket_3":142560,"bp10":47520,"bp30":42240,"bp50":39600}}],"id":9},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナ4d","variants":[{"area":"全顔","unit":"1回","prices":{"old_price":220000,"price":165000,"ticket_3":445500,"bp10":148500,"bp30":132000,"bp50":123750}}],"id":10},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナ6d","variants":[{"area":"全顔","unit":"1回","prices":{"old_price":275000,"price":210000,"ticket_3":567000,"bp10":189000,"bp30":168000,"bp50":157500}}],"id":11},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナアイ","variants":[{"area":"","unit":"1回","prices":{"old_price":66000,"price":48000,"ticket_3":129600,"bp10":43200,"bp30":38400,"bp50":36000}}],"id":12},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナアイ2d","variants":[{"area":"","unit":"1回","prices":{"old_price":77000,"price":55000,"ticket_3":148500,"bp10":49500,"bp30":44000,"bp50":41250}}],"id":13},{"sheet":"レーザー・光治療","kubun":"Ns施術","category":"レーザー・光治療","name":"フォトナ","variants":[{"area":"スマイルリフト","unit":"1回","prices":{"old_price":66000,"price":48000,"ticket_3":129600,"bp10":43200,"bp30":38400,"bp50":36000}},{"area":"人中短縮","unit":"1回","prices":{"old_price":44000,"price":33000,"ticket_3":89100,"bp10":29700,"bp30":26400,"bp50":24750}},{"area":"リップレーズ","unit":"1回","prices":{"old_price":33000,"price":24800,"ticket_3":66960,"bp10":22320,"bp30":19840,"bp50":18600}},{"area":"ミラーピール","unit":"1回","prices":{"old_price":33000,"price":24800,"ticket_3":66960,"bp10":22320,"bp30":19840,"bp50":18600}},{"area":"スムーストーニング","unit":"1回","prices":{"old_price":33000,"price":19800,"ticket_3":53460,"bp10":17820,"bp30":15840,"bp50":14850}},{"area":"アクネトーニング","unit":"1回","prices":{"old_price":33000,"price":19800,"ticket_3":53460,"bp10":17820,"bp30":15840,"bp50":14850}},{"area":"スムースタイト","unit":"1回","prices":{"old_price":55000,"price":33000,"ticket_3":89100,"bp10":29700,"bp30":26400,"bp50":24750}},{"area":"スムースタイト（OP）","unit":"1回","prices":{"old_price":44000,"old_first":26400,"price":44000,"bp10":39600,"bp30":35200,"bp50":33000}}],"id":14},{"sheet":"HIFU・高周波","kubun":"Ns施術","category":"HIFU・高周波","name":"ハイフ（UFMPT）","variants":[{"area":"ハイフアイシャワー®","unit":"1回","prices":{"old_price":33000,"price":27500,"ticket_3":74250,"bp30":22000,"bp50":20625}},{"area":"美肌ハイフシャワー（全顔＋目元）","unit":"1回","prices":{"old_price":44000,"price":36300,"ticket_3":98010,"bp30":29040,"bp50":27225}},{"area":"美肌ハイフシャワー（首のみ）","unit":"1回","prices":{"old_price":27500,"price":27500,"ticket_3":74250,"bp30":22000,"bp50":20625}},{"area":"オーダーメイドハイフ（ライト）","unit":"1回","prices":{"old_price":66000,"price":57750,"ticket_3":124740,"bp30":46200,"bp50":43312}},{"area":"オーダーメイドハイフ（スタンダード）","unit":"1回","prices":{"old_price":110000,"price":88000,"ticket_3":237600,"bp30":70400,"bp50":66000}},{"area":"オーダーメイドハイフ（プレミアム）","unit":"1回","prices":{"old_price":132000,"price":110000,"ticket_3":297000,"bp30":88000,"bp50":82500}}],"id":15},{"sheet":"HIFU・高周波","kubun":"Ns施術","category":"HIFU・高周波","name":"白玉ハイフトーニング","variants":[{"area":"全顔ライト","unit":"1回","prices":{"old_price":19800,"price":19800,"ticket_3":53460,"bp30":15840,"bp50":14850}},{"area":"全顔スタンダード","unit":"1回","prices":{"old_price":29800,"price":29800,"ticket_3":80460,"bp30":23840,"bp50":22350}}],"id":16},{"sheet":"HIFU・高周波","kubun":"Ns施術","category":"HIFU・高周波","name":"ボルニューマ","variants":[{"area":"100ショット","unit":"1回","prices":{"old_price":33000,"price":28600,"ticket_3":77220,"bp30":22880,"bp50":21450}},{"area":"200ショット","unit":"1回","prices":{"old_price":66000,"price":57750,"ticket_3":155925,"bp30":46200,"bp50":43312}},{"area":"300ショット","unit":"1回","prices":{"old_price":99000,"price":85800,"ticket_3":231660,"bp30":68640,"bp50":64350}},{"area":"400ショット","unit":"1回","prices":{"old_price":132000,"price":113850,"ticket_3":307395,"bp30":91080,"bp50":85387}},{"area":"500ショット","unit":"1回","prices":{"old_price":165000,"price":137500,"ticket_3":371250,"bp30":110000,"bp50":103125}}],"id":17},{"sheet":"HIFU・高周波","kubun":"Ns施術","category":"HIFU・高周波","name":"ボルフォーマー","variants":[{"area":"ライト","unit":"1回","prices":{"old_price":132000,"price":115500,"ticket_3":311850,"bp30":92400,"bp50":86625}},{"area":"スタンダード","unit":"1回","prices":{"old_price":198000,"price":165000,"ticket_3":445500,"bp30":132000,"bp50":123750}},{"area":"プレミアム","unit":"1回","prices":{"old_price":275000,"price":220000,"ticket_3":475200,"bp30":176000,"bp50":165000}}],"id":18},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"ダーマペン4","variants":[{"area":"顔全体（ヒアルロン酸＋マスク＋麻酔付き）","unit":"1回","prices":{"old_price":26400,"old_first":16500,"price":26400,"repeat":21120,"campaign":16500,"ticket_3":63360,"bp10":23760,"bp30":21120,"bp50":19800}},{"area":"顔全体","unit":"1回","prices":{"old_price":19800,"old_first":9900,"price":19800,"repeat":15840,"campaign":9900,"ticket_3":59400,"bp10":17820,"bp30":15840,"bp50":14850}}],"id":19},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"ヴェルベットスキン","variants":[{"area":"顔全体（ヒアルロン酸＋マスク＋麻酔付き）","unit":"1回","prices":{"old_price":36300,"price":36300,"campaign":22000,"ticket_3":108900,"bp10":32670,"bp30":29040,"bp50":27225}},{"area":"顔全体","unit":"1回","prices":{"old_price":29700,"price":29700,"campaign":15400,"ticket_3":71280,"bp10":26730,"bp30":23760,"bp50":22275}},{"area":"お尻（ヒアルロン酸＋マスク＋麻酔付き）","unit":"1回","prices":{"price":66000,"bp10":59400,"bp30":52800,"bp50":49500}}],"id":20},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"ヴェルベットスキン（美容液オプション）","variants":[{"area":"ヒアルロン酸","unit":"1回","prices":{"old_price":5500,"price":5500,"bp10":4950,"bp30":4400,"bp50":4125}},{"area":"ウーバーピール","unit":"1回","prices":{"old_price":11000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}},{"area":"美白","unit":"1回","prices":{"old_price":11000,"price":11000,"bp10":9900,"bp30":8800,"bp50":8250}}],"id":21},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"アグネス","variants":[{"area":"ニキビ・稗粒腫（1～4個）","unit":"1回","prices":{"old_price":11000,"price":11000,"bp30":8800,"bp50":8250}},{"area":"ニキビ・稗粒腫（5～10個）","unit":"1回","prices":{"old_price":16500,"price":16500,"bp30":13200,"bp50":12375}},{"area":"ニキビ・稗粒腫（11～20個）","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}},{"area":"ニキビ・稗粒腫（21～30個）","unit":"1回","prices":{"old_price":33000,"price":33000,"bp30":26400,"bp50":24750}}],"id":22},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"圧出","variants":[{"area":"","unit":"1個","prices":{"old_price":550,"price":550,"bp30":440,"bp50":412}}],"id":23},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"サブシジョン","variants":[{"area":"2×2㎝","unit":"1回","prices":{"old_price":44000,"price":44000,"bp30":35200,"bp50":33000}},{"area":"半顔","unit":"1回","prices":{"old_price":88000,"price":88000,"bp30":70400,"bp50":66000}},{"area":"全顔","unit":"1回","prices":{"old_price":110000,"price":110000,"bp30":88000,"bp50":82500}}],"id":24},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"ハイドラピーリング","variants":[{"area":"顔（美容液導入無し）","unit":"1回","prices":{"old_price":19800,"old_first":13200,"price":19800,"ticket_3":59400,"bp10":17820,"bp30":15840,"bp50":14850}},{"area":"顔（美容液導入有り）","unit":"1回","prices":{"old_price":26400,"old_first":16500,"price":26400,"ticket_3":79200,"bp10":23760,"bp30":21120,"bp50":19800}},{"area":"背中上（美容液導入無し）","unit":"1回","prices":{"old_price":29700,"price":29700,"ticket_3":89100,"bp10":26730,"bp30":23760,"bp50":22275}},{"area":"背中上（美容液導入有り）","unit":"1回","prices":{"old_price":39600,"price":39600,"ticket_3":118800,"bp10":35640,"bp30":31680,"bp50":29700}}],"id":25},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"イオン導入","variants":[{"area":"ビタミンC＋ｱﾙｹﾞﾏｽｸ","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_3":26400,"bp10":7920,"bp30":7040,"bp50":6600}},{"area":"トラネキサム酸＋ｱﾙｹﾞﾏｽｸ","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_3":26400,"bp10":7920,"bp30":7040,"bp50":6600}}],"id":26},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"プラズマリフティング","variants":[{"area":"プラズマのみ","unit":"1回","prices":{"old_price":11000,"price":11000,"bp30":8800,"bp50":8250}}],"id":27},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"プラズマリフティング＋美容液","variants":[{"area":"ヒト臍帯由来幹細胞培養上清液","unit":"1回","prices":{"old_price":33000,"price":33000,"bp30":26400,"bp50":24750}},{"area":"エクソソームアンプル","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}},{"area":"ビタミンC","unit":"1回","prices":{"old_price":14300,"price":14300,"bp30":11440,"bp50":10725}},{"area":"プラセンタ","unit":"1回","prices":{"old_price":14300,"price":14300,"bp30":11440,"bp50":10725}},{"area":"タイトニングセラム","unit":"1回","prices":{"old_price":16500,"price":16500,"bp30":13200,"bp50":12375}},{"area":"リジュランセラム修復","unit":"1回","prices":{"old_price":16500,"price":16500,"bp30":13200,"bp50":12375}}],"id":28},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"サーマニードル","variants":[{"area":"頬・鼻（毛穴）・首：1部位","unit":"1回","prices":{"old_price":33000,"old_first":22000,"price":33000,"campaign":22000,"bp30":26400,"bp50":24750}},{"area":"顔全体","unit":"1回","prices":{"old_price":44000,"old_first":33000,"price":44000,"campaign":33000,"bp30":35200,"bp50":33000}},{"area":"カスタマイズ","unit":"1回","prices":{"old_price":55000,"old_first":44000,"price":55000,"campaign":44000,"bp30":44000,"bp50":41250}}],"id":29},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"サーマニードル（美容液オプション）","variants":[{"area":"ラコス","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}},{"area":"トラネキサム酸","unit":"1回","prices":{"old_price":5500,"price":5500,"bp30":4400,"bp50":4125}},{"area":"ビタミンC","unit":"1回","prices":{"old_price":5500,"price":5500,"bp30":4400,"bp50":4125}}],"id":30},{"sheet":"スキンケアデバイス","kubun":"Ns施術","category":"スキンケアデバイス","name":"サーマニードルアイ","variants":[{"area":"","unit":"1回","prices":{"price":88000,"ticket_3":250800,"bp30":70400,"bp50":66000}}],"id":31},{"sheet":"ピーリング","kubun":"Ns施術","category":"ピーリング","name":"マッサージピール","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":16500,"price":13200,"ticket_3":37620,"ticket_5":59400,"bp30":10560,"bp50":9900}},{"area":"首","unit":"1回","prices":{"old_price":16500,"price":13200,"bp30":10560,"bp50":9900}},{"area":"身体","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}}],"id":32},{"sheet":"ピーリング","kubun":"Ns施術","category":"ピーリング","name":"リバースピール","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":16500,"price":13200,"ticket_3":37620,"ticket_5":59400,"bp30":10560,"bp50":9900}},{"area":"首","unit":"1回","prices":{"old_price":16500,"price":13200,"bp30":10560,"bp50":9900}},{"area":"身体","unit":"1回","prices":{"old_price":22000,"price":22000,"bp30":17600,"bp50":16500}}],"id":33},{"sheet":"ピーリング","kubun":"Ns施術","category":"ピーリング","name":"ミラノリピール","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":16500,"price":13200,"ticket_3":37620,"ticket_5":59400,"bp30":10560,"bp50":9900}},{"area":"首","unit":"1回","prices":{"old_price":16500,"price":13200,"bp30":10560,"bp50":9900}},{"area":"ヒップ・背中上","unit":"1回","prices":{"old_price":22000,"price":22000,"ticket_3":62700,"ticket_5":99000,"bp30":17600,"bp50":16500}},{"area":"ワキ・肘・ひざ・かかと","unit":"1回","prices":{"old_price":13200,"price":11000,"ticket_3":31350,"ticket_5":49500,"bp30":8800,"bp50":8250}}],"id":34},{"sheet":"ピーリング","kubun":"Ns施術","category":"ピーリング","name":"3種","variants":[{"area":"身体1部位","unit":"1回","prices":{"old_price":22000,"price":22000,"ticket_3":62700,"ticket_5":99000,"bp30":17600,"bp50":16500}}],"id":35},{"sheet":"注入治療","kubun":"Dr.施術","category":"注入治療","name":"水光注射（ハイコックス）","variants":[{"area":"スキンボトックスニューロ","unit":"10単位","prices":{"old_price":27500,"price":27500,"bp30":24750,"bp50":24750}},{"area":"スキンボトックスニューロ","unit":"オプション","prices":{"old_price":13750,"price":13750,"bp30":12375,"bp50":12375}},{"area":"リジュラン","unit":"1cc","prices":{"old_price":33000,"price":33000,"bp30":29700,"bp50":29700}},{"area":"リジュラン","unit":"2㏄","prices":{"old_price":66000,"price":49500,"bp30":44550,"bp50":44550}},{"area":"リジュラン","unit":"3㏄","prices":{"old_price":99000,"price":66000,"bp30":59400,"bp50":59400}},{"area":"リジュラン","unit":"追加1㏄","prices":{"old_price":16500,"price":16500,"bp30":14850,"bp50":14850}},{"area":"ジュベルック","unit":"2㏄","prices":{"old_price":44000,"price":44000,"bp30":39600,"bp50":39600}},{"area":"ジュベルック","unit":"3㏄","prices":{"old_price":55000,"price":55000,"bp30":49500,"bp50":49500}},{"area":"ジュベルック","unit":"6㏄","prices":{"old_price":110000,"price":88000,"bp30":79200,"bp50":79200}},{"area":"ジュベルック","unit":"追加1㏄","prices":{"old_price":11000,"price":11000,"bp30":9900,"bp50":9900}},{"area":"プルリアルデンシファイシングル","unit":"1本2cc","prices":{"old_price":77000,"price":66000,"bp30":59400,"bp50":59400}},{"area":"プルリアルデンシファイダブル","unit":"2本4㏄","prices":{"old_price":154000,"price":132000,"bp30":118800,"bp50":118800}},{"area":"スネコスパフォルマ","unit":"1本3.5㏄","prices":{"old_price":55000,"price":55000,"bp30":49500,"bp50":49500}}],"id":36},{"sheet":"注入治療","kubun":"Dr.施術","category":"注入治療","name":"Dr.手打ち注射","variants":[{"area":"リジュラン","unit":"1cc","prices":{"old_price":44000,"price":44000,"bp30":39600,"bp50":39600}},{"area":"リジュラン","unit":"2㏄","prices":{"old_price":77000,"price":66000,"bp30":59400,"bp50":59400}},{"area":"リジュラン","unit":"3㏄","prices":{"old_price":110000,"price":88000,"bp30":79200,"bp50":79200}},{"area":"リジュラン","unit":"追加1㏄","prices":{"old_price":44000,"price":22000,"bp30":19800,"bp50":19800}},{"area":"ジュベルック","unit":"2㏄","prices":{"old_price":55000,"price":49500,"bp30":44550,"bp50":44550}},{"area":"ジュベルック","unit":"3cc","prices":{"old_price":66000,"price":66000,"bp30":59400,"bp50":59400}},{"area":"ジュベルック","unit":"追加1㏄","prices":{"old_price":33000,"price":16500,"bp30":14850,"bp50":14850}},{"area":"スネコスパフォルマ","unit":"1本（3.5cc）","prices":{"old_price":55000,"price":55000,"bp30":49500,"bp50":49500}},{"area":"プルリアルデンシファイ","unit":"1本2cc","prices":{"old_price":88000,"price":77000,"bp30":69300,"bp50":69300}},{"area":"プルリアルデンシファイ","unit":"2本4㏄","prices":{"old_price":176000,"price":156000,"bp30":140400,"bp50":140400}},{"area":"ジャルプロHMW","unit":"1本2.5cc","prices":{"old_price":66000,"price":55000,"bp30":49500,"bp50":49500}},{"area":"ジャルプロスーパーハイドロ","unit":"1本","prices":{"old_price":77000,"price":69800,"bp30":62820,"bp50":62820}},{"area":"スキンバイブ（アラガン）","unit":"1本","prices":{"old_price":77000,"price":66000,"bp30":59400,"bp50":59400}}],"id":37},{"sheet":"注入治療","kubun":"Dr.施術","category":"注入治療","name":"脂肪溶解注射（顔）","variants":[{"area":"FatXCore","unit":"1cc","prices":{"old_price":13200,"price":10560,"bp30":9504,"bp50":9504}}],"id":38},{"sheet":"ボトックス","kubun":"Dr.施術","category":"ボトックス","name":"ボトックス","variants":[{"area":"ニューロノックス","unit":"1部位（眉間・額・目尻・バニーライン‣口角‣ガミーライン‣顎）","prices":{"old_price":22000,"price":14300,"repeat":14300}},{"area":"ニューロノックス","unit":"2部位","prices":{"old_price":44000,"price":26400,"repeat":26400}},{"area":"ニューロノックス","unit":"3部位以上1部位当たり","prices":{"old_price":22000,"price":39600,"repeat":39600}},{"area":"ニューロノックス（リタッチ）","unit":"1部位","prices":{"price":3300}},{"area":"ニューロノックスまとめ買い","unit":"オーダーメイド全顔","prices":{"old_price":44000,"price":44000}},{"area":"ニューロノックスまとめ買い","unit":"100単位","prices":{"old_price":137500,"price":77000,"campaign":77000}},{"area":"ニューロノックスボトックスリフト","unit":"1回","prices":{"old_price":33000,"price":33000}},{"area":"アラガン","unit":"1部位（眉間・額・目尻・バニーライン‣口角‣ガミーライン‣顎）","prices":{"old_price":27500,"price":27500,"repeat":20625}},{"area":"アラガン","unit":"2部位","prices":{"old_price":55000,"price":55000,"repeat":38500}},{"area":"アラガン","unit":"3部位以上1部位当たり","prices":{"old_price":22000,"price":82500,"repeat":57750}},{"area":"アラガンまとめ買い","unit":"50単位","prices":{"price":66000,"campaign":66000}},{"area":"アラガンまとめ買い","unit":"100単位","prices":{"old_price":220000,"price":99000,"campaign":99000}},{"area":"アラガンボトックスリフト","unit":"1回","prices":{"old_price":55000,"price":55000}}],"id":39},{"sheet":"ヒアルロン酸","kubun":"Dr.施術","category":"ヒアルロン酸","name":"ヒアルロン酸","variants":[{"area":"CGスタイラー","unit":"1本1ml","prices":{"old_price":88000,"price":77000,"bp30":73150,"bp50":73150}},{"area":"ボリフト（アラガン）","unit":"1本","prices":{"old_price":77000,"price":77000,"moni_full":65450,"bp30":73150,"bp50":73150}},{"area":"ボリューマ（アラガン）","unit":"1本","prices":{"old_price":77000,"price":77000,"moni_full":65450,"bp30":73150,"bp50":73150}},{"area":"ボルベラ（アラガン）","unit":"1本","prices":{"old_price":77000,"price":77000,"moni_full":65450,"bp30":73150,"bp50":73150}},{"area":"ボラックス（アラガン）","unit":"1本","prices":{"old_price":77000,"price":77000,"moni_full":65450,"bp30":73150,"bp50":73150}},{"area":"レスチレン","unit":"1本","prices":{"old_price":77000,"price":77000,"moni_full":65450,"bp30":73150,"bp50":73150}}],"id":40},{"sheet":"ヒアルロン酸","kubun":"Dr.施術","category":"ヒアルロン酸","name":"ヒアルローニターゼ","variants":[{"area":"当院部分修正","unit":"1cc","prices":{"old_price":22000,"price":22000}},{"area":"当院修正","unit":"1本","prices":{"old_price":38500,"price":38500}},{"area":"当院修正","unit":"1部位","prices":{"old_price":38500,"price":66000}},{"area":"他院修正","unit":"1本","prices":{"old_price":55000,"price":55000}},{"area":"他院修正","unit":"1部位","prices":{"old_price":55000,"price":77000}}],"id":41},{"sheet":"スレッド（糸リフト）","kubun":"Dr.施術","category":"スレッド（糸リフト）","name":"ショートスレッド","variants":[{"area":"全顔","unit":"10本","prices":{"price":27500,"bp30":24750,"bp50":24750}},{"area":"全顔","unit":"20本","prices":{"price":44000,"bp30":39600,"bp50":39600}},{"area":"全顔","unit":"40本","prices":{"price":77000,"bp30":69300,"bp50":69300}},{"area":"全顔","unit":"60本","prices":{"price":115500,"bp30":103950,"bp50":103950}},{"area":"全顔","unit":"80本","prices":{"price":154000,"bp30":138600,"bp50":138600}},{"area":"全顔","unit":"100本","prices":{"price":192500,"bp30":173250,"bp50":173250}},{"area":"40本以上10本追加","unit":"10本","prices":{"price":19250,"bp30":17325,"bp50":17325}}],"id":42},{"sheet":"スレッド（糸リフト）","kubun":"Dr.施術","category":"スレッド（糸リフト）","name":"アイスレッド","variants":[{"area":"全顔","unit":"10本","prices":{"price":44000,"bp30":39600,"bp50":39600}},{"area":"全顔","unit":"20本","prices":{"price":77000,"bp30":69300,"bp50":69300}}],"id":43},{"sheet":"スレッド（糸リフト）","kubun":"Dr.施術","category":"スレッド（糸リフト）","name":"ロングスレッドPDO","variants":[{"area":"全顔","unit":"1本","prices":{"price":33000,"moni_full":19800,"bp30":29700,"bp50":29700}},{"area":"全顔","unit":"4本","prices":{"price":132000,"campaign":118800,"moni_full":79200,"bp30":118800,"bp50":118800}},{"area":"全顔","unit":"6本","prices":{"price":198000,"campaign":168300,"moni_full":118800,"bp30":178200,"bp50":178200}},{"area":"全顔","unit":"8本","prices":{"price":264000,"campaign":211200,"moni_full":158400,"bp30":237600,"bp50":237600}},{"area":"全顔","unit":"10本","prices":{"price":330000,"campaign":247500,"moni_full":198000,"bp30":297000,"bp50":297000}},{"area":"全顔","unit":"12本","prices":{"price":396000,"campaign":277200,"moni_full":237600,"bp30":356400,"bp50":356400}}],"id":44},{"sheet":"スレッド（糸リフト）","kubun":"Dr.施術","category":"スレッド（糸リフト）","name":"ロングスレッドPCL","variants":[{"area":"全顔","unit":"1本","prices":{"price":55000,"moni_full":33000,"bp30":49500,"bp50":49500}},{"area":"全顔","unit":"4本","prices":{"price":220000,"campaign":198800,"moni_full":132000,"bp30":198000,"bp50":198000}},{"area":"全顔","unit":"6本","prices":{"price":330000,"campaign":280500,"moni_full":198000,"bp30":297000,"bp50":297000}},{"area":"全顔","unit":"8本","prices":{"price":440000,"campaign":352000,"moni_full":264000,"bp30":396000,"bp50":396000}},{"area":"全顔","unit":"10本","prices":{"price":550000,"campaign":412500,"moni_full":330000,"bp30":495000,"bp50":495000}},{"area":"全顔","unit":"12本","prices":{"price":660000,"campaign":462000,"moni_full":396000,"bp30":594000,"bp50":594000}}],"id":45},{"sheet":"スレッド（糸リフト）","kubun":"Dr.施術","category":"スレッド（糸リフト）","name":"バーティカルリフト","variants":[{"area":"バーティカルリフト","unit":"4本","prices":{"price":220000,"campaign":165000,"moni_full":143000,"bp30":198000,"bp50":198000}},{"area":"バーティカルリフト","unit":"6本","prices":{"price":330000,"campaign":231000,"moni_full":198000,"bp30":297000,"bp50":297000}}],"id":46},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"二重埋没法（1年間保証付）","variants":[{"area":"","unit":"1回","prices":{"price":132000,"moni_full":99000,"moni_mask":118800,"bp50":118800}}],"id":47},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"自然癒着法","variants":[{"area":"4点留め","unit":"1回","prices":{"price":220000,"moni_full":118000,"moni_mask":132000,"bp50":198000}},{"area":"6点留め","unit":"1回","prices":{"price":275000,"moni_full":132000,"moni_mask":165000,"bp50":247500}}],"id":48},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"目の下のくま・たるみ取り","variants":[{"area":"脱脂","unit":"1回","prices":{"price":220000,"moni_full":132000,"moni_mask":165000,"bp50":198000}},{"area":"ハムラ法","unit":"1回","prices":{"price":385000,"moni_mask":330000,"bp50":346500}},{"area":"裏ハムラ法","unit":"1回","prices":{"price":440000,"moni_mask":385000,"bp50":396000}}],"id":49},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"タレ目形成","variants":[{"area":"","unit":"","prices":{"price":220000,"moni_full":99000,"moni_mask":132000,"bp50":198000}}],"id":50},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"中顔面リフト","variants":[{"area":"4本","unit":"","prices":{"price":220000,"moni_full":143000,"moni_mask":165000,"bp50":198000}},{"area":"6本","unit":"","prices":{"price":330000,"moni_full":198000,"moni_mask":231000,"bp50":297000}}],"id":51},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"眉下切開","variants":[{"area":"","unit":"","prices":{"price":440000,"moni_full":264000,"moni_mask":330000,"bp50":396000}}],"id":52},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"ネックリフト","variants":[{"area":"","unit":"","prices":{"price":660000,"moni_full":550000,"moni_mask":550000,"bp50":594000}}],"id":53},{"sheet":"美容外科（オペ）","kubun":"Dr.オペ","category":"美容外科（オペ）","name":"脂肪吸引","variants":[{"area":"頬","unit":"","prices":{"price":220000,"campaign":176000,"moni_full":132000,"moni_mask":154000,"bp50":198000}},{"area":"顎下","unit":"","prices":{"price":220000,"campaign":176000,"moni_full":132000,"moni_mask":154000,"bp50":198000}},{"area":"ジョールファット","unit":"","prices":{"price":198000,"campaign":158400,"moni_full":118800,"moni_mask":138600,"bp50":178200}},{"area":"頬➕顎下","unit":"","prices":{"price":440000,"campaign":308000,"moni_full":220000,"moni_mask":264000,"bp50":396000}}],"id":54},{"sheet":"医療ボディ痩身","kubun":"Ns施術","category":"医療ボディ痩身","name":"脂肪溶解注射（ボディコントゥア）","variants":[{"area":"顔","unit":"1cc","prices":{"old_price":11000,"old_first":8800,"price":11000,"bp30":8800,"bp50":8250}},{"area":"身体","unit":"1cc","prices":{"old_price":11000,"old_first":8800,"price":11000,"bp30":8800,"bp50":8250}},{"area":"身体","unit":"5cc","prices":{"old_price":55000,"price":55000,"bp30":44000,"bp50":41250}},{"area":"身体","unit":"10cc","prices":{"old_price":110000,"price":110000,"bp30":88000,"bp50":82500}},{"area":"身体","unit":"20cc","prices":{"old_price":220000,"price":220000,"bp30":176000,"bp50":165000}}],"id":55},{"sheet":"医療ボディ痩身","kubun":"Ns施術","category":"医療ボディ痩身","name":"脂肪溶解注射（FatXCore）","variants":[{"area":"顔","unit":"1cc","prices":{"old_price":13200,"old_first":10560,"price":13200,"bp30":10560,"bp50":9900}},{"area":"身体","unit":"1cc","prices":{"old_price":13200,"old_first":10560,"price":13200,"bp30":10560,"bp50":9900}},{"area":"身体","unit":"5cc","prices":{"old_price":66000,"price":66000,"bp30":52800,"bp50":49500}},{"area":"身体","unit":"10cc","prices":{"old_price":132000,"price":132000,"bp30":105600,"bp50":99000}},{"area":"身体","unit":"20cc","prices":{"old_price":264000,"price":264000,"bp30":211200,"bp50":198000}}],"id":56},{"sheet":"医療ボディ痩身","kubun":"Ns施術","category":"医療ボディ痩身","name":"脂肪冷却（クラツーα）","variants":[{"area":"1カップ","unit":"1回","prices":{"old_price":55000,"old_first":19800,"price":41250,"ticket_3":222750,"bp30":33000,"bp50":30937}},{"area":"2カップ","unit":"1回","prices":{"old_price":110000,"old_first":39600,"price":82500,"ticket_5":330000,"bp30":66000,"bp50":61875}},{"area":"3カップ","unit":"1回","prices":{"old_price":165000,"old_first":59400,"price":123750,"ticket_3":445500,"bp30":99000,"bp50":92812}},{"area":"4カップ","unit":"1回","prices":{"old_price":220000,"old_first":79200,"price":165000,"ticket_5":660000,"bp30":132000,"bp50":123750}}],"id":57},{"sheet":"医療ボディ痩身","kubun":"Ns施術","category":"医療ボディ痩身","name":"ボディハイフ（UFMPT）","variants":[{"area":"二の腕（スタンダード）","unit":"1回","prices":{"old_price":88000,"old_first":39800,"price":66000,"ticket_3":198000,"ticket_5":330000,"bp30":52800,"bp50":49500}},{"area":"二の腕（ライト）","unit":"1回","prices":{"old_price":66000,"old_first":39800,"price":49500,"ticket_3":148500,"ticket_5":247500,"bp30":39600,"bp50":37125}},{"area":"ブラファット","unit":"1回","prices":{"old_price":22000,"price":16500,"ticket_3":49500,"ticket_5":82500,"bp30":13200,"bp50":12375}},{"area":"ウエスト（スタンダード）","unit":"1回","prices":{"old_price":220000,"price":165000,"ticket_3":495000,"ticket_5":825000,"bp30":132000,"bp50":123750}},{"area":"ウエスト（ライト）","unit":"1回","prices":{"old_price":165000,"old_first":66000,"price":123750,"ticket_3":371250,"ticket_5":618750,"bp30":99000,"bp50":92812}},{"area":"お腹（スタンダード）","unit":"1回","prices":{"old_price":220000,"price":165000,"ticket_3":495000,"ticket_5":825000,"bp30":132000,"bp50":123750}},{"area":"お腹（ライト）","unit":"1回","prices":{"old_price":165000,"old_first":66000,"price":123750,"ticket_3":371250,"ticket_5":618750,"bp30":99000,"bp50":92812}},{"area":"ひざ上（スタンダード）","unit":"1回","prices":{"old_price":33000,"price":24750,"ticket_3":74250,"ticket_5":123750,"bp30":19800,"bp50":18562}},{"area":"ひざ上（ライト）","unit":"1回","prices":{"old_price":22000,"price":16500,"ticket_3":49500,"ticket_5":82500,"bp30":13200,"bp50":12375}},{"area":"太もも周り","unit":"1回","prices":{"old_price":297000,"price":222750,"ticket_3":668250,"ticket_5":1113750,"bp30":178200,"bp50":167062}},{"area":"内ももor外もも","unit":"1回","prices":{"old_price":165000,"old_first":66000,"price":123750,"ticket_3":371250,"ticket_5":618750,"bp30":99000,"bp50":92812}}],"id":58},{"sheet":"医療脱毛","kubun":"Ns施術","category":"医療脱毛","name":"レディース脱毛","variants":[{"area":"全身（顔・うなじ・VIO除く）","unit":"1回","prices":{"old_price":110000,"price":110000,"ticket_5":550000,"ticket_8":880000,"bp30":88000,"bp50":82500}},{"area":"VIO","unit":"1回","prices":{"old_price":27500,"price":22000,"ticket_3":21000,"ticket_5":110000,"ticket_8":176000,"bp30":17600,"bp50":16500}},{"area":"顔全体","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"全身パーフェクト（顔・うなじ・VIO付き）","unit":"1回","prices":{"old_price":167200,"price":167200,"ticket_5":836000,"ticket_8":1337600,"bp30":133760,"bp50":125400}},{"area":"セレクト脱毛3か所","unit":"1回","prices":{"old_price":40700,"price":40700,"ticket_3":122100,"ticket_5":203500,"bp30":32560,"bp50":30525}},{"area":"セレクト脱毛5か所","unit":"1回","prices":{"old_price":62700,"price":62700,"ticket_3":188100,"ticket_5":313500,"bp30":50160,"bp50":47025}},{"area":"打ち放題30分","unit":"1回","prices":{"old_price":16500,"price":16500,"bp30":13200,"bp50":12375}},{"area":"打ち放題60分","unit":"1回","prices":{"old_price":27500,"price":27500,"ticket_3":20900,"bp30":22000,"bp50":20625}},{"area":"口周囲（鼻下＋顎）","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"うなじ","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"両ワキ","unit":"1回","prices":{"old_price":3300,"price":3300,"ticket_5":16500,"ticket_8":26400,"bp30":2640,"bp50":2475}},{"area":"両ひじ上","unit":"1回","prices":{"old_price":11000,"price":11000,"ticket_5":55000,"ticket_8":88000,"bp30":8800,"bp50":8250}},{"area":"両ひじ下","unit":"1回","prices":{"old_price":11000,"price":11000,"ticket_5":55000,"ticket_8":88000,"bp30":8800,"bp50":8250}},{"area":"手の甲・指","unit":"1回","prices":{"old_price":3300,"price":3300,"ticket_5":16500,"ticket_8":26400,"bp30":2640,"bp50":2475}},{"area":"胸","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"乳輪周り","unit":"1回","prices":{"old_price":5500,"price":5500,"ticket_5":27500,"ticket_8":44000,"bp30":4400,"bp50":4125}},{"area":"腹部","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"へそ周り（直径6センチ）","unit":"1回","prices":{"old_price":5500,"price":5500,"ticket_5":27500,"ticket_8":44000,"bp30":4400,"bp50":4125}},{"area":"背中上","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"背中下","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"臀部","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"Vライン","unit":"1回","prices":{"old_price":11000,"price":11000,"ticket_5":55000,"ticket_8":88000,"bp30":8800,"bp50":8250}},{"area":"Iライン","unit":"1回","prices":{"old_price":11000,"price":11000,"ticket_5":55000,"ticket_8":88000,"bp30":8800,"bp50":8250}},{"area":"Oライン","unit":"1回","prices":{"old_price":11000,"price":11000,"ticket_5":55000,"ticket_8":88000,"bp30":8800,"bp50":8250}},{"area":"両ひざ上","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"両ひざ下","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"足の甲・指","unit":"1回","prices":{"old_price":3300,"price":3300,"ticket_5":16500,"ticket_8":26400,"bp30":2640,"bp50":2475}},{"area":"両ひざ","unit":"1回","prices":{"old_price":5500,"price":5500,"ticket_5":27500,"ticket_8":44000,"bp30":4400,"bp50":4125}},{"area":"両ひじ","unit":"1回","prices":{"old_price":5500,"price":5500,"ticket_5":27500,"ticket_8":44000,"bp30":4400,"bp50":4125}},{"area":"剃毛代（1部位）","unit":"1回","prices":{"old_price":3300,"price":3300,"bp30":2640,"bp50":2475}},{"area":"１ショット","unit":"1回","prices":{"old_price":550,"price":550,"bp30":440,"bp50":412}}],"id":59},{"sheet":"医療脱毛","kubun":"Ns施術","category":"医療脱毛","name":"メンズ脱毛","variants":[{"area":"顔全体","unit":"1回","prices":{"old_price":39600,"price":39600,"ticket_5":198000,"ticket_8":316800,"bp30":31680,"bp50":29700}},{"area":"ヒゲ3か所","unit":"1回","prices":{"old_price":29700,"price":29700,"ticket_5":148500,"ticket_8":237600,"bp30":23760,"bp50":22275}},{"area":"全身（顔・うなじ・VIO除く）","unit":"1回","prices":{"old_price":247665,"price":247665,"ticket_5":1238325,"ticket_8":1981320,"bp30":198132,"bp50":185748}},{"area":"腕全体セット","unit":"1回","prices":{"old_price":39600,"price":39600,"ticket_5":198000,"ticket_8":316800,"bp30":31680,"bp50":29700}},{"area":"脚全体セット","unit":"1回","prices":{"old_price":51150,"price":51150,"ticket_5":255750,"ticket_8":409200,"bp30":40920,"bp50":38362}},{"area":"胸＋お腹セット","unit":"1回","prices":{"old_price":49500,"price":49500,"ticket_5":247500,"ticket_8":396000,"bp30":39600,"bp50":37125}},{"area":"額","unit":"1回","prices":{"old_price":8250,"price":8250,"ticket_5":41250,"ticket_8":66000,"bp30":6600,"bp50":6187}},{"area":"眉間・眉上","unit":"1回","prices":{"old_price":8250,"price":8250,"ticket_5":41250,"ticket_8":66000,"bp30":6600,"bp50":6187}},{"area":"鼻","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"鼻下","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"アゴ","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"アゴ下","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"頬＋もみあげ","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"首","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"うなじ","unit":"1回","prices":{"old_price":19800,"price":19800,"ticket_5":99000,"ticket_8":158400,"bp30":15840,"bp50":14850}},{"area":"両ワキ","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"両ひじ上","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"両ひじ下","unit":"1回","prices":{"old_price":16500,"price":16500,"ticket_5":82500,"ticket_8":132000,"bp30":13200,"bp50":12375}},{"area":"手の甲・指","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"胸","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"乳輪周り","unit":"1回","prices":{"old_price":9900,"price":9900,"ticket_5":49500,"ticket_8":79200,"bp30":7920,"bp50":7425}},{"area":"腹部","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"へそ周り（直径6㎝）","unit":"1回","prices":{"old_price":9900,"price":9900,"ticket_5":49500,"ticket_8":79200,"bp30":7920,"bp50":7425}},{"area":"背中上","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"背中下","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"腰","unit":"1回","prices":{"old_price":19800,"price":19800,"ticket_5":99000,"ticket_8":158400,"bp30":15840,"bp50":14850}},{"area":"臀部","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"両ひざ上","unit":"1回","prices":{"old_price":24750,"price":24750,"ticket_5":123750,"ticket_8":198000,"bp30":19800,"bp50":18562}},{"area":"両ひざ下","unit":"1回","prices":{"old_price":19800,"price":19800,"ticket_5":99000,"ticket_8":158400,"bp30":15840,"bp50":14850}},{"area":"足の甲・指","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"両ひざ","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"両ひじ","unit":"1回","prices":{"old_price":6600,"price":6600,"ticket_5":33000,"ticket_8":52800,"bp30":5280,"bp50":4950}},{"area":"剃毛代（1部位）","unit":"1回","prices":{"old_price":3300,"price":3300,"bp30":2640,"bp50":2475}},{"area":"1ショット","unit":"1回","prices":{"old_price":550,"price":550,"bp30":440,"bp50":412}}],"id":60},{"sheet":"医療脱毛","kubun":"Ns施術","category":"医療脱毛","name":"キッズ脱毛","variants":[{"area":"全身（顔・うなじ・VIO除く）","unit":"1回","prices":{"old_price":88000,"price":88000,"ticket_5":440000,"ticket_8":704000,"bp30":70400,"bp50":66000}},{"area":"顔全体","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"口周囲（鼻下＋顎）","unit":"1回","prices":{"old_price":10560,"price":10560,"ticket_5":52800,"ticket_8":84480,"bp30":8448,"bp50":7920}},{"area":"うなじ","unit":"1回","prices":{"old_price":10560,"price":10560,"ticket_5":52800,"ticket_8":84480,"bp30":8448,"bp50":7920}},{"area":"両ワキ","unit":"1回","prices":{"old_price":2640,"price":2640,"ticket_5":13200,"ticket_8":21120,"bp30":2112,"bp50":1980}},{"area":"両ひじ上","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"両ひじ下","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"手の甲・指","unit":"1回","prices":{"old_price":2640,"price":2640,"ticket_5":13200,"ticket_8":21120,"bp30":2112,"bp50":1980}},{"area":"胸","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"乳輪周り","unit":"1回","prices":{"old_price":4400,"price":4400,"ticket_5":22000,"ticket_8":35200,"bp30":3520,"bp50":3300}},{"area":"腹部","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"へそ周り（直径6㎝）","unit":"1回","prices":{"old_price":4400,"price":4400,"ticket_5":22000,"ticket_8":35200,"bp30":3520,"bp50":3300}},{"area":"背中上","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"背中下","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"臀部","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"Vライン","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"Iライン","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"Oライン","unit":"1回","prices":{"old_price":8800,"price":8800,"ticket_5":44000,"ticket_8":70400,"bp30":7040,"bp50":6600}},{"area":"VIOセット","unit":"1回","prices":{"old_price":22000,"price":22000,"ticket_5":110000,"ticket_8":176000,"bp30":17600,"bp50":16500}},{"area":"両ひざ上","unit":"1回","prices":{"old_price":13200,"price":13200,"ticket_5":66000,"ticket_8":105600,"bp30":10560,"bp50":9900}},{"area":"両ひざ下","unit":"1回","prices":{"old_price":10560,"price":10560,"ticket_5":52800,"ticket_8":84480,"bp30":8448,"bp50":7920}},{"area":"足の甲・指","unit":"1回","prices":{"old_price":2640,"price":2640,"ticket_5":13200,"ticket_8":21120,"bp30":2112,"bp50":1980}},{"area":"両ひざ","unit":"1回","prices":{"old_price":4400,"price":4400,"ticket_5":22000,"ticket_8":35200,"bp30":3520,"bp50":3300}},{"area":"両ひじ","unit":"1回","prices":{"old_price":4400,"price":4400,"ticket_5":22000,"ticket_8":35200,"bp30":3520,"bp50":3300}},{"area":"剃毛代（1部位）","unit":"1回","prices":{"old_price":3300,"price":3300,"bp30":2640,"bp50":2475}},{"area":"1ショット","unit":"1回","prices":{"old_price":550,"price":550,"bp30":440,"bp50":412}}],"id":61},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"高濃度ビタミンC","variants":[{"area":"","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8250}}],"id":62},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"白玉点滴","variants":[{"area":"","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":6600}}],"id":63},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"プラチナ白玉点滴","variants":[{"area":"","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8250}}],"id":64},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"プラセンタ注射","variants":[{"area":"１A","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2475}}],"id":65},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"脂肪燃焼注射","variants":[{"area":"","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2475}}],"id":66},{"sheet":"点滴・注射","kubun":"Ns施術","category":"点滴・注射","name":"にんにく注射","variants":[{"area":"","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2475}}],"id":67},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"サノレックス（食欲抑制）","variants":[{"area":"10錠","unit":"","prices":{"price":11000}},{"area":"30錠","unit":"","prices":{"price":8800}}],"id":68},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"ゼニカル（脂質排泄）","variants":[{"area":"1週間21カプセル","unit":"","prices":{"price":11000}},{"area":"1か月84カプセル","unit":"","prices":{"price":3300}}],"id":69},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"防風通聖散","variants":[{"area":"90包","unit":"","prices":{"price":3300}}],"id":70},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"防己黄耆湯","variants":[{"area":"90包","unit":"","prices":{"price":3300}}],"id":71},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"アカルボース（糖質乳収剤）","variants":[{"area":"10錠","unit":"","prices":{"price":2200}},{"area":"90錠","unit":"","prices":{"price":16500}}],"id":72},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"リベルサス","variants":[{"area":"3㎎30錠","unit":"","prices":{"price":13200}},{"area":"7㎎30錠","unit":"","prices":{"price":24200}}],"id":73},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"トラネキサム酸","variants":[{"area":"30錠","unit":"","prices":{"price":3300}}],"id":74},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"シナール","variants":[{"area":"30錠","unit":"","prices":{"price":1650}}],"id":75},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"ユベラN","variants":[{"area":"30錠","unit":"","prices":{"price":1650}}],"id":76},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"ヘリオケア","variants":[{"area":"","unit":"","prices":{"price":8800}}],"id":77},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"シミ肝斑セット","variants":[{"area":"トラネキサム酸・シナール・ユベラＮ30錠","unit":"","prices":{"price":6600}}],"id":78},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"ニキビ・肌荒れセット","variants":[{"area":"シナール・ユベラＮ・ビフロキシン30錠","unit":"","prices":{"price":5500}}],"id":79},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"ハイドロキノン4g","variants":[{"area":"","unit":"","prices":{"price":2200}}],"id":80},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"トレチノイン5g","variants":[{"area":"","unit":"","prices":{"price":1650}}],"id":81},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"リンデロンVG5g","variants":[{"area":"","unit":"","prices":{"price":770}}],"id":82},{"sheet":"内服・外用薬","kubun":"その他","category":"内服・外用薬","name":"デキサンVG5g","variants":[{"area":"","unit":"","prices":{"price":770}}],"id":83},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"キシロカイン麻酔","variants":[{"area":"","unit":"","prices":{"old_price":1100,"price":1100}}],"id":84},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"局所麻酔ブロック0.5CC","variants":[{"area":"","unit":"","prices":{"old_price":11000,"price":11000}}],"id":85},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"局所麻酔0.5CC","variants":[{"area":"","unit":"","prices":{"old_price":11000,"price":11000}}],"id":86},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"点眼麻酔","variants":[{"area":"","unit":"1回","prices":{"old_price":5500,"price":5500}}],"id":87},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"笑気麻酔","variants":[{"area":"30分","unit":"1回","prices":{"old_price":11000,"price":11000}},{"area":"","unit":"1回","prices":{"old_price":5500,"price":5500}}],"id":88},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"局所麻酔","variants":[{"area":"","unit":"1回","prices":{"old_price":1100,"price":1100}},{"area":"","unit":"1回","prices":{"old_price":16500,"price":16500}}],"id":89},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"目元用シール麻酔","variants":[{"area":"目元2枚","unit":"","prices":{"old_price":660,"price":660}}],"id":90},{"sheet":"麻酔・その他","kubun":"その他","category":"麻酔・その他","name":"静脈麻酔","variants":[{"area":"","unit":"1回","prices":{"old_price":55000,"price":55000}}],"id":91},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨローズドメーラ","variants":[{"area":"顔","unit":"1回","prices":{"price":27500,"first":11000,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":92},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨアンストレス","variants":[{"area":"顔","unit":"1回","prices":{"price":18700,"first":11000,"bp30":14960,"bp50":14960,"ep5":17765,"ep10":16830,"ep20":14960}}],"id":93},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨイラストリアス","variants":[{"area":"顔","unit":"1回","prices":{"price":18700,"first":11000,"bp30":14960,"bp50":14960,"ep5":17765,"ep10":16830,"ep20":14960}}],"id":94},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨミューズ","variants":[{"area":"顔","unit":"1回","prices":{"price":15400,"first":7700,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":95},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨビオフィート","variants":[{"area":"顔","unit":"1回","prices":{"price":15400,"first":7700,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":96},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨシャトーデボーテ","variants":[{"area":"顔","unit":"1回","prices":{"price":15400,"first":7700,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":97},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨコモデックス","variants":[{"area":"顔","unit":"1回","prices":{"price":12100,"first":7700,"bp30":9680,"bp50":9680,"ep5":11495,"ep10":10890,"ep20":9680}}],"id":98},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＣＨフォーエバーヤング","variants":[{"area":"顔","unit":"1回","prices":{"price":18700,"first":11000,"bp30":14960,"bp50":14960,"ep5":17765,"ep10":16830,"ep20":14960}}],"id":99},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"CHニュアンス","variants":[{"area":"顔","unit":"1回","prices":{"price":22000,"first":13200,"bp30":17600,"bp50":17600,"ep5":20900,"ep10":19800,"ep20":17600}},{"area":"顔➕首➕デコルテ","unit":"1回","prices":{"price":27500,"first":18700,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":100},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"スキンメイド60分","variants":[{"area":"顔","unit":"1回","prices":{"price":16500,"first":13200,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}}],"id":101},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"スキンメイド90分","variants":[{"area":"顔","unit":"1回","prices":{"price":19800,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":102},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＶＶＳトリートメント","variants":[{"area":"顔","unit":"1回","prices":{"price":25000,"first":22000,"bp30":20000,"bp50":20000,"ep5":23750,"ep10":22500,"ep20":20000}}],"id":103},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"トロイピール","variants":[{"area":"顔","unit":"1回","prices":{"price":25000,"first":22000,"bp30":20000,"bp50":20000,"ep5":23750,"ep10":22500,"ep20":20000}}],"id":104},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"エピダーマルスキン30分","variants":[{"area":"顔","unit":"1回","prices":{"price":27500,"first":22000,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":105},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"エピダーマルスキン45分","variants":[{"area":"顔","unit":"1回","prices":{"price":33000,"bp30":26400,"bp50":26400,"ep5":31350,"ep10":29700,"ep20":26400}}],"id":106},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ハーブピーリング","variants":[{"area":"顔","unit":"1回","prices":{"price":27500,"first":11000,"bp10":24750,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":107},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ハーブピーリング背中","variants":[{"area":"背中","unit":"1回","prices":{"price":44000,"first":22000,"bp10":39600,"bp30":35200,"bp50":35200,"ep5":41800,"ep10":39600,"ep20":35200}}],"id":108},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ハーブピーリング背中半分","variants":[{"area":"背中半分","unit":"1回","prices":{"price":27500,"first":16500,"bp10":24750,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":109},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"アフター再生トリートメント","variants":[{"area":"","unit":"1回","prices":{"price":13200,"bp30":10560,"bp50":10560,"ep5":12540,"ep10":11880,"ep20":10560}}],"id":110},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"Ｈ２ハイドロフェイシャル顔60分","variants":[{"area":"顔","unit":"1回","prices":{"price":13200,"bp30":10560,"bp50":10560,"ep5":12540,"ep10":11880,"ep20":10560}}],"id":111},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"Ｈ２ハイドロフェイシャル顔＋頭70分","variants":[{"area":"顔＋頭","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}}],"id":112},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰヘッドマッサージ10分","variants":[{"area":"","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":113},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰヘッドカッサ10分","variants":[{"area":"","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":114},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰガビラン10分","variants":[{"area":"","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":115},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰ肌質別マスク","variants":[{"area":"","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":116},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰ幹細胞美容液導入","variants":[{"area":"","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800,"ep5":10450,"ep10":9900,"ep20":8800}}],"id":117},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰエクソソームアンプル導入","variants":[{"area":"","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}}],"id":118},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰプラズマのみ","variants":[{"area":"","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800,"ep5":10450,"ep10":9900,"ep20":8800}}],"id":119},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰプラズマリフティング","variants":[{"area":"プラズマ＋ＶＣ","unit":"1回","prices":{"price":14300,"bp30":11440,"bp50":11440,"ep5":13585,"ep10":12870,"ep20":11440}},{"area":"プラズマ＋プラセンタ","unit":"1回","prices":{"price":14300,"bp30":11440,"bp50":11440,"ep5":13585,"ep10":12870,"ep20":11440}},{"area":"プラズマ＋タイトニング","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}},{"area":"プラズマ＋リジェンセラム","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}},{"area":"プラズマ＋ヒト臍帯由来幹細胞培養上清液","unit":"1回","prices":{"price":33000,"bp30":26400,"bp50":26400,"ep5":31350,"ep10":29700,"ep20":26400}},{"area":"プラズマ＋エクソソームアンプル","unit":"1回","prices":{"price":22000,"bp30":17600,"bp50":17600,"ep5":20900,"ep10":19800,"ep20":17600}},{"area":"プラズマ＋純正エクソソーム","unit":"1回","prices":{"price":55000,"bp30":44000,"bp50":44000,"ep5":52250,"ep10":49500,"ep20":44000}}],"id":120},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰイオン導入","variants":[{"area":"ＶＣor トラネキサム酸＋ｱﾙｹﾞﾏｽｸ","unit":"1回","prices":{"price":8800,"bp10":7920,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":121},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰヒーライト10分","variants":[{"area":"顔","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":122},{"sheet":"エステフェイシャル","kubun":"エステ","category":"エステフェイシャル","name":"ＯＰシルクコラーゲン","variants":[{"area":"顔","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":123},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"キャビラジ+スリミング経絡マッサージ60分","variants":[{"area":"身体","unit":"1回","prices":{"price":24200,"bp30":19360,"bp50":19360,"ep5":22990,"ep10":21780,"ep20":19360}}],"id":124},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"キャビラジ+スリミング経絡マッサージ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":36300,"bp30":29040,"bp50":29040,"ep5":34485,"ep10":32670,"ep20":29040}}],"id":125},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"スリミング経絡マッサージ＋電磁波EMS60分","variants":[{"area":"身体","unit":"1回","prices":{"price":26400,"bp30":21120,"bp50":21120,"ep5":25080,"ep10":23760,"ep20":21120}}],"id":126},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"キャビゼロ瘦身60分","variants":[{"area":"身体","unit":"1回","prices":{"price":24200,"bp30":19360,"bp50":19360,"ep5":22990,"ep10":21780,"ep20":19360}}],"id":127},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"キャビゼロ瘦身＋発汗付き90分","variants":[{"area":"身体","unit":"1回","prices":{"price":36300,"bp30":29040,"bp50":29040,"ep5":34485,"ep10":32670,"ep20":29040}}],"id":128},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"キャビゼロ瘦身＋発汗付き120分","variants":[{"area":"身体","unit":"1回","prices":{"price":48400,"bp30":38720,"bp50":38720,"ep5":45980,"ep10":43560,"ep20":38720}}],"id":129},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ポールシェリーリラクシング90分","variants":[{"area":"身体","unit":"1回","prices":{"price":19800,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":130},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ハイパーウッド30分","variants":[{"area":"身体","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":131},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ハイパーウッド60分","variants":[{"area":"身体","unit":"1回","prices":{"price":13200,"bp30":10560,"bp50":10560,"ep5":12540,"ep10":11880,"ep20":10560}}],"id":132},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ハイパーウッド90分","variants":[{"area":"身体","unit":"1回","prices":{"price":19800,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":133},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ボディ&フェイシャルアロマ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800}}],"id":134},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールボディ&フェイシャルアロマ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200}}],"id":135},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールボディアロマリンパマッサージ60分","variants":[{"area":"身体","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800,"ep5":10450,"ep10":9900,"ep20":8800}}],"id":136},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールボディアロマリンパマッサージ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":15400,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":137},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールデコルテ・ヘッド15分","variants":[{"area":"身体","unit":"1回","prices":{"price":6600,"bp30":5280,"bp50":5280,"ep5":6270,"ep10":5940,"ep20":5280}}],"id":138},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールハンド10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":139},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"ラセールフット20分","variants":[{"area":"身体","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":140},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"経絡マッサージ70分","variants":[{"area":"身体","unit":"1回","prices":{"price":15400,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":141},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"経絡マッサージ＋発汗付き","variants":[{"area":"身体","unit":"1回","prices":{"price":19800,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":142},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"チネイザン20分","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":143},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPラジオ波/キャビテーション10分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":144},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPキャビテーション&ラジオ波10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":145},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPキャビゼロ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":146},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OP電磁波EMS1箇所30分","variants":[{"area":"身体","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}}],"id":147},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPハイパーウッド30分","variants":[{"area":"身体","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":148},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPスリミングマッサージ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":149},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPリンパマッサージ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":2200,"bp30":1760,"bp50":1760,"ep5":2090,"ep10":1980,"ep20":1760}}],"id":150},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPリフレ足ツボ20分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":151},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPヒートマット20分","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":152},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPラセールオイル1パーツ","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":153},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPラセールオイル全身","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":154},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"OPBDSクリーム","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":155},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"カスタム痩身60分","variants":[{"area":"身体","unit":"1回","prices":{"price":24200,"bp30":19360,"bp50":19360,"ep5":22990,"ep10":21780,"ep20":19360}}],"id":156},{"sheet":"エステボディ","kubun":"エステ","category":"エステボディ","name":"カスタム痩身90分","variants":[{"area":"身体","unit":"1回","prices":{"price":36300,"bp30":29040,"bp50":29040,"ep5":34485,"ep10":32670,"ep20":29040}}],"id":157},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ボディ&フェイシャルアロマ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800}}],"id":158},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールボディ&フェイシャルアロマ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":16500,"bp30":13200,"bp50":13200}}],"id":159},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールボディアロマリンパマッサージ60分","variants":[{"area":"身体","unit":"1回","prices":{"price":11000,"bp30":8800,"bp50":8800,"ep5":10450,"ep10":9900,"ep20":8800}}],"id":160},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールボディアロマリンパマッサージ90分","variants":[{"area":"身体","unit":"1回","prices":{"price":15400,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":161},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールデコルテ・ヘッド15分","variants":[{"area":"身体","unit":"1回","prices":{"price":6600,"first":8800,"bp30":5280,"bp50":5280,"ep5":6270,"ep10":5940,"ep20":5280}}],"id":162},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールハンド10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"first":7700,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":163},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"ラセールフット20分","variants":[{"area":"身体","unit":"1回","prices":{"price":8800,"first":7700,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":164},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"経絡マッサージ70分","variants":[{"area":"身体","unit":"1回","prices":{"price":15400,"first":11000,"bp30":12320,"bp50":12320,"ep5":14630,"ep10":13860,"ep20":12320}}],"id":165},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"経絡マッサージ＋発汗付き","variants":[{"area":"身体","unit":"1回","prices":{"price":19800,"first":11000,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":166},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"チネイザン20分","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"first":13200,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":167},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPラジオ波/キャビテーション10分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":168},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPキャビテーション&ラジオ波10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"first":22000,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":169},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPキャビゼロ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"first":22000,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":170},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OP電磁波EMS1箇所30分","variants":[{"area":"身体","unit":"1回","prices":{"price":16500,"first":22000,"bp30":13200,"bp50":13200,"ep5":15675,"ep10":14850,"ep20":13200}}],"id":171},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPハイパーウッド30分","variants":[{"area":"身体","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":7040,"ep5":8360,"ep10":7920,"ep20":7040}}],"id":172},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPスリミングマッサージ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"first":11000,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":173},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPリンパマッサージ10分","variants":[{"area":"身体","unit":"1回","prices":{"price":2200,"first":22000,"bp30":1760,"bp50":1760,"ep5":2090,"ep10":1980,"ep20":1760}}],"id":174},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPリフレ足ツボ20分","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"first":16500,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":175},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPヒートマット20分","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":176},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPラセールオイル1パーツ","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":177},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPラセールオイル全身","variants":[{"area":"身体","unit":"1回","prices":{"price":5500,"bp30":4400,"bp50":4400,"ep5":5225,"ep10":4950,"ep20":4400}}],"id":178},{"sheet":"リラクゼーション","kubun":"エステ","category":"リラクゼーション","name":"OPBDSクリーム","variants":[{"area":"身体","unit":"1回","prices":{"price":3300,"bp30":2640,"bp50":2640,"ep5":3135,"ep10":2970,"ep20":2640}}],"id":179},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"フェイシャル＋デコルテor背中トリートメント90分","variants":[{"area":"顔＋デコルテ/背中","unit":"1回","prices":{"price":27500,"first":13200,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":180},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"二の腕&背中痩せ50分","variants":[{"area":"二の腕＋背中","unit":"1回","prices":{"price":19800,"first":6600,"bp30":15840,"bp50":15840,"ep5":18810,"ep10":17820,"ep20":15840}}],"id":181},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"ベーシックフェイシャル50分","variants":[{"area":"顔","unit":"1回","prices":{"price":8800,"bp30":7040,"bp50":7040}}],"id":182},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"1day集中コース120分","variants":[{"area":"顔","unit":"1回","prices":{"price":27500,"bp30":22000,"bp50":22000,"ep5":26125,"ep10":24750,"ep20":22000}}],"id":183},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"1day集中コース＋美白フェイシャル180分","variants":[{"area":"顔","unit":"1回","prices":{"price":32500,"bp30":26000,"bp50":26000,"ep5":30875,"ep10":29250,"ep20":26000}}],"id":184},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"全身オイルトリートメント50分","variants":[{"area":"身体","unit":"1回","prices":{"price":7700,"bp30":6160,"bp50":6160,"ep5":7315,"ep10":6930,"ep20":6160}}],"id":185},{"sheet":"エステその他","kubun":"エステ","category":"エステその他","name":"ヘッド＋デコルテ/フットマッサージ30分","variants":[{"area":"身体","unit":"1回","prices":{"price":4400,"bp30":3520,"bp50":3520,"ep5":4180,"ep10":3960,"ep20":3520}}],"id":186}];
 
-let allData = null;
-let selectedTreatments = [];
+// ─── 状態 ───
+let selectedIds = new Set();
+let currentLayout = 4;
+let currentCategory = null;
+let searchQuery = '';
 
-function fmt(val) {
-  if (!val) return null;
-  const n = parseInt(String(val).replace(/[¥,\s]/g, ''), 10);
-  if (isNaN(n)) return null;
-  return n.toLocaleString('ja-JP');
+// ─── 初期化 ───
+function init() {
+  buildCategoryFilter();
+  buildList();
+  updatePreview();
 }
 
-function fmtYen(val) {
-  const f = fmt(val);
-  if (!f) return '<span class="pop-price-na">設定なし</span>';
-  return '<span class="yen">¥</span>' + f + '<span class="tax">(税込)</span>';
+function buildCategoryFilter() {
+  const cats = [...new Set(TREATMENTS.map(t => t.sheet))];
+  const el = document.getElementById('catFilter');
+  el.innerHTML = '<button class="cat-btn active" onclick="filterCategory(null, this)">すべて</button>' +
+    cats.map(c => `<button class="cat-btn" onclick="filterCategory('${c}', this)">${c}</button>`).join('');
 }
 
-async function loadData() {
-  const res = await fetch(DATA_URL);
-  allData = await res.json();
-  buildCategorySelect();
-  updateList();
+function filterCategory(cat, btn) {
+  currentCategory = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  buildList();
 }
 
-function buildCategorySelect() {
-  const sel = document.getElementById('catSelect');
-  const cats = [...new Set(allData.treatments.flatMap(t => t.categories || [t.category]))].sort();
-  cats.forEach(c => {
-    const opt = document.createElement('option');
-    opt.value = c;
-    opt.textContent = c;
-    sel.appendChild(opt);
-  });
-}
+document.getElementById('searchBox').addEventListener('input', function() {
+  searchQuery = this.value.trim().toLowerCase();
+  buildList();
+});
 
 function getFilteredTreatments() {
-  let items = allData.treatments;
-  const cat = document.getElementById('catSelect').value;
-  const q = document.getElementById('searchInput').value.trim().toLowerCase();
-
-  if (cat) {
-    items = items.filter(t => (t.categories || [t.category]).includes(cat));
-  }
-  if (q) {
-    items = items.filter(t =>
-      (t.treatment || '').toLowerCase().includes(q) ||
-      (t.area || '').toLowerCase().includes(q)
-    );
-  }
-  return items;
-}
-
-function updateList() {
-  const items = getFilteredTreatments();
-  const wrap = document.getElementById('treatmentListWrap');
-
-  if (!document.getElementById('catSelect').value && !document.getElementById('searchInput').value.trim()) {
-    wrap.style.display = 'none';
-    return;
-  }
-
-  wrap.innerHTML = '';
-  wrap.style.display = items.length > 0 ? 'block' : 'none';
-
-  items.slice(0, 50).forEach((t, i) => {
-    const div = document.createElement('div');
-    div.className = 'treatment-list-item';
-    const cat = (t.categories || [t.category])[0] || '';
-    const area = t.area ? ` / ${t.area}` : '';
-    const sessions = t.sessions ? ` [${t.sessions}]` : '';
-    const price = fmt(t.price) ? `¥${fmt(t.price)}` : '';
-    div.innerHTML = `<strong>${esc(t.treatment || '—')}${esc(area)}${esc(sessions)}</strong> ${price} <span class="item-cat">${esc(cat)}</span>`;
-    div.addEventListener('click', () => addTreatment(t));
-    wrap.appendChild(div);
-  });
-
-  if (items.length > 50) {
-    const more = document.createElement('div');
-    more.className = 'treatment-list-item';
-    more.style.textAlign = 'center';
-    more.style.opacity = '0.6';
-    more.textContent = `...他 ${items.length - 50}件（検索で絞り込んでください）`;
-    wrap.appendChild(more);
-  }
-}
-
-function addTreatment(t) {
-  // Avoid duplicates by checking unique combo
-  const key = (t.treatment || '') + '|' + (t.area || '') + '|' + (t.price || '');
-  if (selectedTreatments.some(s => (s.treatment || '') + '|' + (s.area || '') + '|' + (s.price || '') === key)) return;
-
-  selectedTreatments.push(t);
-  renderSelected();
-  renderPOP();
-}
-
-function removeTreatment(idx) {
-  selectedTreatments.splice(idx, 1);
-  renderSelected();
-  renderPOP();
-}
-
-function clearAll() {
-  selectedTreatments = [];
-  renderSelected();
-  renderPOP();
-}
-
-function renderSelected() {
-  const list = document.getElementById('selectedList');
-  list.innerHTML = '';
-  selectedTreatments.forEach((t, i) => {
-    const tag = document.createElement('span');
-    tag.className = 'selected-tag';
-    const area = t.area ? ` / ${t.area}` : '';
-    tag.innerHTML = `${esc(t.treatment)}${esc(area)} <span class="remove" onclick="removeTreatment(${i})">✕</span>`;
-    list.appendChild(tag);
-  });
-}
-
-function renderPOP() {
-  const area = document.getElementById('previewArea');
-
-  if (selectedTreatments.length === 0) {
-    area.innerHTML = '<div style="color:var(--text-light); padding:60px; text-align:center;">上のメニューから施術を選択してください。</div>';
-    return;
-  }
-
-  let html = '';
-
-  // 2施術ずつA4ページに配置
-  for (let i = 0; i < selectedTreatments.length; i += 2) {
-    html += '<div class="a4-page">';
-    html += buildCard(selectedTreatments[i]);
-    if (i + 1 < selectedTreatments.length) {
-      html += buildCard(selectedTreatments[i + 1]);
-    } else {
-      html += '<div class="pop-card empty">（空きスペース）</div>';
+  return TREATMENTS.filter(t => {
+    if (currentCategory && t.sheet !== currentCategory) return false;
+    if (searchQuery) {
+      const haystack = (t.name + ' ' + t.area + ' ' + t.category + ' ' + t.unit).toLowerCase();
+      return haystack.includes(searchQuery);
     }
-    html += '</div>';
-  }
+    return true;
+  });
+}
 
-  area.innerHTML = html;
+function buildList() {
+  const filtered = getFilteredTreatments();
+  const el = document.getElementById('listGrid');
+  el.innerHTML = filtered.map(t => {
+    const sel = selectedIds.has(t.id) ? 'selected' : '';
+    const v0 = t.variants[0];
+    const price = v0.prices.price ? '¥' + v0.prices.price.toLocaleString() : '';
+    const varCount = t.variants.length;
+    const areaText = varCount > 1 ? `(${varCount}件)` : (v0.area || '');
+    return `<div class="list-item ${sel}" onclick="toggleSelect(${t.id})" data-id="${t.id}">
+      <div class="li-check">${sel ? '✓' : ''}</div>
+      <span class="li-name">${t.name}</span>
+      <span class="li-area">${areaText}</span>
+      <span class="li-price">${price}${varCount > 1 ? '〜' : ''}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleSelect(id) {
+  if (selectedIds.has(id)) {
+    selectedIds.delete(id);
+  } else {
+    selectedIds.add(id);
+  }
+  buildList();
+  updatePreview();
+}
+
+function clearSelection() {
+  selectedIds.clear();
+  buildList();
+  updatePreview();
+}
+
+function setLayout(n) {
+  currentLayout = n;
+  document.querySelectorAll('.layout-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.layout-btn[data-layout="${n}"]`).classList.add('active');
+  updatePreview();
+}
+
+function fmt(v) {
+  return '¥' + v.toLocaleString();
+}
+function fmtShort(v) {
+  return '¥' + v.toLocaleString();
+}
+function discPct(base, val) {
+  if (!base || !val || val >= base) return '';
+  const pct = Math.round((1 - val / base) * 100);
+  return pct > 0 ? '<span class="disc">' + pct + '%OFF</span>' : '';
+}
+function ticketUnit(key, val) {
+  const n = {ticket_3:3, ticket_5:5, ticket_8:8}[key];
+  if (!n || !val) return '';
+  return '<span class="disc">1回あたり ' + fmt(Math.round(val / n)) + '</span>';
 }
 
 function buildCard(t) {
-  const cat = (t.categories || [t.category])[0] || '';
-  const area = t.area || '';
-  const basePrice = parseInt(String(t.price || '').replace(/[¥,\s]/g, ''), 10);
+  const vars = t.variants;
+  const isSingle = vars.length === 1;
+  let html = `<div class="pop-card">`;
 
-  let html = '<div class="pop-card">';
-
-  // クリニック名
-  html += '<div class="pop-clinic">BEAUTE SKIN CLINIC</div>';
-
-  // カテゴリ
-  if (cat) {
-    html += `<div style="text-align:center;"><span class="pop-category">${esc(cat)}</span></div>`;
-  }
+  // ヘッダー
+  html += `<div class="card-header">
+    <div class="card-clinic">BEAUTE SKIN CLINIC</div>
+    <div class="card-category">${t.category}</div>
+  </div>`;
 
   // 施術名
-  html += `<div class="pop-treatment-name">${esc(t.treatment || '—')}</div>`;
+  html += `<div class="card-name">${t.name}</div>`;
 
-  // 部位/詳細
-  if (area) {
-    html += `<div class="pop-area">${esc(area)}</div>`;
-  }
+  if (isSingle) {
+    // ── 単一バリアント: 従来の大きい価格表示 ──
+    const v = vars[0];
+    const p = v.prices;
+    if (v.area) html += `<div class="card-area">${v.area}</div>`;
+    if (v.unit) html += `<div class="card-unit">${v.unit}</div>`;
 
-  html += '<hr class="pop-divider">';
+    if (p.old_price && p.price && p.old_price !== p.price) {
+      const dir = p.price < p.old_price ? 'down' : 'up';
+      const arrow = dir === 'down' ? '↓' : '↑';
+      html += `<div class="old-price">旧 <s>${fmt(p.old_price)}</s><span class="direction ${dir}">${arrow}</span></div>`;
+    }
 
-  // 価格セクション
-  html += '<div class="pop-prices">';
-
-  // 通常価格
-  html += `<div class="pop-price-row">
-    <span class="pop-price-label">通常価格</span>
-    <span class="pop-price-value main-price">${fmtYen(t.price)}</span>
-  </div>`;
-
-  // 単位
-  if (t.sessions) {
-    html += `<div style="text-align:right; font-size:10px; color:var(--text-light); margin-top:-2mm;">${esc(t.sessions)}</div>`;
-  }
-
-  // リピート割
-  if (t.repeat_price && t.repeat_price !== '設定なし' && t.repeat_price !== 'なし') {
-    html += `<div class="pop-price-row">
-      <span class="pop-price-label">リピート割</span>
-      <span class="pop-price-value discount">${fmtYen(t.repeat_price)}</span>
+    html += `<div class="main-price">
+      <div class="main-price-label">通常価格（税込）</div>
+      <div class="main-price-value"><span class="main-price-yen">¥</span>${p.price.toLocaleString()}<span class="main-price-tax">（税込）</span></div>
     </div>`;
+
+    let subs = [];
+    const isEsteSingle = t.kubun === 'エステ';
+    if (isEsteSingle && p.first) subs.push(['初回価格', fmt(p.first), 'first', p.first]);
+    if (p.repeat) subs.push(['リピート', fmt(p.repeat), 'repeat', p.repeat]);
+    if (p.campaign) subs.push(['CP', fmt(p.campaign), 'campaign', p.campaign]);
+    if (subs.length) {
+      html += '<div class="sub-prices">';
+      subs.forEach(([l,v,c,n]) => html += `<div class="sub-row"><span class="sub-label">${l}</span><span class="sub-value ${c}">${v}${discPct(p.price, n)}</span></div>`);
+      html += '</div>';
+    }
+
+    // 回数券
+    let tickets = [];
+    if (p.ticket_3) tickets.push(['3回券', fmt(p.ticket_3), p.ticket_3, 3]);
+    if (p.ticket_5) tickets.push(['5回券', fmt(p.ticket_5), p.ticket_5, 5]);
+    if (p.ticket_8) tickets.push(['8回券', fmt(p.ticket_8), p.ticket_8, 8]);
+    if (tickets.length) {
+      html += '<div class="ticket-box"><div class="ticket-header">回数券</div>';
+      tickets.forEach(([l,v,n,times]) => {
+        const unit = fmt(Math.round(n / times));
+        html += `<div class="ticket-row"><span>${l}</span><span class="tv">${v}${discPct(p.price, n)}<span class="disc">1回あたり ${unit}</span></span></div>`;
+      });
+      html += '</div>';
+    }
+
+    // BP・EP（EPはエステのみ）
+    const isEste = t.kubun === 'エステ';
+    let pps = [];
+    if (p.bp10) pps.push(['BP10万', fmt(p.bp10), 'bp', p.bp10]);
+    if (p.bp30) pps.push(['BP30万', fmt(p.bp30), 'bp', p.bp30]);
+    if (p.bp50) pps.push(['BP50万', fmt(p.bp50), 'bp', p.bp50]);
+    if (isEste && p.ep5) pps.push(['EP5万', fmt(p.ep5), 'ep', p.ep5]);
+    if (isEste && p.ep10) pps.push(['EP10万', fmt(p.ep10), 'ep', p.ep10]);
+    if (isEste && p.ep20) pps.push(['EP20万', fmt(p.ep20), 'ep', p.ep20]);
+    if (pps.length) {
+      html += '<div class="pp-box"><div class="pp-header">プリペイド</div>';
+      pps.forEach(([l,v,tp,n]) => html += `<div class="pp-row"><span>${l}</span><span class="pv pv-${tp}">${v}${discPct(p.price, n)}</span></div>`);
+      html += '</div>';
+    }
+
+  } else {
+    // ── 複数バリアント: テーブル形式 ──
+    // 表示する価格列（データがある列のみ自動表示）
+    const priceCols = [
+      {key:'old_price', label:'旧通常'},
+      {key:'old_first', label:'旧初回'},
+      {key:'price', label:'通常'},
+      {key:'first', label:'初回'},
+      {key:'repeat', label:'リピート'},
+      {key:'campaign', label:'CP'},
+      {key:'moni_full', label:'モニ全'},
+      {key:'moni_mask', label:'モニ隠'},
+      {key:'moni_eye', label:'モニ目'},
+      {key:'ticket_3', label:'3回券'},
+      {key:'ticket_5', label:'5回券'},
+      {key:'ticket_8', label:'8回券'},
+      {key:'bp10', label:'BP10'},
+      {key:'bp30', label:'BP30'},
+      {key:'bp50', label:'BP50'},
+      {key:'ep5', label:'EP5'},
+      {key:'ep10', label:'EP10'},
+      {key:'ep20', label:'EP20'},
+    ];
+    // どの列にデータがあるか（EP・初回はエステのみ）
+    const isEste = t.kubun === 'エステ';
+    const activeCols = priceCols.filter(col => {
+      if (!isEste && col.key.startsWith('ep')) return false;
+      if (!isEste && col.key === 'first') return false;
+      return vars.some(v => v.prices[col.key]);
+    });
+
+    html += '<table class="var-table"><thead><tr>';
+    html += '<th class="vt-area"></th>';
+    activeCols.forEach(col => {
+      let hcls = 'vt-price';
+      if (col.key === 'old_price' || col.key === 'old_first') hcls += ' vt-old-h';
+      if (col.key === 'price') hcls += ' vt-new-h';
+      html += `<th class="${hcls}">${col.label}</th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    vars.forEach(v => {
+      const p = v.prices;
+      const label = v.area || v.unit || '-';
+      const changed = p.old_price && p.price && p.old_price !== p.price;
+      html += '<tr>';
+      html += `<td class="vt-area">${label}</td>`;
+      activeCols.forEach(col => {
+        const val = p[col.key];
+        let cls = 'vt-price';
+        if (col.key === 'old_price' || col.key === 'old_first') cls += ' vt-old';
+        else if (col.key === 'price') {
+          cls += ' vt-new';
+          if (changed) cls += p.price < p.old_price ? ' price-down' : ' price-up';
+        }
+        else if (col.key === 'first') cls += ' vt-first';
+        else if (col.key === 'repeat') cls += ' vt-repeat';
+        else if (col.key === 'campaign') cls += ' vt-campaign';
+        else if (col.key.startsWith('moni')) cls += ' vt-monitor';
+        else if (col.key.startsWith('ticket')) cls += ' vt-ticket';
+        else if (col.key.startsWith('bp')) cls += ' vt-bp';
+        else if (col.key.startsWith('ep')) cls += ' vt-ep';
+        let cell = val ? fmtShort(val) : '';
+        if (val && p.price && val < p.price && col.key !== 'old_price' && col.key !== 'old_first' && col.key !== 'price') {
+          cell += discPct(p.price, val);
+        }
+        if (val && col.key.startsWith('ticket')) {
+          cell += ticketUnit(col.key, val);
+        }
+        html += `<td class="${cls}">${cell}</td>`;
+      });
+      html += '</tr>';
+    });
+
+    html += '</tbody></table>';
   }
 
-  // CP
-  if (t.campaign_price && t.campaign_price !== '設定なし' && t.campaign_price !== 'なし') {
-    html += `<div class="pop-price-row">
-      <span class="pop-price-label">CP価格</span>
-      <span class="pop-price-value campaign">${fmtYen(t.campaign_price)}</span>
-    </div>`;
-  }
-
-  // モニター
-  if (t.monitor_full_price && t.monitor_full_price !== '設定なし' && t.monitor_full_price !== 'なし') {
-    html += `<div class="pop-price-row">
-      <span class="pop-price-label">モニター全顔</span>
-      <span class="pop-price-value monitor">${fmtYen(t.monitor_full_price)}</span>
-    </div>`;
-  }
-  if (t.monitor_eye_price && t.monitor_eye_price !== '設定なし' && t.monitor_eye_price !== 'なし') {
-    html += `<div class="pop-price-row">
-      <span class="pop-price-label">モニター目元</span>
-      <span class="pop-price-value monitor">${fmtYen(t.monitor_eye_price)}</span>
-    </div>`;
-  }
-
-  html += '</div>'; // .pop-prices
-
-  // 回数券
-  if (t.ticket_3 || t.ticket_5 || t.ticket_8) {
-    html += '<div class="pop-ticket-section">';
-    html += '<div class="pop-ticket-title">回数券</div>';
-    if (t.ticket_3) {
-      const unit3 = Math.round(Number(t.ticket_3) / 3);
-      html += `<div class="pop-ticket-row">
-        <span class="pop-ticket-tier">3回券</span>
-        <span class="pop-ticket-price">¥${fmt(t.ticket_3)}<span class="pop-ticket-unit">(@¥${fmt(String(unit3))})</span></span>
-      </div>`;
-    }
-    if (t.ticket_5) {
-      const unit5 = Math.round(Number(t.ticket_5) / 5);
-      html += `<div class="pop-ticket-row">
-        <span class="pop-ticket-tier">5回券</span>
-        <span class="pop-ticket-price">¥${fmt(t.ticket_5)}<span class="pop-ticket-unit">(@¥${fmt(String(unit5))})</span></span>
-      </div>`;
-    }
-    if (t.ticket_8) {
-      const unit8 = Math.round(Number(t.ticket_8) / 8);
-      html += `<div class="pop-ticket-row">
-        <span class="pop-ticket-tier">8回券</span>
-        <span class="pop-ticket-price">¥${fmt(t.ticket_8)}<span class="pop-ticket-unit">(@¥${fmt(String(unit8))})</span></span>
-      </div>`;
-    }
-    html += '</div>';
-  }
-
-  // PP割引
-  if (t.prepaid_10 || t.prepaid_30 || t.prepaid_50) {
-    html += '<div class="pop-pp-section">';
-    html += '<div class="pop-pp-title">プリペイド割引</div>';
-    if (t.prepaid_10) {
-      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP10万</span><span class="pop-pp-price">¥${fmt(t.prepaid_10)}</span></div>`;
-    }
-    if (t.prepaid_30) {
-      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP30万</span><span class="pop-pp-price">¥${fmt(t.prepaid_30)}</span></div>`;
-    }
-    if (t.prepaid_50) {
-      html += `<div class="pop-pp-row"><span class="pop-pp-tier">PP50万</span><span class="pop-pp-price">¥${fmt(t.prepaid_50)}</span></div>`;
-    }
-    html += '</div>';
-  }
-
-  // フッター
-  html += `<div class="pop-footer">
-    ※表示価格はすべて税込です。<br>
-    価格は予告なく変更する場合がございます。
-  </div>`;
-
-  html += '</div>'; // .pop-card
+  html += '</div>';
   return html;
 }
 
-function esc(str) {
-  if (!str) return '';
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function updatePreview() {
+  const count = selectedIds.size;
+  document.getElementById('selectedCount').textContent = count ? `${count}件選択中` : '';
+  document.getElementById('btnClear').style.display = count ? '' : 'none';
+  document.getElementById('previewHint').style.display = count ? 'none' : '';
+
+  const selected = TREATMENTS.filter(t => selectedIds.has(t.id));
+  const container = document.getElementById('cardGrid');
+  container.className = 'card-grid layout-' + currentLayout;
+
+  if (!selected.length) {
+    container.innerHTML = '';
+    return;
+  }
+
+  container.innerHTML = selected.map(t => buildCard(t)).join('');
 }
 
-// イベント
-document.getElementById('catSelect').addEventListener('change', updateList);
-let searchTimer;
-document.getElementById('searchInput').addEventListener('input', () => {
-  clearTimeout(searchTimer);
-  searchTimer = setTimeout(updateList, 200);
-});
-
-loadData();
+init();
 </script>
-
 </body>
 </html>
