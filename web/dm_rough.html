@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>圧着DMハガキ 4面デザインラフ｜ボーテ（BEAUTE）</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* エアリー・スプリング パレット — 白ベース × ベージュアクセント */
+  --accent:      #AF7A5B;  /* テラコッタブラウン */
+  --accent-light:#EDCDB8;  /* ウォームベージュ */
+  --accent-pale: #F9F1EA;  /* 極薄ウォーム背景 */
+  --beige:       #C4AD96;  /* ベージュ中間（明るめ） */
+  --beige-mid:   #E8D8C6;  /* ベージュ薄め */
+  --beige-pale:  #F7F0E8;  /* ベージュ極薄 */
+  --beige-deep:  #8A7460;  /* ベージュ濃いめ */
+  --dark:        #3A3230;  /* テキスト黒（温かみ） */
+  --mid:         #6A5E56;  /* テキスト中間 */
+  --gray:        #A89E94;  /* テキスト薄め */
+  --white:       #FFFFFF;
+  --serif: 'Cormorant Garamond', 'Noto Serif JP', serif;
+}
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  background: linear-gradient(170deg, #F5EFE8 0%, #FAF6F2 40%, #F7F2EC 100%);
+  color: var(--dark);
+  padding: 48px 20px 64px;
+  min-height: 100vh;
+}
+
+/* ── ページ見出し ── */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.page-header p {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--beige);
+  margin-bottom: 6px;
+}
+.page-header h1 {
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--beige-deep);
+  font-weight: 400;
+}
+
+/* ── ラッパー ── */
+.dm-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ── 共通 ── */
+.face-tag {
+  position: absolute;
+  top: 0; left: 0;
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  padding: 4px 12px;
+  border-radius: 0 0 6px 0;
+}
+.divider-line {
+  border: none;
+  border-top: 0.5px solid rgba(175,122,91,0.15);
+  margin: 10px 0;
+}
+.fold-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--serif);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--beige);
+  margin: 2px 0;
+}
+.fold-label::before, .fold-label::after {
+  content: '';
+  flex: 1;
+  border-top: 1px dashed rgba(175,122,91,0.15);
+}
+
+/* ══════════════════════════════
+   面1：表面・宛名面
+══════════════════════════════ */
+.face1 {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(80,50,30,0.08), 0 1px 3px rgba(175,122,91,0.06);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 260px;
+  overflow: hidden;
+}
+.face1 .face-tag { background: rgba(175,122,91,0.08); color: var(--accent); z-index: 2; }
+
+/* 左：写真エリア */
+.face1-photo {
+  position: relative;
+  background: linear-gradient(135deg, #4A4440 0%, #3A3430 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 28px 30px;
+  overflow: hidden;
+}
+.face1-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 80%, rgba(175,122,91,0.1) 0%, transparent 60%),
+    linear-gradient(to top, rgba(40,35,30,0.7) 0%, rgba(40,35,30,0.1) 50%, transparent 100%);
+  z-index: 1;
+}
+.face1-photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(237,205,184,0.06) 0%, transparent 50%),
+    linear-gradient(145deg, #5A5450 0%, #4A4440 30%, #3A3430 100%);
+}
+.face1-photo-placeholder-icon {
+  width: 48px; height: 48px;
+  border: 1.5px solid rgba(237,205,184,0.45);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.face1-photo-placeholder-icon::after {
+  content: '';
+  width: 18px; height: 18px;
+  background: rgba(237,205,184,0.3);
+  border-radius: 50%;
+}
+.face1-photo-placeholder-text {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: rgba(237,205,184,0.55);
+  text-align: center;
+  line-height: 1.7;
+}
+/* 写真の上にかぶせるコピー */
+.face1-overlay {
+  position: relative;
+  z-index: 2;
+}
+.face1-overlay-en {
+  font-family: var(--serif);
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--accent-light);
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+.face1-overlay-catch {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.85;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
+}
+.face1-overlay-catch em {
+  font-style: normal;
+  color: var(--accent-light);
+}
+
+/* 右：宛名エリア */
+.face1-address-side {
+  background: linear-gradient(160deg, #FFFFFF 0%, #FBF7F3 50%, #F9F3ED 100%);
+  padding: 48px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.face1-salon-name {
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.face1-salon-sub {
+  font-size: 9.5px;
+  color: var(--gray);
+  letter-spacing: 0.06em;
+}
+.address-box {
+  border: 0.5px solid rgba(175,122,91,0.2);
+  border-radius: 6px;
+  padding: 16px 18px;
+  background: rgba(255,255,255,0.7);
+  margin-top: 18px;
+}
+.address-label {
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: var(--beige);
+  margin-bottom: 10px;
+}
+.address-dummy {
+  font-size: 11.5px;
+  line-height: 1.9;
+  color: var(--mid);
+}
+.face1-since {
+  font-family: var(--serif);
+  font-size: 8px;
+  letter-spacing: 0.24em;
+  color: var(--beige);
+  text-align: right;
+  margin-top: 14px;
+}
+
+/* ══════════════════════════════
+   開き面（面2・面3）
+══════════════════════════════ */
+.open-faces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(80,50,30,0.08), 0 1px 3px rgba(175,122,91,0.06);
+  overflow: hidden;
+}
+
+/* ── 面2：悩み別フェイシャル ── */
+.face2 {
+  position: relative;
+  background: linear-gradient(160deg, #FFFFFF 0%, #FBF7F2 60%, #F9F3EC 100%);
+  padding: 48px 32px 32px;
+  border-right: 1px dashed rgba(175,122,91,0.15);
+}
+.face2 .face-tag { background: rgba(175,122,91,0.06); color: var(--accent); }
+
+.face2-eyebrow {
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.face2-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--dark);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.face2-title em { font-style: normal; color: var(--accent); }
+.face2-subtitle {
+  font-size: 10px;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+/* フェイシャルB/Aグリッド */
+.facial-ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.facial-ba-card {
+  background: rgba(255,255,255,0.85);
+  border: 0.5px solid rgba(175,122,91,0.12);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(175,122,91,0.04);
+}
+.facial-ba-label {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.facial-ba-photos {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 4px;
+}
+.facial-ba-ph {
+  flex: 1;
+  height: 52px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-family: var(--serif);
+  letter-spacing: 0.06em;
+}
+.facial-ba-ph.before {
+  background: #EDE4DA;
+  color: var(--beige-deep);
+}
+.facial-ba-ph.after {
+  background: rgba(175,122,91,0.12);
+  color: var(--accent);
+}
+.facial-ba-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--beige);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+/* カード内価格 */
+.facial-ba-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 0.5px solid rgba(175,122,91,0.1);
+}
+.facial-ba-normal {
+  font-family: var(--serif);
+  font-size: 9px;
+  color: var(--gray);
+  text-decoration: line-through;
+}
+.facial-ba-special {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.facial-ba-special small {
+  font-size: 9px;
+}
+.facial-ba-note {
+  font-size: 9px;
+  color: var(--gray);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ── 面3：その他メニュー ── */
+.face3 {
+  position: relative;
+  background: linear-gradient(160deg, #FEFCFA 0%, #FAF6F1 100%);
+  padding: 48px 32px 32px;
+}
+.face3 .face-tag { background: rgba(175,122,91,0.06); color: var(--beige-deep); }
+
+.face3-eyebrow {
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(175,122,91,0.12);
+  margin-bottom: 16px;
+}
+
+/* メニューカード */
+.menu-card {
+  background: rgba(255,255,255,0.8);
+  border: 0.5px solid rgba(175,122,91,0.1);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 12px rgba(175,122,91,0.03);
+}
+.menu-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.menu-card-num {
+  font-family: var(--serif);
+  font-size: 16px;
+  color: var(--beige-mid);
+  line-height: 1;
+}
+.menu-card-title {
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--dark);
+}
+.menu-card-body {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.menu-card-photo {
+  width: 80px;
+  height: 60px;
+  background: var(--beige-mid);
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.menu-card-photo-icon {
+  width: 18px; height: 18px;
+  border: 1px solid rgba(138,114,88,0.4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.menu-card-photo-icon::after {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--beige-deep);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.menu-card-photo-text {
+  font-size: 7px;
+  color: var(--beige-deep);
+  letter-spacing: 0.06em;
+}
+.menu-card-info {
+  flex: 1;
+}
+.menu-card-desc {
+  font-size: 9.5px;
+  line-height: 1.7;
+  color: var(--mid);
+  margin-bottom: 6px;
+}
+.menu-card-price {
+  font-size: 10px;
+  color: var(--dark);
+  letter-spacing: 0.04em;
+}
+.menu-card-price s {
+  color: var(--gray);
+  font-size: 9px;
+}
+.menu-card-price .highlight {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+/* ══════════════════════════════
+   面4：裏面（リニューアル＋クーポン＋QR）
+══════════════════════════════ */
+.face4 {
+  position: relative;
+  background: linear-gradient(160deg, #FFFFFF 0%, #FDFAF7 50%, #FAF6F1 100%);
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(80,50,30,0.08), 0 1px 3px rgba(175,122,91,0.06);
+  padding: 48px 40px 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  overflow: hidden;
+}
+.face4::after {
+  content: 'BEAUTE';
+  position: absolute;
+  left: -24px; bottom: 10px;
+  font-family: var(--serif);
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  color: rgba(175,122,91,0.04);
+  pointer-events: none;
+}
+.face4 .face-tag { background: rgba(175,122,91,0.06); color: var(--beige-deep); }
+
+/* 面4左：リニューアル＋サロン情報 */
+.face4-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.renewal-block {
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(237,205,184,0.08) 0%, transparent 50%),
+    linear-gradient(145deg, #5A5450 0%, #4A4440 30%, #3A3430 100%);
+  border-radius: 8px;
+  padding: 20px 18px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.renewal-block::before {
+  content: 'NEW';
+  position: absolute;
+  right: -5px; top: 8px;
+  font-family: var(--serif);
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  color: rgba(237,205,184,0.08);
+  pointer-events: none;
+}
+.renewal-eyebrow {
+  font-family: var(--serif);
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--accent-light);
+  margin-bottom: 8px;
+  opacity: 0.85;
+}
+.renewal-title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.renewal-title em { font-style: normal; color: var(--accent-light); }
+.renewal-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.renewal-ph {
+  height: 40px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+  color: rgba(237,205,184,0.45);
+  letter-spacing: 0.04em;
+}
+.renewal-access {
+  font-size: 9px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+}
+
+.salon-block {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.qr-box {
+  width: 72px; height: 72px;
+  background: var(--beige-pale);
+  border: 0.5px dashed rgba(175,122,91,0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.qr-icon {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+  width: 30px;
+}
+.qr-icon span {
+  height: 8px;
+  background: var(--beige-deep);
+  border-radius: 1px;
+  opacity: 0.4;
+}
+.qr-icon span:nth-child(2) { opacity: 0.15; }
+.qr-icon span:nth-child(3) { opacity: 0.6; }
+.qr-icon span:nth-child(5) { opacity: 0.3; }
+.qr-label {
+  font-family: var(--serif);
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  color: var(--beige-deep);
+}
+.salon-info {
+  font-size: 9.5px;
+  line-height: 1.9;
+  color: var(--gray);
+}
+
+/* 面4右：クーポン */
+.face4-right { display: flex; flex-direction: column; }
+
+.coupon-wrap {
+  border: 1.5px dashed var(--accent);
+  border-radius: 8px;
+  padding: 20px 22px;
+  position: relative;
+  margin-bottom: 10px;
+  flex: 1;
+  background: rgba(255,255,255,0.5);
+}
+.scissors-label {
+  position: absolute;
+  top: -10px; left: 14px;
+  background: linear-gradient(90deg, #FEFCFA, #FAF6F1);
+  padding: 0 8px;
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+.scissors-label::before { content: '✂  '; }
+
+.coupon-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  padding: 3px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.coupon-menu {
+  font-size: 12px;
+  color: var(--dark);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+.coupon-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.coupon-normal {
+  font-family: var(--serif);
+  font-size: 12px;
+  color: var(--gray);
+  text-decoration: line-through;
+}
+.coupon-special {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--accent);
+  font-weight: 400;
+  line-height: 1;
+}
+.coupon-special span { font-size: 13px; }
+.coupon-conditions {
+  font-size: 10px;
+  line-height: 1.85;
+  color: var(--mid);
+}
+.coupon-expiry {
+  margin-top: 8px;
+  font-size: 10px;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+}
+
+.small-note {
+  font-size: 9.5px;
+  color: var(--gray);
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+/* ── 凡例 ── */
+.legend {
+  max-width: 900px;
+  margin: 28px auto 0;
+  background: rgba(255,255,255,0.8);
+  border-radius: 8px;
+  border: 0.5px solid rgba(175,122,91,0.12);
+  padding: 16px 20px;
+  font-size: 10.5px;
+  color: var(--gray);
+  line-height: 1.95;
+}
+.legend strong { color: var(--mid); font-weight: 400; }
+.legend-title {
+  font-family: var(--serif);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--beige);
+  margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <p>DESIGN ROUGH — A4 圧着式DMはがき 4面構成</p>
+  <h1>ボーテ（BEAUTE）エステサロン｜休眠掘り起こし企画｜2026.3</h1>
+</div>
+
+<div class="dm-wrapper">
+
+  <!-- ══ 面1：表面・宛名面 ══ -->
+  <div class="face1">
+    <span class="face-tag">面1｜表面・宛名面</span>
+
+    <!-- 左半分：写真チラ見せ＋コピー -->
+    <div class="face1-photo">
+      <div class="face1-photo-placeholder">
+        <div class="face1-photo-placeholder-icon"></div>
+        <p class="face1-photo-placeholder-text">エントランス写真<br>（差し込み予定）</p>
+      </div>
+      <div class="face1-overlay">
+        <p class="face1-overlay-en">BEAUTE SKIN CLINIC — SINCE 2006</p>
+        <p class="face1-overlay-catch">
+          新しい<em>ボーテ</em>に、<br>
+          会いにきてください。
+        </p>
+      </div>
+    </div>
+
+    <!-- 右半分：宛名 -->
+    <div class="face1-address-side">
+      <div>
+        <p class="face1-salon-name">BEAUTE SKIN CLINIC</p>
+        <p class="face1-salon-sub">ボーテスキンクリニック｜JR六甲道駅 徒歩2分</p>
+      </div>
+      <div>
+        <div class="address-box">
+          <p class="address-label">宛名エリア</p>
+          <div class="address-dummy">
+            〒000-0000<br>
+            ○○市△△町□□番地<br>
+            山田　花子　様
+          </div>
+        </div>
+        <p class="face1-since">19 years of beauty</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fold-label">▼ 開いた面（面2・面3 が一体で見える）</div>
+
+  <!-- ══ 面2・面3：開き面 ══ -->
+  <div class="open-faces">
+
+    <!-- 面2：悩み別フェイシャル（B/A写真4種） -->
+    <div class="face2">
+      <span class="face-tag">面2｜開き左・フェイシャル訴求</span>
+      <p class="face2-eyebrow">FACIAL CARE</p>
+      <h2 class="face2-title">
+        悩み別フェイシャル<br><em>美肌管理</em>
+      </h2>
+      <p class="face2-subtitle">あなたの悩みに合わせた、専門的なケア</p>
+
+      <!-- 4種 B/Aグリッド -->
+      <div class="facial-ba-grid">
+        <div class="facial-ba-card">
+          <p class="facial-ba-label">しわ・たるみ</p>
+          <div class="facial-ba-photos">
+            <div class="facial-ba-ph before">BEFORE</div>
+            <div class="facial-ba-arrow">›</div>
+            <div class="facial-ba-ph after">AFTER</div>
+          </div>
+          <div class="facial-ba-price">
+            <span class="facial-ba-normal">18,700円</span>
+            <span class="facial-ba-special">→ 11,000<small>円</small></span>
+          </div>
+        </div>
+        <div class="facial-ba-card">
+          <p class="facial-ba-label">しみ・くすみ</p>
+          <div class="facial-ba-photos">
+            <div class="facial-ba-ph before">BEFORE</div>
+            <div class="facial-ba-arrow">›</div>
+            <div class="facial-ba-ph after">AFTER</div>
+          </div>
+          <div class="facial-ba-price">
+            <span class="facial-ba-normal">18,700円</span>
+            <span class="facial-ba-special">→ 11,000<small>円</small></span>
+          </div>
+        </div>
+        <div class="facial-ba-card">
+          <p class="facial-ba-label">ニキビ・ニキビ跡</p>
+          <div class="facial-ba-photos">
+            <div class="facial-ba-ph before">BEFORE</div>
+            <div class="facial-ba-arrow">›</div>
+            <div class="facial-ba-ph after">AFTER</div>
+          </div>
+          <div class="facial-ba-price">
+            <span class="facial-ba-normal">18,700円</span>
+            <span class="facial-ba-special">→ 11,000<small>円</small></span>
+          </div>
+        </div>
+        <div class="facial-ba-card">
+          <p class="facial-ba-label">敏感肌・赤ら顔</p>
+          <div class="facial-ba-photos">
+            <div class="facial-ba-ph before">BEFORE</div>
+            <div class="facial-ba-arrow">›</div>
+            <div class="facial-ba-ph after">AFTER</div>
+          </div>
+          <div class="facial-ba-price">
+            <span class="facial-ba-normal">18,700円</span>
+            <span class="facial-ba-special">→ 11,000<small>円</small></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="facial-ba-note">※税込・DM限定価格。当該施術を初めてお受けの方に適用。</p>
+    </div>
+
+    <!-- 面3：その他メニュー3種 -->
+    <div class="face3">
+      <span class="face-tag">面3｜開き右・その他メニュー</span>
+      <p class="face3-eyebrow">BODY &amp; RELAXATION</p>
+
+      <!-- 01：ミネラルスチームサウナ -->
+      <div class="menu-card">
+        <div class="menu-card-header">
+          <span class="menu-card-num">01</span>
+          <span class="menu-card-title">ミネラルスチームサウナ</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-photo">
+            <div class="menu-card-photo-icon"></div>
+            <span class="menu-card-photo-text">写真</span>
+          </div>
+          <div class="menu-card-info">
+            <p class="menu-card-desc">体を芯から温め、発汗と同時にミネラルを補給し巡りを整える。</p>
+            <p class="menu-card-price">30分　<strong>6,600円</strong>（税込）</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02：ミネラルデトックス痩身 -->
+      <div class="menu-card">
+        <div class="menu-card-header">
+          <span class="menu-card-num">02</span>
+          <span class="menu-card-title">ミネラルデトックス痩身エステ</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-photo">
+            <div class="menu-card-photo-icon"></div>
+            <span class="menu-card-photo-text">写真</span>
+          </div>
+          <div class="menu-card-info">
+            <p class="menu-card-desc">温活×デトックスで脂肪燃焼＋排出。冷え・むくみケアにも。</p>
+            <p class="menu-card-price">60分　<s>14,300円</s>　<span class="highlight">初回 11,000円</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03：HAAB LA SERRE -->
+      <div class="menu-card">
+        <div class="menu-card-header">
+          <span class="menu-card-num">03</span>
+          <span class="menu-card-title">HAAB LA SERRE ボディアロマリンパ</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-photo">
+            <div class="menu-card-photo-icon"></div>
+            <span class="menu-card-photo-text">写真</span>
+          </div>
+          <div class="menu-card-info">
+            <p class="menu-card-desc">極上のオイルで深部から温め、老廃物を流しながらボディラインを整える。</p>
+            <p class="menu-card-price">通常　<strong>13,200円</strong>（税込）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fold-label">▼ 裏面（面4）</div>
+
+  <!-- ══ 面4：リニューアル告知＋クーポン＋QR ══ -->
+  <div class="face4">
+    <span class="face-tag">面4｜裏面・新空間＋クーポン</span>
+
+    <!-- 左：リニューアル告知＋サロン情報 -->
+    <div class="face4-left">
+      <div class="renewal-block">
+        <p class="renewal-eyebrow">— 2024.7 RENEWAL —</p>
+        <p class="renewal-title">
+          生まれ変わった<em>新空間</em>で、<br>
+          お待ちしています。
+        </p>
+        <div class="renewal-photos">
+          <div class="renewal-ph">入口</div>
+          <div class="renewal-ph">個室</div>
+          <div class="renewal-ph">シャワー</div>
+          <div class="renewal-ph">パウダー</div>
+        </div>
+        <p class="renewal-access">
+          JR六甲道駅 徒歩2分｜完全個室・シャワー完備
+        </p>
+      </div>
+
+      <div class="salon-block">
+        <div class="qr-box">
+          <div class="qr-icon">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+          <span class="qr-label">予約</span>
+        </div>
+        <div class="salon-info">
+          ボーテ（BEAUTE）<br>
+          〒●●●-●●●● 兵庫県神戸市●●●<br>
+          TEL 078-●●●-●●●●<br>
+          火〜日 10:00〜20:00（月曜定休）
+        </div>
+      </div>
+    </div>
+
+    <!-- 右：クーポン -->
+    <div class="face4-right">
+      <div class="coupon-wrap">
+        <span class="scissors-label">切り取り線</span>
+        <span class="coupon-badge">このDMの方限定クーポン</span>
+        <p class="coupon-menu">悩み別フェイシャル 美肌管理<br>（しわ・たるみ／しみ・くすみ／ニキビ／敏感肌）</p>
+        <div class="coupon-price-row">
+          <span class="coupon-normal">通常 18,700円</span>
+          <span class="coupon-special">11,000<span>円（税込）</span></span>
+        </div>
+        <div class="coupon-conditions">
+          ・当該施術を初めてお受けになる方に適用<br>
+          ・1回のみご使用いただけます<br>
+          ・ご来院時に本クーポンをご持参ください
+        </div>
+        <p class="coupon-expiry">有効期限：2026年●月●日まで（ダミー・要確認）</p>
+      </div>
+      <p class="small-note">
+        ※ 他の割引・クーポンとの併用不可。お一人様1回限り有効。<br>
+        ※ 価格・有効期限はオーナー確認後に確定予定。
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- 凡例 -->
+<div class="legend">
+  <p class="legend-title">DESIGN ROUGH — NOTES</p>
+  <strong>トンマナ</strong>：テラコッタブラウン（#AF7A5B）× ウォームベージュ（#EDCDB8）× ホワイトベース ― 明るく軽やかでエアリー。春の透明感を演出<br>
+  <strong>面1 写真</strong>：エントランス写真1点を差し込み予定。<br>
+  <strong>面2 B/A写真</strong>：悩み別フェイシャル4種のビフォアアフター写真×4組。写真素材の準備・使用許諾確認が必要。<br>
+  <strong>面3 メニュー写真</strong>：サウナ・痩身・HAAB LA SERREの施術イメージ写真×3点。<br>
+  <strong>面4 院内写真</strong>：リニューアル新空間の写真4点（エントランス・個室・シャワー・パウダー）を差し込み予定。<br>
+  <strong>クーポン価格・有効期限</strong>：ダミー表記。オーナー確認後に確定し差し替え。<br>
+  <strong>「このDMの方限定」</strong>：DM上の表現。実態はボーテで当該施術初回受講者に適用（社内周知済）。<br>
+  <strong>入稿期限（仮）</strong>：2026年3月25日 / 宮崎さんへの制作依頼用ラフとして転用可。
+</div>
+
+</body>
+</html>
